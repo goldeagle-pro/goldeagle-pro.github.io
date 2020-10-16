@@ -1,0 +1,172 @@
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="noindex,follow">
+	<title>SQ2 Skill Sim.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+
+
+</style>
+
+
+
+    <!-- Slidebars CSS -->
+    <link rel="stylesheet" href="./css/slidebars.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- Slidebars -->
+    <script src="./js/slidebars.min.js"></script>
+  </head>
+
+<body>
+
+	<div canvas="container">
+		<!-- Your main site content. -->
+		<div class="main-content">
+		<h1>ダンジョントラベラーズ　スキルシミュレータ</h1>
+
+			<h3>Left Slidebar Controls</h3>
+			<div class="menu">
+				
+				<p class="sb-toggle-left">メニュー</p>
+			</div>
+
+			<h3>Right Slidebar Controls</h3>
+			<div class="menu">
+				<p class="sb-toggle-right">クラス</p>
+
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div off-canvas="sb-left left push">
+		<div class="left-content">
+            <hr class="fade">
+            <div>
+                <input type="text" name="name" value="" placeholder="name" id="name">
+            </div>
+            <hr class="fade">
+            <div>
+                <!--<label for="retire">ボーナス</label>-->
+                <input type="text" name="number" value="" placeholder="00-50" id="number">
+            </div>
+            <hr class="fade">
+            <div>
+                <!--<label for="Lv">Lv</label>-->
+                <input type="text" name="number" value="" placeholder="01-99" id="number">
+            </div>
+            <hr class="fade">
+            <div>
+                <!--<label for="slot">セーブ</label>-->
+                <select name="slot" id="slot"></select>
+            </div>
+            <hr class="fade">
+            <div>
+                <p class="button" id="save">セーブ</p>
+            </div>
+            <hr class="fade">
+            <di>
+                <p class="button" id="load">ロード</p>
+            </di>
+            <hr class="fade">
+            <div>
+                <p class="button" id="clear">クリア</p>
+            </div>
+            <hr class="fade">
+            <div>
+                <p class="button" id="copy">URL出力</p>
+            </div>
+            <hr class="fade">
+            <div>
+                <p class="button" id="showAbout">アバウト</p>
+            </div>
+            <hr class="fade">
+            <div>
+                <p class="button" id="showOption">オプション</p>
+            </div>
+            <hr class="fade">
+            <div>
+                <p class="button" id="delDatas">セーブデータ全消去</p>
+            </div>
+            <hr class="fade">
+		</div>
+	</div>
+
+	<div off-canvas="sb-right right overlay">
+		<div class="right-content">
+			ここに右スライドコンテンツここに右スライドコンテンツここに右スライドコンテンツここに右スライドコンテンツここに右スライドコンテンツ<br>
+			<p class="sb-close">閉じるボタン</p>
+		</div>
+	</div>
+
+
+
+
+    <!-- Slidebars -->
+<script>
+( function ( $ ) {
+  // Initialize Slidebars
+  var controller = new slidebars();
+  controller.init();
+
+  /**
+   * Original Version Style Control Classes
+   */
+
+  // Open left
+  $( '.sb-open-left' ).on( 'click', function ( event ) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    controller.open( 'sb-left' );
+  } );
+
+  // Toggle left
+  $( '.sb-toggle-left' ).on( 'click', function ( event ) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    controller.toggle( 'sb-left' );
+  } );
+
+  // Open right
+  $( '.sb-open-right' ).on( 'click', function ( event ) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    controller.open( 'sb-right' );
+  } );
+
+  // Toggle right
+  $( '.sb-toggle-right' ).on( 'click', function ( event ) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    controller.toggle( 'sb-right' );
+  } );
+
+  // Close
+  $( '.sb-close' ).on( 'click', function ( event ) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    controller.close();
+  } );
+} ) ( jQuery );
+</script>
+
+
+
+
+
+  </body>
+</html>
