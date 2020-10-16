@@ -1,72 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <Head>
-        <meta charset="uft-8">
-        <title>SQ2SS</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" type="text/css" href="https://goldeagle-pro.github.io/css/slidebars.css">
-    </Head>
-    <body>
-        <div canvas="container">
-            <!--ここにページのコンテンツ内容-->
-            <h1>SQ2 skill.sim</h1>
-            <div class="sb-open-left">MENU</div> 
-        </div>
-        <div off-canvas="sb-left left push">
-            <!--ここに右からスライドしてくるコンテンツ内容-->
-            <p>ロード</p>
-        </div>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/slidebars.min.css">
+<script src="js/jquery.js"></script>
+<script src="js/slidebars.min.js"></script>
+</head>
+<body>
+    <div canvas="container">
+        <!--ここにページのコンテンツ内容-->
+        <div class="sb-open-left">MENU</div> 
+    </div>
+    <div class="sb-left left push">
+        <!--ここに左からスライドしてくるコンテンツ内容-->
+    </div>
 
-        <script>
-            ( function ( $ ) {
-             // Initialize Slidebars
-             var controller = new slidebars();
-             controller.init();
-            
-             /**
-             * Original Version Style Control Classes
-             */
-            
-             // Open left
-             $( '.sb-open-left' ).on( 'click', function ( event ) {
-             event.preventDefault();
-             event.stopPropagation();
-            
-             controller.open( 'sb-left' );
-             } );
-            
-             // Toggle left
-             $( '.sb-toggle-left' ).on( 'click', function ( event ) {
-             event.preventDefault();
-             event.stopPropagation();
-            
-             controller.toggle( 'sb-left' );
-             } );
-            
-             // Open right
-             $( '.sb-open-right' ).on( 'click', function ( event ) {
-             event.preventDefault();
-             event.stopPropagation();
-            
-             controller.open( 'sb-right' );
-             } );
-            
-             // Toggle right
-             $( '.sb-toggle-right' ).on( 'click', function ( event ) {
-             event.preventDefault();
-             event.stopPropagation();
-            
-             controller.toggle( 'sb-right' );
-             } );
-            
-             // Close
-             $( '.sb-close' ).on( 'click', function ( event ) {
-             event.preventDefault();
-             event.stopPropagation();
-            
-             controller.close();
-             } );
-            } ) ( jQuery );
-            </script>
-            <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    </body>
+<script>
+( function ( $ ) {
+ var controller = new slidebars();
+ controller.init();
+
+ $( '.sb-toggle-left' ).on( 'click', function ( event ) {
+ event.preventDefault();
+ event.stopPropagation();
+
+ controller.toggle( 'sb-left' );
+ } );
+
+} ) ( jQuery );
+</script>
+</body>
+</html>
