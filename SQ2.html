@@ -1,157 +1,35 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<!--
-		Copyright (c) 2016 Kag
-	-->
-	<title>SQ2SS</title>
-	<!-- meta -->
-	<meta name="Keywords" content="世界樹の迷宮2,諸王の聖杯,SQ2,スキルシミュレータ">
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="./css/slidebars.css">
-	<link rel="stylesheet" type="text/css" href="./css/jquery-ui-1.10.4.custom.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<link rel="stylesheet" type="text/css" href="./css/swordman.css">
-	<link rel="stylesheet" type="text/css" href="./css/ranger.css">
-	<link rel="stylesheet" type="text/css" href="./css/paladin.css">
-	<link rel="stylesheet" type="text/css" href="./css/darkhunter.css">
-	<link rel="stylesheet" type="text/css" href="./css/medic.css">
-	<link rel="stylesheet" type="text/css" href="./css/alchemist.css">
-	<link rel="stylesheet" type="text/css" href="./css/bard.css">
-	<link rel="stylesheet" type="text/css" href="./css/bushido.css">
-	<link rel="stylesheet" type="text/css" href="./css/cursemaker.css">
-	<link rel="stylesheet" type="text/css" href="./css/gunner.css">
-	<link rel="stylesheet" type="text/css" href="./css/doctormagus.css">
-	<link rel="stylesheet" type="text/css" href="./css/pet.css">
-
-	<!-- Scripts -->
-	<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=01wdQ6RNFIvvREj0j0ce_nvvytcGZ66qUZcD5VaD6lRq-VSRzitBP-jqapCrX2PC" charset="UTF-8"></script><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="./js/jquery-ui-1.10.4.custom.min.js" type="text/javascript" charset="utf-8" defer></script>
-	<script src="./js/jquery.ui.touch-punch.min.js" type="text/javascript" charset="utf-8" defer></script>
-	<script src="./js/slidebars.js" type="text/javascript" charset="utf-8" defer></script>
-
-	<script src="./js/data.js" type="text/javascript" charset="utf-8" defer></script>
-	<script src="./js/application.js" type="text/javascript" charset="utf-8" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/slidebars.min.css">
+<script src="js/jquery.js"></script>
+<script src="js/slidebars.min.js"></script>
 </head>
 <body>
-	<div class="sb-slidebar sb-left">
-		<div class="sb-left-inner">
-			<hr class="fade">
-			<div>
-				<!--<label for="name">名前</label>-->
-				<input type="text" name="name" value="" placeholder="Name" id="name">
-			</div>
-			<hr class="fade">
-			<div>
-				<!--<label for="retire">ボーナス</label>-->
-				<select name="retire" id="retire">
-					<option value="00">+0pt (引退なし)</option>
-					<option value="04">+4pt (引退Lv30-)</option>
-					<option value="05">+5pt (引退Lv40-)</option>
-					<option value="06">+6pt (引退Lv50-)</option>
-					<option value="07">+7pt (引退Lv60-)</option>
-					<option value="08">+8pt (引退Lv70-)</option>
-					<option value="10">+10pt (引退Lv99)</option>
-				</select>
-			</div>
-			<hr class="fade">
-			<div>
-				<!--<label for="lvCap">Lv</label>-->
-				<select name="lvCap" id="lvCap">
-					<option value="70">Lv70</option>
-					<option value="99">Lv99</option>
-				</select>
-			</div>
-			<hr class="fade">
-			<div>
-				<!--<label for="slot">セーブ</label>-->
-				<select name="slot" id="slot">
-				</select>
-			</div>
-			<hr class="fade">
-			<div>
-				<p class="button" id="save">セーブ</p>
-			</div>
-			<hr class="fade">
-			<div>
-				<p class="button" id="load">ロード</p>
-			</div>
-			<hr class="fade">
-			<div>
-				<p class="button" id="clear">クリア</p>
-			</div>
-			<hr class="fade">
-			<div>
-				<p class="button" id="copy">URL出力</p>
-			</div>
-			<hr class="fade">
-			<div>
-				<p class="button" id="showAbout">アバウト</p>
-			</div>
-			<hr class="fade">
-			<div>
-				<p class="button" id="showOption">オプション</p>
-			</div>
-			<hr class="fade">
-			<div>
-				<p class="button" id="delDatas">セーブデータ全消去</p>
-			</div>
-			<hr class="fade">
-		</div>
-	</div>
-	<div class="sb-slidebar sb-right">
-		<div class="sb-right-inner" id="jobSelect">
-		</div>
-	</div>
+    <div canvas="container">
+		<!--ここにページのコンテンツ内容-->
+		<h1>SQ2 Skill Sim.</h1>
+        <div class="sb-open-left">MENU</div> 
+    </div>
+    <div class="sb-left left push">
+		<!--ここに左からスライドしてくるコンテンツ内容-->
+		<p>セーブ</p>
+    </div>
 
-	<div id="sb-site">
-		<div id="container">
-			<p class="c">SQ2 Skill Sim.</p>	
-			<div class="menu c">
-				<div class="sb-toggle-left">メニュー</div>
-				<div class="sb-toggle-right">クラス</div>
-			</div>
-			<p id="nowJob">&nbsp;</p>
-			<p id="stat">&nbsp;</p>
-		</div>
-		
-		<div id="field">
-			<div id="job" class="skillField">
-				<div class="data"></div>
-			</div>
-		</div>
-		<div id="loading">
-			<p>Javascriptを無効にしている場合は有効にしてください。</p>
-			<p>Internet Explorer 10未満には対応しておりません。<br>
-				最新のGoogle Chrome, Firefox, Operaなどをご利用ください。
-			</p>
-			<img src="./img/loading.gif">
-		</div>
-	</div>
-	<div id="about" title="About">
-		<p class="c">SQ2スキルシミュレータ</p>
-		<p>動作環境：IE10+, Chrome, Firefox, Safari, Opera, etc.</p>
-		<p class="c">何かありましたらメールへ<br><img src='/assets/images/mail.png'></p>
-		<p>
-			Ver.0.0.1 : 2016/04/05: 試作<br>
-			Ver.0.1.0 : 2016/04/13: 公開<br>
-			Ver.0.2.0 : 2016/04/22: オプション追加<br>
-			Ver.0.3.0 : 2016/04/27: セーブデータの保存場所をlocalStorageに変更<br>
-		</p>
-	</div>
-	<div id="option">
-		<p>スキルレベルの入力にダイアログを使う</p>
-		<p>
-		<label><input type="radio" name="use" value="def">おまかせ</label><br>
-		<label><input type="radio" name="use" value="yes">常に使う</label><br>
-		<label><input type="radio" name="use" value="no">使わない</label>
-		</p>
-	</div>
-	<div id="msgbox" title="Dialog"></div>
-	<div id="skillInput" title="スキルレベル入力"></div>
-	<div id="dummy"></div>
+<script>
+( function ( $ ) {
+ var controller = new slidebars();
+ controller.init();
+
+ $( '.sb-toggle-left' ).on( 'click', function ( event ) {
+ event.preventDefault();
+ event.stopPropagation();
+
+ controller.toggle( 'sb-left' );
+ } );
+
+} ) ( jQuery );
+</script>
 </body>
+</html>
