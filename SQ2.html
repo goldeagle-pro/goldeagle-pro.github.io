@@ -1,35 +1,159 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link rel="stylesheet" href="./css/slidebars.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="./js/slidebars.min.js"></script>
-</head>
-<body>
-    <div canvas="container">
-		<!--ここにページのコンテンツ内容-->
-		<h1>SQ2 Skill Sim.</h1>
-        <div class="sb-open-left">MENU</div> 
-    </div>
-    <div class="sb-left left push">
-		<!--ここに左からスライドしてくるコンテンツ内容-->
-		<p>セーブ</p>
-    </div>
 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="noindex,follow">
+	<title>設置サンプル2 - Slidebars v2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="http://tuono034s.com/demo/global.css">
+
+<!--追加しているスタイル-->
+<style type="text/css">
+.main-content,
+.left-content,
+.right-content,
+.top-content,
+.bottom-content {
+	padding:20px;
+}
+.main-content div,
+.left-content div,
+.right-content div,
+.top-content div,
+.bottom-content div {
+	cursor: pointer;
+}
+.menu p {
+    border: 1px solid;
+    padding: 5px;
+}
+.left-content p,
+.right-content p,
+.top-content p,
+.bottom-content p {
+    border: 1px solid;
+    padding: 5px;
+}
+
+</style>
+
+
+
+    <!-- Slidebars CSS -->
+    <link rel="stylesheet" href="./css/slidebars.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- Slidebars -->
+    <script src="./js/slidebars.min.js"></script>
+  </head>
+
+<body>
+
+	<div canvas="container">
+		<!-- Your main site content. -->
+		<div class="main-content">
+		<h1>Slidebars 設置サンプル２だよ！</h1>
+			<p>参照：<a href="http://www.adchsm.com/slidebars/" target="_blank">http://www.adchsm.com/slidebars/</a></p>
+			<p>元の記事：<a href="http://tuono034s.com/web-entry/2468/">Slidebars.js【Ver2】の使い方、設定方法～バージョンが変わってます</a></p>
+
+			<h2>Slidebars for jQuery</h2>
+			<p>jquery.min.js　Version:  1.12.2<br />
+			slidebars.js　Version:  2.0.2</p>
+
+			<h3>Left Slidebar Controls</h3>
+			<div class="menu">
+				<p class="sb-open-left">MENU:.sb-open-left（左開く）</p>
+				<p class="sb-toggle-left">MENU:.sb-toggle-left（左開く、閉じる）</p>
+			</div>
+
+			<h3>Right Slidebar Controls</h3>
+			<div class="menu">
+				<p class="sb-open-right">MENU:.sb-open-right（右開く）</p>
+				<p class="sb-toggle-right">MENU:.sb-toggle-right（右開く、閉じる）</p>
+
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div off-canvas="sb-left left push">
+		<div class="left-content">
+			ここに左スライドコンテンツここに左スライドコンテンツここに左スライドコンテンツここに左スライドコンテンツ左スライドコンテンツ<br>
+			<p class="sb-close">閉じるボタン</p>
+		</div>
+	</div>
+
+	<div off-canvas="sb-right right overlay">
+		<div class="right-content">
+			ここに右スライドコンテンツここに右スライドコンテンツここに右スライドコンテンツここに右スライドコンテンツここに右スライドコンテンツ<br>
+			<p class="sb-close">閉じるボタン</p>
+		</div>
+	</div>
+
+
+
+
+    <!-- Slidebars -->
 <script>
 ( function ( $ ) {
- var controller = new slidebars();
- controller.init();
+  // Initialize Slidebars
+  var controller = new slidebars();
+  controller.init();
 
- $( '.sb-toggle-left' ).on( 'click', function ( event ) {
- event.preventDefault();
- event.stopPropagation();
+  /**
+   * Original Version Style Control Classes
+   */
 
- controller.toggle( 'sb-left' );
- } );
+  // Open left
+  $( '.sb-open-left' ).on( 'click', function ( event ) {
+    event.preventDefault();
+    event.stopPropagation();
 
+    controller.open( 'sb-left' );
+  } );
+
+  // Toggle left
+  $( '.sb-toggle-left' ).on( 'click', function ( event ) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    controller.toggle( 'sb-left' );
+  } );
+
+  // Open right
+  $( '.sb-open-right' ).on( 'click', function ( event ) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    controller.open( 'sb-right' );
+  } );
+
+  // Toggle right
+  $( '.sb-toggle-right' ).on( 'click', function ( event ) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    controller.toggle( 'sb-right' );
+  } );
+
+  // Close
+  $( '.sb-close' ).on( 'click', function ( event ) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    controller.close();
+  } );
 } ) ( jQuery );
 </script>
-</body>
+
+
+
+
+
+  </body>
 </html>
