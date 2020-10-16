@@ -146,10 +146,23 @@
                 </td>
             </tr>
         </table>
-        <div id="selectDispA">
-            <div id="Lv15a">
-                <table border="1">
-                    <th colspan="2">Lv15職</th>
+    </div>
+    <div>
+        <table border="1">
+            <tr>
+                <th colspan="2">Lv15職</th>
+            </tr>
+            <tr>
+                <th>
+                <select id="cgangeSelectA">
+                    <option value="Lv15a">パラディン</option>
+                    <option value="Lv15b">ダークナイト</option>
+                </select>
+                </th>
+                <th>SLv</th>
+            </tr>
+            <div id="selectDispA">
+                <div id="Lv15a">
                     <tr>
                         <td>ディフェンダー</td>
                         <td>
@@ -246,9 +259,24 @@
                             </select>
                         </td>
                     </tr>
-                </table>
+                </div>
+                <div id="Lv15b">
+                    <tr>
+                        <td>バーサーク</td>
+                        <td>
+                            <select id="DKa" onchange="DT2skill()">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                    </tr>
+                </div>
             </div>
-        </div>
-    </div>    
+        </table> 
+    </div> 
 </body>
 </html>
