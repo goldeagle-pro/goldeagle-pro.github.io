@@ -20,6 +20,27 @@ function changeDispA(start){
 	}
 }
 
+function DT2skill() {
+	var value = document.getElementById('A').value;
+	var skillA = document.getElementById('skillA');
+	var text = '';
+	if(value == '0'){
+	  text = '0';
+	} else if(value == 1) {
+	  text = '2';
+	} else if(value == 2) {
+		text = '6';
+	} else if(value == 3) {
+		text = '12';
+	} else if(value == 4) {
+		text = '20';
+	} else if(value == 5) {
+		text = '30';
+	}
+
+	skillA.innerHTML = text;
+  }
+
 function JobB(){
 	changeDispB(1);
 	document.getElementById('changeSelectB').onchange =function(e){
