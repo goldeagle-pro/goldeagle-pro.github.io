@@ -39,17 +39,17 @@ function funcFtA(){
 	var value = document.getElementById('FTa').value;
 	var skillFtA = document.getElementById('skillFtA');
 	if(value == 0){
-		text = '0';
+		text = 0;
 	}else if(value == 1){
-		text = '2';
+		text = 2;
 	}else if(value == 2){
-		text = '6';
+		text = 6;
 	}else if(value == 3){
-		text = '12';
+		text = 12;
 	}else if(value == 4){
-		text = '20';
+		text = 20;
 	}else if(value == 5){
-		text = '30';
+		text = 30;
 	}
 	skillFtA.innerHTML = text;
 }
@@ -58,19 +58,48 @@ function funcFtB(){
 	var value = document.getElementById('FTb').value;
 	var skillFtB = document.getElementById('skillFtB');
 	if(value == 0){
-		text = '0';
+		text = 0;
 	}else if(value == 1){
-		text = '2';
+		text = 2;
 	}else if(value == 2){
-		text = '6';
+		text = 6;
 	}else if(value == 3){
-		text = '12';
+		text = 12;
 	}else if(value == 4){
-		text = '20';
+		text = 20;
 	}else if(value == 5){
-		text = '30';
+		text = 30;
 	}
 	skillFtB.innerHTML = text;
+}
+
+function funcFtC(){
+	var value = document.getElementById('FTc').value;
+	var skillFtC = document.getElementById('skillFtC');
+	if(value == 0){
+		text = 0;
+	}else if(value == 1){
+		text = 1;
+	}else if(value == 2){
+		text = 3;
+	}else if(value == 3){
+		text = 6;
+	}else if(value == 4){
+		text = 10;
+	}else if(value == 5){
+		text = 15;
+	}else if(value == 6){
+		text = 21;
+	}else if(value == 7){
+		text = 28;
+	}else if(value == 8){
+		text = 36;
+	}else if(value == 9){
+		text = 45;
+	}else if(value == 10){
+		text = 55;
+	}
+	skillFtC.innerHTML = text;
 }
 
 function funcPlA(){
@@ -95,6 +124,14 @@ function funcPlA(){
 function DT2skill(){
 	var FTa = document.getElementById("FTa").selectedIndex;
 	var FTb = document.getElementById("FTb").selectedIndex;
+	var FTc = document.getElementById("FTc").selectedIndex;
+	var FTd = document.getElementById("FTd").selectedIndex;
+	var FTe = document.getElementById("FTe").selectedIndex;
+	var FTf = document.getElementById("FTf").selectedIndex;
+	var FTg = document.getElementById("FTg").selectedIndex;
+	var FTh = document.getElementById("FTh").selectedIndex;
+
+	
 	var PLa = document.getElementById('PLa').selectedIndex;
 }
 
