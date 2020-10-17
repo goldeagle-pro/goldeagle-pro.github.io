@@ -20,27 +20,6 @@ function changeDispA(start){
 	}
 }
 
-function DT2skill() {
-	var value = document.getElementById('FTa').value;
-	var skillA = document.getElementById('skillFtA');
-	var text = '';
-	if(value == '0'){
-	  text = '0';
-	} else if(value == 1) {
-	  text = '2';
-	} else if(value == 2) {
-		text = '6';
-	} else if(value == 3) {
-		text = '12';
-	} else if(value == 4) {
-		text = '20';
-	} else if(value == 5) {
-		text = '30';
-	}
-
-	skillA.innerHTML = text;
-}
-
 function JobB(){
 	changeDispB(1);
 	document.getElementById('changeSelectB').onchange =function(e){
@@ -55,3 +34,67 @@ function changeDispB(start){
 		items[i].style.display = "none";
 	}
 }
+
+function funcFtA(){
+	var value = document.getElementById('FTa').value;
+	var skillFtA = document.getElementById('skillFtA');
+	if(value == 0){
+		text = '0';
+	}else if(value == 1){
+		text = '2';
+	}else if(value == 2){
+		text = '6';
+	}else if(value == 3){
+		text = '12';
+	}else if(value == 4){
+		text = '20';
+	}else if(value == 5){
+		text = '30';
+	}
+	skillFtA.innerHTML = text;
+}
+
+function funcFtB(){
+	var value = document.getElementById('FTb').value;
+	var skillFtB = document.getElementById('skillFtB');
+	if(value == 0){
+		text = '0';
+	}else if(value == 1){
+		text = '2';
+	}else if(value == 2){
+		text = '6';
+	}else if(value == 3){
+		text = '12';
+	}else if(value == 4){
+		text = '20';
+	}else if(value == 5){
+		text = '30';
+	}
+	skillFtB.innerHTML = text;
+}
+
+function funcPlA(){
+	var value = document.getElementById('PLa').value;
+	var skillFtB = document.getElementById('skillPlA');
+	if(value == 0){
+		text = '0';
+	}else if(value == 1){
+		text = '2';
+	}else if(value == 2){
+		text = '6';
+	}else if(value == 3){
+		text = '12';
+	}else if(value == 4){
+		text = '20';
+	}else if(value == 5){
+		text = '30';
+	}
+	skillPlA.innerHTML = text;
+}
+
+function DT2skill(){
+	var FTa = document.getElementById("FTa").selectedIndex;
+	var FTb = document.getElementById("FTb").selectedIndex;
+	var PLa = document.getElementById('PLa').selectedIndex;
+}
+
