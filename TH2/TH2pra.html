@@ -8,29 +8,7 @@
   <!--scripts-->
   <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=1EPIj0XNw1ppV4DorJU786D_nZ4RhKg1CZ_CNYLINGi93u5d_155FTFdnxLeN7hZ" charset="UTF-8"></script>
 
-  <script type="text/javascript">
-window.onload = Job;
-
-function Job(){
-	JobA();
-	
-}
-
-function JobA(){
-	changeDispA(1);
-	document.getElementById('changeSelectA').onchange =function(e){
-		changeDispA(0);
-		document.getElementById(this.options[this.selectedIndex].value).style.display = "block";
-	}
-}
-
-function changeDispA(start){
-	var items = document.getElementById('selectDispA').children;
-	for(var i=start; i<items.length; i++){
-		items[i].style.display = "none";
-	}
-}
-  </script>
+  <script src="../js/th2dt.js"></script>
 
 </head>
 <body>
