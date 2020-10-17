@@ -39,7 +39,7 @@ function DT2skill() {
 	}
 
 	skillA.innerHTML = text;
-  }
+}
 
 function JobB(){
 	changeDispB(1);
