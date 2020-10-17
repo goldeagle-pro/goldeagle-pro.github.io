@@ -259,3 +259,10 @@ function DT2skill(){
 	
 	var PLa = document.getElementById('PLa').selectedIndex;
 }
+
+var culc = document.getElementById('FTa').textContent
+	
+
+
+console.log(skillFtF + skillFtA);
+}
