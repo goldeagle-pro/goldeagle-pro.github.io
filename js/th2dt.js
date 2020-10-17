@@ -259,4 +259,3 @@ function DT2skill(){
 	
 	var PLa = document.getElementById('PLa').selectedIndex;
 }
-
