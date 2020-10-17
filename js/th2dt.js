@@ -21,8 +21,8 @@ function changeDispA(start){
 }
 
 function DT2skill() {
-	var value = document.getElementById('A').value;
-	var skillA = document.getElementById('skillA');
+	var value = document.getElementById('FTa').value;
+	var skillA = document.getElementById('skillFtA');
 	var text = '';
 	if(value == '0'){
 	  text = '0';
