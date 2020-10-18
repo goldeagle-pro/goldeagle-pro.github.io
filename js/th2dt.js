@@ -229,7 +229,7 @@ function funcFtH(){
 
 function funcPlA(){
 	var value = document.getElementById('PLa').value;
-	var skillFtB = document.getElementById('skillPlA');
+	var skillPlA = document.getElementById('skillPlA');
 	if(value == 0){
 		text = '0';
 	}else if(value == 1){
@@ -245,6 +245,19 @@ function funcPlA(){
 	}
 	skillPlA.innerHTML = text;
 }
+function culc(){
+var skillFtA=document.getElementById('skillFtA').textContent;
+var skillFtF=document.getElementById('skillFtF').textContent
+
+var skillNumA=Number(skillFtA);
+var skillNumF=Number(skillFtF);
+
+var zz=skillNumA+skillNumF;
+culcNum=document.getElementById('culc');
+culcNum.innerHTML=zz;
+}
+
+culc();
 
 function DT2skill(){
 	var FTa = document.getElementById("FTa").selectedIndex;
@@ -260,9 +273,3 @@ function DT2skill(){
 	var PLa = document.getElementById('PLa').selectedIndex;
 }
 
-var culc = document.getElementById('FTa').textContent
-	
-
-
-console.log(skillFtF + skillFtA);
-}

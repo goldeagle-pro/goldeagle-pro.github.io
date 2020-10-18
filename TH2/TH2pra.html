@@ -4,23 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ファイター系</title>
+  <!-- meta -->
+	<meta name="Keywords" content="ToHeart2,ダンジョントラベラーズ, スキルシミュレータ,ファイター">
 
   <!--scripts-->
   <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=1EPIj0XNw1ppV4DorJU786D_nZ4RhKg1CZ_CNYLINGi93u5d_155FTFdnxLeN7hZ" charset="UTF-8"></script>
 
-  <script src="../js/th2dt.js"></script>
+  
 
 </head>
 <body>
   <h2>ファイター系</h2>
   <p>Lv</p><input type="text">
   <p>スキルの素</p><input type="text">
+  <p>残りSP</p>
+  <p>使用SP</p>
+  <p id="culc" onchange="culc()"></p>
   <table border="1" align="center">
     <tr>
       <th>基本職</th>
       <th>Lv15職</th>
       <th>Lv30職</th>
     </tr>
+    <tr>
       <td>ファイター</td>
       <td>
         <select id="changeSelectA">
@@ -40,9 +46,14 @@
       <td>
         <table border="1" frame="below">
           <tr>
+            <td>スキル</td>
+            <td>sLv</td>
+            <td>必要SP</td>
+          </tr>  
+          <tr>
             <td>挑発</td>
             <td>
-              <select id="A" onchange="DT2skill()">
+              <select id="FTa" onchange="DT2skill();funcFtA()">   
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -52,13 +63,13 @@
               </select>
             </td>
             <td>
-              <p id="skillA">0</p>
+              <p id="skillFtA">0</p>
             </td>
           </tr>
           <tr>
             <td>ウォークライ</td>
             <td>
-              <select id="B" onchange="DT2skill()">
+              <select id="FTb" onchange="DT2skill();funcFtB()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -66,12 +77,15 @@
                 <option value="4">4</option>
                 <option value="5">5</option>
               </select>
+            </td>
+            <td>
+              <p id="skillFtB">0</p>
             </td>
           </tr>
           <tr>
             <td>レイジングスマッシュ</td>
             <td>
-              <select id="C" onchange="DT2skill()">
+              <select id="FTc" onchange="DT2skill();funcFtC()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -84,12 +98,15 @@
                 <option value="9">9</option>
                 <option value="10">10</option>
               </select>
+            </td>
+            <td>
+              <p id="skillFtC">0</p>
             </td>
           </tr>
           <tr>
             <td>ソードマスタリー</td>
             <td>
-              <select id="D" onchange="DT2skill()">
+              <select id="FTd" onchange="DT2skill();funcFtD()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -102,12 +119,15 @@
                 <option value="9">9</option>
                 <option value="10">10</option>
               </select>
+            </td>
+            <td>
+              <p id="skillFtD">0</p>
             </td>
           </tr>
           <tr>
             <td>ランスマスタリー</td>
             <td>
-              <select id="E" onchange="DT2skill()">
+              <select id="FTe" onchange="DT2skill();funcFtE()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -120,12 +140,15 @@
                 <option value="9">9</option>
                 <option value="10">10</option>
               </select>
+            </td>
+            <td>
+              <p id="skillFtE">0</p>
             </td>
           </tr>
           <tr>
             <td>アックスマスタリー</td>
             <td>
-              <select id="F" onchange="DT2skill()">
+              <select id="FTf" onchange="DT2skill();funcFtF()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -139,11 +162,14 @@
                 <option value="10">10</option>
               </select>
             </td>
+            <td>
+              <p id="skillFtF">0</p>
+            </td>
           </tr>
           <tr>
             <td>アヴェンジャー</td>
             <td>
-              <select id="G" onchange="DT2skill()">
+              <select id="FTg" onchange="DT2skill();funcFtG()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -152,11 +178,14 @@
                 <option value="5">5</option>
               </select>
             </td>
+            <td>
+              <p id="skillFtG">0</p>
+            </td>
           </tr>
           <tr>
             <td>ダブルアタック</td>
             <td>
-              <select id="H" onchange="DT2skill()">
+              <select id="FTh" onchange="DT2skill();funcFtH()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -164,6 +193,9 @@
                 <option value="4">4</option>
                 <option value="5">5</option>
               </select>
+            </td>
+            <td>
+              <p id="skillFtH">0</p>
             </td>
           </tr>
         </table>
@@ -173,9 +205,14 @@
           <div id="Lv15a">
             <table border="1" frame="below">
               <tr>
+                <td>スキル</td>
+                <td>sLv</td>
+                <td>必要SP</td>
+              </tr>
+              <tr>
                 <td>ディフェンダー</td>
                 <td>
-                  <select id="PLa" onchange="DT2skill()">
+                  <select id="PLa" onchange="DT2skill();funcPlA()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -183,6 +220,9 @@
                     <option value="4">4</option>
                     <option value="5">5</option>
                   </select>
+                </td>
+                <td>
+                  <p id="skillPlA">0</p>
                 </td>
               </tr>
               <tr>
@@ -272,6 +312,10 @@
           </div>
           <div id="Lv15b">
             <table border="1" frame="below">
+              <tr>
+                <td>スキル</td>
+                <td>sLv</td>
+              </tr>
               <tr>
                 <td>バーサーク</td>
                 <td>
@@ -404,6 +448,10 @@
         <div id="selectDispB">
           <div id="Lv30a">
             <table border="1" frame="below">
+              <tr>
+                <td>スキル</td>
+                <td>sLv</td>
+              </tr>
               <tr>
                 <td>マテリアルガード</td>
                 <td>
@@ -548,9 +596,341 @@
               </tr>
             </table>
           </div>
+          <div id="Lv30b">
+            <table border="1" frame="below">
+              <tr>
+                <td>スキル</td>
+                <td>sLv</td>
+              </tr>
+              <tr>
+                <td>峰打ち</td>
+                <td>
+                  <select id="SAa" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>背水の陣</td>
+                <td>
+                  <select id="SAb" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </td>
+              </tr>
+              <tr>
+                <td>一刀両断</td>
+                <td>
+                  <select id="SAc" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>鎧徹し</td>
+                <td>
+                  <select id="SAd" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>鬼神楽</td>
+                <td>
+                  <select id="SAe" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>煉獄朧斬り</td>
+                <td>
+                  <select id="SAf" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>刀の心得</td>
+                <td>
+                  <select id="SAg" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>心眼</td>
+                <td>
+                  <select id="SAh" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>トリプルアタック</td>
+                <td>
+                  <select id="SAi" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>流水の構え</td>
+                <td>
+                  <select id="SAj" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="Lv30c">
+            <table border="1" frame="below">
+              <tr>
+                <td>スキル</td>
+                <td>sLv</td>
+              </tr>
+              <tr>
+                <td>ブラッドバイト</td>
+                <td>
+                  <select id="DLa" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>ソウルバイト</td>
+                <td>
+                  <select id="DLb" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>ショックスパイラル</td>
+                <td>
+                  <select id="DLc" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>アトラクト</td>
+                <td>
+                  <select id="DLd" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>メガトンプレス</td>
+                <td>
+                  <select id="DLe" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>ライフブリング</td>
+                <td>
+                  <select id="DLf" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>ブレイブ</td>
+                <td>
+                  <select id="DLg" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>ブレイブ</td>
+                <td>
+                  <select id="DLh" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>グラージアキュム</td>
+                <td>
+                  <select id="DLi" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>ダーククエスト</td>
+                <td>
+                  <select id="DLj" onchange="DT2skill()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
       </td>
     </tr>
   </table>
+
+  <script src="../js/th2dt.js"></script>
 </body>
 </html>
