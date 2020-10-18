@@ -563,7 +563,14 @@ function funcDkH(){
 }
 
 function culcSP(){
-	var skillFts=[Number(document.getElementById('skillFtA').textContent),Number(document.getElementById('skillFtB').textContent),Number(document.getElementById('skillFtC').textContent),Number(document.getElementById('skillFtD').textContent),Number(document.getElementById('skillFtE').textContent),Number(document.getElementById('skillFtF').textContent),Number(document.getElementById('skillFtG').textContent),Number(document.getElementById('skillFtH').textContent)];
+	var skillFts=[Number(document.getElementById('skillFtA').textContent),
+				  Number(document.getElementById('skillFtB').textContent),
+				  Number(document.getElementById('skillFtC').textContent),
+				  Number(document.getElementById('skillFtD').textContent),
+				  Number(document.getElementById('skillFtE').textContent),
+				  Number(document.getElementById('skillFtF').textContent),
+				  Number(document.getElementById('skillFtG').textContent),
+				  Number(document.getElementById('skillFtH').textContent)];
 	
 	var sumSP=skillFts.reduce(function(sum, element){
 	  return sum + element;
