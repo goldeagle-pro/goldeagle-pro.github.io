@@ -566,10 +566,10 @@ function culcSP(){
 var skillFtA=document.getElementById('skillFtA').textContent;
 var skillFtF=document.getElementById('skillFtF').textContent
 
-var skillNumA=Number(skillFtA);
-var skillNumF=Number(skillFtF);
+var skillNumFtA=Number(skillFtA);
+var skillNumFtF=Number(skillFtF);
 
-var sumSP=skillNumA+skillNumF;
+var sumSP=skillNumFtA+skillNumFtF;
 culcNum=document.getElementById('culcSP');
 culcNum.innerHTML=sumSP;
 }
