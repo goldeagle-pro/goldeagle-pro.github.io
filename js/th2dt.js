@@ -563,38 +563,18 @@ function funcDkH(){
 }
 
 function culcSP(){
-var skillFtA=document.getElementById('skillFtA').textContent;
-var skillFtB=document.getElementById('skillFtB').textContent;
-var skillFtC=document.getElementById('skillFtC').textContent;
-var skillFtD=document.getElementById('skillFtD').textContent;
-var skillFtE=document.getElementById('skillFtE').textContent;
-var skillFtF=document.getElementById('skillFtF').textContent
-var skillFtG=document.getElementById('skillFtG').textContent;
-var skillFtH=document.getElementById('skillFtH').textContent;
-
-var skillNumFtA=Number(skillFtA);
-var skillNumFtB=Number(skillFtB);
-var skillNumFtC=Number(skillFtC);
-var skillNumFtD=Number(skillFtD);
-var skillNumFtE=Number(skillFtE);
-var skillNumFtF=Number(skillFtF);
-var skillNumFtG=Number(skillFtG);
-var skillNumFtH=Number(skillFtH);
-
-var sumSP=skillNumFtA
-			+skillNumFtB
-			+skillNumFtC
-			+skillNumFtD
-			+skillNumFtE
-			+skillNumFtF
-			+skillNumFtG
-			+skillNumFtH;
-
-culcNum=document.getElementById('culcSP');
-culcNum.innerHTML=sumSP;
-}
-
-culcSP();
+	var skillFts=[Number(document.getElementById('skillFtA').textContent),Number(document.getElementById('skillFtB').textContent),Number(document.getElementById('skillFtC').textContent),Number(document.getElementById('skillFtD').textContent),Number(document.getElementById('skillFtE').textContent),Number(document.getElementById('skillFtF').textContent),Number(document.getElementById('skillFtG').textContent),Number(document.getElementById('skillFtH').textContent)];
+	
+	var sumSP=skillFts.reduce(function(sum, element){
+	  return sum + element;
+	}, 0);
+	
+	  culcNum=document.getElementById('culcSP');
+	culcNum.innerHTML=sumSP;
+	}
+	culcSP();
+	
+	
 
 function DT2skill(){
 	var FTa = document.getElementById("FTa").selectedIndex;
