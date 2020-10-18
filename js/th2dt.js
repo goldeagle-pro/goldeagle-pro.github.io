@@ -564,12 +564,32 @@ function funcDkH(){
 
 function culcSP(){
 var skillFtA=document.getElementById('skillFtA').textContent;
+var skillFtB=document.getElementById('skillFtB').textContent;
+var skillFtC=document.getElementById('skillFtC').textContent;
+var skillFtD=document.getElementById('skillFtD').textContent;
+var skillFtE=document.getElementById('skillFtE').textContent;
 var skillFtF=document.getElementById('skillFtF').textContent
+var skillFtG=document.getElementById('skillFtG').textContent;
+var skillFtH=document.getElementById('skillFtH').textContent;
 
 var skillNumFtA=Number(skillFtA);
+var skillNumFtB=Number(skillFtB);
+var skillNumFtC=Number(skillFtC);
+var skillNumFtD=Number(skillFtD);
+var skillNumFtE=Number(skillFtE);
 var skillNumFtF=Number(skillFtF);
+var skillNumFtG=Number(skillFtG);
+var skillNumFtH=Number(skillFtH);
 
-var sumSP=skillNumFtA+skillNumFtF;
+var sumSP=skillNumFtA
+			+skillNumFtB
+			+skillNumFtC
+			+skillNumFtD
+			+skillNumFtE
+			 +skillNumFtF
+			 +skillNumFtG
+			 +skillNumFtH;
+
 culcNum=document.getElementById('culcSP');
 culcNum.innerHTML=sumSP;
 }
