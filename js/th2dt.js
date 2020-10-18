@@ -794,7 +794,17 @@ function culcSP(){
 				Number(document.getElementById('skillDkE').textContent),
 				Number(document.getElementById('skillDkF').textContent),
 				Number(document.getElementById('skillDkG').textContent),
-				Number(document.getElementById('skillDkH').textContent)];
+				Number(document.getElementById('skillDkH').textContent),
+
+				Number(document.getElementById('skillVlA').textContent),
+				Number(document.getElementById('skillVlB').textContent),
+				Number(document.getElementById('skillVlC').textContent),
+				Number(document.getElementById('skillVlD').textContent),
+				Number(document.getElementById('skillVlE').textContent),
+				Number(document.getElementById('skillVlF').textContent),
+				Number(document.getElementById('skillVlG').textContent),
+				Number(document.getElementById('skillVlH').textContent),
+				Number(document.getElementById('skillVlI').textContent),];
 	
 	var sumSP=skillFts.reduce(function(sum, element){
 	  return sum + element;
