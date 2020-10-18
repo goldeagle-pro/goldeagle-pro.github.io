@@ -586,9 +586,9 @@ var sumSP=skillNumFtA
 			+skillNumFtC
 			+skillNumFtD
 			+skillNumFtE
-			 +skillNumFtF
-			 +skillNumFtG
-			 +skillNumFtH;
+			+skillNumFtF
+			+skillNumFtG
+			+skillNumFtH;
 
 culcNum=document.getElementById('culcSP');
 culcNum.innerHTML=sumSP;
