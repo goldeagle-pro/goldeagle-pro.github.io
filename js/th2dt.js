@@ -38,192 +38,268 @@ function changeDispB(start){
 function funcFtA(){
 	var value = document.getElementById('FTa').value;
 	var skillFtA = document.getElementById('skillFtA');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 2;
-	}else if(value == 2){
-		text = 6;
-	}else if(value == 3){
-		text = 12;
-	}else if(value == 4){
-		text = 20;
-	}else if(value == 5){
-		text = 30;
-	}
+	switch(value){
+		case 0:
+			text = 0;
+		break;
+		  case 1:
+			text = 2;
+		break;
+		  case 2:
+			text = 6;
+		break;
+		  case 3:
+			text = 12;
+		break;
+		  case 4:
+			text = 20;
+		break;
+		  case 5:
+			text = 30;
+		break;
+		}
 	skillFtA.innerHTML = text;
 }
 
 function funcFtB(){
 	var value = document.getElementById('FTb').value;
 	var skillFtB = document.getElementById('skillFtB');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 2;
-	}else if(value == 2){
-		text = 6;
-	}else if(value == 3){
-		text = 12;
-	}else if(value == 4){
-		text = 20;
-	}else if(value == 5){
-		text = 30;
-	}
+	switch(value){
+		case 0:
+			text = 0;
+		break;
+		  case 1:
+			text = 2;
+		break;
+		  case 2:
+			text = 6;
+		break;
+		  case 3:
+			text = 12;
+		break;
+		  case 4:
+			text = 20;
+		break;
+		  case 5:
+			text = 30;
+		break;
+		}
 	skillFtB.innerHTML = text;
 }
 
 function funcFtC(){
 	var value = document.getElementById('FTc').value;
 	var skillFtC = document.getElementById('skillFtC');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 1;
-	}else if(value == 2){
-		text = 3;
-	}else if(value == 3){
-		text = 6;
-	}else if(value == 4){
-		text = 10;
-	}else if(value == 5){
-		text = 15;
-	}else if(value == 6){
-		text = 21;
-	}else if(value == 7){
-		text = 28;
-	}else if(value == 8){
-		text = 36;
-	}else if(value == 9){
-		text = 45;
-	}else if(value == 10){
-		text = 55;
-	}
+	switch(value) {
+		case 0:
+			text = 0;
+		break;
+		  case 1:
+			text = 1;
+		break;
+		  case 2:
+			text = 3;
+		break;
+		  case 3:
+			text = 6;
+		break;
+		  case 4:
+			text = 10;
+		break;
+		case 5:
+			text = 15;
+		break;
+		  case 6:
+			text = 21;
+		break;
+		  case 7:
+			text = 28;
+		break;
+		  case 8:
+			text = 36;
+		break;
+		  case 9:
+			text = 45;
+		break;
+		  case 10:
+			text = 55;
+		break;
+		}
 	skillFtC.innerHTML = text;
 }
 
 function funcFtD(){
 	var value = document.getElementById('FTd').value;
 	var skillFtD = document.getElementById('skillFtD');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 1;
-	}else if(value == 2){
-		text = 3;
-	}else if(value == 3){
-		text = 6;
-	}else if(value == 4){
-		text = 10;
-	}else if(value == 5){
-		text = 15;
-	}else if(value == 6){
-		text = 21;
-	}else if(value == 7){
-		text = 28;
-	}else if(value == 8){
-		text = 36;
-	}else if(value == 9){
-		text = 45;
-	}else if(value == 10){
-		text = 55;
-	}
+	switch(value) {
+		case 0:
+			text = 0;
+		break;
+		  case 1:
+			text = 1;
+		break;
+		  case 2:
+			text = 3;
+		break;
+		  case 3:
+			text = 6;
+		break;
+		  case 4:
+			text = 10;
+		break;
+		case 5:
+			text = 15;
+		break;
+		  case 6:
+			text = 21;
+		break;
+		  case 7:
+			text = 28;
+		break;
+		  case 8:
+			text = 36;
+		break;
+		  case 9:
+			text = 45;
+		break;
+		  case 10:
+			text = 55;
+		break;
+		}
 	skillFtD.innerHTML = text;
 }
 
 function funcFtE(){
 	var value = document.getElementById('FTe').value;
 	var skillFtE = document.getElementById('skillFtE');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 1;
-	}else if(value == 2){
-		text = 3;
-	}else if(value == 3){
-		text = 6;
-	}else if(value == 4){
-		text = 10;
-	}else if(value == 5){
-		text = 15;
-	}else if(value == 6){
-		text = 21;
-	}else if(value == 7){
-		text = 28;
-	}else if(value == 8){
-		text = 36;
-	}else if(value == 9){
-		text = 45;
-	}else if(value == 10){
-		text = 55;
-	}
+	switch(value) {
+		case 0:
+			text = 0;
+		break;
+		  case 1:
+			text = 1;
+		break;
+		  case 2:
+			text = 3;
+		break;
+		  case 3:
+			text = 6;
+		break;
+		  case 4:
+			text = 10;
+		break;
+		case 5:
+			text = 15;
+		break;
+		  case 6:
+			text = 21;
+		break;
+		  case 7:
+			text = 28;
+		break;
+		  case 8:
+			text = 36;
+		break;
+		  case 9:
+			text = 45;
+		break;
+		  case 10:
+			text = 55;
+		break;
+		}
 	skillFtE.innerHTML = text;
 }
 
 function funcFtF(){
 	var value = document.getElementById('FTf').value;
 	var skillFtF = document.getElementById('skillFtF');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 1;
-	}else if(value == 2){
-		text = 3;
-	}else if(value == 3){
-		text = 6;
-	}else if(value == 4){
-		text = 10;
-	}else if(value == 5){
-		text = 15;
-	}else if(value == 6){
-		text = 21;
-	}else if(value == 7){
-		text = 28;
-	}else if(value == 8){
-		text = 36;
-	}else if(value == 9){
-		text = 45;
-	}else if(value == 10){
-		text = 55;
-	}
+	switch(value) {
+		case 0:
+			text = 0;
+		break;
+		  case 1:
+			text = 1;
+		break;
+		  case 2:
+			text = 3;
+		break;
+		  case 3:
+			text = 6;
+		break;
+		  case 4:
+			text = 10;
+		break;
+		case 5:
+			text = 15;
+		break;
+		  case 6:
+			text = 21;
+		break;
+		  case 7:
+			text = 28;
+		break;
+		  case 8:
+			text = 36;
+		break;
+		  case 9:
+			text = 45;
+		break;
+		  case 10:
+			text = 55;
+		break;
+		}
 	skillFtF.innerHTML = text;
 }
 
 function funcFtG(){
 	var value = document.getElementById('FTg').value;
 	var skillFtG = document.getElementById('skillFtG');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 2;
-	}else if(value == 2){
-		text = 6;
-	}else if(value == 3){
-		text = 12;
-	}else if(value == 4){
-		text = 20;
-	}else if(value == 5){
-		text = 30;
-	}
+	switch(value){
+		case 0:
+			text = 0;
+		break;
+		  case 1:
+			text = 2;
+		break;
+		  case 2:
+			text = 6;
+		break;
+		  case 3:
+			text = 12;
+		break;
+		  case 4:
+			text = 20;
+		break;
+		  case 5:
+			text = 30;
+		break;
+		}
 	skillFtG.innerHTML = text;
 }
 
 function funcFtH(){
 	var value = document.getElementById('FTh').value;
 	var skillFtH = document.getElementById('skillFtH');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 2;
-	}else if(value == 2){
-		text = 6;
-	}else if(value == 3){
-		text = 12;
-	}else if(value == 4){
-		text = 20;
-	}else if(value == 5){
-		text = 30;
-	}
+	switch(value){
+		case 0:
+			text = 0;
+		break;
+		  case 1:
+			text = 2;
+		break;
+		  case 2:
+			text = 6;
+		break;
+		  case 3:
+			text = 12;
+		break;
+		  case 4:
+			text = 20;
+		break;
+		  case 5:
+			text = 30;
+		break;
+		}
 	skillFtH.innerHTML = text;
 }
 
