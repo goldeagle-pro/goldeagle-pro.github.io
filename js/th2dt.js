@@ -231,17 +231,17 @@ function funcPlA(){
 	var value = document.getElementById('PLa').value;
 	var skillPlA = document.getElementById('skillPlA');
 	if(value == 0){
-		text = '0';
+		text = 0;
 	}else if(value == 1){
-		text = '2';
+		text = 2;
 	}else if(value == 2){
-		text = '6';
+		text = 6;
 	}else if(value == 3){
-		text = '12';
+		text = 12;
 	}else if(value == 4){
-		text = '20';
+		text = 20;
 	}else if(value == 5){
-		text = '30';
+		text = 30;
 	}
 	skillPlA.innerHTML = text;
 }
