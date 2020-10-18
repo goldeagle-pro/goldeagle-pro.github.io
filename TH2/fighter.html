@@ -19,7 +19,7 @@
   <p>スキルの素</p><input type="text">
   <p>残りSP</p>
   <p>使用SP</p>
-  <p id="culc" onchange="culc()"></p>
+  <p id="culc"></p>
   <table border="1" align="center">
     <tr>
       <th>基本職</th>
@@ -53,7 +53,7 @@
           <tr>
             <td>挑発</td>
             <td>
-              <select id="FTa" onchange="DT2skill();funcFtA()">   
+              <select id="FTa" onchange="DT2skill();funcFtA();culc()">   
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -69,7 +69,7 @@
           <tr>
             <td>ウォークライ</td>
             <td>
-              <select id="FTb" onchange="DT2skill();funcFtB()">
+              <select id="FTb" onchange="DT2skill();funcFtB();culc()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -85,7 +85,7 @@
           <tr>
             <td>レイジングスマッシュ</td>
             <td>
-              <select id="FTc" onchange="DT2skill();funcFtC()">
+              <select id="FTc" onchange="DT2skill();funcFtC();culc()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -106,7 +106,7 @@
           <tr>
             <td>ソードマスタリー</td>
             <td>
-              <select id="FTd" onchange="DT2skill();funcFtD()">
+              <select id="FTd" onchange="DT2skill();funcFtD();culc()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -127,7 +127,7 @@
           <tr>
             <td>ランスマスタリー</td>
             <td>
-              <select id="FTe" onchange="DT2skill();funcFtE()">
+              <select id="FTe" onchange="DT2skill();funcFtE();culc()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -148,7 +148,7 @@
           <tr>
             <td>アックスマスタリー</td>
             <td>
-              <select id="FTf" onchange="DT2skill();funcFtF()">
+              <select id="FTf" onchange="DT2skill();funcFtF();culc()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -169,7 +169,7 @@
           <tr>
             <td>アヴェンジャー</td>
             <td>
-              <select id="FTg" onchange="DT2skill();funcFtG()">
+              <select id="FTg" onchange="DT2skill();funcFtG();culc()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -185,7 +185,7 @@
           <tr>
             <td>ダブルアタック</td>
             <td>
-              <select id="FTh" onchange="DT2skill();funcFtH()">
+              <select id="FTh" onchange="DT2skill();funcFtH();culc()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -212,7 +212,7 @@
               <tr>
                 <td>ディフェンダー</td>
                 <td>
-                  <select id="PLa" onchange="DT2skill();funcPlA()">
+                  <select id="PLa" onchange="DT2skill();funcPlA();culc()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -228,7 +228,7 @@
               <tr>
                 <td>シールドバッシュ</td>
                 <td>
-                  <select id="PLb" onchange="DT2skill()">
+                  <select id="PLb" onchange="DT2skill();funcPlB();culc()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -241,7 +241,7 @@
               <tr>
                 <td>カバー</td>
                 <td>
-                  <select id="PLc" onchange="DT2skill()">
+                  <select id="PLc" onchange="DT2skill();funcPlC();culc()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -254,7 +254,7 @@
               <tr>
                 <td>パリィ</td>
                 <td>
-                  <select id="PLd" onchange="DT2skill()">
+                  <select id="PLd" onchange="DT2skill();funcPlD();culc()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -267,7 +267,7 @@
               <tr>
                 <td>ヒール</td>
                 <td>
-                  <select id="PLe" onchange="DT2skill()">
+                  <select id="PLe" onchange="DT2skill();funcPlE();culc()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -285,7 +285,7 @@
               <tr>
                 <td>オートガード</td>
                 <td>
-                  <select id="PLf" onchange="DT2skill()">
+                  <select id="PLf" onchange="DT2skill();funcPlF();culc()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -298,7 +298,7 @@
               <tr>
                 <td>オートミニリカバ</td>
                 <td>
-                  <select id="PLg" onchange="DT2skill()">
+                  <select id="PLg" onchange="DT2skill();funcPlG();culc()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
