@@ -586,7 +586,12 @@ function DT2skill(){
 	var FTg = document.getElementById("FTg").selectedIndex;
 	var FTh = document.getElementById("FTh").selectedIndex;
 
-	
 	var PLa = document.getElementById('PLa').selectedIndex;
+	var PLb = document.getElementById('PLb').selectedIndex;
+	var PLc = document.getElementById('PLc').selectedIndex;
+	var PLd = document.getElementById('PLd').selectedIndex;
+	var PLe = document.getElementById('PLe').selectedIndex;
+	var PLf = document.getElementById('PLf').selectedIndex;
+	var PLg = document.getElementById('PLg').selectedIndex;
 }
 
