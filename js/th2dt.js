@@ -39,22 +39,22 @@ function funcFtA(){
 	var value = document.getElementById('FTa').value;
 	var skillFtA = document.getElementById('skillFtA');
 	switch(value){
-		case 0:
+		case "0":
 			text = 0;
 		break;
-		  case 1:
+		  case "1":
 			text = 2;
 		break;
-		  case 2:
+		  case "2":
 			text = 6;
 		break;
-		  case 3:
+		  case "3":
 			text = 12;
 		break;
-		  case 4:
+		  case "4":
 			text = 20;
 		break;
-		  case 5:
+		  case "5":
 			text = 30;
 		break;
 		}
@@ -65,22 +65,22 @@ function funcFtB(){
 	var value = document.getElementById('FTb').value;
 	var skillFtB = document.getElementById('skillFtB');
 	switch(value){
-		case 0:
+		case "0":
 			text = 0;
 		break;
-		  case 1:
+		  case "1":
 			text = 2;
 		break;
-		  case 2:
+		  case "2":
 			text = 6;
 		break;
-		  case 3:
+		  case "3":
 			text = 12;
 		break;
-		  case 4:
+		  case "4":
 			text = 20;
 		break;
-		  case 5:
+		  case "5":
 			text = 30;
 		break;
 		}
@@ -91,37 +91,37 @@ function funcFtC(){
 	var value = document.getElementById('FTc').value;
 	var skillFtC = document.getElementById('skillFtC');
 	switch(value) {
-		case 0:
+		case "0":
 			text = 0;
 		break;
-		  case 1:
+		  case "1":
 			text = 1;
 		break;
-		  case 2:
+		  case "2":
 			text = 3;
 		break;
-		  case 3:
+		  case "3":
 			text = 6;
 		break;
-		  case 4:
+		  case "4":
 			text = 10;
 		break;
-		case 5:
+		case "5":
 			text = 15;
 		break;
-		  case 6:
+		  case "6":
 			text = 21;
 		break;
-		  case 7:
+		  case "7":
 			text = 28;
 		break;
-		  case 8:
+		  case "8":
 			text = 36;
 		break;
-		  case 9:
+		  case "9":
 			text = 45;
 		break;
-		  case 10:
+		  case "10":
 			text = 55;
 		break;
 		}
@@ -132,37 +132,37 @@ function funcFtD(){
 	var value = document.getElementById('FTd').value;
 	var skillFtD = document.getElementById('skillFtD');
 	switch(value) {
-		case 0:
+		case "0":
 			text = 0;
 		break;
-		  case 1:
+		  case "1":
 			text = 1;
 		break;
-		  case 2:
+		  case "2":
 			text = 3;
 		break;
-		  case 3:
+		  case "3":
 			text = 6;
 		break;
-		  case 4:
+		  case "4":
 			text = 10;
 		break;
-		case 5:
+		case "5":
 			text = 15;
 		break;
-		  case 6:
+		  case "6":
 			text = 21;
 		break;
-		  case 7:
+		  case "7":
 			text = 28;
 		break;
-		  case 8:
+		  case "8":
 			text = 36;
 		break;
-		  case 9:
+		  case "9":
 			text = 45;
 		break;
-		  case 10:
+		  case "10":
 			text = 55;
 		break;
 		}
@@ -173,37 +173,37 @@ function funcFtE(){
 	var value = document.getElementById('FTe').value;
 	var skillFtE = document.getElementById('skillFtE');
 	switch(value) {
-		case 0:
+		case "0":
 			text = 0;
 		break;
-		  case 1:
+		  case "1":
 			text = 1;
 		break;
-		  case 2:
+		  case "2":
 			text = 3;
 		break;
-		  case 3:
+		  case "3":
 			text = 6;
 		break;
-		  case 4:
+		  case "4":
 			text = 10;
 		break;
-		case 5:
+		case "5":
 			text = 15;
 		break;
-		  case 6:
+		  case "6":
 			text = 21;
 		break;
-		  case 7:
+		  case "7":
 			text = 28;
 		break;
-		  case 8:
+		  case "8":
 			text = 36;
 		break;
-		  case 9:
+		  case "9":
 			text = 45;
 		break;
-		  case 10:
+		  case "10":
 			text = 55;
 		break;
 		}
@@ -214,37 +214,37 @@ function funcFtF(){
 	var value = document.getElementById('FTf').value;
 	var skillFtF = document.getElementById('skillFtF');
 	switch(value) {
-		case 0:
+		case "0":
 			text = 0;
 		break;
-		  case 1:
+		  case "1":
 			text = 1;
 		break;
-		  case 2:
+		  case "2":
 			text = 3;
 		break;
-		  case 3:
+		  case "3":
 			text = 6;
 		break;
-		  case 4:
+		  case "4":
 			text = 10;
 		break;
-		case 5:
+		case "5":
 			text = 15;
 		break;
-		  case 6:
+		  case "6":
 			text = 21;
 		break;
-		  case 7:
+		  case "7":
 			text = 28;
 		break;
-		  case 8:
+		  case "8":
 			text = 36;
 		break;
-		  case 9:
+		  case "9":
 			text = 45;
 		break;
-		  case 10:
+		  case "10":
 			text = 55;
 		break;
 		}
@@ -255,22 +255,22 @@ function funcFtG(){
 	var value = document.getElementById('FTg').value;
 	var skillFtG = document.getElementById('skillFtG');
 	switch(value){
-		case 0:
+		case "0":
 			text = 0;
 		break;
-		  case 1:
+		  case "1":
 			text = 2;
 		break;
-		  case 2:
+		  case "2":
 			text = 6;
 		break;
-		  case 3:
+		  case "3":
 			text = 12;
 		break;
-		  case 4:
+		  case "4":
 			text = 20;
 		break;
-		  case 5:
+		  case "5":
 			text = 30;
 		break;
 		}
@@ -281,22 +281,22 @@ function funcFtH(){
 	var value = document.getElementById('FTh').value;
 	var skillFtH = document.getElementById('skillFtH');
 	switch(value){
-		case 0:
+		case "0":
 			text = 0;
 		break;
-		  case 1:
+		  case "1":
 			text = 2;
 		break;
-		  case 2:
+		  case "2":
 			text = 6;
 		break;
-		  case 3:
+		  case "3":
 			text = 12;
 		break;
-		  case 4:
+		  case "4":
 			text = 20;
 		break;
-		  case 5:
+		  case "5":
 			text = 30;
 		break;
 		}
@@ -306,143 +306,197 @@ function funcFtH(){
 function funcPlA(){
 	var value = document.getElementById('PLa').value;
 	var skillPlA = document.getElementById('skillPlA');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 2;
-	}else if(value == 2){
-		text = 6;
-	}else if(value == 3){
-		text = 12;
-	}else if(value == 4){
-		text = 20;
-	}else if(value == 5){
-		text = 30;
-	}
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
 	skillPlA.innerHTML = text;
 }
 
 function funcPlB(){
 	var value = document.getElementById('PLb').value;
 	var skillPlB = document.getElementById('skillPlB');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 2;
-	}else if(value == 2){
-		text = 6;
-	}else if(value == 3){
-		text = 12;
-	}else if(value == 4){
-		text = 20;
-	}else if(value == 5){
-		text = 30;
-	}
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
 	skillPlB.innerHTML = text;
 }
 
 function funcPlC(){
 	var value = document.getElementById('PLc').value;
 	var skillPlC = document.getElementById('skillPlC');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 2;
-	}else if(value == 2){
-		text = 6;
-	}else if(value == 3){
-		text = 12;
-	}else if(value == 4){
-		text = 20;
-	}else if(value == 5){
-		text = 30;
-	}
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
 	skillPlC.innerHTML = text;
 }
 
 function funcPlD(){
 	var value = document.getElementById('PLd').value;
 	var skillPlD = document.getElementById('skillPlD');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 2;
-	}else if(value == 2){
-		text = 6;
-	}else if(value == 3){
-		text = 12;
-	}else if(value == 4){
-		text = 20;
-	}else if(value == 5){
-		text = 30;
-	}
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
 	skillPlD.innerHTML = text;
 }
 
 function funcPlE(){
 	var value = document.getElementById('PLe').value;
 	var skillPlE = document.getElementById('skillPlE');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 1;
-	}else if(value == 2){
-		text = 3;
-	}else if(value == 3){
-		text = 6;
-	}else if(value == 4){
-		text = 10;
-	}else if(value == 5){
-		text = 15;
-	}else if(value == 6){
-		text = 21;
-	}else if(value == 7){
-		text = 28;
-	}else if(value == 8){
-		text = 36;
-	}else if(value == 9){
-		text = 45;
-	}else if(value == 10){
-		text = 55;
-	}
+	switch(value) {
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 1;
+		break;
+		  case "2":
+			text = 3;
+		break;
+		  case "3":
+			text = 6;
+		break;
+		  case "4":
+			text = 10;
+		break;
+		case "5":
+			text = 15;
+		break;
+		  case "6":
+			text = 21;
+		break;
+		  case "7":
+			text = 28;
+		break;
+		  case "8":
+			text = 36;
+		break;
+		  case "9":
+			text = 45;
+		break;
+		  case "10":
+			text = 55;
+		break;
+		}
 	skillPlE.innerHTML = text;
 }
 
 function funcPlF(){
 	var value = document.getElementById('PLf').value;
 	var skillPlF = document.getElementById('skillPlF');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 2;
-	}else if(value == 2){
-		text = 6;
-	}else if(value == 3){
-		text = 12;
-	}else if(value == 4){
-		text = 20;
-	}else if(value == 5){
-		text = 30;
-	}
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
 	skillPlF.innerHTML = text;
 }
 
 function funcPlG(){
 	var value = document.getElementById('PLg').value;
 	var skillPlG = document.getElementById('skillPlG');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 2;
-	}else if(value == 2){
-		text = 6;
-	}else if(value == 3){
-		text = 12;
-	}else if(value == 4){
-		text = 20;
-	}else if(value == 5){
-		text = 30;
-	}
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
 	skillPlG.innerHTML = text;
 }
 
