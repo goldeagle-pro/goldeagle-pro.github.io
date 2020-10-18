@@ -503,204 +503,298 @@ function funcPlG(){
 function funcDkA(){
 	var value = document.getElementById('DKa').value;
 	var skillDkA = document.getElementById('skillDkA');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 2;
-	}else if(value == 2){
-		text = 6;
-	}else if(value == 3){
-		text = 12;
-	}else if(value == 4){
-		text = 20;
-	}else if(value == 5){
-		text = 30;
-	}
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
 	skillDkA.innerHTML = text;
 }
 
 function funcDkB(){
 	var value = document.getElementById('DKb').value;
 	var skillDkB = document.getElementById('skillDkB');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 1;
-	}else if(value == 2){
-		text = 3;
-	}else if(value == 3){
-		text = 6;
-	}else if(value == 4){
-		text = 10;
-	}else if(value == 5){
-		text = 15;
-	}else if(value == 6){
-		text = 21;
-	}else if(value == 7){
-		text = 28;
-	}else if(value == 8){
-		text = 36;
-	}else if(value == 9){
-		text = 45;
-	}else if(value == 10){
-		text = 55;
-	}
+	switch(value) {
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 1;
+		break;
+		  case "2":
+			text = 3;
+		break;
+		  case "3":
+			text = 6;
+		break;
+		  case "4":
+			text = 10;
+		break;
+		case "5":
+			text = 15;
+		break;
+		  case "6":
+			text = 21;
+		break;
+		  case "7":
+			text = 28;
+		break;
+		  case "8":
+			text = 36;
+		break;
+		  case "9":
+			text = 45;
+		break;
+		  case "10":
+			text = 55;
+		break;
+		}
 	skillDkB.innerHTML = text;
 }
 
 function funcDkC(){
 	var value = document.getElementById('DkC').value;
 	var skillDkC = document.getElementById('skillDkC');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 1;
-	}else if(value == 2){
-		text = 3;
-	}else if(value == 3){
-		text = 6;
-	}else if(value == 4){
-		text = 10;
-	}else if(value == 5){
-		text = 15;
-	}else if(value == 6){
-		text = 21;
-	}else if(value == 7){
-		text = 28;
-	}else if(value == 8){
-		text = 36;
-	}else if(value == 9){
-		text = 45;
-	}else if(value == 10){
-		text = 55;
-	}
+	switch(value) {
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 1;
+		break;
+		  case "2":
+			text = 3;
+		break;
+		  case "3":
+			text = 6;
+		break;
+		  case "4":
+			text = 10;
+		break;
+		case "5":
+			text = 15;
+		break;
+		  case "6":
+			text = 21;
+		break;
+		  case "7":
+			text = 28;
+		break;
+		  case "8":
+			text = 36;
+		break;
+		  case "9":
+			text = 45;
+		break;
+		  case "10":
+			text = 55;
+		break;
+		}
 	skillDkC.innerHTML = text;
 }
 
 function funcDkD(){
 	var value = document.getElementById('DKd').value;
 	var skillDkD = document.getElementById('skillDkD');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 1;
-	}else if(value == 2){
-		text = 3;
-	}else if(value == 3){
-		text = 6;
-	}else if(value == 4){
-		text = 10;
-	}else if(value == 5){
-		text = 15;
-	}else if(value == 6){
-		text = 21;
-	}else if(value == 7){
-		text = 28;
-	}else if(value == 8){
-		text = 36;
-	}else if(value == 9){
-		text = 45;
-	}else if(value == 10){
-		text = 55;
-	}
+	switch(value) {
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 1;
+		break;
+		  case "2":
+			text = 3;
+		break;
+		  case "3":
+			text = 6;
+		break;
+		  case "4":
+			text = 10;
+		break;
+		case "5":
+			text = 15;
+		break;
+		  case "6":
+			text = 21;
+		break;
+		  case "7":
+			text = 28;
+		break;
+		  case "8":
+			text = 36;
+		break;
+		  case "9":
+			text = 45;
+		break;
+		  case "10":
+			text = 55;
+		break;
+		}
 	skillDkD.innerHTML = text;
 }
 
 function funcDkE(){
 	var value = document.getElementById('DKe').value;
 	var skillDkE = document.getElementById('skillDkE');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 2;
-	}else if(value == 2){
-		text = 6;
-	}else if(value == 3){
-		text = 12;
-	}else if(value == 4){
-		text = 20;
-	}else if(value == 5){
-		text = 30;
-	}
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
 	skillDkE.innerHTML = text;
 }
 
 function funcDkF(){
 	var value = document.getElementById('DKf').value;
 	var skillDkF = document.getElementById('skillDkF');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 2;
-	}else if(value == 2){
-		text = 6;
-	}else if(value == 3){
-		text = 12;
-	}else if(value == 4){
-		text = 20;
-	}else if(value == 5){
-		text = 30;
-	}
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
 	skillDkF.innerHTML = text;
 }
 
 function funcDkG(){
 	var value = document.getElementById('DKg').value;
 	var skillDkG = document.getElementById('skillDkG');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 1;
-	}else if(value == 2){
-		text = 3;
-	}else if(value == 3){
-		text = 6;
-	}else if(value == 4){
-		text = 10;
-	}else if(value == 5){
-		text = 15;
-	}else if(value == 6){
-		text = 21;
-	}else if(value == 7){
-		text = 28;
-	}else if(value == 8){
-		text = 36;
-	}else if(value == 9){
-		text = 45;
-	}else if(value == 10){
-		text = 55;
-	}
+	switch(value) {
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 1;
+		break;
+		  case "2":
+			text = 3;
+		break;
+		  case "3":
+			text = 6;
+		break;
+		  case "4":
+			text = 10;
+		break;
+		case "5":
+			text = 15;
+		break;
+		  case "6":
+			text = 21;
+		break;
+		  case "7":
+			text = 28;
+		break;
+		  case "8":
+			text = 36;
+		break;
+		  case "9":
+			text = 45;
+		break;
+		  case "10":
+			text = 55;
+		break;
+		}
 	skillDkG.innerHTML = text;
 }
 
 function funcDkH(){
 	var value = document.getElementById('DKh').value;
 	var skillDkH = document.getElementById('skillDkH');
-	if(value == 0){
-		text = 0;
-	}else if(value == 1){
-		text = 2;
-	}else if(value == 2){
-		text = 6;
-	}else if(value == 3){
-		text = 12;
-	}else if(value == 4){
-		text = 20;
-	}else if(value == 5){
-		text = 30;
-	}
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
 	skillDkH.innerHTML = text;
 }
 
 function culcSP(){
-	var skillFts=[Number(document.getElementById('skillFtA').textContent),
-				  Number(document.getElementById('skillFtB').textContent),
-				  Number(document.getElementById('skillFtC').textContent),
-				  Number(document.getElementById('skillFtD').textContent),
-				  Number(document.getElementById('skillFtE').textContent),
-				  Number(document.getElementById('skillFtF').textContent),
-				  Number(document.getElementById('skillFtG').textContent),
-				  Number(document.getElementById('skillFtH').textContent)];
+	var skillFts=[
+				Number(document.getElementById('skillFtA').textContent),
+				Number(document.getElementById('skillFtB').textContent),
+				Number(document.getElementById('skillFtC').textContent),
+				Number(document.getElementById('skillFtD').textContent),
+				Number(document.getElementById('skillFtE').textContent),
+				Number(document.getElementById('skillFtF').textContent),
+				Number(document.getElementById('skillFtG').textContent),
+				Number(document.getElementById('skillFtH').textContent),
+				
+				Number(document.getElementById('skillPlA').textContent),
+				Number(document.getElementById('skillPlB').textContent),
+				Number(document.getElementById('skillPlC').textContent),
+				Number(document.getElementById('skillPlD').textContent),
+				Number(document.getElementById('skillPlE').textContent),
+				Number(document.getElementById('skillPlF').textContent),
+				Number(document.getElementById('skillPlG').textContent),
+				
+				Number(document.getElementById('skillDkA').textContent),
+				Number(document.getElementById('skillDkB').textContent),
+				Number(document.getElementById('skillDkC').textContent),
+				Number(document.getElementById('skillDkD').textContent),
+				Number(document.getElementById('skillDkE').textContent),
+				Number(document.getElementById('skillDkF').textContent),
+				Number(document.getElementById('skillDkG').textContent),
+				Number(document.getElementById('skillDkH').textContent)];
 	
 	var sumSP=skillFts.reduce(function(sum, element){
 	  return sum + element;
@@ -730,5 +824,14 @@ function DT2skill(){
 	var PLe = document.getElementById('PLe').selectedIndex;
 	var PLf = document.getElementById('PLf').selectedIndex;
 	var PLg = document.getElementById('PLg').selectedIndex;
+
+	var DKa = document.getElementById('DKa').selectedIndex;
+	var DKb = document.getElementById('DKb').selectedIndex;
+	var DKc = document.getElementById('DKc').selectedIndex;
+	var DKd = document.getElementById('DKd').selectedIndex;
+	var DKe = document.getElementById('DKe').selectedIndex;
+	var DKf = document.getElementById('DKf').selectedIndex;
+	var DKg = document.getElementById('DKg').selectedIndex;
+	var DKh = document.getElementById('DKh').selectedIndex;
 }
 
