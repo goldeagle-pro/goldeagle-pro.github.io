@@ -245,19 +245,19 @@ function funcPlA(){
 	}
 	skillPlA.innerHTML = text;
 }
-function culc(){
+function culcSP(){
 var skillFtA=document.getElementById('skillFtA').textContent;
 var skillFtF=document.getElementById('skillFtF').textContent
 
 var skillNumA=Number(skillFtA);
 var skillNumF=Number(skillFtF);
 
-var zz=skillNumA+skillNumF;
-culcNum=document.getElementById('culc');
-culcNum.innerHTML=zz;
+var sumSP=skillNumA+skillNumF;
+culcNum=document.getElementById('culcSP');
+culcNum.innerHTML=sumSP;
 }
 
-culc();
+culcSP();
 
 function DT2skill(){
 	var FTa = document.getElementById("FTa").selectedIndex;
