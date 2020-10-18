@@ -370,6 +370,198 @@ function funcPlG(){
 	skillPlG.innerHTML = text;
 }
 
+function funcDkA(){
+	var value = document.getElementById('DKa').value;
+	var skillDkA = document.getElementById('skillDkA');
+	if(value == 0){
+		text = 0;
+	}else if(value == 1){
+		text = 2;
+	}else if(value == 2){
+		text = 6;
+	}else if(value == 3){
+		text = 12;
+	}else if(value == 4){
+		text = 20;
+	}else if(value == 5){
+		text = 30;
+	}
+	skillDkA.innerHTML = text;
+}
+
+function funcDkB(){
+	var value = document.getElementById('DKb').value;
+	var skillDkB = document.getElementById('skillDkB');
+	if(value == 0){
+		text = 0;
+	}else if(value == 1){
+		text = 1;
+	}else if(value == 2){
+		text = 3;
+	}else if(value == 3){
+		text = 6;
+	}else if(value == 4){
+		text = 10;
+	}else if(value == 5){
+		text = 15;
+	}else if(value == 6){
+		text = 21;
+	}else if(value == 7){
+		text = 28;
+	}else if(value == 8){
+		text = 36;
+	}else if(value == 9){
+		text = 45;
+	}else if(value == 10){
+		text = 55;
+	}
+	skillDkB.innerHTML = text;
+}
+
+function funcDkC(){
+	var value = document.getElementById('DkC').value;
+	var skillDkC = document.getElementById('skillDkC');
+	if(value == 0){
+		text = 0;
+	}else if(value == 1){
+		text = 1;
+	}else if(value == 2){
+		text = 3;
+	}else if(value == 3){
+		text = 6;
+	}else if(value == 4){
+		text = 10;
+	}else if(value == 5){
+		text = 15;
+	}else if(value == 6){
+		text = 21;
+	}else if(value == 7){
+		text = 28;
+	}else if(value == 8){
+		text = 36;
+	}else if(value == 9){
+		text = 45;
+	}else if(value == 10){
+		text = 55;
+	}
+	skillDkC.innerHTML = text;
+}
+
+function funcDkD(){
+	var value = document.getElementById('DKd').value;
+	var skillDkD = document.getElementById('skillDkD');
+	if(value == 0){
+		text = 0;
+	}else if(value == 1){
+		text = 1;
+	}else if(value == 2){
+		text = 3;
+	}else if(value == 3){
+		text = 6;
+	}else if(value == 4){
+		text = 10;
+	}else if(value == 5){
+		text = 15;
+	}else if(value == 6){
+		text = 21;
+	}else if(value == 7){
+		text = 28;
+	}else if(value == 8){
+		text = 36;
+	}else if(value == 9){
+		text = 45;
+	}else if(value == 10){
+		text = 55;
+	}
+	skillDkD.innerHTML = text;
+}
+
+function funcDkE(){
+	var value = document.getElementById('DKe').value;
+	var skillDkE = document.getElementById('skillDkE');
+	if(value == 0){
+		text = 0;
+	}else if(value == 1){
+		text = 2;
+	}else if(value == 2){
+		text = 6;
+	}else if(value == 3){
+		text = 12;
+	}else if(value == 4){
+		text = 20;
+	}else if(value == 5){
+		text = 30;
+	}
+	skillDkE.innerHTML = text;
+}
+
+function funcDkF(){
+	var value = document.getElementById('DKf').value;
+	var skillDkF = document.getElementById('skillDkF');
+	if(value == 0){
+		text = 0;
+	}else if(value == 1){
+		text = 2;
+	}else if(value == 2){
+		text = 6;
+	}else if(value == 3){
+		text = 12;
+	}else if(value == 4){
+		text = 20;
+	}else if(value == 5){
+		text = 30;
+	}
+	skillDkF.innerHTML = text;
+}
+
+function funcDkG(){
+	var value = document.getElementById('DKg').value;
+	var skillDkG = document.getElementById('skillDkG');
+	if(value == 0){
+		text = 0;
+	}else if(value == 1){
+		text = 1;
+	}else if(value == 2){
+		text = 3;
+	}else if(value == 3){
+		text = 6;
+	}else if(value == 4){
+		text = 10;
+	}else if(value == 5){
+		text = 15;
+	}else if(value == 6){
+		text = 21;
+	}else if(value == 7){
+		text = 28;
+	}else if(value == 8){
+		text = 36;
+	}else if(value == 9){
+		text = 45;
+	}else if(value == 10){
+		text = 55;
+	}
+	skillDkG.innerHTML = text;
+}
+
+function funcDkH(){
+	var value = document.getElementById('DKh').value;
+	var skillDkH = document.getElementById('skillDkH');
+	if(value == 0){
+		text = 0;
+	}else if(value == 1){
+		text = 2;
+	}else if(value == 2){
+		text = 6;
+	}else if(value == 3){
+		text = 12;
+	}else if(value == 4){
+		text = 20;
+	}else if(value == 5){
+		text = 30;
+	}
+	skillDkH.innerHTML = text;
+}
+
 function culcSP(){
 var skillFtA=document.getElementById('skillFtA').textContent;
 var skillFtF=document.getElementById('skillFtF').textContent
