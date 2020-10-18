@@ -245,6 +245,131 @@ function funcPlA(){
 	}
 	skillPlA.innerHTML = text;
 }
+
+function funcPlB(){
+	var value = document.getElementById('PLb').value;
+	var skillPlB = document.getElementById('skillPlB');
+	if(value == 0){
+		text = 0;
+	}else if(value == 1){
+		text = 2;
+	}else if(value == 2){
+		text = 6;
+	}else if(value == 3){
+		text = 12;
+	}else if(value == 4){
+		text = 20;
+	}else if(value == 5){
+		text = 30;
+	}
+	skillPlB.innerHTML = text;
+}
+
+function funcPlC(){
+	var value = document.getElementById('PLc').value;
+	var skillPlC = document.getElementById('skillPlC');
+	if(value == 0){
+		text = 0;
+	}else if(value == 1){
+		text = 2;
+	}else if(value == 2){
+		text = 6;
+	}else if(value == 3){
+		text = 12;
+	}else if(value == 4){
+		text = 20;
+	}else if(value == 5){
+		text = 30;
+	}
+	skillPlC.innerHTML = text;
+}
+
+function funcPlD(){
+	var value = document.getElementById('PLd').value;
+	var skillPlD = document.getElementById('skillPlD');
+	if(value == 0){
+		text = 0;
+	}else if(value == 1){
+		text = 2;
+	}else if(value == 2){
+		text = 6;
+	}else if(value == 3){
+		text = 12;
+	}else if(value == 4){
+		text = 20;
+	}else if(value == 5){
+		text = 30;
+	}
+	skillPlD.innerHTML = text;
+}
+
+function funcPlE(){
+	var value = document.getElementById('PLe').value;
+	var skillPlE = document.getElementById('skillPlE');
+	if(value == 0){
+		text = 0;
+	}else if(value == 1){
+		text = 1;
+	}else if(value == 2){
+		text = 3;
+	}else if(value == 3){
+		text = 6;
+	}else if(value == 4){
+		text = 10;
+	}else if(value == 5){
+		text = 15;
+	}else if(value == 6){
+		text = 21;
+	}else if(value == 7){
+		text = 28;
+	}else if(value == 8){
+		text = 36;
+	}else if(value == 9){
+		text = 45;
+	}else if(value == 10){
+		text = 55;
+	}
+	skillPlE.innerHTML = text;
+}
+
+function funcPlF(){
+	var value = document.getElementById('PLf').value;
+	var skillPlF = document.getElementById('skillPlF');
+	if(value == 0){
+		text = 0;
+	}else if(value == 1){
+		text = 2;
+	}else if(value == 2){
+		text = 6;
+	}else if(value == 3){
+		text = 12;
+	}else if(value == 4){
+		text = 20;
+	}else if(value == 5){
+		text = 30;
+	}
+	skillPlF.innerHTML = text;
+}
+
+function funcPlG(){
+	var value = document.getElementById('PLg').value;
+	var skillPlG = document.getElementById('skillPlG');
+	if(value == 0){
+		text = 0;
+	}else if(value == 1){
+		text = 2;
+	}else if(value == 2){
+		text = 6;
+	}else if(value == 3){
+		text = 12;
+	}else if(value == 4){
+		text = 20;
+	}else if(value == 5){
+		text = 30;
+	}
+	skillPlG.innerHTML = text;
+}
+
 function culcSP(){
 var skillFtA=document.getElementById('skillFtA').textContent;
 var skillFtF=document.getElementById('skillFtF').textContent
