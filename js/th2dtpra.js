@@ -39,12 +39,13 @@ function remSP(){
   var curLv =document.getElementById('curLv').value;
    var remSP = document.getElementById('remSP');
 
-var arraySPs = [3,3,4,5,6];
-var arraySP = arraySPs[Number(curLv)];
+var remSPs = [3,3,4,5,6]
+var remSP = remSPs.filter(function(value){
+    return value = Number(curLv);
+})
 
 
-
-var sumRemSP = Number(arraySP)
+var sumRemSP = Number(remSP.innerHTML)
 				+Number(document.getElementById('skillDrug').value)
 				-Number(document.getElementById('culcSP').innerHTML);
 				
