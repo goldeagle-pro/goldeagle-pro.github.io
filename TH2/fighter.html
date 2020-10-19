@@ -869,11 +869,12 @@
               <tr>
                 <td>スキル</td>
                 <td>sLv</td>
+                <td>必要SP</td>
               </tr>
               <tr>
                 <td>ブラッドバイト</td>
                 <td>
-                  <select id="DLa" onchange="DT2skill()">
+                  <select id="DLa" onchange="DT2skill();funcDlA();culcSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -886,12 +887,15 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
                   </select>
+                </td>
+                <td>
+                  <p id="skillDlA">0</p>
                 </td>
               </tr>
               <tr>
                 <td>ソウルバイト</td>
                 <td>
-                  <select id="DLb" onchange="DT2skill()">
+                  <select id="DLb" onchange="DT2skill();funcDlB();culcSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -904,12 +908,15 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
                   </select>
+                </td>
+                <td>
+                  <p id="skillDlB">0</p>
                 </td>
               </tr>
               <tr>
                 <td>ショックスパイラル</td>
                 <td>
-                  <select id="DLc" onchange="DT2skill()">
+                  <select id="DLc" onchange="DT2skill();funcDlC();culcSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -922,12 +929,15 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
                   </select>
+                </td>
+                <td>
+                  <p id="skillDlC">0</p>
                 </td>
               </tr>
               <tr>
                 <td>アトラクト</td>
                 <td>
-                  <select id="DLd" onchange="DT2skill()">
+                  <select id="DLd" onchange="DT2skill();funcDlD();culcSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -935,12 +945,15 @@
                     <option value="4">4</option>
                     <option value="5">5</option>
                   </select>
+                </td>
+                <td>
+                  <p id="skillDlD">0</p>
                 </td>
               </tr>
               <tr>
                 <td>メガトンプレス</td>
                 <td>
-                  <select id="DLe" onchange="DT2skill()">
+                  <select id="DLe" onchange="DT2skill();funcDlE();culcSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -953,12 +966,15 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
                   </select>
+                </td>
+                <td>
+                  <p id="skillDlE">0</p>
                 </td>
               </tr>
               <tr>
                 <td>ライフブリング</td>
                 <td>
-                  <select id="DLf" onchange="DT2skill()">
+                  <select id="DLf" onchange="DT2skill();funcDlF();culcSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -972,11 +988,14 @@
                     <option value="10">10</option>
                   </select>
                 </td>
+                <td>
+                  <p id="skillDlF">0</p>
+                </td>
               </tr>
               <tr>
                 <td>ブレイブ</td>
                 <td>
-                  <select id="DLg" onchange="DT2skill()">
+                  <select id="DLg" onchange="DT2skill();funcDlG();culcSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -985,11 +1004,14 @@
                     <option value="5">5</option>
                   </select>
                 </td>
+                <td>
+                  <p id="skillDlG">0</p>
+                </td>
               </tr>
               <tr>
                 <td>ブレイブ</td>
                 <td>
-                  <select id="DLh" onchange="DT2skill()">
+                  <select id="DLh" onchange="DT2skill();funcDlH();culcSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -997,12 +1019,15 @@
                     <option value="4">4</option>
                     <option value="5">5</option>
                   </select>
+                </td>
+                <td>
+                  <p id="skillDlH">0</p>
                 </td>
               </tr>
               <tr>
                 <td>グラージアキュム</td>
                 <td>
-                  <select id="DLi" onchange="DT2skill()">
+                  <select id="DLi" onchange="DT2skill();funcDlI();culcSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1011,11 +1036,14 @@
                     <option value="5">5</option>
                   </select>
                 </td>
+                <td>
+                  <p id="skillDlI">0</p>
+                </td>
               </tr>
               <tr>
                 <td>ダーククエスト</td>
                 <td>
-                  <select id="DLj" onchange="DT2skill()">
+                  <select id="DLj" onchange="DT2skill();funcDlJ();culcSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1023,6 +1051,9 @@
                     <option value="4">4</option>
                     <option value="5">5</option>
                   </select>
+                </td>
+                <td>
+                  <p id="skillDlJ">0</p>
                 </td>
               </tr>
             </table>
