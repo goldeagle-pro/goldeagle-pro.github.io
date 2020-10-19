@@ -1051,6 +1051,356 @@ function funcVlI(){
 	skillVlI.innerHTML = text;
 }
 
+function funcSaA(){
+	var value = document.getElementById('SAa').value;
+	var skillSaA = document.getElementById('skillSaA');
+	switch(value) {
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 1;
+		break;
+		  case "2":
+			text = 3;
+		break;
+		  case "3":
+			text = 6;
+		break;
+		  case "4":
+			text = 10;
+		break;
+		case "5":
+			text = 15;
+		break;
+		  case "6":
+			text = 21;
+		break;
+		  case "7":
+			text = 28;
+		break;
+		  case "8":
+			text = 36;
+		break;
+		  case "9":
+			text = 45;
+		break;
+		  case "10":
+			text = 55;
+		break;
+		}
+	skillSaA.innerHTML = text;
+}
+
+function funcSaB(){
+	var value = document.getElementById('SAb').value;
+	var skillSaB = document.getElementById('skillSaB');
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
+	skillSaB.innerHTML = text;
+}
+
+function funcSaC(){
+	var value = document.getElementById('SAc').value;
+	var skillSaC = document.getElementById('skillSaC');
+	switch(value) {
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 1;
+		break;
+		  case "2":
+			text = 3;
+		break;
+		  case "3":
+			text = 6;
+		break;
+		  case "4":
+			text = 10;
+		break;
+		case "5":
+			text = 15;
+		break;
+		  case "6":
+			text = 21;
+		break;
+		  case "7":
+			text = 28;
+		break;
+		  case "8":
+			text = 36;
+		break;
+		  case "9":
+			text = 45;
+		break;
+		  case "10":
+			text = 55;
+		break;
+		}
+	skillSaC.innerHTML = text;
+}
+
+function funcSaD(){
+	var value = document.getElementById('SAd').value;
+	var skillSaD = document.getElementById('skillSaD');
+	switch(value) {
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 1;
+		break;
+		  case "2":
+			text = 3;
+		break;
+		  case "3":
+			text = 6;
+		break;
+		  case "4":
+			text = 10;
+		break;
+		case "5":
+			text = 15;
+		break;
+		  case "6":
+			text = 21;
+		break;
+		  case "7":
+			text = 28;
+		break;
+		  case "8":
+			text = 36;
+		break;
+		  case "9":
+			text = 45;
+		break;
+		  case "10":
+			text = 55;
+		break;
+		}
+	skillSaD.innerHTML = text;
+}
+
+function funcSaE(){
+	var value = document.getElementById('SAe').value;
+	var skillSaE = document.getElementById('skillSaE');
+	switch(value) {
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 1;
+		break;
+		  case "2":
+			text = 3;
+		break;
+		  case "3":
+			text = 6;
+		break;
+		  case "4":
+			text = 10;
+		break;
+		case "5":
+			text = 15;
+		break;
+		  case "6":
+			text = 21;
+		break;
+		  case "7":
+			text = 28;
+		break;
+		  case "8":
+			text = 36;
+		break;
+		  case "9":
+			text = 45;
+		break;
+		  case "10":
+			text = 55;
+		break;
+		}
+	skillSaE.innerHTML = text;
+}
+
+function funcSaF(){
+	var value = document.getElementById('SAf').value;
+	var skillSaF = document.getElementById('skillSaF');
+	switch(value) {
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 1;
+		break;
+		  case "2":
+			text = 3;
+		break;
+		  case "3":
+			text = 6;
+		break;
+		  case "4":
+			text = 10;
+		break;
+		case "5":
+			text = 15;
+		break;
+		  case "6":
+			text = 21;
+		break;
+		  case "7":
+			text = 28;
+		break;
+		  case "8":
+			text = 36;
+		break;
+		  case "9":
+			text = 45;
+		break;
+		  case "10":
+			text = 55;
+		break;
+		}
+	skillSaF.innerHTML = text;
+}
+
+function funcSaH(){
+	var value = document.getElementById('SAh').value;
+	var skillSaH = document.getElementById('skillSaH');
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
+	skillSaH.innerHTML = text;
+}
+
+function funcSaI(){
+	var value = document.getElementById('SAi').value;
+	var skillSaI = document.getElementById('skillSaI');
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
+	skillSaI.innerHTML = text;
+}
+
+function funcSaJ(){
+	var value = document.getElementById('SAj').value;
+	var skillSaJ = document.getElementById('skillSaJ');
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
+	skillSaJ.innerHTML = text;
+}
+
+function funcSaG(){
+	var value = document.getElementById('SAg').value;
+	var skillSaG = document.getElementById('skillSaG');
+	switch(value) {
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 1;
+		break;
+		  case "2":
+			text = 3;
+		break;
+		  case "3":
+			text = 6;
+		break;
+		  case "4":
+			text = 10;
+		break;
+		case "5":
+			text = 15;
+		break;
+		  case "6":
+			text = 21;
+		break;
+		  case "7":
+			text = 28;
+		break;
+		  case "8":
+			text = 36;
+		break;
+		  case "9":
+			text = 45;
+		break;
+		  case "10":
+			text = 55;
+		break;
+		}
+	skillSaG.innerHTML = text;
+}
+
 function culcSP(){
 	var skillFts=[
 				Number(document.getElementById('skillFtA').textContent),
