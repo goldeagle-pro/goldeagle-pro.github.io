@@ -1282,6 +1282,47 @@ function funcSaF(){
 	skillSaF.innerHTML = text;
 }
 
+function funcSaG(){
+	var value = document.getElementById('SAg').value;
+	var skillSaG = document.getElementById('skillSaG');
+	switch(value) {
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 1;
+		break;
+		  case "2":
+			text = 3;
+		break;
+		  case "3":
+			text = 6;
+		break;
+		  case "4":
+			text = 10;
+		break;
+		case "5":
+			text = 15;
+		break;
+		  case "6":
+			text = 21;
+		break;
+		  case "7":
+			text = 28;
+		break;
+		  case "8":
+			text = 36;
+		break;
+		  case "9":
+			text = 45;
+		break;
+		  case "10":
+			text = 55;
+		break;
+		}
+	skillSaG.innerHTML = text;
+}
+
 function funcSaH(){
 	var value = document.getElementById('SAh').value;
 	var skillSaH = document.getElementById('skillSaH');
@@ -1360,9 +1401,9 @@ function funcSaJ(){
 	skillSaJ.innerHTML = text;
 }
 
-function funcSaG(){
-	var value = document.getElementById('SAg').value;
-	var skillSaG = document.getElementById('skillSaG');
+function funcDlA(){
+	var value = document.getElementById('DLa').value;
+	var skillDlA = document.getElementById('skillDlA');
 	switch(value) {
 		case "0":
 			text = 0;
@@ -1398,7 +1439,301 @@ function funcSaG(){
 			text = 55;
 		break;
 		}
-	skillSaG.innerHTML = text;
+	skillDlA.innerHTML = text;
+}
+
+function funcDlB(){
+	var value = document.getElementById('DLb').value;
+	var skillDlB = document.getElementById('skillDlB');
+	switch(value) {
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 1;
+		break;
+		  case "2":
+			text = 3;
+		break;
+		  case "3":
+			text = 6;
+		break;
+		  case "4":
+			text = 10;
+		break;
+		case "5":
+			text = 15;
+		break;
+		  case "6":
+			text = 21;
+		break;
+		  case "7":
+			text = 28;
+		break;
+		  case "8":
+			text = 36;
+		break;
+		  case "9":
+			text = 45;
+		break;
+		  case "10":
+			text = 55;
+		break;
+		}
+	skillDlB.innerHTML = text;
+}
+
+function funcDlC(){
+	var value = document.getElementById('DLc').value;
+	var skillDlC = document.getElementById('skillDlC');
+	switch(value) {
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 1;
+		break;
+		  case "2":
+			text = 3;
+		break;
+		  case "3":
+			text = 6;
+		break;
+		  case "4":
+			text = 10;
+		break;
+		case "5":
+			text = 15;
+		break;
+		  case "6":
+			text = 21;
+		break;
+		  case "7":
+			text = 28;
+		break;
+		  case "8":
+			text = 36;
+		break;
+		  case "9":
+			text = 45;
+		break;
+		  case "10":
+			text = 55;
+		break;
+		}
+	skillDlC.innerHTML = text;
+}
+
+function funcDlD(){
+	var value = document.getElementById('DLd').value;
+	var skillDlD = document.getElementById('skillDlD');
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
+	skillDlD.innerHTML = text;
+}
+
+function funcDlE(){
+	var value = document.getElementById('DLe').value;
+	var skillDlE = document.getElementById('skillDlE');
+	switch(value) {
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 1;
+		break;
+		  case "2":
+			text = 3;
+		break;
+		  case "3":
+			text = 6;
+		break;
+		  case "4":
+			text = 10;
+		break;
+		case "5":
+			text = 15;
+		break;
+		  case "6":
+			text = 21;
+		break;
+		  case "7":
+			text = 28;
+		break;
+		  case "8":
+			text = 36;
+		break;
+		  case "9":
+			text = 45;
+		break;
+		  case "10":
+			text = 55;
+		break;
+		}
+	skillDlE.innerHTML = text;
+}
+
+function funcDlF(){
+	var value = document.getElementById('DLf').value;
+	var skillDlF = document.getElementById('skillDlF');
+	switch(value) {
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 1;
+		break;
+		  case "2":
+			text = 3;
+		break;
+		  case "3":
+			text = 6;
+		break;
+		  case "4":
+			text = 10;
+		break;
+		case "5":
+			text = 15;
+		break;
+		  case "6":
+			text = 21;
+		break;
+		  case "7":
+			text = 28;
+		break;
+		  case "8":
+			text = 36;
+		break;
+		  case "9":
+			text = 45;
+		break;
+		  case "10":
+			text = 55;
+		break;
+		}
+	skillDlF.innerHTML = text;
+}
+
+function funcDlG(){
+	var value = document.getElementById('DLg').value;
+	var skillDlG = document.getElementById('skillDlG');
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
+	skillDlG.innerHTML = text;
+}
+
+function funcDlH(){
+	var value = document.getElementById('DLh').value;
+	var skillDlH = document.getElementById('skillDlH');
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
+	skillDlH.innerHTML = text;
+}
+
+function funcDlI(){
+	var value = document.getElementById('DLi').value;
+	var skillDlI = document.getElementById('skillDlI');
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
+	skillDlI.innerHTML = text;
+}
+
+function funcDlJ(){
+	var value = document.getElementById('DLj').value;
+	var skillDlJ = document.getElementById('skillDlJ');
+	switch(value){
+		case "0":
+			text = 0;
+		break;
+		  case "1":
+			text = 2;
+		break;
+		  case "2":
+			text = 6;
+		break;
+		  case "3":
+			text = 12;
+		break;
+		  case "4":
+			text = 20;
+		break;
+		  case "5":
+			text = 30;
+		break;
+		}
+	skillDlJ.innerHTML = text;
 }
 
 function culcSP(){
@@ -1448,7 +1783,7 @@ function culcSP(){
 				Number(document.getElementById('skillSaG').textContent),
 				Number(document.getElementById('skillSaH').textContent),
 				Number(document.getElementById('skillSaI').textContent),
-				Number(document.getElementById('skillSaJ').textContent);
+				Number(document.getElementById('skillSaJ').textContent),
 			
 				Number(document.getElementById('skillDlA').textContent),
 				Number(document.getElementById('skillDlB').textContent),
