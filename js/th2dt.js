@@ -47,9 +47,8 @@ var arraySPs = [3,3,4,5,6,7,8,9,10,11,12,13,14,15,16,
 	286,296,306,316,326,337,348,359,370,382,394,406,
 	418,431,444,457,470,484,498,512,526,541,556,571,
 	586,602,618,634,651,668];
-var arraySP = arraySPs[Number(curLv)];
 
-
+	var arraySP = arraySPs[Number(curLv)];
 
 var sumRemSP = Number(arraySP)
 				+Number(document.getElementById('skillDrug').value)
@@ -58,4 +57,5 @@ var sumRemSP = Number(arraySP)
 remSP.innerHTML = sumRemSP;
 
 }
+
 remSP();
