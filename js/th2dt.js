@@ -1437,7 +1437,19 @@ function culcSP(){
 				Number(document.getElementById('skillVlF').textContent),
 				Number(document.getElementById('skillVlG').textContent),
 				Number(document.getElementById('skillVlH').textContent),
-				Number(document.getElementById('skillVlI').textContent)];
+				Number(document.getElementById('skillVlI').textContent),
+			
+				Number(document.getElementById('skillSaA').textContent),
+				Number(document.getElementById('skillSaB').textContent),
+				Number(document.getElementById('skillSaC').textContent),
+				Number(document.getElementById('skillSaD').textContent),
+				Number(document.getElementById('skillSaE').textContent),
+				Number(document.getElementById('skillSaF').textContent),
+				Number(document.getElementById('skillSaG').textContent),
+				Number(document.getElementById('skillSaH').textContent),
+				Number(document.getElementById('skillSaI').textContent),
+				Number(document.getElementById('skillSaJ').textContent)
+			];
 	
 	var sumSP=skillFts.reduce(function(sum, element){
 	  return sum + element;
@@ -1486,5 +1498,16 @@ function DT2skill(){
 	var VLg = document.getElementById('VLg').selectedIndex;
 	var VLh = document.getElementById('VLh').selectedIndex;
 	var VLi = document.getElementById('VLi').selectedIndex;
+
+	var SAa = document.getElementById('SAa').selectedIndex;
+	var SAb = document.getElementById('SAb').selectedIndex;
+	var SAc = document.getElementById('SAc').selectedIndex;
+	var SAd = document.getElementById('SAd').selectedIndex;
+	var SAe = document.getElementById('SAe').selectedIndex;
+	var SAf = document.getElementById('SAf').selectedIndex;
+	var SAg = document.getElementById('SAg').selectedIndex;
+	var SAh = document.getElementById('SAh').selectedIndex;
+	var SAi = document.getElementById('SAi').selectedIndex;
+	var SAj = document.getElementById('SAj').selectedIndex;
 }
 
