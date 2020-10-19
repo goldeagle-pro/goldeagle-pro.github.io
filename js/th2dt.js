@@ -42,8 +42,11 @@ switch(curLv){
   
 	case "":
     text = 3;
-  break;
-  case "1":
+  	break;
+  	case "0":
+	  text = 3;
+	break;
+  	case "1":
 		text = 3;
 	break;
 	case "2":
@@ -53,7 +56,10 @@ switch(curLv){
 
 remSP.innerHTML = text;
 
-var sumRemSP = Number(remSP.innerHTML)+Number(document.getElementById('skillDrug').value)-Number(document.getElementById('culcSP').innerHTML);
+var sumRemSP = Number(remSP.innerHTML)
+				+Number(document.getElementById('skillDrug').value)
+				-Number(document.getElementById('culcSP').innerHTML);
+				
 remSP.innerHTML = sumRemSP;
 
 }
