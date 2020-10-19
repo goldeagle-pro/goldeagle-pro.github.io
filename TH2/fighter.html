@@ -17,14 +17,19 @@
 <body>
   <div class="container">
   <h2>ファイター系</h2>
-  <p>Lv</p><input id="curLv" type="text"  onchange="remSP()">
-  <p>スキルの素</p><input id="skillDrug" type="text" onchange="remSP()">
-  <p>残りSP</p>
+  <div class="getSP">
+  <p class="Lv">Lv</p>
+    <input id="curLv" type="text"  onchange="remSP()">
+  <p class="skillD">スキルの素</p><input id="skillDrug" type="text" onchange="remSP()">
+  </div>
+  <div class="remainSP">
+  <p class="remain">残りSP：</p>
   <p id="remSP">3</p>
-  <p>使用SP</p>
+  <p class="useSP">使用SP：</p>
   <p id="culcSP" onchange="remSP()">0</p>
-  <table border="1" align="center">
-    <tr>
+  </div>
+  <table class="jobSP" border="1" align="center">
+    <tr class="job">
       <th>基本職</th>
       <th>Lv15職</th>
       <th>Lv30職</th>
@@ -54,7 +59,10 @@
             <td>必要SP</td>
           </tr>  
           <tr>
-            <td>挑発</td>
+            <td class="skill">
+            <span>挑発</span>
+            <p class="skillDesc">敵一人の攻撃を自分に引き付ける</p>
+            </td>
             <td>
               <select id="FTa" onchange="DT2skill();funcFtA();culcSP()">   
                 <option value="0">0</option>
@@ -70,7 +78,10 @@
             </td>
           </tr>
           <tr>
-            <td>ウォークライ</td>
+            <td class="skill">
+              <span>ウォークライ</span>
+              <p class="skillDesc">味方全員の攻撃力アップ　移動中使用可</p>
+            </td>
             <td>
               <select id="FTb" onchange="DT2skill();funcFtB();culcSP()">
                 <option value="0">0</option>
