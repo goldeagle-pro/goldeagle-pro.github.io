@@ -35,7 +35,7 @@ function changeDispB(start){
 	}
 }
 
-document.getElementById('curLv').onchange= function remSP(){
+function remSP(){
   var curLv =document.getElementById('curLv').value;
    var remSP = document.getElementById('remSP');
 switch(curLv){
@@ -52,6 +52,9 @@ switch(curLv){
 }
 
 remSP.innerHTML = text;
-}
 
+var sumRemSP = Number(remSP.innerHTML)+Number(document.getElementById('skillDrug').value)-Number(document.getElementById('culcSP').innerHTML);
+remSP.innerHTML = sumRemSP;
+
+}
 remSP();
