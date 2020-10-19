@@ -34,3 +34,24 @@ function changeDispB(start){
 		items[i].style.display = "none";
 	}
 }
+
+document.getElementById('curLv').onchange= function remSP(){
+  var curLv =document.getElementById('curLv').value;
+   var remSP = document.getElementById('remSP');
+switch(curLv){
+  
+	case "":
+    text = 3;
+  break;
+  case "1":
+		text = 3;
+	break;
+	case "2":
+		text = 4;
+	break;
+}
+
+remSP.innerHTML = text;
+}
+
+remSP();
