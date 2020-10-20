@@ -15,6 +15,7 @@
 
 </head>
 <body>
+  <form>
   <div class="container">
   <h2>ファイター系</h2>
   <div class="getSP">
@@ -26,8 +27,9 @@
   <p class="remain">残りSP：</p>
   <p id="remSP">3</p>
   <p class="useSP">使用SP：</p>
-  <p id="culcSP" onchange="remSP()">0</p>
+  <p id="culcSP" onchange="remSP()" onclick="clearAll()">0</p>
   </div>
+  <input type="button" value="クリア" onclick="clearAll()">
   <table class="jobSP" border="1" align="center">
     <tr class="job">
       <th>基本職</th>
@@ -93,7 +95,7 @@
               </select>
             </td>
             <td>
-              <p id="skillFtB">0</p>
+              <p id="skillFtB" class="skillLv">0</p>
             </td>
           </tr>
           <tr>
@@ -242,7 +244,10 @@
                 <td>必要SP</td>
               </tr>
               <tr>
-                <td>ディフェンダー</td>
+                <td class="skill">
+                  <span>ディフェンダー</span>
+                  <p class="skillDesc">自身の防御力アップ、攻撃力ダウン</p>
+                </td>
                 <td>
                   <select id="PLa" onchange="DT2skill();funcPlA();culcSP()">
                     <option value="0">0</option>
@@ -258,7 +263,10 @@
                 </td>
               </tr>
               <tr>
-                <td>シールドバッシュ</td>
+                <td class="skill">
+                  <span>シールドバッシュ</span>
+                  <p class="skillDesc">盾装備時、敵一体にダメージ+気絶の効果</p>
+                </td>
                 <td>
                   <select id="PLb" onchange="DT2skill();funcPlB();culcSP()">
                     <option value="0">0</option>
@@ -274,7 +282,10 @@
                 </td>
               </tr>
               <tr>
-                <td>カバー</td>
+                <td class="skill">
+                  <span>カバー</span>
+                  <p class="skillDesc">味方への物理攻撃を自分が代わって受ける</p>
+                </td>
                 <td>
                   <select id="PLc" onchange="DT2skill();funcPlC();culcSP()">
                     <option value="0">0</option>
@@ -290,7 +301,10 @@
                 </td>
               </tr>
               <tr>
-                <td>パリィ</td>
+                <td class="skill">
+                  <span>パリィ</span>
+                  <p class="skillDesc">近接武器装備時、武器で敵の攻撃を受け流す</p>
+                </td>
                 <td>
                   <select id="PLd" onchange="DT2skill();funcPlD();culcSP()">
                     <option value="0">0</option>
@@ -1096,6 +1110,7 @@
     </tr>
   </table>
   </div>
+  </form>
   <script src="../js/th2dt.js"></script>
   <script src="../js/th2dtft.js"></script>
 </body>
