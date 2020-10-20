@@ -2,34 +2,17 @@ function funcFtA(){
 	var skillLvFtA = document.getElementById('FTa').value;
 	var skillFtA = document.getElementById('skillFtA');
 	var spFtAs = [0,2,6,12,20,30];
-  var text = spFtAs[Number(skillLvFtA)];
+  	var text = spFtAs[Number(skillLvFtA)];
 
 	skillFtA.innerHTML = text;
 }
 
 function funcFtB(){
-	var value = document.getElementById('FTb').value;
+	var skillLvFtB = document.getElementById('FTb').value;
 	var skillFtB = document.getElementById('skillFtB');
-	switch(value){
-		case "0":
-			text = 0;
-		break;
-		  case "1":
-			text = 2;
-		break;
-		  case "2":
-			text = 6;
-		break;
-		  case "3":
-			text = 12;
-		break;
-		  case "4":
-			text = 20;
-		break;
-		  case "5":
-			text = 30;
-		break;
-		}
+	var spFtBs = [0,2,6,12,20,30];
+	var text = spFtBs[Number(skillLvFtB)];
+	
 	skillFtB.innerHTML = text;
 }
 
