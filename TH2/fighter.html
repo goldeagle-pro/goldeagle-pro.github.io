@@ -27,7 +27,7 @@
   <p class="remain">残りSP：</p>
   <p id="remSP">3</p>
   <p class="useSP">使用SP：</p>
-  <p id="culcSP" onchange="remSP()" onclick="clearAll()">0</p>
+  <p id="culcSP" onchange="remSP()">0</p>
   </div>
   <input type="button" value="クリア" onclick="clearAll();DT2skill()">
   <table class="jobSP" border="1" align="center">
@@ -128,7 +128,7 @@
               <p class="skillDesc">剣装備時、攻撃力にボーナス</p>
             </td>
             <td>
-              <select id="FTd" onchange="DT2skill();funcFtD();culcSP()">
+              <select id="FTd" onchange="DT2skill();culcSP()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -152,7 +152,7 @@
               <p class="skillDesc">槍装備時、攻撃力にボーナス</p>
           </td>
             <td>
-              <select id="FTe" onchange="DT2skill();funcFtE();culcSP()">
+              <select id="FTe" onchange="DT2skill();culcSP()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -176,7 +176,7 @@
               <p class="skillDesc">斧装備時、攻撃力にボーナス</p>
             </td>
             <td>
-              <select id="FTf" onchange="DT2skill();funcFtF();culcSP()">
+              <select id="FTf" onchange="DT2skill();culcSP()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -219,7 +219,7 @@
               <p class="skillDesc">通常攻撃時、ときどき2回攻撃</p>
             </td>
             <td>
-              <select id="FTh" onchange="DT2skill();;culcSP()">
+              <select id="FTh" onchange="DT2skill();culcSP()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -249,7 +249,7 @@
                   <p class="skillDesc">自身の防御力アップ、攻撃力ダウン</p>
                 </td>
                 <td>
-                  <select id="PLa" onchange="DT2skill();funcPlA();culcSP()">
+                  <select id="PLa" onchange="DT2skill();culcSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -268,7 +268,7 @@
                   <p class="skillDesc">盾装備時、敵一体にダメージ+気絶の効果</p>
                 </td>
                 <td>
-                  <select id="PLb" onchange="DT2skill();funcPlB();culcSP()">
+                  <select id="PLb" onchange="DT2skill();culcSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -287,7 +287,7 @@
                   <p class="skillDesc">味方への物理攻撃を自分が代わって受ける</p>
                 </td>
                 <td>
-                  <select id="PLc" onchange="DT2skill();funcPlC();culcSP()">
+                  <select id="PLc" onchange="DT2skill();culcSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -322,7 +322,7 @@
               <tr>
                 <td>ヒール</td>
                 <td>
-                  <select id="PLe" onchange="DT2skill();funcPlE();culcSP()">
+                  <select id="PLe" onchange="DT2skill();culcSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -343,7 +343,7 @@
               <tr>
                 <td>オートガード</td>
                 <td>
-                  <select id="PLf" onchange="DT2skill();funcPlF();culcSP()">
+                  <select id="PLf" onchange="DT2skill();culcSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -359,7 +359,7 @@
               <tr>
                 <td>オートミニリカバ</td>
                 <td>
-                  <select id="PLg" onchange="DT2skill();funcPlG();culcSP()">
+                  <select id="PLg" onchange="DT2skill();culcSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>

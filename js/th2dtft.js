@@ -1,225 +1,3 @@
-function funcFtH(){
-	var value = document.getElementById('FTh').value;
-	var skillFtH = document.getElementById('skillFtH');
-	switch(value){
-		case "0":
-			text = 0;
-		break;
-		  case "1":
-			text = 2;
-		break;
-		  case "2":
-			text = 6;
-		break;
-		  case "3":
-			text = 12;
-		break;
-		  case "4":
-			text = 20;
-		break;
-		  case "5":
-			text = 30;
-		break;
-		}
-	skillFtH.innerHTML = text;
-}
-
-function funcPlA(){
-	var value = document.getElementById('PLa').value;
-	var skillPlA = document.getElementById('skillPlA');
-	switch(value){
-		case "0":
-			text = 0;
-		break;
-		  case "1":
-			text = 2;
-		break;
-		  case "2":
-			text = 6;
-		break;
-		  case "3":
-			text = 12;
-		break;
-		  case "4":
-			text = 20;
-		break;
-		  case "5":
-			text = 30;
-		break;
-		}
-	skillPlA.innerHTML = text;
-}
-
-function funcPlB(){
-	var value = document.getElementById('PLb').value;
-	var skillPlB = document.getElementById('skillPlB');
-	switch(value){
-		case "0":
-			text = 0;
-		break;
-		  case "1":
-			text = 2;
-		break;
-		  case "2":
-			text = 6;
-		break;
-		  case "3":
-			text = 12;
-		break;
-		  case "4":
-			text = 20;
-		break;
-		  case "5":
-			text = 30;
-		break;
-		}
-	skillPlB.innerHTML = text;
-}
-
-function funcPlC(){
-	var value = document.getElementById('PLc').value;
-	var skillPlC = document.getElementById('skillPlC');
-	switch(value){
-		case "0":
-			text = 0;
-		break;
-		  case "1":
-			text = 2;
-		break;
-		  case "2":
-			text = 6;
-		break;
-		  case "3":
-			text = 12;
-		break;
-		  case "4":
-			text = 20;
-		break;
-		  case "5":
-			text = 30;
-		break;
-		}
-	skillPlC.innerHTML = text;
-}
-
-function funcPlD(){
-	var value = document.getElementById('PLd').value;
-	var skillPlD = document.getElementById('skillPlD');
-	switch(value){
-		case "0":
-			text = 0;
-		break;
-		  case "1":
-			text = 2;
-		break;
-		  case "2":
-			text = 6;
-		break;
-		  case "3":
-			text = 12;
-		break;
-		  case "4":
-			text = 20;
-		break;
-		  case "5":
-			text = 30;
-		break;
-		}
-	skillPlD.innerHTML = text;
-}
-
-function funcPlE(){
-	var value = document.getElementById('PLe').value;
-	var skillPlE = document.getElementById('skillPlE');
-	switch(value) {
-		case "0":
-			text = 0;
-		break;
-		  case "1":
-			text = 1;
-		break;
-		  case "2":
-			text = 3;
-		break;
-		  case "3":
-			text = 6;
-		break;
-		  case "4":
-			text = 10;
-		break;
-		case "5":
-			text = 15;
-		break;
-		  case "6":
-			text = 21;
-		break;
-		  case "7":
-			text = 28;
-		break;
-		  case "8":
-			text = 36;
-		break;
-		  case "9":
-			text = 45;
-		break;
-		  case "10":
-			text = 55;
-		break;
-		}
-	skillPlE.innerHTML = text;
-}
-
-function funcPlF(){
-	var value = document.getElementById('PLf').value;
-	var skillPlF = document.getElementById('skillPlF');
-	switch(value){
-		case "0":
-			text = 0;
-		break;
-		  case "1":
-			text = 2;
-		break;
-		  case "2":
-			text = 6;
-		break;
-		  case "3":
-			text = 12;
-		break;
-		  case "4":
-			text = 20;
-		break;
-		  case "5":
-			text = 30;
-		break;
-		}
-	skillPlF.innerHTML = text;
-}
-
-function funcPlG(){
-	var value = document.getElementById('PLg').value;
-	var skillPlG = document.getElementById('skillPlG');
-	switch(value){
-		case "0":
-			text = 0;
-		break;
-		  case "1":
-			text = 2;
-		break;
-		  case "2":
-			text = 6;
-		break;
-		  case "3":
-			text = 12;
-		break;
-		  case "4":
-			text = 20;
-		break;
-		  case "5":
-			text = 30;
-		break;
-		}
-	skillPlG.innerHTML = text;
-}
 
 function funcDkA(){
 	var value = document.getElementById('DKa').value;
@@ -1589,30 +1367,50 @@ function DT2skill(){
 	var DLj = document.getElementById('DLj').selectedIndex;
 
 	var skillFtA = document.getElementById('skillFtA');
-	var textA = FTa*(FTa+1);
-	skillFtA.innerHTML = textA;
+	var textFtA = FTa*(FTa+1);
+	skillFtA.innerHTML = textFtA;
 	var skillFtB = document.getElementById('skillFtB');
-	var textB = FTb*(FTb+1);
-	skillFtB.innerHTML = textB;
+	var textFtB = FTb*(FTb+1);
+	skillFtB.innerHTML = textFtB;
 	var skillFtC = document.getElementById('skillFtC');
-	var textC = FTc*(FTc+1)/2;
-	skillFtC.innerHTML = textC;
+	var textFtC = FTc*(FTc+1)/2;
+	skillFtC.innerHTML = textFtC;
 	var skillFtD = document.getElementById('skillFtD');
-	var textD = FTd*(FTd+1)/2;
-	skillFtD.innerHTML = textD;
+	var textFtD = FTd*(FTd+1)/2;
+	skillFtD.innerHTML = textFtD;
 	var skillFtE = document.getElementById('skillFtE');
-	var textE = FTe*(FTe+1)/2;
-	skillFtE.innerHTML = textE;
+	var textFtE = FTe*(FTe+1)/2;
+	skillFtE.innerHTML = textFtE;
 	var skillFtF = document.getElementById('skillFtF');
-	var textF = FTf*(FTf+1)/2;
-	skillFtF.innerHTML = textF;
+	var textFtF = FTf*(FTf+1)/2;
+	skillFtF.innerHTML = textFtF;
 	var skillFtG = document.getElementById('skillFtG');
-	var textG = FTg*(FTg+1);
-	skillFtG.innerHTML = textG;
+	var textFtG = FTg*(FTg+1);
+	skillFtG.innerHTML = textFtG;
 	var skillFtH = document.getElementById('skillFtH');
-	var textH = FTh*(FTh+1);
-	skillFtH.innerHTML = textH;
+	var textFtH = FTh*(FTh+1);
+	skillFtH.innerHTML = textFtH;
 
-  
+	var skillPlA = document.getElementById('skillPlA');
+	var textPlA = PLa*(PLa+1);
+	skillPlA.innerHTML = textPlA;
+	var skillPlB = document.getElementById('skillPlB');
+	var textPlB = PLb*(PLb+1);
+	skillPlB.innerHTML = textPlB;
+	var skillPlC = document.getElementById('skillPlC');
+	var textPlC = PLc*(PLc+1);
+	skillPlC.innerHTML = textPlC;
+	var skillPlD = document.getElementById('skillPlD');
+	var textPlD = PLd*(PLd+1);
+	skillPlD.innerHTML = textPlD;
+	var skillPlE = document.getElementById('skillPlE');
+	var textPlE = PLe*(PLe+1)/2;
+	skillPlE.innerHTML = textPlE;
+	var skillPlF = document.getElementById('skillPlF');
+	var textPlF = PLf*(PLf+1);
+	skillPlF.innerHTML = textPlF;
+	var skillPlB = document.getElementById('skillPlB');
+	var textPlG = PLg*(PLg+1);
+	skillPlG.innerHTML = textPlG;
 	
 }
