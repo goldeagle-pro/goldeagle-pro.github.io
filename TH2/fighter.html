@@ -15,7 +15,7 @@
 
 </head>
 <body>
-  <form>
+  <form name="skillSim">
   <div class="container">
   <h2>ファイター系</h2>
   <div class="getSP">
@@ -29,7 +29,7 @@
   <p class="useSP">使用SP：</p>
   <p id="culcSP" onchange="remSP()" onclick="clearAll()">0</p>
   </div>
-  <input type="button" value="クリア" onclick="clearAll()">
+  <input type="button" value="クリア" onclick="clearAll();DT2skill()">
   <table class="jobSP" border="1" align="center">
     <tr class="job">
       <th>基本職</th>
@@ -66,7 +66,7 @@
             <p class="skillDesc">敵一人の攻撃を自分に引き付ける</p>
             </td>
             <td>
-              <select id="FTa" onchange="DT2skill();funcFtA();culcSP()">   
+              <select id="FTa" onchange="DT2skill();culcSP()">   
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -76,7 +76,7 @@
               </select>
             </td>
             <td>
-              <p id="skillFtA">0</p>
+              <p id="skillFtA" >0</p>
             </td>
           </tr>
           <tr>
@@ -85,7 +85,7 @@
               <p class="skillDesc">味方全員の攻撃力アップ　移動中使用可</p>
             </td>
             <td>
-              <select id="FTb" onchange="DT2skill();funcFtB();culcSP()">
+              <select id="FTb" onchange="DT2skill();culcSP()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -104,7 +104,7 @@
               <p class="skillDesc">近接武器装備時、敵一人に強烈な一撃を放つ</p>
             </td>
             <td>
-              <select id="FTc" onchange="DT2skill();funcFtC();culcSP()">
+              <select id="FTc" onchange="DT2skill();culcSP()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -200,7 +200,7 @@
               <p class="skillDesc">物理ダメージを受けた時に反撃することがある</p>
             </td>
             <td>
-              <select id="FTg" onchange="DT2skill();funcFtG();culcSP()">
+              <select id="FTg" onchange="DT2skill();culcSP()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -219,7 +219,7 @@
               <p class="skillDesc">通常攻撃時、ときどき2回攻撃</p>
             </td>
             <td>
-              <select id="FTh" onchange="DT2skill();funcFtH();culcSP()">
+              <select id="FTh" onchange="DT2skill();;culcSP()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>

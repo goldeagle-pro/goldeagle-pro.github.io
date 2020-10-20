@@ -1,211 +1,3 @@
-function funcFtA(){
-	var skillLvFtA = document.getElementById('FTa').value;
-	var skillFtA = document.getElementById('skillFtA');
-	var spFtAs = [0,2,6,12,20,30];
-  	var text = spFtAs[Number(skillLvFtA)];
-
-	skillFtA.innerHTML = text;
-}
-
-function funcFtB(){
-	var skillLvFtB = document.getElementById('FTb').value;
-	var skillFtB = document.getElementById('skillFtB');
-	var spFtBs = [0,2,6,12,20,30];
-	var text = spFtBs[Number(skillLvFtB)];
-	
-	skillFtB.innerHTML = text;
-}
-
-function funcFtC(){
-	var value = document.getElementById('FTc').value;
-	var skillFtC = document.getElementById('skillFtC');
-	switch(value) {
-		case "0":
-			text = 0;
-		break;
-		  case "1":
-			text = 1;
-		break;
-		  case "2":
-			text = 3;
-		break;
-		  case "3":
-			text = 6;
-		break;
-		  case "4":
-			text = 10;
-		break;
-		case "5":
-			text = 15;
-		break;
-		  case "6":
-			text = 21;
-		break;
-		  case "7":
-			text = 28;
-		break;
-		  case "8":
-			text = 36;
-		break;
-		  case "9":
-			text = 45;
-		break;
-		  case "10":
-			text = 55;
-		break;
-		}
-	skillFtC.innerHTML = text;
-}
-
-function funcFtD(){
-	var value = document.getElementById('FTd').value;
-	var skillFtD = document.getElementById('skillFtD');
-	switch(value) {
-		case "0":
-			text = 0;
-		break;
-		  case "1":
-			text = 1;
-		break;
-		  case "2":
-			text = 3;
-		break;
-		  case "3":
-			text = 6;
-		break;
-		  case "4":
-			text = 10;
-		break;
-		case "5":
-			text = 15;
-		break;
-		  case "6":
-			text = 21;
-		break;
-		  case "7":
-			text = 28;
-		break;
-		  case "8":
-			text = 36;
-		break;
-		  case "9":
-			text = 45;
-		break;
-		  case "10":
-			text = 55;
-		break;
-		}
-	skillFtD.innerHTML = text;
-}
-
-function funcFtE(){
-	var value = document.getElementById('FTe').value;
-	var skillFtE = document.getElementById('skillFtE');
-	switch(value) {
-		case "0":
-			text = 0;
-		break;
-		  case "1":
-			text = 1;
-		break;
-		  case "2":
-			text = 3;
-		break;
-		  case "3":
-			text = 6;
-		break;
-		  case "4":
-			text = 10;
-		break;
-		case "5":
-			text = 15;
-		break;
-		  case "6":
-			text = 21;
-		break;
-		  case "7":
-			text = 28;
-		break;
-		  case "8":
-			text = 36;
-		break;
-		  case "9":
-			text = 45;
-		break;
-		  case "10":
-			text = 55;
-		break;
-		}
-	skillFtE.innerHTML = text;
-}
-
-function funcFtF(){
-	var value = document.getElementById('FTf').value;
-	var skillFtF = document.getElementById('skillFtF');
-	switch(value) {
-		case "0":
-			text = 0;
-		break;
-		  case "1":
-			text = 1;
-		break;
-		  case "2":
-			text = 3;
-		break;
-		  case "3":
-			text = 6;
-		break;
-		  case "4":
-			text = 10;
-		break;
-		case "5":
-			text = 15;
-		break;
-		  case "6":
-			text = 21;
-		break;
-		  case "7":
-			text = 28;
-		break;
-		  case "8":
-			text = 36;
-		break;
-		  case "9":
-			text = 45;
-		break;
-		  case "10":
-			text = 55;
-		break;
-		}
-	skillFtF.innerHTML = text;
-}
-
-function funcFtG(){
-	var value = document.getElementById('FTg').value;
-	var skillFtG = document.getElementById('skillFtG');
-	switch(value){
-		case "0":
-			text = 0;
-		break;
-		  case "1":
-			text = 2;
-		break;
-		  case "2":
-			text = 6;
-		break;
-		  case "3":
-			text = 12;
-		break;
-		  case "4":
-			text = 20;
-		break;
-		  case "5":
-			text = 30;
-		break;
-		}
-	skillFtG.innerHTML = text;
-}
-
 function funcFtH(){
 	var value = document.getElementById('FTh').value;
 	var skillFtH = document.getElementById('skillFtH');
@@ -1733,7 +1525,7 @@ function culcSP(){
 	  culcNum=document.getElementById('culcSP');
 	culcNum.innerHTML=sumSP;
 	}
-	culcSP();
+	
 	
 	
 
@@ -1795,12 +1587,32 @@ function DT2skill(){
 	var DLh = document.getElementById('DLh').selectedIndex;
 	var DLi = document.getElementById('DLi').selectedIndex;
 	var DLj = document.getElementById('DLj').selectedIndex;
-}
 
-function clearAll(){
-  document.skillSim.reset();
-  funcFtA();
-  var culcSP = document.getElementById('culcSP');
-  culcSP.innerHTML = 0;
-  remSP();
+	var skillFtA = document.getElementById('skillFtA');
+	var textA = FTa*(FTa+1);
+	skillFtA.innerHTML = textA;
+	var skillFtB = document.getElementById('skillFtB');
+	var textB = FTb*(FTb+1);
+	skillFtB.innerHTML = textB;
+	var skillFtC = document.getElementById('skillFtC');
+	var textC = FTc*(FTc+1)/2;
+	skillFtC.innerHTML = textC;
+	var skillFtD = document.getElementById('skillFtD');
+	var textD = FTd*(FTd+1)/2;
+	skillFtD.innerHTML = textD;
+	var skillFtE = document.getElementById('skillFtE');
+	var textE = FTe*(FTe+1)/2;
+	skillFtE.innerHTML = textE;
+	var skillFtF = document.getElementById('skillFtF');
+	var textF = FTf*(FTf+1)/2;
+	skillFtF.innerHTML = textF;
+	var skillFtG = document.getElementById('skillFtG');
+	var textG = FTg*(FTg+1);
+	skillFtG.innerHTML = textG;
+	var skillFtH = document.getElementById('skillFtH');
+	var textH = FTh*(FTh+1);
+	skillFtH.innerHTML = textH;
+
+  
+	
 }

@@ -58,6 +58,11 @@ remSP.innerHTML = sumRemSP;
 
 }
 
-  
+ function clearAll(){
+   document.skillSim.reset();
+   
+   var culcSP = document.getElementById('culcSP');
+   culcSP.innerHTML = 0;
+ } 
 
 
