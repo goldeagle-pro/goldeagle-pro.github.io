@@ -92,3 +92,7 @@ h2 {
   span:hover + p.skillDesc {
     display: block;
   }
+
+  .clear {
+    margin-left: 10px;
+  }
