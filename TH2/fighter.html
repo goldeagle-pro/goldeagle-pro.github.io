@@ -66,7 +66,7 @@
             <p class="skillDesc">敵一人の攻撃を自分に引き付ける</p>
             </td>
             <td>
-              <select id="FTa" onchange="DT2skill();culcSP()">   
+              <select id="FTa" onchange="DT2skill();culcSP();remSP()">   
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -85,7 +85,7 @@
               <p class="skillDesc">味方全員の攻撃力アップ　移動中使用可</p>
             </td>
             <td>
-              <select id="FTb" onchange="DT2skill();culcSP()">
+              <select id="FTb" onchange="DT2skill();culcSP();remSP()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -104,7 +104,7 @@
               <p class="skillDesc">近接武器装備時、敵一人に強烈な一撃を放つ</p>
             </td>
             <td>
-              <select id="FTc" onchange="DT2skill();culcSP()">
+              <select id="FTc" onchange="DT2skill();culcSP();remSP()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -128,7 +128,7 @@
               <p class="skillDesc">剣装備時、攻撃力にボーナス</p>
             </td>
             <td>
-              <select id="FTd" onchange="DT2skill();culcSP()">
+              <select id="FTd" onchange="DT2skill();culcSP();remSP()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -152,7 +152,7 @@
               <p class="skillDesc">槍装備時、攻撃力にボーナス</p>
           </td>
             <td>
-              <select id="FTe" onchange="DT2skill();culcSP()">
+              <select id="FTe" onchange="DT2skill();culcSP();remSP()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -176,7 +176,7 @@
               <p class="skillDesc">斧装備時、攻撃力にボーナス</p>
             </td>
             <td>
-              <select id="FTf" onchange="DT2skill();culcSP()">
+              <select id="FTf" onchange="DT2skill();culcSP();remSP()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -200,7 +200,7 @@
               <p class="skillDesc">物理ダメージを受けた時に反撃することがある</p>
             </td>
             <td>
-              <select id="FTg" onchange="DT2skill();culcSP()">
+              <select id="FTg" onchange="DT2skill();culcSP();remSP()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -219,7 +219,7 @@
               <p class="skillDesc">通常攻撃時、ときどき2回攻撃</p>
             </td>
             <td>
-              <select id="FTh" onchange="DT2skill();culcSP()">
+              <select id="FTh" onchange="DT2skill();culcSP();remSP()">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -249,7 +249,7 @@
                   <p class="skillDesc">自身の防御力アップ、攻撃力ダウン</p>
                 </td>
                 <td>
-                  <select id="PLa" onchange="DT2skill();culcSP()">
+                  <select id="PLa" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -268,7 +268,7 @@
                   <p class="skillDesc">盾装備時、敵一体にダメージ+気絶の効果</p>
                 </td>
                 <td>
-                  <select id="PLb" onchange="DT2skill();culcSP()">
+                  <select id="PLb" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -287,7 +287,7 @@
                   <p class="skillDesc">味方への物理攻撃を自分が代わって受ける</p>
                 </td>
                 <td>
-                  <select id="PLc" onchange="DT2skill();culcSP()">
+                  <select id="PLc" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -306,7 +306,7 @@
                   <p class="skillDesc">近接武器装備時、武器で敵の攻撃を受け流す</p>
                 </td>
                 <td>
-                  <select id="PLd" onchange="DT2skill();culcSP()">
+                  <select id="PLd" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -325,7 +325,7 @@
                   <p class="skillDesc">味方一人のHPを回復する</p>
                 </td>
                 <td>
-                  <select id="PLe" onchange="DT2skill();culcSP()">
+                  <select id="PLe" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -349,7 +349,7 @@
                   <p class="skillDesc">物理攻撃時、ガードすることがある</p>
                 </td>
                 <td>
-                  <select id="PLf" onchange="DT2skill();culcSP()">
+                  <select id="PLf" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -368,7 +368,7 @@
                   <p class="skillDesc">戦闘時、毎ターンHPが少し回復</p>
                 </td>
                 <td>
-                  <select id="PLg" onchange="DT2skill();culcSP()">
+                  <select id="PLg" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -396,7 +396,7 @@
                   <p class="skillDesc">自身の攻撃力アップ、防御力ダウン。移動中使用不可</p>
                 </td>
                 <td>
-                  <select id="DKa" onchange="DT2skill();;culcSP()">
+                  <select id="DKa" onchange="DT2skill();;culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -415,7 +415,7 @@
                   <p class="skillDesc">近接武器装備時、敵一人にダメージ+強化を消去</p>
                 </td>
                 <td>
-                  <select id="DKb" onchange="DT2skill();culcSP()">
+                  <select id="DKb" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -439,7 +439,7 @@
                   <p class="skillDesc">剣装備時、敵一人にダメージ+凍結の効果</p>
                 </td>
                 <td>
-                  <select id="DKc" onchange="DT2skill();culcSP()">
+                  <select id="DKc" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -463,7 +463,7 @@
                   <p class="skillDesc">斧装備時、敵一人にダメージ+石化の効果</p>
                 </td>
                 <td>
-                  <select id="DKd" onchange="DT2skill();culcSP()">
+                  <select id="DKd" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -487,7 +487,7 @@
                   <p class="skillDesc">自身の最大HPアップ</p>
                 </td>
                 <td>
-                  <select id="DKe" onchange="DT2skill();culcSP()">
+                  <select id="DKe" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -506,7 +506,7 @@
                   <p class="skillDesc">自身のHPが減ると行動速度があがる</p>
                 </td>
                 <td>
-                  <select id="DKf" onchange="DT2skill();culcSP()">
+                  <select id="DKf" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -525,7 +525,7 @@
                   <p class="skillDesc">全属性耐性アップ</p>
                 </td>
                 <td>
-                  <select id="DKg" onchange="DT2skill();culcSP()">
+                  <select id="DKg" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -549,7 +549,7 @@
                   <p class="skillDesc">近接攻撃でダメージを喰らったとき、相手の能力を低下させる</p>
                 </td>
                 <td>
-                  <select id="DKh" onchange="DT2skill();culcSP()">
+                  <select id="DKh" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -580,7 +580,7 @@
                 <p class="skillDesc">盾装備時、味方全員の物理攻撃を一度だけ軽減する</p>
               </td>
                 <td>
-                  <select id="VLa" onchange="DT2skill();culcSP()">
+                  <select id="VLa" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -604,7 +604,7 @@
                   <p class="skillDesc">盾装備時、味方全員の魔法攻撃を一度だけ軽減する</p>
                 </td>
                 <td>
-                  <select id="VLb" onchange="DT2skill();culcSP()">
+                  <select id="VLb" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -628,7 +628,7 @@
                   <p class="skillDesc">槍装備時、敵一人にダメージ+沈黙の効果</p>
                 </td>
                 <td>
-                  <select id="VLc" onchange="DT2skill();culcSP()">
+                  <select id="VLc" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -652,7 +652,7 @@
                   <p class="skillDesc">槍装備時、敵全体にランダムで3～5回攻撃</p>
                 </td>
                 <td>
-                  <select id="VLd" onchange="DT2skill();culcSP()">
+                  <select id="VLd" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -676,7 +676,7 @@
                   <p class="skillDesc">味方全員の属性耐性アップ</p>
                 </td>
                 <td>
-                  <select id="VLe" onchange="DT2skill();culcSP()">
+                  <select id="VLe" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -695,7 +695,7 @@
                   <p class="skillDesc">味方一人の防御アップ</p>
                 </td>
                 <td>
-                  <select id="VLf" onchange="DT2skill();culcSP()">
+                  <select id="VLf" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -714,7 +714,7 @@
                   <p class="skillDesc">味方全員のHPを回復する</p>
                 </td>
                 <td>
-                  <select id="VLg" onchange="DT2skill();culcSP()">
+                  <select id="VLg" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -738,7 +738,7 @@
                   <p class="skillDesc">死亡時、HP1で生き残ることがある</p>
                 </td>
                 <td>
-                  <select id="VLh" onchange="DT2skill();culcSP()">
+                  <select id="VLh" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -757,7 +757,7 @@
                   <p class="skillDesc">戦闘時、毎ターンTP回復</p>
                 </td>
                 <td>
-                  <select id="VLi" onchange="DT2skill();culcSP()">
+                  <select id="VLi" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -785,7 +785,7 @@
                   <p class="skillDesc">刀装備時、敵一人にダメージ+麻痺の効果</p>
                 </td>
                 <td>
-                  <select id="SAa" onchange="DT2skill();culcSP()">
+                  <select id="SAa" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -809,7 +809,7 @@
                   <p class="skillDesc">自身の与クリティカル率アップ、被クリティカル率アップ</p>
                 </td>
                 <td>
-                  <select id="SAb" onchange="DT2skill();culcSP()">
+                  <select id="SAb" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -827,7 +827,7 @@
                   <p class="skillDesc">刀装備時、敵全員にダメージ+即死の効果</p>
                 </td>
                 <td>
-                  <select id="SAc" onchange="DT2skill();culcSP()">
+                  <select id="SAc" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -851,7 +851,7 @@
                   <p class="skillDesc">刀装備時、敵一人に防御力無視のダメージ+防御ダウンの効果</p>
                 </td>
                 <td>
-                  <select id="SAd" onchange="DT2skill();culcSP()">
+                  <select id="SAd" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -875,7 +875,7 @@
                   <p class="skillDesc">刀装備時、敵全員にダメージ</p>
                 </td>
                 <td>
-                  <select id="SAe" onchange="DT2skill();culcSP()">
+                  <select id="SAe" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -899,7 +899,7 @@
                   <p class="skillDesc">刀装備時、生命のある敵に対して大ダメージを与える+3回攻撃</p>
                 </td>
                 <td>
-                  <select id="SAf" onchange="DT2skill();culcSP()">
+                  <select id="SAf" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -923,7 +923,7 @@
                   <p class="skillDesc">刀装備時、攻撃力にボーナス</p>
                 </td>
                 <td>
-                  <select id="SAg" onchange="DT2skill();culcSP()">
+                  <select id="SAg" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -947,7 +947,7 @@
                   <p class="skillDesc">敵の攻撃対象になったとき、攻撃を受け流して反撃することがある</p>
                 </td>
                 <td>
-                  <select id="SAh" onchange="DT2skill();culcSP()">
+                  <select id="SAh" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -966,7 +966,7 @@
                   <p class="skillDesc">通常攻撃時、時々3回攻撃</p>
                 </td>
                 <td>
-                  <select id="SAi" onchange="DT2skill();culcSP()">
+                  <select id="SAi" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -985,7 +985,7 @@
                   <p class="skillDesc">突攻撃に対してだけ回避率があがる</p>
                 </td>
                 <td>
-                  <select id="SAj" onchange="DT2skill();culcSP()">
+                  <select id="SAj" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1008,9 +1008,12 @@
                 <td>必要SP</td>
               </tr>
               <tr>
-                <td>ブラッドバイト</td>
+                <td class="skill">
+                  <span>ブラッドバイト</span>
+                  <p class="skillDesc">近接武器装備時、敵一人への与ダメージを一定量HPとして吸収</p>
+                </td>
                 <td>
-                  <select id="DLa" onchange="DT2skill();culcSP()">
+                  <select id="DLa" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1029,9 +1032,12 @@
                 </td>
               </tr>
               <tr>
-                <td>ソウルバイト</td>
+                <td class="skill">
+                  <span>ソウルバイト</span>
+                  <p class="skillDesc">近接武器装備時、敵一人への与ダメージを一定量TPとして吸収</p>
+                </td>
                 <td>
-                  <select id="DLb" onchange="DT2skill();culcSP()">
+                  <select id="DLb" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1050,9 +1056,12 @@
                 </td>
               </tr>
               <tr>
-                <td>ショックスパイラル</td>
+                <td class="skill">
+                  <span>ショックスパイラル</span>
+                  <p class="skillDesc">近接武器装備時、敵全員にダメージ+麻痺の効果</p>
+                </td>
                 <td>
-                  <select id="DLc" onchange="DT2skill();culcSP()">
+                  <select id="DLc" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1071,9 +1080,12 @@
                 </td>
               </tr>
               <tr>
-                <td>アトラクト</td>
+                <td class="skill">
+                  <span>アトラクト</span>
+                  <p class="skillDesc">敵全員の攻撃を自分に引き付ける</p>
+                </td>
                 <td>
-                  <select id="DLd" onchange="DT2skill();culcSP()">
+                  <select id="DLd" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1087,9 +1099,12 @@
                 </td>
               </tr>
               <tr>
-                <td>メガトンプレス</td>
+                <td class="skill">
+                  <span>メガトンプレス</span>
+                  <p class="skillDesc">斧装備時、敵一人にダメージ+後ろにいる敵にもダメージ</p>
+                </td>
                 <td>
-                  <select id="DLe" onchange="DT2skill();culcSP()">
+                  <select id="DLe" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1108,9 +1123,12 @@
                 </td>
               </tr>
               <tr>
-                <td>ライフブリング</td>
+                <td class="skill">
+                  <span>ライフブリング</span>
+                  <p class="skillDesc">敵全員からHPを吸収</p>
+                </td>
                 <td>
-                  <select id="DLf" onchange="DT2skill();culcSP()">
+                  <select id="DLf" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1129,9 +1147,12 @@
                 </td>
               </tr>
               <tr>
-                <td>ブレイブ</td>
+                <td class="skill">
+                  <span>ブレイブ</span>
+                  <p class="skillDesc">味方一人の攻撃力アップ</p>
+                </td>
                 <td>
-                  <select id="DLg" onchange="DT2skill();culcSP()">
+                  <select id="DLg" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1145,9 +1166,12 @@
                 </td>
               </tr>
               <tr>
-                <td>ブレイブ</td>
+                <td class="skill">
+                  <span>グラージアキュム</span>
+                  <p class="skillDesc">被ダメージを一定量TPに変換する</p>
+                </td>
                 <td>
-                  <select id="DLh" onchange="DT2skill();culcSP()">
+                  <select id="DLh" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1161,9 +1185,12 @@
                 </td>
               </tr>
               <tr>
-                <td>グラージアキュム</td>
+                <td class="skill">
+                  <span>ダーククエスト</span>
+                  <p class="skillDesc">状態異常に掛かっている程、物理ダメージが上昇する</p>
+                </td>
                 <td>
-                  <select id="DLi" onchange="DT2skill();funcDlI();culcSP()">
+                  <select id="DLi" onchange="DT2skill();culcSP();remSP()">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -1174,22 +1201,6 @@
                 </td>
                 <td>
                   <p id="skillDlI">0</p>
-                </td>
-              </tr>
-              <tr>
-                <td>ダーククエスト</td>
-                <td>
-                  <select id="DLj" onchange="DT2skill();funcDlJ();culcSP()">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                </td>
-                <td>
-                  <p id="skillDlJ">0</p>
                 </td>
               </tr>
             </table>

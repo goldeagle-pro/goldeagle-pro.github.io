@@ -63,6 +63,9 @@ remSP.innerHTML = sumRemSP;
    
    var culcSP = document.getElementById('culcSP');
    culcSP.innerHTML = 0;
+
+   var remSP = document.getElementById('remSP')
+   remSP.innerHTML = 3;
  } 
 
 
