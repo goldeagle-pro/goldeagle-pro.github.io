@@ -946,5 +946,31 @@ function DT2skill(){
   var skillSaJ= document.getElementById('skillSaJ');
 	var textSaJ = SAj*(SAj+1);
 	skillSaJ.innerHTML = textSaJ;
+
+  var skillDlA = document.getElementById('skillDlA');
+	var textDlA = DLa*(DLa+1)/2;
+	skillDlA.innerHTML = textDlA;
+  var skillDlB = document.getElementById('skillDlB');
+	var textDlB = DLb*(DLb+1)/2;
+	skillDlB.innerHTML = textDlB;
+  var skillDlC = document.getElementById('skillDlC');
+	var textDlC = DLc*(DLc+1)/2;
+	skillDlC.innerHTML = textDlC;
+  var skillDlD = document.getElementById('skillDlD');
+	var textDlD = DLd*(DLd+1);
+	skillDlD.innerHTML = textDlD;
+  var skillDlE = document.getElementById('skillDlE');
+	var textDlE = DLe*(DLe+1)/2;
+	skillDlE.innerHTML = textDlE;
+  var skillDlF = document.getElementById('skillDlF');
+	var textDlF = DLf*(DLf+1)/2;
+	skillDlF.innerHTML = textDlF;
+  var skillDlG = document.getElementById('skillDlG');
+	var textDlG = DLg*(DLg+1);
+	skillDlG.innerHTML = textDlG;
+  var skillDlH = document.getElementById('skillDlH');
+	var textDlH = DLh*(DLh+1);
+	skillDlH.innerHTML = textDlH;
+
 }
 
