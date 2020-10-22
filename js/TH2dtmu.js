@@ -336,4 +336,35 @@ function DT2skill() {
 	var skillSgM = document.getElementById('skillSgM');
 		textSgM = SGm*(SGm+1);
 			skillSgM.innerHTML = textSgM;
+
+	var skillBsA = document.getElementById('skillBsA');
+		textBsA = BSa*(BSa+1)/2;
+			skillBsA.innerHTML = textBsA;
+	var skillBsB = document.getElementById('skillBsB');
+		textBsB = BSb*(BSb+1)/2;
+			skillBsB.innerHTML = textBsB;
+	var skillBsC = document.getElementById('skillBsC');
+		textBsC = BSc*(BSc+1);
+			skillBsC.innerHTML = textBsC;
+	var skillBsD = document.getElementById('skillBsD');
+		textBsD = BSd*(BSd+1)/2;
+			skillBsD.innerHTML = textBsD;
+	var skillBsE = document.getElementById('skillBsE');
+		textBsE = BSe*(BSe+1);
+			skillBsE.innerHTML = textBsE;
+	var skillBsF = document.getElementById('skillBsF');
+		textBsF = BSf*(BSf+1);
+			skillBsF.innerHTML = textBsF;
+	var skillBsG = document.getElementById('skillBsG');
+		textBsG = BSg*(BSg+1);
+			skillBsG.innerHTML = textBsG;
+	var skillBsH = document.getElementById('skillBsH');
+		textBsH = BSh*(BSh+1)/2;
+			skillBsH.innerHTML = textBsH;
+	var skillBsI = document.getElementById('skillBsI');
+		textBsI = BSi*(BSi+1)/2;
+			skillBsI.innerHTML = textBsI;
+	var skillBsJ = document.getElementById('skillBsJ');
+		textBsJ = BSj*(BSj+1);
+			skillBsJ.innerHTML = textBsJ;
 }
