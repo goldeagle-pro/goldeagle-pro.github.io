@@ -368,3 +368,109 @@ function DT2skill() {
 		textBsJ = BSj*(BSj+1);
 			skillBsJ.innerHTML = textBsJ;
 }
+
+function culcSP() {
+	var skillSPs = [Number(document.getElementById('skillMuA').textContent),
+			Number(document.getElementById('skillMuB').textContent),
+			Number(document.getElementById('skillMuC').textContent),
+			Number(document.getElementById('skillMuD').textContent),
+			Number(document.getElementById('skillMuE').textContent),
+			Number(document.getElementById('skillMuF').textContent),
+			Number(document.getElementById('skillMuG').textContent),
+
+			Number(document.getElementById('skillSoA').textContent),
+			Number(document.getElementById('skillSoB').textContent),
+			Number(document.getElementById('skillSoC').textContent),
+			Number(document.getElementById('skillSoD').textContent),
+			Number(document.getElementById('skillSoE').textContent),
+			Number(document.getElementById('skillSoF').textContent),
+			Number(document.getElementById('skillSoG').textContent),
+			Number(document.getElementById('skillSoH').textContent),
+
+			Number(document.getElementById('skillEnA').textContent),
+			Number(document.getElementById('skillEnB').textContent),
+			Number(document.getElementById('skillEnC').textContent),
+			Number(document.getElementById('skillEnD').textContent),
+			Number(document.getElementById('skillEnE').textContent),
+			Number(document.getElementById('skillEnF').textContent),
+			Number(document.getElementById('skillEnG').textContent),
+			Number(document.getElementById('skillEnH').textContent),
+			Number(document.getElementById('skillEnI').textContent),
+			Number(document.getElementById('skillEnJ').textContent),
+			Number(document.getElementById('skillEnK').textContent),
+			Number(document.getElementById('skillEnL').textContent),
+			Number(document.getElementById('skillEnM').textContent),
+			Number(document.getElementById('skillEnN').textContent),
+			Number(document.getElementById('skillEnO').textContent),
+			Number(document.getElementById('skillEnP').textContent),
+			Number(document.getElementById('skillEnQ').textContent),
+			Number(document.getElementById('skillEnR').textContent),
+
+			Number(document.getElementById('skillPrA').textContent),
+			Number(document.getElementById('skillPrB').textContent),
+			Number(document.getElementById('skillPrC').textContent),
+			Number(document.getElementById('skillPrD').textContent),
+			Number(document.getElementById('skillPrE').textContent),
+			Number(document.getElementById('skillPrF').textContent),
+			Number(document.getElementById('skillPrG').textContent),
+			Number(document.getElementById('skillPrH').textContent),
+			Number(document.getElementById('skillPrI').textContent),
+			Number(document.getElementById('skillPrJ').textContent),
+			Number(document.getElementById('skillPrK').textContent),
+			Number(document.getElementById('skillPrL').textContent),
+
+			Number(document.getElementById('skillWtA').textContent),
+			Number(document.getElementById('skillWtB').textContent),
+			Number(document.getElementById('skillWtC').textContent),
+			Number(document.getElementById('skillWtD').textContent),
+			Number(document.getElementById('skillWtE').textContent),
+			Number(document.getElementById('skillWtF').textContent),
+			Number(document.getElementById('skillWtG').textContent),
+			Number(document.getElementById('skillWtH').textContent),
+			Number(document.getElementById('skillWtI').textContent),
+			Number(document.getElementById('skillWtJ').textContent),
+
+			Number(document.getElementById('skillMpA').textContent),
+			Number(document.getElementById('skillMpB').textContent),
+			Number(document.getElementById('skillMpC').textContent),
+			Number(document.getElementById('skillMpD').textContent),
+			Number(document.getElementById('skillMpE').textContent),
+			Number(document.getElementById('skillMpF').textContent),
+			Number(document.getElementById('skillMpG').textContent),
+			Number(document.getElementById('skillMpH').textContent),
+			Number(document.getElementById('skillMpI').textContent),
+			Number(document.getElementById('skillMpJ').textContent),
+
+			Number(document.getElementById('skillSgA').textContent),
+			Number(document.getElementById('skillSgB').textContent),
+			Number(document.getElementById('skillSgC').textContent),
+			Number(document.getElementById('skillSgD').textContent),
+			Number(document.getElementById('skillSgE').textContent),
+			Number(document.getElementById('skillSgF').textContent),
+			Number(document.getElementById('skillSgG').textContent),
+			Number(document.getElementById('skillSgH').textContent),
+			Number(document.getElementById('skillSgI').textContent),
+			Number(document.getElementById('skillSgJ').textContent),
+			Number(document.getElementById('skillSgK').textContent),
+			Number(document.getElementById('skillSgL').textContent),
+			Number(document.getElementById('skillSgM').textContent),
+
+			Number(document.getElementById('skillBsA').textContent),
+			Number(document.getElementById('skillBsB').textContent),
+			Number(document.getElementById('skillBsC').textContent),
+			Number(document.getElementById('skillBsD').textContent),
+			Number(document.getElementById('skillBsE').textContent),
+			Number(document.getElementById('skillBsF').textContent),
+			Number(document.getElementById('skillBsG').textContent),
+			Number(document.getElementById('skillBsH').textContent),
+			Number(document.getElementById('skillBsI').textContent),
+			Number(document.getElementById('skillBsJ').textContent),
+];
+
+	var sumSP = skillSPs.reduce(function(sum, element) {
+		return sum + element;
+	},0);
+
+	culcNum = document.getElementById('culcSP');
+	culcNum.innerHTML = sumSP;
+}
