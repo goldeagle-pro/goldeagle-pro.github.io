@@ -68,4 +68,3 @@ remSP.innerHTML = sumRemSP;
    remSP.innerHTML = 3;
  } 
 
-
