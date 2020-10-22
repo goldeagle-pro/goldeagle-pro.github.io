@@ -265,4 +265,35 @@ function DT2skill() {
 	var skillWtJ = document.getElementById('skillWtJ');
 		textWtJ = WTj*(WTj+1);
 			skillWtJ.innerHTML = textWtJ;
+	
+	var skillMpA = document.getElementById('skillMpA');
+		textMpA = MPa*(MPa+1)/2;
+			skillMpA.innerHTML = textMpA;
+	var skillMpB = document.getElementById('skillMpB');
+		textMpB = MPb*(MPb+1)/2;
+			skillMpB.innerHTML = textMpB;
+	var skillMpC = document.getElementById('skillMpC');
+		textMpC = MPc*(MPc+1);
+			skillMpC.innerHTML = textMpC;
+	var skillMpD = document.getElementById('skillMpD');
+		textMpD = MPd*(MPd+1);
+			skillMpD.innerHTML = textMpD;
+	var skillMpE = document.getElementById('skillMpE');
+		textMpE = MPe*(MPe+1);
+			skillMpE.innerHTML = textMpE;
+	var skillMpF = document.getElementById('skillMpF');
+		textMpF = MPf*(MPf+1);
+			skillMpF.innerHTML = textMpF;
+	var skillMpG = document.getElementById('skillMpG');
+		textMpG = MPg*(MPg+1)/2;
+			skillMpG.innerHTML = textMpG;
+	var skillMpH = document.getElementById('skillMpG');
+		textMpH = MPh*(MPh+1)/2;
+			skillMpH.innerHTML = textMpH;
+	var skillMpI = document.getElementById('skillMpI');
+		textMpI = MPi*(MPi+1);
+			skillMpI.innerHTML = textMpI;
+	var skillMpJ = document.getElementById('skillMpJ');
+		textMpJ = MPj*(MPj+1);
+			skillMpJ.innerHTML = textMpJ;
 }
