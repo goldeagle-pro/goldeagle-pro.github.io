@@ -283,7 +283,7 @@
 												<option value="10">10</option>
 											</select>
 										</td>
-										<td class="skillSoC">0</td>
+										<td id ="skillSoC">0</td>
 									</tr>
 									<tr>
 										<td class="skill">
@@ -366,7 +366,7 @@
 												<option value="5">5</option>
 											</select>
 										</td>
-										<td id="skillSog">0</td>
+										<td id="skillSoG">0</td>
 									</tr>
 									<tr>
 										<td class="skill">
@@ -801,7 +801,7 @@
 												<option value="5">5</option>
 											</select>
 										</td>
-										<td id="skillPrE">0</td>
+										<td id="skillPrD">0</td>
 									</tr>
 									<tr>
 										<td class="skill">
@@ -809,7 +809,24 @@
 											<p class="skillDesc">敵全体をスロウにする</p>
 										</td>
 										<td>
-											<select id="PRo" onchange="DT2skill();culcSP();remSP()">
+											<select id="PRe" onchange="DT2skill();culcSP();remSP()">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+											</select>
+										</td>
+										<td id="skillPrE">0</td>
+									</tr>
+									<tr>
+										<td class="skill">
+											<span>ディバインシールド</span>
+											<p class="skillDesc">自分の被ダメージを一定量無効化する</p>
+										</td>
+										<td>
+											<select id="PRf" onchange="DT2skill();culcSP();remSP()">
 												<option value="0">0</option>
 												<option value="1">1</option>
 												<option value="2">2</option>
@@ -822,8 +839,8 @@
 									</tr>
 									<tr>
 										<td class="skill">
-											<span>ディバインシールド</span>
-											<p class="skillDesc">自分の被ダメージを一定量無効化する</p>
+											<span>ライト</span>
+											<p class="skillDesc">フィールドを明るく照らし、隠された扉を見つけ出す</p>
 										</td>
 										<td>
 											<select id="PRg" onchange="DT2skill();culcSP();remSP()">
@@ -839,8 +856,8 @@
 									</tr>
 									<tr>
 										<td class="skill">
-											<span>ライト</span>
-											<p class="skillDesc">フィールドを明るく照らし、隠された扉を見つけ出す</p>
+											<span>リターン</span>
+											<p class="skillDesc">ダンジョンから脱出する</p>
 										</td>
 										<td>
 											<select id="PRh" onchange="DT2skill();culcSP();remSP()">
@@ -856,8 +873,8 @@
 									</tr>
 									<tr>
 										<td class="skill">
-											<span>リターン</span>
-											<p class="skillDesc">ダンジョンから脱出する</p>
+											<span>オートミニリカバ</span>
+											<p class="skillDesc">戦闘時、毎ターンHP回復</p>
 										</td>
 										<td>
 											<select id="PRi" onchange="DT2skill();culcSP();remSP()">
@@ -873,8 +890,8 @@
 									</tr>
 									<tr>
 										<td class="skill">
-											<span>オートミニリカバ</span>
-											<p class="skillDesc">戦闘時、毎ターンHP回復</p>
+											<span>オートミニリフレッシュ</span>
+											<p class="skillDesc">戦闘時、毎ターンTP回復</p>
 										</td>
 										<td>
 											<select id="PRj" onchange="DT2skill();culcSP();remSP()">
@@ -890,28 +907,11 @@
 									</tr>
 									<tr>
 										<td class="skill">
-											<span>オートミニリフレッシュ</span>
-											<p class="skillDesc">戦闘時、毎ターンTP回復</p>
-										</td>
-										<td>
-											<select id="PRk" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillPrK">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
 											<span>ヒールマスタリー</span>
 											<p class="skillDesc">回復魔法の回復量にボーナス</p>
 										</td>
 										<td>
-											<select id="PRl" onchange="DT2skill();culcSP();remSP()">
+											<select id="PRk" onchange="DT2skill();culcSP();remSP()">
 												<option value="0">0</option>
 												<option value="1">1</option>
 												<option value="2">2</option>
@@ -925,7 +925,7 @@
 												<option value="10">10</option>
 											</select>
 										</td>
-										<td id="skillPrL">0</td>
+										<td id="skillPrK">0</td>
 									</tr>
 									<tr>
 										<td class="skill">
@@ -933,7 +933,7 @@
 											<p class="skillDesc">詠唱速度アップ</p>
 										</td>
 										<td>
-											<select id="PRm" onchange="DT2skill();culcSP();remSP()">
+											<select id="PRl" onchange="DT2skill();culcSP();remSP()">
 												<option value="0">0</option>
 												<option value="1">1</option>
 												<option value="2">2</option>
@@ -942,7 +942,7 @@
 												<option value="5">5</option>
 											</select>
 										</td>
-										<td id="skillPrM">0</td>
+										<td id="skillPrL">0</td>
 									</tr>
 								</table>
 							</div>
@@ -1789,5 +1789,6 @@
 		</div>
 	</form>
 	<script src="../js/th2dt.js"></script>
+	<script src="../js/TH2dtmu.js"></script>
 </body>
 </html>

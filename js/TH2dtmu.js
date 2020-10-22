@@ -47,8 +47,7 @@ function DT2skill() {
 	var PRj = document.getElementById('PRj').selectedIndex;
 	var PRk = document.getElementById('PRk').selectedIndex;
 	var PRl = document.getElementById('PRl').selectedIndex;
-	var PRm = document.getElementById('PRm').selectedIndex;
-
+	
 	var WTa = document.getElementById('WTa').selectedIndex;
 	var WTb = document.getElementById('WTb').selectedIndex;
 	var WTc = document.getElementById('WTc').selectedIndex;
@@ -96,4 +95,52 @@ function DT2skill() {
 	var BSi = document.getElementById('BSi').selectedIndex;
 	var BSj = document.getElementById('BSj').selectedIndex;
 
+
+	var skillMuA = document.getElementById('skillMuA');
+		textMuA = MUa*(MUa+1)/2;
+			skillMuA.innerHTML = textMuA;
+	var skillMuB = document.getElementById('skillMuB');
+		textMuB = MUb*(MUb+1)/2;
+			skillMuB.innerHTML = textMuB;
+	var skillMuC = document.getElementById('skillMuC');
+		textMuC = MUc*(MUc+1)/2;
+			skillMuC.innerHTML =textMuC;
+	var skillMuD = document.getElementById('skillMuD');
+		textMuD = MUd*(MUd+1)/2;
+			skillMuD.innerHTML =textMuD;
+	var skillMuE = document.getElementById('skillMuE');
+		textMuE = MUe*(MUe+1)/2;
+			skillMuE.innerHTML =textMuE;
+	var skillMuF = document.getElementById('skillMuF');
+		textMuF = MUf*(MUf+1)/2;
+			skillMuF.innerHTML =textMuF;
+	var skillMuG = document.getElementById('skillMuG');
+		textMuG = MUg*(MUg+1);
+			skillMuG.innerHTML = textMuG;
+	
+	var skillSoA = document.getElementById('skillSoA');
+		textSoA = SOa*(SOa+1)/2;
+			skillSoA.innerHTML = textSoA;
+	var skillSoB = document.getElementById('skillSoB');
+		textSoB = SOb*(SOb+1)/2;
+			skillSoB.innerHTML = textSoB;
+	var skillSoC = document.getElementById('skillSoC');
+		textSoC = SOc*(SOc+1)/2;
+			skillSoC.innerHTML = textSoC;
+	var skillSoD = document.getElementById('skillSoD');
+		textSoD = SOd*(SOd+1)/2;
+			skillSoD.innerHTML = textSoD;
+	var skillSoE = document.getElementById('skillSoE');
+		textSoE = SOe*(SOe+1)/2;
+			skillSoE.innerHTML = textSoE;
+	var skillSoF = document.getElementById('skillSoF');
+		textSoF = SOf*(SOf+1)/2;
+			skillSoF.innerHTML = textSoF;
+	var skillSoG = document.getElementById('skillSoG');
+		textSoG = SOg*(SOg+1);
+			skillSoG.innerHTML = textSoG;
+	var skillSoH = document.getElementById('skillSoH');
+		textSoH = SOh*(SOh+1);
+			skillSoH.innerHTML = textSoH;
+	
 }
