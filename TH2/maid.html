@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>メイド系</title>
+	<!-- meta -->
+	<meta name="Keywords" content="ToHeart2,ダンジョントラベラーズ, スキルシミュレータ,メイド">
+	<!--CSS-->
+	<link rel="stylesheet" href="../css/th2dt_job.css">
+	<!--scripts-->
+	<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=1EPIj0XNw1ppV4DorJU786D_nZ4RhKg1CZ_CNYLINGi93u5d_155FTFdnxLeN7hZ" charset="UTF-8"></script>
+
+</head>
+<body>
+	<form name="skillSim">
+		<div class="container">
+			<h2>スカウト系</h2>
+			<div class="getSP">
+				<p class="Lv">Lv</p>
+				<input id="curLv" type="text"  onchange="remSP()">
+				<p class="skillD">スキルの素</p>
+				<input id="skillDrug" type="text" onchange="remSP()">
+			</div>
+			<div class="remainSP">
+				<p class="remain">残りSP：</p>
+				<p id="remSP">3</p>
+				<p class="useSP">使用SP：</p>
+				<p id="culcSP" onchange="remSP()">0</p>
+				<input type="button" class="clear" value="クリア" onclick="clearAll();DT2skill()">
+			</div>
+
+			<table class="jobSP" border="1" align="center">
+				<tr>
+					<th>基本職</th>
+					<th>Lv15職</th>
+					<th>Lv30職</th>
+				</tr>
+				<tr>
+					<td>メイド</td>
+					<td>
+						<select id="changeSelectA">
+							<option value="Lv15a">バード</option>
+							<option value="Lv15b">ダンサー</option>
+						</select>
+					</td>
+					<td>
+						<select id="changeSelectB">
+							<option value="Lv30a">歌姫</option>
+							<option value="Lv30b">ジョシコーセー</option>
+							<option value="Lv30c">マスターアイドル</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table border="1">
+							<tr>
+								<td class="skill">
+									<span>応急手当</span>
+									<p class="skillDesc">味方一人のHPを回復する（戦闘時のみ）</p>
+								</td>
+								<td>
+									<select id="MAa">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</td>
+								<td id="skillMaA">0</td>
+							</tr>
+							<tr>
+								<td class="skill">
+									<span>料理</span>
+									<p class="skillDesc">味方一人のTPを回復する（戦闘時のみ）</p>
+								</td>
+								<td>
+									<select id="MAb">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</td>
+								<td id="skillMaB">0</td>
+							</tr>
+							<tr>
+								<td class="skill">
+									<span>献身</span>
+									<p class="skillDesc">自身のTPを対象に分け与える</p>
+								</td>
+								<td>
+									<select id="MAc">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</td>
+								<td id="skillMaC">0</td>
+							</tr>
+							<tr>
+								<td class="skill">
+									<span>掃除</span>
+									<p class="skillDesc">自身の周囲を掃除して動きやすくする</p>
+								</td>
+								<td>
+									<select id="MAd">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</td>
+								<td id="skillMaD">0</td>
+							</tr>
+							<tr>
+								<td class="skill">
+									<span>子守唄</span>
+									<p class="skillDesc">敵一人を眠らせる</p>
+								</td>
+								<td>
+									<select id="MAe">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</td>
+								<td id="skillMaE">0</td>
+							</tr>
+							<tr>
+								<td class="skill">
+									<span>奉仕の心</span>
+									<p class="skillDesc">戦闘終了後、味方全員のHPとTPが一定量回復</p>
+								</td>
+								<td>
+									<select id="MAf">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</td>
+								<td id="skilllMaF">0</td>
+							</tr>
+							<tr>
+								<td class="skill">
+									<span>メイドマスタリー</span>
+									<p class="skillDesc">メイドスキルにボーナス</p>
+								</td>
+								<td>
+									<select id="MAg">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+								</td>
+								<td id="skillMaG">0</td>
+							</tr>	
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>

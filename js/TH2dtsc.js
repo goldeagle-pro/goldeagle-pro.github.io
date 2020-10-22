@@ -219,3 +219,72 @@ function DT2skill() {
 		textKnM = KNm*(KNm+1)/2;
 			skillKnM.innerHTML = textKnM;
 }
+
+function culcSP(){
+	var totalSPs = [
+		Number(document.getElementById('skillScA').textContent),
+		Number(document.getElementById('skillScB').textContent),
+		Number(document.getElementById('skillScC').textContent),
+		Number(document.getElementById('skillScD').textContent),
+		Number(document.getElementById('skillScE').textContent),
+		Number(document.getElementById('skillScF').textContent),
+		Number(document.getElementById('skillScG').textContent),
+		Number(document.getElementById('skillScH').textContent),
+
+		Number(document.getElementById('skillArA').textContent),
+		Number(document.getElementById('skillArB').textContent),
+		Number(document.getElementById('skillArC').textContent),
+		Number(document.getElementById('skillArD').textContent),
+		Number(document.getElementById('skillArE').textContent),
+		Number(document.getElementById('skillArF').textContent),
+
+		Number(document.getElementById('skillAsA').textContent),
+		Number(document.getElementById('skillAsB').textContent),
+		Number(document.getElementById('skillAsC').textContent),
+		Number(document.getElementById('skillAsD').textContent),
+		Number(document.getElementById('skillAsE').textContent),
+		Number(document.getElementById('skillAsF').textContent),
+
+		Number(document.getElementById('skillSnA').textContent),
+		Number(document.getElementById('skillSnB').textContent),
+		Number(document.getElementById('skillSnC').textContent),
+		Number(document.getElementById('skillSnD').textContent),
+		Number(document.getElementById('skillSnE').textContent),
+		Number(document.getElementById('skillSnF').textContent),
+		Number(document.getElementById('skillSnG').textContent),
+
+		Number(document.getElementById('skillThA').textContent),
+		Number(document.getElementById('skillThB').textContent),
+		Number(document.getElementById('skillThC').textContent),
+		Number(document.getElementById('skillThD').textContent),
+		Number(document.getElementById('skillThE').textContent),
+		Number(document.getElementById('skillThF').textContent),
+		Number(document.getElementById('skillThG').textContent),
+		Number(document.getElementById('skillThH').textContent),
+		Number(document.getElementById('skillThI').textContent),
+		Number(document.getElementById('skillThJ').textContent),
+		Number(document.getElementById('skillThK').textContent),
+		Number(document.getElementById('skillThL').textContent),
+
+		Number(document.getElementById('skillKnA').textContent),
+		Number(document.getElementById('skillKnB').textContent),
+		Number(document.getElementById('skillKnC').textContent),
+		Number(document.getElementById('skillKnD').textContent),
+		Number(document.getElementById('skillKnE').textContent),
+		Number(document.getElementById('skillKnF').textContent),
+		Number(document.getElementById('skillKnG').textContent),
+		Number(document.getElementById('skillKnH').textContent),
+		Number(document.getElementById('skillKnI').textContent),
+		Number(document.getElementById('skillKnJ').textContent),
+		Number(document.getElementById('skillKnK').textContent),
+		Number(document.getElementById('skillKnL').textContent),
+		Number(document.getElementById('skillKnM').textContent),
+	];
+
+	var sumSP = totalSPs.reduce(function(sum, element){
+		return sum + element;
+	}, 0);
+
+	var culcSP = document.getElementById('culcSP');
+	culcSP.innerHTML = sumSP;
+}
