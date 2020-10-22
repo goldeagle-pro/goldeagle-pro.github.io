@@ -100,4 +100,45 @@ function DT2skill() {
 	var skillArF = document.getElementById('skillArF');
 		textArF = ARf*(ARf+1);
 			skillArF.innerHTML = textArF;
+
+	var skillAsA = document.getElementById('skillAsA');
+		textAsA = ASa*(ASa+1)/2;
+			skillAsA.innerHTML = textAsA;
+	var skillAsB = document.getElementById('skillAsB');
+		textAsB = ASb*(ASb+1)/2;
+			skillAsB.innerHTML = textAsB;
+	var skillAsC = document.getElementById('skillAsC');
+		textAsC = ASc*(ASc+1)/2;
+			skillAsC.innerHTML = textAsC;
+	var skillAsD = document.getElementById('skillAsD');
+		textAsD = ASd*(ASd+1);
+			skillAsD.innerHTML = textAsD;
+	var skillAsE = document.getElementById('skillAsE');
+		textAsE = ASe*(ASe+1);
+			skillAsE.innerHTML = textAsE;
+	var skillAsF = document.getElementById('skillAsF');
+		textAsF = ASf*(ASf+1);
+			skillAsF.innerHTML = textAsF;
+
+	var skillSnA = document.getElementById('skillSnA');
+		textSnA = SNa*(SNa+1)/2;
+			skillSnA.innerHTML = textSnA;
+	var skillSnB = document.getElementById('skillSnB');
+		textSnB = SNb*(SNb+1)/2;
+			skillSnB.innerHTML = textSnB;
+	var skillSnC = document.getElementById('skillSnC');
+		textSnC = SNc*(SNc+1);
+			skillSnC.innerHTML = textSnC;
+	var skillSnD = document.getElementById('skillSnD');
+		textSnD = SNd*(SNd+1);
+			skillSnD.innerHTML = textSnD;
+	var skillSnE = document.getElementById('skillSnE');
+		textSnE = SNe*(SNe+1)/2;
+			skillSnE.innerHTML = textSnE;
+	var skillSnF = document.getElementById('skillSnF');
+		textSnF = SNf*(SNf+1);
+			skillSnF.innerHTML = textSnF;
+	var skillSnG = document.getElementById('skillSnG');
+		textSnG = SNg*(SNg+1);
+			skillSnG.innerHTML = textSnG;
 }
