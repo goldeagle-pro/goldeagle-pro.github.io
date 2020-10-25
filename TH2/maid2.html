@@ -41,12 +41,12 @@
 					<p id="remSP">3</p>
 					<p class="useSP">使用SP：</p>
 					<p id="culcSP" onchange="remSP()">0</p>
-					<input type="button" class="clear" value="クリア" onclick="clearAll();DT2skill()">
+					
 				</div>
 				<div id="save">
 					
 					
-					<input type="button" value="ロード" onclick="load()">
+					
 				</div>
 				<div>
 					<table class="jobSP" border="1" align="center">
@@ -1600,10 +1600,21 @@
 			</div>
 			<hr class="fade">
 			<div>
-				<p type="button" onclick="save()">セーブ</p>
+				<p class="button" onclick="save()">セーブ</p>
 			</div>
 			<hr class="fade">
-			<p class="sb-close">閉じるボタン</p>
+			<div>
+				<p class="button" onclick="load()">ロード</p>
+			</div>
+			<hr class="fade">
+			<div>
+				<p class="button" onclick="clearAll();DT2skill()">クリア</p>
+			</div>
+			<hr class="fade">
+			<div>
+				<p class="button" onclick="deleteAll()">セーブデータ全消去</p>
+			</div>
+			<hr class="fade">
 		</div>
 	</div>
 

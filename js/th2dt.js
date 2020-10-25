@@ -68,3 +68,10 @@ remSP.innerHTML = sumRemSP;
    remSP.innerHTML = 3;
  } 
 
+function deleteAll() {
+	var result = confirm('セーブデータを全消去してよろしいですか？');
+	
+if (result) {
+	localStorage.clear();
+}
+}
