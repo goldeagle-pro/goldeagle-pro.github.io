@@ -397,20 +397,23 @@ function culcSP() {
 
 function save() {
 	var saveData = [document.getElementById('curLv').value,
+			document.getElementById('skillDrug').value,
 			document.getElementById('saveDataName').value];
+
 	localStorage.setItem(document.getElementById('saveDataNum').value,
 				JSON.stringify(saveData));
 	
 	var saveNum = document.getElementById('saveDataNum');
 	saveName = document.getElementById('saveDataName').value;
 
-	saveNum.options[saveNum.selectedIndex].textContent = saveName;
+	saveNum.options[saveNum.selectedIndex].textContent =saveNum.selectedIndex + ":" + saveName;
 }
 
 function load() {
 	var loadData= JSON.parse(localStorage.getItem(document.getElementById('saveDataNum').value));
 	document.getElementById('curLv').value = loadData[0];
-	document.getElementById('saveDataName').value = loadData[1];
+	document.getElementById('skillDrug').value = loadData[1];
+	document.getElementById('saveDataName').value = loadData[2];
 
 	remSP();
 }
