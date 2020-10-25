@@ -32,21 +32,11 @@
 				</div>
 			
 				<h2>メイド系</h2>
-				<div class="getSP">
-					
-					
-				</div>
 				<div class="remainSP">
 					<p class="remain">残りSP：</p>
 					<p id="remSP">3</p>
 					<p class="useSP">使用SP：</p>
 					<p id="culcSP" onchange="remSP()">0</p>
-					
-				</div>
-				<div id="save">
-					
-					
-					
 				</div>
 				<div>
 					<table class="jobSP" border="1" align="center">
@@ -1565,56 +1555,58 @@
 
 	<div off-canvas="sb-left left push">
 		<div class="left-content">
-			<hr class="fade">
-			<div>
-				<input type="text" name="saveDataName" id="saveDataName" placeholder="Name">
-			</div>
-			<hr class="fade">
-			<div>
-				<input type="text" name="skillDrug" id="skillDrug" placeholder="スキルの素" onchange="remSP()">
-			</div>
-			<hr class="fade">
-			<div>
-				<input id="curLv" type="text" placeholder="Lv" onchange="remSP()">
-			</div>
-			<hr class="fade">
-			<div>
-				<select id="saveDataNum">
-					<option value="0">セーブデータ選択</option>
-					<option value="1">1:no data</option>
-					<option value="2">2:no data</option>
-					<option value="3">3:no data</option>
-					<option value="4">4:no data</option>
-					<option value="5">5:no data</option>
-					<option value="6">6:no data</option>
-					<option value="7">7:no data</option>
-					<option value="8">8:no data</option>
-					<option value="9">9:no data</option>
-					<option value="10">10:no data</option>
-					<option value="11">11:no data</option>
-					<option value="12">12:no data</option>
-					<option value="13">13:no data</option>
-					<option value="14">14:no data</option>
-					<option value="15">15:no data</option>
-				</select>
-			</div>
-			<hr class="fade">
-			<div>
-				<p class="button" onclick="save()">セーブ</p>
-			</div>
-			<hr class="fade">
-			<div>
-				<p class="button" onclick="load()">ロード</p>
-			</div>
-			<hr class="fade">
-			<div>
-				<p class="button" onclick="clearAll();DT2skill()">クリア</p>
-			</div>
-			<hr class="fade">
-			<div>
-				<p class="button" onclick="deleteAll()">セーブデータ全消去</p>
-			</div>
-			<hr class="fade">
+			<form name="LvData">
+				<hr class="fade">
+				<div>
+					<input type="text" name="saveDataName" id="saveDataName" placeholder="Name">
+				</div>
+				<hr class="fade">
+				<div>
+					<input type="text" name="skillDrug" id="skillDrug" placeholder="スキルの素" onchange="remSP()">
+				</div>
+				<hr class="fade">
+				<div>
+					<input id="curLv" type="text" placeholder="Lv" onchange="remSP()">
+				</div>
+				<hr class="fade">
+				<div>
+					<select id="saveDataNum">
+						<option value="0">セーブデータ選択</option>
+						<option value="1">1:no data</option>
+						<option value="2">2:no data</option>
+						<option value="3">3:no data</option>
+						<option value="4">4:no data</option>
+						<option value="5">5:no data</option>
+						<option value="6">6:no data</option>
+						<option value="7">7:no data</option>
+						<option value="8">8:no data</option>
+						<option value="9">9:no data</option>
+						<option value="10">10:no data</option>
+						<option value="11">11:no data</option>
+						<option value="12">12:no data</option>
+						<option value="13">13:no data</option>
+						<option value="14">14:no data</option>
+						<option value="15">15:no data</option>
+					</select>
+				</div>
+				<hr class="fade">
+				<div>
+					<p class="button" onclick="save()">セーブ</p>
+				</div>
+				<hr class="fade">
+				<div>
+					<p class="button" onclick="load()">ロード</p>
+				</div>
+				<hr class="fade">
+				<div>
+					<p class="button" onclick="clearAll();DT2skill()">クリア</p>
+				</div>
+				<hr class="fade">
+				<div>
+					<p class="button" onclick="deleteAll()">セーブデータ全消去</p>
+				</div>
+				<hr class="fade">
+			</form>
 		</div>
 	</div>
 

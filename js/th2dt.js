@@ -72,6 +72,13 @@ function deleteAll() {
 	var result = confirm('セーブデータを全消去してよろしいですか？');
 	
 if (result) {
+  var saveNum = document.getElementById('saveDataNum')
+	saveNum.options[saveNum.selectedIndex].textContent =saveNum.selectedIndex + ":"+"no data";
+  
 	localStorage.clear();
+  document.LvData.reset();
+
+
 }
 }
+
