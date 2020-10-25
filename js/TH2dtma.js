@@ -399,7 +399,8 @@ function save() {
 	var saveData = [document.getElementById('curLv').value,
 			document.getElementById('skillDrug').value,
 			document.getElementById('saveDataName').value,
-			document.getElementById('changeSelectA').value
+			document.getElementById('changeSelectA').value,
+			document.getElementById('changeSelectB').value
 		];
 			
 
@@ -418,6 +419,7 @@ function load() {
 	document.getElementById('skillDrug').value = loadData[1];
 	document.getElementById('saveDataName').value = loadData[2];
 	document.getElementById('changeSelectA').value = loadData[3];
+	document.getElementById('changeSelectB').value = loadData[4];
 
 	remSP();
 }
