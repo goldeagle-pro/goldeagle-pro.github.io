@@ -394,3 +394,14 @@ function culcSP() {
 	culcNum = document.getElementById('culcSP');
 	culcNum.innerHTML = totalSP;
 }
+
+function save() {
+	localStorage.setItem(document.getElementById('saveDataNum').value,
+		document.getElementById('saveDataName').value);
+}
+
+function load() {
+	console.log(localStorage.getItem(document.getElementById('saveDataNum').value));
+
+  saveDataName.value = localStorage.getItem(document.getElementById('saveDataNum').value);
+}

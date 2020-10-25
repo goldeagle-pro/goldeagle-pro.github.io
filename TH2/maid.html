@@ -15,7 +15,7 @@
 <body>
 	<form name="skillSim">
 		<div class="container">
-			<h2>スカウト系</h2>
+			<h2>メイド系</h2>
 			<div class="getSP">
 				<p class="Lv">Lv</p>
 				<input id="curLv" type="text"  onchange="remSP()">
@@ -29,7 +29,25 @@
 				<p id="culcSP" onchange="remSP()">0</p>
 				<input type="button" class="clear" value="クリア" onclick="clearAll();DT2skill()">
 			</div>
-
+			<div id="save">
+				<input type="text" id="saveDataName" value="セーブデータ">
+				<select id="saveDataNum">
+					<option value="0">セーブデータ選択</option>
+					<option value="1">1:no data</option>
+					<option value="2">2:no data</option>
+					<option value="3">3:no data</option>
+					<option value="4">4:no data</option>
+					<option value="5">5:no data</option>
+					<option value="6">6:no data</option>
+					<option value="7">7:no data</option>
+					<option value="8">8:no data</option>
+					<option value="9">9:no data</option>
+					<option value="10">10:no data</option>
+				</select>
+				<input type="button" value="セーブ" onclick="save()">
+				<input type="button" value="ロード" onclick="load()">
+			</div>
+		<div>
 			<table class="jobSP" border="1" align="center">
 				<tr>
 					<th>基本職</th>
@@ -1542,3 +1560,4 @@
 	<script src="../js/th2dt.js"></script>
 	<script src="../js/TH2dtma.js"></script>
 </body>
+</html>
