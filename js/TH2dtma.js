@@ -398,7 +398,10 @@ function culcSP() {
 function save() {
 	var saveData = [document.getElementById('curLv').value,
 			document.getElementById('skillDrug').value,
-			document.getElementById('saveDataName').value];
+			document.getElementById('saveDataName').value,
+			document.getElementById('changeSelectA').value
+		];
+			
 
 	localStorage.setItem(document.getElementById('saveDataNum').value,
 				JSON.stringify(saveData));
@@ -414,6 +417,7 @@ function load() {
 	document.getElementById('curLv').value = loadData[0];
 	document.getElementById('skillDrug').value = loadData[1];
 	document.getElementById('saveDataName').value = loadData[2];
+	document.getElementById('changeSelectA').value = loadData[3];
 
 	remSP();
 }
