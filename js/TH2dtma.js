@@ -400,6 +400,11 @@ function save() {
 			document.getElementById('saveDataName').value];
 	localStorage.setItem(document.getElementById('saveDataNum').value,
 				JSON.stringify(saveData));
+	
+	var saveNum = document.getElementById('saveDataNum');
+	saveName = document.getElementById('saveDataName').value;
+
+	saveNum.options[saveNum.selectedIndex].textContent = saveName;
 }
 
 function load() {
