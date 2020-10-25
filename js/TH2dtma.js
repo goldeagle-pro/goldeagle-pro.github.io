@@ -396,12 +396,16 @@ function culcSP() {
 }
 
 function save() {
+	var saveData = [document.getElementById('curLv').value,
+			document.getElementById('saveDataName').value];
 	localStorage.setItem(document.getElementById('saveDataNum').value,
-		document.getElementById('saveDataName').value);
+				JSON.stringify(saveData));
 }
 
 function load() {
-	console.log(localStorage.getItem(document.getElementById('saveDataNum').value));
+	var loadData= JSON.parse(localStorage.getItem(document.getElementById('saveDataNum').value));
+	document.getElementById('curLv').value = loadData[0];
+	document.getElementById('saveDataName').value = loadData[1];
 
-  saveDataName.value = localStorage.getItem(document.getElementById('saveDataNum').value);
+	remSP();
 }
