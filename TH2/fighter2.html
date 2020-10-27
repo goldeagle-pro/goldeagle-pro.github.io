@@ -1,166 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<title>メイド系</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<!-- meta -->
-	<meta name="Keywords" content="ToHeart2,ダンジョントラベラーズ, スキルシミュレータ,メイド">
-
-	<!-- CSS -->
-	<link rel="stylesheet" href="../css/slidebars.min.css">
+	<title>ファイター系</title>
+	<meta name = "viewport" content = "width = device-width, 
+		initial-scale = 1.0, minimum-scale = 1.0, 
+		maximum-scale = 1.0, user-scalable = no">
+	<link rel = "stylesheet" href = "../css/slidebars.css">
 	<link rel="stylesheet" href="../css/th2dt_job.css">
-	<!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	<!-- Script -->
-	<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=1EPIj0XNw1ppV4DorJU786D_nZ4RhKg1CZ_CNYLINGi93u5d_155FTFdnxLeN7hZ" charset="UTF-8"></script>
-	<script src="../js/slidebars.min.js"></script>
-
 </head>
-
+	
 <body>
-	<div>
-		<div class="container">
-			<div class="main-content">
-				<div class="menu">
-					<p class="sb-toggle-left"><  メニュー</p>
-					<p class="sb-toggle-right">クラス  ></p>
-				</div>
-			</div>
-		</div>
-<div off-canvas="sb-left left push">
-	<div class="left-content">
-		<form name="LvData">
-			<hr class="fade">
-			<div>
-				<input type="text" name="saveDataName" id="saveDataName" placeholder="Name">
-			</div>
-			<hr class="fade">
-			<div>
-				<input type="text" name="skillDrug" id="skillDrug" placeholder="スキルの素" onchange="remSP()">
-			</div>
-			<hr class="fade">
-			<div>
-				<input id="curLv" type="text" placeholder="Lv" onchange="remSP()">
-			</div>
-			<hr class="fade">
-			<div>
-				<select id="saveDataNum">
-					<option value="0">セーブデータ選択</option>
-					<option value="1">1:no data</option>
-					<option value="2">2:no data</option>
-					<option value="3">3:no data</option>
-					<option value="4">4:no data</option>
-					<option value="5">5:no data</option>
-					<option value="6">6:no data</option>
-					<option value="7">7:no data</option>
-					<option value="8">8:no data</option>
-					<option value="9">9:no data</option>
-					<option value="10">10:no data</option>
-					<option value="11">11:no data</option>
-					<option value="12">12:no data</option>
-					<option value="13">13:no data</option>
-					<option value="14">14:no data</option>
-					<option value="15">15:no data</option>
-				</select>
-			</div>
-			<hr class="fade">
-			<div class="button">
-				<p onclick="save()">セーブ</p>
-			</div>
-			<hr class="fade">
-			<div class="button">
-				<p onclick="load()">ロード</p>
-			</div>
-			<hr class="fade">
-			<div class="button">
-				<p onclick="clearAll();DT2skill()">クリア</p>
-			</div>
-			<hr class="fade">
-			<div class="button">
-				<p onclick="deleteAll()">セーブデータ全消去</p>
-			</div>
-			<hr class="fade">
-		</form>
-	</div>
-</div>
+	<div id = "sb-site">
+		<p>TH2DT Skill Sim.</p>
 
-<div off-canvas="sb-right right push">
-	<div class="right-content">
+		<div class="menu">
+			<p class="sb-toggle-left">メニュー</p>
+			<p class="sb-toggle-right">クラス</p> 
+		</div>
+	</div>
+		
+	<div class = "sb-slidebar sb-left sb-style-push">
 		<hr class="fade">
-		<div class="button">
-			<a href="https://goldeagle-pro.github.io/TH2/fighter.html">ファイター系</a>
+		<div>
+			<input type="text" name="saveDataName" id="saveDataName" placeholder="Name">
 		</div>
 		<hr class="fade">
-		<div class="button">
+		<div>
+			<input type="text" name="skillDrug" id="skillDrug" placeholder="スキルの素" onchange="remSP()">
+		</div>
+		<hr class="fade">
+		<div>
+			<input type="text" name="curLv" id="curLv" placeholder="Lv" onchange="remSP()">
+		</div>
+		<hr class="fade">
+		<div>
+			<select id="saveDataNum">
+				<option value="0">セーブデータ選択</option>
+				<option value="1">1:no data</option>
+				<option value="2">2:no data</option>
+				<option value="3">3:no data</option>
+				<option value="4">4:no data</option>
+				<option value="5">5:no data</option>
+				<option value="6">6:no data</option>
+				<option value="7">7:no data</option>
+				<option value="8">8:no data</option>
+				<option value="9">9:no data</option>
+				<option value="10">10:no data</option>
+				<option value="11">11:no data</option>
+				<option value="12">12:no data</option>
+				<option value="13">13:no data</option>
+				<option value="14">14:no data</option>
+				<option value="15">15:no data</option>
+			</select>
+		</div>
+		<hr class="fade">
+		<div class="btn">
+			<p onclick="save()">セーブ</p>
+		</div>
+		<hr class="fade">
+		<div class="btn">
+			<p onclick="load()">ロード</p>
+		</div>
+		<hr class="fade">
+		<div class="btn">
+			<p onclick="clearAll();DT2skill()">クリア</p>
+		</div>
+		<hr class="fade">
+		<div class="btn">
+			<p onclick="deleteAll()">セーブデータ全消去</p>
+		</div>
+		<hr class="fade">
+	</div>
+
+	<div class = "sb-slidebar sb-right sb-style-push">
+		<hr class="fade">
+		<div class="btn">
+			<p class="sb-close">ファイター系</p>
+		</div>
+		<hr class="fade">
+		<div class="btn">
 			<a href="https://goldeagle-pro.github.io/TH2/magicuser.html">マジックユーザー系</a>
 		</div>
 		<hr class="fade">
-		<div class="button">
+		<div class="btn">
 			<a href="https://goldeagle-pro.github.io/TH2/scout.html">スカウト系</a>
 		</div>
 		<hr class="fade">
-		<div class="button">
-			<p class="sb-close">メイド系</p>
+		<div class="btn">
+			<a href="https://goldeagle-pro.github.io/TH2/maid.html">メイド系</a>
 		</div>
+		<hr class="fade">
 	</div>
-</div>
+<!-- script -->
+	<script src="../js/th2dt.js" type="text/javascript" charset="UTF-8"></script>
 
-
-	<script src="../js/th2dt.js"></script>
-	<script src="../js/TH2dtma.js"></script>
-
-    <!-- Slidebars -->
+	<script src="../js/th2dtft.js" type="text/javascript" charset="UTF-8"></script> 
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>	
+	<script src = "../js/slidebars.js"></script>
+	
 <script>
-( function ( $ ) {
-  // Initialize Slidebars
-  var controller = new slidebars();
-  controller.init();
-
-  /**
-   * Original Version Style Control Classes
-   */
-
-  // Open left
-  $( '.sb-open-left' ).on( 'click', function ( event ) {
-    event.preventDefault();
-    event.stopPropagation();
-
-    controller.open( 'sb-left' );
-  } );
-
-  // Toggle left
-  $( '.sb-toggle-left' ).on( 'click', function ( event ) {
-    event.preventDefault();
-    event.stopPropagation();
-
-    controller.toggle( 'sb-left' );
-  } );
-
-  // Open right
-  $( '.sb-open-right' ).on( 'click', function ( event ) {
-    event.preventDefault();
-    event.stopPropagation();
-
-    controller.open( 'sb-right' );
-  } );
-
-  // Toggle right
-  $( '.sb-toggle-right' ).on( 'click', function ( event ) {
-    event.preventDefault();
-    event.stopPropagation();
-
-    controller.toggle( 'sb-right' );
-  } );
-
-  // Close
-  $( '.sb-close' ).on( 'click', function ( event ) {
-    event.preventDefault();
-    event.stopPropagation();
-
-    controller.close();
-  } );
-} ) ( jQuery );
+	(function($) {
+	$(document).ready(function() {
+	$.slidebars();
+	});
+	}) (jQuery);
 </script>
 </body>
 </html>
