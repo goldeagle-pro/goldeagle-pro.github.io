@@ -8,6 +8,11 @@ function DTskill() {
 	var FT07 = document.getElementById('FT07').selectedIndex;
 	var FT08 = document.getElementById('FT08').selectedIndex;
 
+	var PL01 = document.getElementById('PL01').selectedIndex;
+	var PL02 = document.getElementById('PL02').selectedIndex;
+	var PL03 = document.getElementById('PL03').selectedIndex;
+	var PL04 = document.getElementById('PL04').selectedIndex;
+
 	var skillFT01 = document.getElementById('skillFT01');
 		textFT01 = FT01*(FT01+1);
 			skillFT01.innerHTML = textFT01;
@@ -32,4 +37,17 @@ function DTskill() {
 	var skillFT08 = document.getElementById('skillFT08');
 		textFT08 = FT08*(FT08+1);
 			skillFT08.innerHTML = textFT08;
+	
+	var skillPL01 = document.getElementById('skillPL01');
+		textPL01 = PL01*(PL01+1);
+			skillPL01.innerHTML = textPL01;
+	var skillPL02 = document.getElementById('skillPL02');
+		textPL02 = PL02*(PL02+1);
+			skillPL02.innerHTML = textPL02;
+	var skillPL03 = document.getElementById('skillPL03');
+		textPL03 = PL03*(PL03+1);
+			skillPL03.innerHTML = textPL03;
+	var skillPL04 = document.getElementById('skillPL04');
+		textPL04 = PL04*(PL04+1);
+			skillPL04.innerHTML = textPL04;
 }
