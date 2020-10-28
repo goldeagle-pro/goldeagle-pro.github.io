@@ -7,17 +7,90 @@
 		initial-scale = 1.0, minimum-scale = 1.0, 
 		maximum-scale = 1.0, user-scalable = no">
 	<link rel = "stylesheet" href = "../css/slidebars.css">
-	<link rel="stylesheet" href="../css/th2dt_job.css">
+	<link rel="stylesheet" href="../css/TH2dt_job.css">
 </head>
 	
 <body>
 	<div id = "sb-site">
-		<p>TH2DT Skill Sim.</p>
+		<form name="reset">
+			<div>
+				<p class="c">TH2DT Skill Sim.</p>
+			</div>
+			<div class="menu">
+				<p class="sb-toggle-left box"><  メニュー</p>
+				<p class="sb-toggle-right box">クラス  ></p> 
+			</div>
+			<p class="c">ファイター系</p>
+			<div class="useSPs">
+				<p>Lv:</p>
+				<p id="totalLv">1</p>
+				<p id="remain">残りSP:</p>
+				<p id="remSP">3</p>
+				<p id="useSP">使用SP:</p>
+				<p id="culcSP" onchange>0</p>
+			</div>
 
-		<div class="menu">
-			<p class="sb-toggle-left">メニュー</p>
-			<p class="sb-toggle-right">クラス</p> 
-		</div>
+			<div class="skillTable">
+				<table class="skillName" border="1" align="center">
+					<tr>
+						<td>基本職</td>
+						<td>Lv15職</td>
+						<td>Lv30職</td>
+					</tr>
+					<tr>
+						<td>ファイター</td>
+						<td>
+							<select id="changeSelectA">
+								<option value="Lv15a">パラディン</option>
+								<option value="Lv15b">ダークナイト</option>
+							</select>
+						</td>
+						<td>
+							<select id="changeSelectB">
+								<option value="Lv30a">ヴァルキリー</option>
+								<option value="Lv30b">侍</option>
+								<option value="Lv30c">ダークロード</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table border="1">
+								<tr>
+									<td>スキル</td>
+									<td>sLv</td>
+									<td>必要SP</td>
+								</tr>
+								<tr>
+									<td class="skill">
+										<span>挑発</span>
+										<div class="skillDesc">
+											<p >敵一人の攻撃を自分に引き付ける</p>
+											<hr class="skillup">
+											<p>LvUp時</br>
+											<span class="up">効果ターン数アップ</span></br>
+											<span class="up">行動後速度修正アップ</span></br>
+											<span class="down">消費TPアップ</span></p>
+										</div>
+									</td>
+									<td>
+										<select id="FT01" onchange="DTskill()">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+									</td>
+									<td id="skillFT01">0</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
 	</div>
 		
 	<div class = "sb-slidebar sb-left sb-style-push">
@@ -27,11 +100,11 @@
 		</div>
 		<hr class="fade">
 		<div>
-			<input type="text" name="skillDrug" id="skillDrug" placeholder="スキルの素" onchange="remSP()">
+			<input type="text" name="skillDrug" id="skillDrug" placeholder="スキルの素">
 		</div>
 		<hr class="fade">
 		<div>
-			<input type="text" name="curLv" id="curLv" placeholder="Lv" onchange="remSP()">
+			<input type="text" name="curLv" id="curLv" placeholder="Lv" onchange="totalLv()">
 		</div>
 		<hr class="fade">
 		<div>
@@ -93,7 +166,7 @@
 		<hr class="fade">
 	</div>
 <!-- script -->
-	<script src="../js/th2dt.js" type="text/javascript" charset="UTF-8"></script>
+	<script src="../js/TH2dtcopy.js" type="text/javascript" charset="UTF-8"></script>
 
 	<script src="../js/th2dtft.js" type="text/javascript" charset="UTF-8"></script> 
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>	

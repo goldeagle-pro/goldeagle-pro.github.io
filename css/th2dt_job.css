@@ -1,72 +1,73 @@
-h2 {
-    text-align: center;
-  }
-  
-.main-content {
-  padding: 100px 50px;
-
+#sb-site {
+  background-color: #CED6F8;
 }
 
+.c {
+  text-align: center;
+}
 
-.remainSP {
+.menu {
   display: flex;
   justify-content: center;
-  align-items: center;
+  
 }
 
+.box {
+  background-color: #F6F6F6;
+  border: 1px solid #000080;
+  width :110px;
+  height: 40px;
+  border-radius: 5px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 5px;
+}
 
+.box:hover {
+  background-color: #A4B4F9;
+  cursor: pointer;
+}
 
-.remain {
-  margin-right:  5px;
+.useSPs {
+  display: flex;
+  justify-content: center;
+}
+
+#totalLv {
+  margin-right: 10px;
 }
 
 #remSP {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
-.useSP {
-  margin-right: 5px;
+select {
+  background-color: #CED6F8;
 }
 
-.jobSP {
-  background-color: #fff
-}
-
-.job {
-  background-color: #7fff00;
-}
-
-#skill div {
+.skill {
   position: relative;
 }
 
 .skillDesc {
   display: none;
   position: absolute;
-  padding: 16px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;  
+  top: 25px;
+  width: 250px;
+  border: 2px solid #000080;
   border-radius: 8px;
-  background: #333;
-  color: #fff;
+  background-color: #CED6F8;
+  padding: 8px;
 }
 
-.skillDesc:after {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -10px;
-  border: solid transparent;
-  border-color: rgba(51, 51, 51, 0);
-  border-bottom-color: #333;
-  border-width: 10px;
-  pointer-events: none;
-  content: " ";
-}
-
-span:hover + p.skillDesc {
+.skill:hover .skillDesc {
   display: block;
 }
 
+.up {
+  color: #000080;
+}
+
+.down {
+  color: red;
+}
