@@ -1,5 +1,6 @@
 #sb-site {
   background-color: #CED6F8;
+  position: relative;
 }
 
 .c {
@@ -45,14 +46,12 @@ select {
   background-color: #CED6F8;
 }
 
-.skill {
-  position: relative;
-}
 
-.skillDesc {
+.skillDescA {
   display: none;
   position: absolute;
-  top: 25px;
+  top: 300px;
+  left: 600px;
   width: 250px;
   border: 2px solid #000080;
   border-radius: 8px;
@@ -60,8 +59,9 @@ select {
   padding: 8px;
 }
 
-.skill:hover .skillDesc {
+.skill:hover .skillDescA {
   display: block;
+  z-index: 10;
 }
 
 .up {
