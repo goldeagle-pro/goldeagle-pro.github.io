@@ -1,6 +1,5 @@
 #sb-site {
   background-color: #CED6F8;
-  position: relative;
 }
 
 .c {
@@ -42,6 +41,10 @@
   margin-right: 10px;
 }
 
+.skillName {
+  position: relative;
+}
+
 select {
   background-color: #CED6F8;
 }
@@ -50,8 +53,8 @@ select {
 .skillDescA {
   display: none;
   position: absolute;
-  top: 300px;
-  left: 600px;
+  top: 100px;
+  left: 200px;
   width: 250px;
   border: 2px solid #000080;
   border-radius: 8px;
