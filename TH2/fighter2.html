@@ -27,7 +27,7 @@
 				<p id="remain">残りSP:</p>
 				<p id="remSP">3</p>
 				<p id="useSP">使用SP:</p>
-				<p id="culcSP" onchange>0</p>
+				<p id="culcSP">0</p>
 			</div>
 
 			<div class="skillTable">
@@ -74,7 +74,7 @@
 										</div>
 									</td>
 									<td>
-										<select id="FT01" onchange="DTskill()">
+										<select id="FT01" onchange="DTskill(); culcSP()">
 											<option value="0">0</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -100,7 +100,7 @@
 										</div>
 									</td>
 									<td>
-										<select id="FT02" onchange="DTskill()">
+										<select id="FT02" onchange="DTskill(); culcSP()">
 											<option value="0">0</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -125,7 +125,7 @@
 										</div>
 									</td>
 									<td>
-										<select id="FT03" onchange="DTskill()">
+										<select id="FT03" onchange="DTskill(); culcSP()">
 											<option value="0">0</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -152,7 +152,7 @@
 										</div>
 									</td>
 									<td>
-										<select id="FT04" onchange="DTskill()">
+										<select id="FT04" onchange="DTskill(); culcSP()">
 											<option value="0">0</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -179,7 +179,7 @@
 										</div>
 									</td>
 									<td>
-										<select id="FT05" onchange="DTskill()">
+										<select id="FT05" onchange="DTskill(); culcSP()">
 											<option value="0">0</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -206,7 +206,7 @@
 										</div>
 									</td>
 									<td>
-										<select id="FT06" onchange="DTskill()">
+										<select id="FT06" onchange="DTskill(); culcSP()">
 											<option value="0">0</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -233,7 +233,7 @@
 										</div>
 									</td>
 									<td>
-										<select id="FT07" onchange="DTskill()">
+										<select id="FT07" onchange="DTskill(); culcSP()">
 											<option value="0">0</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -255,7 +255,7 @@
 										</div>
 									</td>
 									<td>
-										<select id="FT08" onchange="DTskill()">
+										<select id="FT08" onchange="DTskill(); culcSP()">
 											<option value="0">0</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -268,110 +268,412 @@
 								</tr>
 							</table>
 						</td>
-						<td id="selectDispA">
-							<table border="1">
-								<tr>
-									<td class="skill">
-										<span>ディフェンダー</span>
-										<div class="skillDescB">
-											<p>自身の防御力アップ、攻撃力ダウン</p>
-											<hr class="skillup">
-											<p>LvUp時</br>
-											<span class="up">防御力増加率アップ</span></br>
-											<span class="up">効果ターン数アップ</span></br>
-											<span class="up">行動後速度修正アップ</span></br>
-											<span class="down">消費TPアップ</span></br>
-											<span class="down">攻撃力減少率アップ</span></p>
-										</div>
-									</td>
-									<td>
-										<select id="PL01" onchange="DTskill()">
-											<option value="0">0</option>
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-											<option value="5">5</option>
-										</select>
-									</td>
-									<td id="skillPL01">0</td>
-								</tr>
-								<tr>
-									<td class="skill">
-										<span>シールドバッシュ</span>
-										<div class="skillDescB">
-											<p>盾装備時、敵一人にダメージ+気絶の効果</p>
-											<hr class="skillup">
-											<p>LvUp時</br>
-											<span class="up">攻撃力修正アップ</span></br>
-											<span class="up">命中率修正アップ</span></br>
-											<span class="up">追加効果発生率修正アップ</span></br>
-											<span class="down">消費TPアップ</span></p>
-										</div>
-									</td>
-									<td>
-										<select id="PL02" onchange="DTskill()">
-											<option value="0">0</option>
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-											<option value="5">5</option>
-										</select>
-									</td>
-									<td id="skillPL02">0</td>
-								</tr>
-								<tr>
-									<td class="skill">
-										<span>カバー</span>
-										<div class="skillDescB">
-											<p>味方への物理攻撃を自分が代わって受ける</p>
-											<hr class="skillup">
-											<p>LvUp時</br>
-											<span class="up">カバー持続率アップ</span></br>
-											<span class="up">効果ターン数アップ</span></br>
-											<span class="up">行動後速度修正アップ</span></br>
-											<span class="down">消費TPアップ</span></p>
-										</div>
-									</td>
-									<td>
-										<select id="PL03" onchange="DTskill()">
-											<option value="0">0</option>
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-											<option value="5">5</option>
-										</select>
-									</td>
-									<td id="skillPL03">0</td>
-								</tr>
-								<tr>
-									<td class="skill">
-										<span>パリィ</span>
-										<div class="skillDescB">
-											<p>近接武器装備時、武器で敵の攻撃を受け流す</p>
-											<hr class="skillup">
-											<p>LvUp時</br>
-											<span class="up">パリィ持続率アップ</span></br>
-											<span class="up">効果ターン数アップ</span></br>
-											<span class="up">行動後速度修正アップ</span></br>
-											<span class="down">消費TPアップ</span></p>
-										</div>
-									</td>
-									<td>
-										<select id="PL04" onchange="DTskill()">
-											<option value="0">0</option>
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-											<option value="5">5</option>
-										</select>
-									</td>
-									<td id="skillPL04">0</td>
-								</tr>
-							</table>
+						<td>
+							<div id="selectDispA">
+								<div id="Lv15a">
+									<table border="1">
+										<tr>
+											<td>スキル</td>
+											<td>sLv</td>
+											<td>必要SP</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>ディフェンダー</span>
+												<div class="skillDescB">
+													<p>自身の防御力アップ、攻撃力ダウン</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">防御力増加率アップ</span></br>
+													<span class="up">効果ターン数アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></br>
+													<span class="down">攻撃力減少率アップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="PL01" onchange="DTskill(); culcSP()">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillPL01">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>シールドバッシュ</span>
+												<div class="skillDescB">
+													<p>盾装備時、敵一人にダメージ+気絶の効果</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">攻撃力修正アップ</span></br>
+													<span class="up">命中率修正アップ</span></br>
+													<span class="up">追加効果発生率修正アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="PL02" onchange="DTskill(); culcSP()">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillPL02">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>カバー</span>
+												<div class="skillDescB">
+													<p>味方への物理攻撃を自分が代わって受ける</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">カバー持続率アップ</span></br>
+													<span class="up">効果ターン数アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="PL03" onchange="DTskill(); culcSP()">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillPL03">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>パリィ</span>
+												<div class="skillDescB">
+													<p>近接武器装備時、武器で敵の攻撃を受け流す</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">パリィ持続率アップ</span></br>
+													<span class="up">効果ターン数アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="PL04" onchange="DTskill(); culcSP()">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillPL04">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>ヒール</span>
+												<div class="skillDescB">
+													<p>味方一人のHPを回復する</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">HP回復量アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="PL05" onchange="DTskill(); culcSP()">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillPL05">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>オートガード</span>
+												<div class="skillDescB">
+													<p>物理攻撃時、ガードすることがある</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">オートガード発動率アップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="PL06" onchange="DTskill(); culcSP()">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillPL06">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>オートミニリカバリ</span>
+												<div class="skillDescB">
+													<p>戦闘時、毎ターンHPが少し回復</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">HP回復量アップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="PL07" onchange="DTskill(); culcSP()">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillPL07">0</td>
+										</tr>
+									</table>
+								</div>
+								<div id="Lv15b">
+									<table border="1">
+										<tr>
+											<td>スキル</td>
+											<td>sLv</td>
+											<td>必要SP</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>バーサーク</span>
+												<div class="skillDescB">
+													<p>自身の攻撃力アップ、防御力ダウン</br>
+													移動中使用不可</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">攻撃力増加率アップ</span></br>
+													<span class="up">効果ターン数アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></br>
+													<span class="down">防御力減少率アップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="DK01" onchange="DTskill(); culcSP()">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillDK01">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>オーラエリミネイト</span>
+												<div class="skillDescB">
+													<p>近接武器装備時、敵一人にダメージ+強化を消去</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">命中率修正アップ</span></br>
+													<span class="up">追加効果発生率アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="DK02" onchange="DTskill(); culcSP()">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillDK02">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>フロストスラッシュ</span>
+												<div class="skillDescB">
+													<p>剣装備時、敵一人にダメージ+凍結の効果</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">攻撃力修正アップ</span></br>
+													<span class="up">追加効果発生率アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="DK03" onchange="DTskill(); culcSP()">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillDK03">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>ジオブレイク</span>
+												<div class="skillDescB">
+													<p>斧装備時、敵一人にダメージ+石化の効果</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">攻撃力修正アップ</span></br>
+													<span class="up">追加効果発動率アップ</span></br>
+													<span class="up">行動後速度修正アップ</span>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="DK04" onchange="DTskill(); culcSP()">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillDK04">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>エンラージブラッド</span>
+												<div class="skillDescB">
+													<p>自身の最大HPアップ</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">最大HP増加率アップ</span></br>
+													<span class="up">詠唱速度アップ</span></br>
+													<span class="up">効果ターン数アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="DK05" onchange="DTskill(); culcSP()">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillDK05">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>プレパレイション</span>
+												<div class="skillDescB">
+													<p>自身のHPが減ると行動速度が上がる</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">瀕死時行動速度増加率アップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="DK06" onchange="DTskill(); culcSP()">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillDK06">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>アダプテーション</span>
+												<div class="skillDescB">
+													<p>全属性耐性アップ</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">属性耐性アップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="DK07" onchange="DTskill(); culcSP()">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillDK07">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>ダークオーラ</span>
+												<div class="skillDescB">
+													<p>近接攻撃でダメージを喰らったとき、相手の能力を低下させる</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">能力低下項目を増やす</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="DK08" onchange="DTskill(); culcSP()">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillDK08">0</td>
+										</tr>
+									</table>
+								</div>
+							</div>
 						</td>
 					</tr>
 				</table>
