@@ -248,7 +248,7 @@
 									<td class="skill">
 										<span>ダブルアタック</span>
 										<div class="skillDescA">
-											<p>通常攻撃時、時々2回攻撃</p>
+											<p>通常攻撃時、ときどき2回攻撃</p>
 											<hr class="skillup">
 											<p>LvUp時</br>
 											<span class="up">ダブルアタック発動率アップ</span></p>
@@ -430,7 +430,7 @@
 										</tr>
 										<tr>
 											<td class="skill">
-												<span>オートミニリカバリ</span>
+												<span>オートミニリカバ</span>
 												<div class="skillDescB">
 													<p>戦闘時、毎ターンHPが少し回復</p>
 													<hr class="skillup">
@@ -553,7 +553,7 @@
 													<hr class="skillup">
 													<p>LvUp時</br>
 													<span class="up">攻撃力修正アップ</span></br>
-													<span class="up">追加効果発動率アップ</span></br>
+													<span class="up">追加効果発生率アップ</span></br>
 													<span class="up">行動後速度修正アップ</span>
 													<span class="down">消費TPアップ</span></p>
 												</div>
@@ -582,7 +582,7 @@
 													<p>自身の最大HPアップ</p>
 													<hr class="skillup">
 													<p>LvUp時</br>
-													<span class="up">最大HP増加率アップ</span></br>
+													<span class="up">最大HP増幅率アップ</span></br>
 													<span class="up">詠唱速度アップ</span></br>
 													<span class="up">効果ターン数アップ</span></br>
 													<span class="down">消費TPアップ</span></p>
@@ -688,7 +688,7 @@
 											<td class="skill">
 												<span>マテリアルガード</span>
 												<div class="skillDescC">
-													<p>盾装備時、味方全員の物理攻撃を一度だけ軽減する</p>
+													<p>盾装備時、味方全員への物理ダメージを一度だけ軽減する</p>
 													<hr class="skillup">
 													<p>LvUp時</br>
 													<span class="up">ダメージ軽減率アップ</span></br>
@@ -716,7 +716,7 @@
 											<td class="skill">
 												<span>スペルガード</span>
 												<div class="skillDescC">
-													<p>盾装備時、味方全員の魔法攻撃を一度だけ軽減する</p>
+													<p>盾装備時、味方全員への魔法ダメージを一度だけ軽減する</p>
 													<hr class="skillup">
 													<p>LvUp時</br>
 													<span class="up">ダメージ軽減率アップ</span></br>
@@ -828,7 +828,7 @@
 											<td class="skill">
 												<span>プロテクション</span>
 												<div class="skillDescC">
-													<p>味方一人の防御アップ</p>
+													<p>味方一人の防御力アップ</p>
 													<hr class="skillup">
 													<p>LvUp時</br>
 													<span class="up">防御力増加率アップ</span></br>
@@ -884,7 +884,7 @@
 													<p>死亡時、HP1で生き残ることがある</p>
 													<hr class="skillup">
 													<p>LvUp時</br>
-													<span class="up">根性発生率アップ</span></p>
+													<span class="up">根性発動率アップ</span></p>
 												</div>
 											</td>
 											<td>
@@ -923,6 +923,530 @@
 										</tr>
 									</table>
 								</div>
+								<div id="Lv30b">
+									<table border="1">
+										<tr>
+											<td>スキル</td>
+											<td>sLv</td>
+											<td>必要SP</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>峰打ち</span>
+												<div class="skillDescC">
+													<p>刀装備時、敵一人にダメージ+麻痺の効果</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">攻撃力修正アップ</span></br>
+													<span class="up">命中率修正アップ</span></br>
+													<span class="up">追加効果発生率アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="SA01">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillSA01">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>背水の陣</span>
+												<div class="skillDescC">
+													<p>自身の与クリティカル率アップ、被クリティカル率アップ</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">クリティカル発生率アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="up">効果ターン数アップ</span></br>
+													<span class="down">消費TPアップ</span></br>
+													<span class="down">被クリティカル率発生率アップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="SA02">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillSA02">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>一刀両断</span>
+												<div class="skillDescC">
+													<p>刀装備時、敵全員にダメージ+即死の効果</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">攻撃力修正アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="up">追加効果発生率アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="SA03">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillSA03">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>鎧徹し</span>
+												<div class="skillDescC">
+													<p>刀装備時、敵一人に防御力無視のダメージ+防御ダウンの効果</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">攻撃力修正アップ</span></br>
+													<span class="up">防御ダウン値アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="SA04">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillSA04">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>鬼神楽</span>
+												<div class="skillDescC">
+													<hr class="skillup">
+													<p>刀装備時、敵全員にダメージ</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">攻撃力修正アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="SA05">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillSA05">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>煉獄朧斬り</span>
+												<div class="skillDescC">
+													<p>刀装備時、生命のある敵に対して大ダメージを与える+3回攻撃</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">攻撃力修正アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="SA06">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillSA06">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>刀の心得</span>
+												<div class="skillDescC">
+													<span>刀装備時、攻撃力にボーナス</span>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">攻撃力ボーナスアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="SA07">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillSA07">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>心眼</span>
+												<div class="skillDescC">
+													<p>敵の攻撃の対象になった時、攻撃を受け流して反撃することがある</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">発動率アップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="SA08">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillSA08">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>トリプルアタック</span>
+												<div class="skillDescC">
+													<p>通常攻撃時、ときどき3回攻撃</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">トリプルアタック発動率アップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="SA09">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillSA09">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>流水の構え</span>
+												<div class="skillDescC">
+													<p>突攻撃に対してだけ回避率が上昇する</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">回避率アップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="SA10">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillSA10">0</td>
+										</tr>
+									</table>
+								</div>
+								<div id="Lv30c">
+									<table border="1">
+										<tr>
+											<td>スキル</td>
+											<td>sLv</td>
+											<td>必要SP</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>ブラッドバイト</span>
+												<div class="skillDescC">
+													<p>近接武器装備時、敵一人への与ダメージを一定量HPとして吸収</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">攻撃力修正アップ</span></br>
+													<span class="up">吸収率アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="DL01">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillDL01">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>ソウルバイト</span>
+												<div class="skillDescC">
+													<p>近接武器装備時、敵一人への与ダメージを一定量TPとして吸収</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">攻撃力修正アップ</span></br>
+													<span class="up">吸収率アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="DL02">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillDL02">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>ショックスパイラル</span>
+												<div class="skillDescC">
+													<p>近接武器装備時、敵全員にダメージ+麻痺の効果</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">攻撃力修正アップ</span></br>
+													<span class="up">追加効果発生率アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="DL03">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillDL03">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>アトラクト</span>
+												<div class="skillDescC">
+													<p>敵全員の攻撃を自分に引き付ける</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">効果ターン数アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="DL04">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillDL04">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>メガトンプレス</span>
+												<div class="skillDescC">
+													<p>斧装備時、敵一人にダメージ+後ろにいる敵にもダメージ</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">攻撃力修正アップ</span></br>
+													<span class="up">連続ダメージキャラ数アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="DL05">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillDL05">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>ライフブリング</span>
+												<div class="skillDescC">
+													<p>敵全員からHPを吸収</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">魔法ダメージアップ</span></br>
+													<span class="up">魔法命中アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="DL06">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillDL06">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>ブレイブ</span>
+												<div class="skillDescC">
+													<p>味方一人の攻撃力アップ</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">攻撃力増加率アップ</span></br>
+													<span class="up">効果ターン数アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="DL07">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillDL07">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>グラージアキュム</span>
+												<div class="skillDescC">
+													<p>被ダメージを一定量TPに変換する</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">TP変換量アップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="DL08">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillDL08">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>ダーククエスト</span>
+												<div class="skillDescC">
+													<p>状態異常に掛かっている程、物理ダメージが上昇する</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">ダメージ量アップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="DL09">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillDL09">0</td>
+										</tr>
+									</table>
+								</div>
 							</div>
 						</td>
 					</tr>
@@ -942,7 +1466,7 @@
 		</div>
 		<hr class="fade">
 		<div>
-			<input type="text" name="curLv" id="curLv" placeholder="Lv" onchange="totalLv()">
+			<input type="text" name="currentLv" id="currentLv" placeholder="Lv" onchange="totalLv()">
 		</div>
 		<hr class="fade">
 		<div>

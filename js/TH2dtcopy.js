@@ -30,7 +30,7 @@ function jobB() {
 }
 
 function changeDispB(x) {
-	var items = document.getElementById('skillDispB').children;
+	var items = document.getElementById('selectDispB').children;
 	for(i=x; i<items.length; i++) {
 		items[i].style.display ="none";
 	}
@@ -38,7 +38,6 @@ function changeDispB(x) {
 
 
 function totalLv() {
-	var nowLv = document.getElementById('totalLv');
-	nowLv.innerHTML = document.getElementById('curLv').value;
+	document.getElementById('totalLv').innerHTML = document.getElementById('currentLv').value;
 }
 
