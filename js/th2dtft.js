@@ -25,6 +25,16 @@ function DTskill() {
 	var DK07 = document.getElementById('DK07').selectedIndex;
 	var DK08 = document.getElementById('DK08').selectedIndex;
 
+	var VL01 = document.getElementById('VL01').selectedIndex;
+	var VL02 = document.getElementById('VL02').selectedIndex;
+	var VL03 = document.getElementById('VL03').selectedIndex;
+	var VL04 = document.getElementById('VL04').selectedIndex;
+	var VL05 = document.getElementById('VL05').selectedIndex;
+	var VL06 = document.getElementById('VL06').selectedIndex;
+	var VL07 = document.getElementById('VL07').selectedIndex;
+	var VL08 = document.getElementById('VL08').selectedIndex;
+	var VL09 = document.getElementById('VL09').selectedIndex;
+
 	var skillFT01 = document.getElementById('skillFT01');
 		textFT01 = FT01*(FT01+1);
 			skillFT01.innerHTML = textFT01;
@@ -96,6 +106,34 @@ function DTskill() {
 	var skillDK08 = document.getElementById('skillDK08');
 		textDK08 = DK08*(DK08+1);
 			skillDK08.innerHTML = textDK08;
+
+		var skillVL01 = document.getElementById('skillVL01');
+			textVL01 = VL01*(VL01+1)/2;
+				skillVL01.innerHTML = textVL01;
+		var skillVL02 = document.getElementById('skillVL02');
+			textVL02 = VL02*(VL02+1)/2;
+				skillVL02.innerHTML = textVL02;
+		var skillVL03 = document.getElementById('skillVL03');
+			textVL03 = VL03*(VL03+1)/2;
+				skillVL03.innerHTML = textVL03;
+		var skillVL04 = document.getElementById('skillVL04');
+			textVL04 = VL04*(VL04+1)/2;
+				skillVL04.innerHTML = textVL04;
+		var skillVL05 = document.getElementById('skillVL05');
+			textVL05 = VL05*(VL05+1);
+				skillVL05.innerHTML = textVL05;
+		var skillVL06 = document.getElementById('skillVL06');
+			textVL06 = VL06*(VL06+1);
+				skillVL06.innerHTML = textVL06;
+		var skillVL07 = document.getElementById('skillVL07');
+			textVL07 = VL07*(VL07+1)/2;
+				skillVL07.innerHTML = textVL07;
+		var skillVL08 = document.getElementById('skillVL08');
+			textVL08 = VL08*(VL08+1);
+				skillVL08.innerHTML = textVL08;
+		var skillVL09 = document.getElementById('skillVL09');
+			textVL09 = VL09*(VL09+1);
+				skillVL09.innerHTML = textVL09;
 }
 
 function culcSP() {
@@ -106,12 +144,39 @@ function culcSP() {
 			Number(document.getElementById('skillFT05').textContent),
 			Number(document.getElementById('skillFT06').textContent),
 			Number(document.getElementById('skillFT07').textContent),
-			Number(document.getElementById('skillFT08').textContent)
-];
+			Number(document.getElementById('skillFT08').textContent),
+
+			Number(document.getElementById('skillPL01').textContent),
+			Number(document.getElementById('skillPL02').textContent),
+			Number(document.getElementById('skillPL03').textContent),
+			Number(document.getElementById('skillPL04').textContent),
+			Number(document.getElementById('skillPL05').textContent),
+			Number(document.getElementById('skillPL06').textContent),
+			Number(document.getElementById('skillPL07').textContent),
+			
+			Number(document.getElementById('skillDK01').textContent),
+			Number(document.getElementById('skillDK02').textContent),
+			Number(document.getElementById('skillDK03').textContent),
+			Number(document.getElementById('skillDK04').textContent),
+			Number(document.getElementById('skillDK05').textContent),
+			Number(document.getElementById('skillDK06').textContent),
+			Number(document.getElementById('skillDK07').textContent),
+			Number(document.getElementById('skillDK08').textContent),
+
+			Number(document.getElementById('skillVL01').textContent),
+			Number(document.getElementById('skillVL02').textContent),
+			Number(document.getElementById('skillVL03').textContent),
+			Number(document.getElementById('skillVL04').textContent),
+			Number(document.getElementById('skillVL05').textContent),
+			Number(document.getElementById('skillVL06').textContent),
+			Number(document.getElementById('skillVL07').textContent),
+			Number(document.getElementById('skillVL08').textContent),
+			Number(document.getElementById('skillVL09').textContent)
+		];
 
 	sumSP = skillSPs.reduce(function(a, x){
 		return a + x;
 	},0);
 
-	culcSP.innerHTML = sumSP;
+	document.getElementById('culcSP').innerHTML = sumSP;
 }
