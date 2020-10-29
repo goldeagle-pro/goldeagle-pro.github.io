@@ -1,6 +1,6 @@
 window.onload = job();
 
-job() {
+function job() {
 	jobA();
 	jobB();
 }
