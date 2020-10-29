@@ -84,6 +84,22 @@ select {
   z-index: 10;
 }
 
+.skillDescC {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 250px;
+  border: 2px solid #000080;
+  border-radius: 8px;
+  background-color: #CED6F8;
+  padding: 8px;
+}
+
+.skill:hover .skillDescC {
+  display: block;
+  z-index: 10;
+}
 .up {
   color: #000080;
 }
