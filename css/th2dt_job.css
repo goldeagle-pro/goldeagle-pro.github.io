@@ -1,7 +1,3 @@
-#sb-site {
-  background-color: #CED6F8;
-}
-
 .c {
   text-align: center;
 }
@@ -9,7 +5,10 @@
 .menu {
   display: flex;
   justify-content: center;
-  
+}
+
+.skillTable {
+  margin-bottom: 50px;
 }
 
 .box {
