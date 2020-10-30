@@ -380,6 +380,16 @@ function load() {
 	document.getElementById('DK07').options.selectedIndex = loadData[26];
 	document.getElementById('DK08').options.selectedIndex = loadData[27];
 
+	document.getElementById('VL01').options.selectedIndex = loadData[28];
+	document.getElementById('VL02').options.selectedIndex = loadData[29];
+	document.getElementById('VL03').options.selectedIndex = loadData[30];
+	document.getElementById('VL04').options.selectedIndex = loadData[31];
+	document.getElementById('VL05').options.selectedIndex = loadData[32];
+	document.getElementById('VL06').options.selectedIndex = loadData[33];
+	document.getElementById('VL07').options.selectedIndex = loadData[34];
+	document.getElementById('VL08').options.selectedIndex = loadData[35];
+	document.getElementById('VL09').options.selectedIndex = loadData[36];
+
 	DTskill();
 	culcSP();
 	remainSP();
