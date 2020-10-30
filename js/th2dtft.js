@@ -1,9 +1,9 @@
 window.onload =loading()
 function loading(){ 
 
-	var saveDatas =JSON.parse(localStorage.getItem('test'));
+	var saveNamess =JSON.parse(localStorage.getItem('test'));
 	for(i=0;i<wave.length;i++){
-	document.getElementById('saveDataNum').options[i].textContent=saveDatas[i];
+	document.getElementById('saveDataNum').options[i].textContent=saveNames[i];
 }
 	
 }
