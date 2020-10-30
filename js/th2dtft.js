@@ -1,5 +1,5 @@
-window.onload =loading()
-function loading(){ 
+window.onload =loadName()
+function loadName(){ 
 
 	var saveNamess =JSON.parse(localStorage.getItem('test'));
 	for(i=0;i<wave.length;i++){
