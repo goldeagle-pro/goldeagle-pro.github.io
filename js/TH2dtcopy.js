@@ -64,7 +64,9 @@ function remainSP() {
 
 function clearAll() {
 	document.skillSim.reset();
-	document.saveData.reset();
+	document.getElementById('saveDataName').value = "";
+	document.getElementById('skillDrug').value = "";
+	document.getElementById('currentLv').value = 1;
 	document.getElementById('totalLv').innerHTML = document.getElementById('currentLv').value;
 }
 
