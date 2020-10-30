@@ -329,6 +329,15 @@ function save() {
 				document.getElementById('PL05').options.selectedIndex,
 				document.getElementById('PL06').options.selectedIndex,
 				document.getElementById('PL07').options.selectedIndex,
+
+				document.getElementById('DK01').options.selectedIndex,
+				document.getElementById('DK02').options.selectedIndex,
+				document.getElementById('DK03').options.selectedIndex,
+				document.getElementById('DK04').options.selectedIndex,
+				document.getElementById('DK05').options.selectedIndex,
+				document.getElementById('DK06').options.selectedIndex,
+				document.getElementById('DK07').options.selectedIndex,
+				document.getElementById('DK08').options.selectedIndex,
 	];
 
 	localStorage.setItem(document.getElementById('saveDataNum').value,JSON.stringify(saveDataArrays));
@@ -361,6 +370,15 @@ function load() {
 	document.getElementById('PL05').options.selectedIndex = loadData[17];
 	document.getElementById('PL06').options.selectedIndex = loadData[18];
 	document.getElementById('PL07').options.selectedIndex = loadData[19];
+
+	document.getElementById('DK01').options.selectedIndex = loadData[20];
+	document.getElementById('DK02').options.selectedIndex = loadData[21];
+	document.getElementById('DK03').options.selectedIndex = loadData[22];
+	document.getElementById('DK04').options.selectedIndex = loadData[23];
+	document.getElementById('DK05').options.selectedIndex = loadData[24];
+	document.getElementById('DK06').options.selectedIndex = loadData[25];
+	document.getElementById('DK07').options.selectedIndex = loadData[26];
+	document.getElementById('DK08').options.selectedIndex = loadData[27];
 
 	DTskill();
 	culcSP();
