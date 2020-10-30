@@ -45,10 +45,6 @@
   position: relative;
 }
 
-select {
-  background-color: #CED6F8;
-}
-
 .skill:hover {
   cursor: pointer;
 }
