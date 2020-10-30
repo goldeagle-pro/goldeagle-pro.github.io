@@ -49,6 +49,10 @@ select {
   background-color: #CED6F8;
 }
 
+.skill:hover {
+  cursor: pointer;
+}
+/* スキル説明*/
 
 .skillDescA {
   display: none;
@@ -60,6 +64,12 @@ select {
   border-radius: 8px;
   background-color: #CED6F8;
   padding: 8px;
+}
+
+.skillDescA hr {
+  height: 1px;
+  background: linear-gradient(to right, #000080, #CED6F8);
+  border: none;
 }
 
 .skill:hover .skillDescA {
@@ -79,6 +89,12 @@ select {
   padding: 8px;
 }
 
+.skillDescB hr {
+  height: 1px;
+  background: linear-gradient(to right, #000080, #CED6F8);
+  border: none;
+}
+
 .skill:hover .skillDescB {
   display: block;
   z-index: 10;
@@ -96,6 +112,12 @@ select {
   padding: 8px;
 }
 
+.skillDescC hr {
+  height: 1px;
+  background: linear-gradient(to right, #000080, #CED6F8);
+  border: none;
+}
+
 .skill:hover .skillDescC {
   display: block;
   z-index: 10;
@@ -106,4 +128,36 @@ select {
 
 .down {
   color: red;
+}
+
+/* slider*/
+.sb-left {
+  padding: 0 20px; 
+}
+
+.sb-right {
+  padding: 0 20px;
+}
+
+.btn {
+  color: #ffffff;
+}
+
+.btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+ hr {
+  height: 1px;
+  background: linear-gradient(to right, #222,#fff,#222);
+  border: none;
+}
+
+a {
+  color: #ffffff;
+}
+
+#saveDataNum {
+  background-color: #ffffff;
 }
