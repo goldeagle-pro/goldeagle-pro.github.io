@@ -1,10 +1,11 @@
-window.onload =load() {
-	localStorage.getItem('test');
+window.onload =loading()
+function loading(){ 
 
-	JSON.parse(saveNumberArrays);
-
-	document.getElementById('saveDataNum').options.selectedIndex = saveNumber.selectedIndex;
-	console.log(document.getElementById('saveDataNum').options.selectedIndex);
+	var saveDatas =JSON.parse(localStorage.getItem('test'));
+	for(i=0;i<wave.length;i++){
+	document.getElementById('saveDataNum').options[i].textContent=saveDatas[i];
+}
+	
 }
 function DTskill() {
 	var FT01 = document.getElementById('FT01').selectedIndex;
@@ -294,12 +295,17 @@ function save() {
 	var saveNumber = document.getElementById('saveDataNum');
 	var saveWord = document.getElementById('saveDataName').value;
 
-	saveNumber.options[saveNumber.selectedIndex].textContent = saveNumber.selectedIndex + ":" + saveWord;
+	selectNumber= saveNumber.options.selectedIndex
+	saveNumber.options[selectNumber].textContent = saveNumber.options.selectedIndex+":"+saveWord;
+
+	var saveNumberArrays = [];
 	
-	var saveNumberArrays = [saveNumber.selectedIndex, :, saveWord]
+	for(i=0;i<saveNumber.options.length; i++){	
+	var obj = saveNumber.options[i].textContent;
+	saveNumberArrays.push(obj);
+	}
 
 	localStorage.setItem('test',JSON.stringify(saveNumberArrays));
-
 
 	var saveDataArrays = [	document.getElementById('saveDataName').value,
 				document.getElementById('skillDrug').value,
@@ -333,28 +339,28 @@ function save() {
 function load() {
 	var loadData = JSON.parse(localStorage.getItem(document.getElementById('saveDataNum').value));
 
-	document.getElementById('saveDataName').value = loadData[1];
-	document.getElementById('skillDrug').value = loadData[2];
-	document.getElementById('currentLv').value = loadData[3];
-	document.getElementById('changeSelectA').value = loadData[4];
-	document.getElementById('changeSelectB').value = loadData[5];
+	document.getElementById('saveDataName').value = loadData[0];
+	document.getElementById('skillDrug').value = loadData[1];
+	document.getElementById('currentLv').value = loadData[2];
+	document.getElementById('changeSelectA').value = loadData[3];
+	document.getElementById('changeSelectB').value = loadData[4];
 
-	document.getElementById('FT01').options.selectedIndex = loadData[6];
-	document.getElementById('FT02').options.selectedIndex = loadData[7];
-	document.getElementById('FT03').options.selectedIndex = loadData[8];
-	document.getElementById('FT04').options.selectedIndex = loadData[9];
-	document.getElementById('FT05').options.selectedIndex = loadData[10];
-	document.getElementById('FT06').options.selectedIndex = loadData[11];
-	document.getElementById('FT07').options.selectedIndex = loadData[12];
-	document.getElementById('FT08').options.selectedIndex = loadData[13];
+	document.getElementById('FT01').options.selectedIndex = loadData[5];
+	document.getElementById('FT02').options.selectedIndex = loadData[6];
+	document.getElementById('FT03').options.selectedIndex = loadData[7];
+	document.getElementById('FT04').options.selectedIndex = loadData[8];
+	document.getElementById('FT05').options.selectedIndex = loadData[9];
+	document.getElementById('FT06').options.selectedIndex = loadData[10];
+	document.getElementById('FT07').options.selectedIndex = loadData[11];
+	document.getElementById('FT08').options.selectedIndex = loadData[12];
 
-	document.getElementById('PL01').options.selectedIndex = loadData[14];
-	document.getElementById('PL02').options.selectedIndex = loadData[15];
-	document.getElementById('PL03').options.selectedIndex = loadData[16];
-	document.getElementById('PL04').options.selectedIndex = loadData[17];
-	document.getElementById('PL05').options.selectedIndex = loadData[18];
-	document.getElementById('PL06').options.selectedIndex = loadData[19];
-	document.getElementById('PL07').options.selectedIndex = loadData[20];
+	document.getElementById('PL01').options.selectedIndex = loadData[13];
+	document.getElementById('PL02').options.selectedIndex = loadData[14];
+	document.getElementById('PL03').options.selectedIndex = loadData[15];
+	document.getElementById('PL04').options.selectedIndex = loadData[16];
+	document.getElementById('PL05').options.selectedIndex = loadData[17];
+	document.getElementById('PL06').options.selectedIndex = loadData[18];
+	document.getElementById('PL07').options.selectedIndex = loadData[19];
 
 	DTskill();
 	culcSP();
