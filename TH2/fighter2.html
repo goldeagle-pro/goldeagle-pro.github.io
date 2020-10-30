@@ -12,7 +12,7 @@
 	
 <body>
 	<div id = "sb-site">
-		<form name="reset">
+		<form name="skillSim">
 			<div>
 				<p class="c">TH2DT Skill Sim.</p>
 			</div>
@@ -25,7 +25,7 @@
 				<p>Lv:</p>
 				<p id="totalLv">1</p>
 				<p id="remain">残りSP:</p>
-				<p id="remSP">3</p>
+				<p id="remainSP">3</p>
 				<p id="useSP">使用SP:</p>
 				<p id="culcSP">0</p>
 			</div>
@@ -74,7 +74,7 @@
 										</div>
 									</td>
 									<td>
-										<select id="FT01" onchange="DTskill(); culcSP()">
+										<select id="FT01" onchange="DTskill(); culcSP(); remainSP()">
 											<option value="0">0</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -100,7 +100,7 @@
 										</div>
 									</td>
 									<td>
-										<select id="FT02" onchange="DTskill(); culcSP()">
+										<select id="FT02" onchange="DTskill(); culcSP(); remainSP()">
 											<option value="0">0</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -125,7 +125,7 @@
 										</div>
 									</td>
 									<td>
-										<select id="FT03" onchange="DTskill(); culcSP()">
+										<select id="FT03" onchange="DTskill(); culcSP(); remainSP()">
 											<option value="0">0</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -152,7 +152,7 @@
 										</div>
 									</td>
 									<td>
-										<select id="FT04" onchange="DTskill(); culcSP()">
+										<select id="FT04" onchange="DTskill(); culcSP(); remainSP()">
 											<option value="0">0</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -179,7 +179,7 @@
 										</div>
 									</td>
 									<td>
-										<select id="FT05" onchange="DTskill(); culcSP()">
+										<select id="FT05" onchange="DTskill(); culcSP(); remainSP()">
 											<option value="0">0</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -206,7 +206,7 @@
 										</div>
 									</td>
 									<td>
-										<select id="FT06" onchange="DTskill(); culcSP()">
+										<select id="FT06" onchange="DTskill(); culcSP(); remainSP()">
 											<option value="0">0</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -233,7 +233,7 @@
 										</div>
 									</td>
 									<td>
-										<select id="FT07" onchange="DTskill(); culcSP()">
+										<select id="FT07" onchange="DTskill(); culcSP(); remainSP()">
 											<option value="0">0</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -255,7 +255,7 @@
 										</div>
 									</td>
 									<td>
-										<select id="FT08" onchange="DTskill(); culcSP()">
+										<select id="FT08" onchange="DTskill(); culcSP(); remainSP()">
 											<option value="0">0</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -292,7 +292,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="PL01" onchange="DTskill(); culcSP()">
+												<select id="PL01" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -317,7 +317,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="PL02" onchange="DTskill(); culcSP()">
+												<select id="PL02" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -342,7 +342,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="PL03" onchange="DTskill(); culcSP()">
+												<select id="PL03" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -367,7 +367,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="PL04" onchange="DTskill(); culcSP()">
+												<select id="PL04" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -390,7 +390,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="PL05" onchange="DTskill(); culcSP()">
+												<select id="PL05" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -417,7 +417,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="PL06" onchange="DTskill(); culcSP()">
+												<select id="PL06" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -439,7 +439,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="PL07" onchange="DTskill(); culcSP()">
+												<select id="PL07" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -475,7 +475,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="DK01" onchange="DTskill(); culcSP()">
+												<select id="DK01" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -499,7 +499,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="DK02" onchange="DTskill(); culcSP()">
+												<select id="DK02" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -529,7 +529,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="DK03" onchange="DTskill(); culcSP()">
+												<select id="DK03" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -559,7 +559,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="DK04" onchange="DTskill(); culcSP()">
+												<select id="DK04" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -589,7 +589,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="DK05" onchange="DTskill(); culcSP()">
+												<select id="DK05" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -611,7 +611,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="DK06" onchange="DTskill(); culcSP()">
+												<select id="DK06" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -633,7 +633,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="DK07" onchange="DTskill(); culcSP()">
+												<select id="DK07" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -660,7 +660,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="DK08" onchange="DTskill(); culcSP()">
+												<select id="DK08" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -696,7 +696,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="VL01" onchange="DTskill(); culcSP()">
+												<select id="VL01" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -724,7 +724,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="VL02" onchange="DTskill(); culcSP()">
+												<select id="VL02" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -754,7 +754,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="VL03" onchange="DTskill(); culcSP()">
+												<select id="VL03" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -783,7 +783,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="VL04" onchange="DTskill(); culcSP()">
+												<select id="VL04" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -813,7 +813,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="VL05" onchange="DTskill(); culcSP()">
+												<select id="VL05" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -838,7 +838,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="VL06" onchange="DTskill(); culcSP()">
+												<select id="VL06" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -861,7 +861,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="VL07" onchange="DTskill(); culcSP()">
+												<select id="VL07" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -888,7 +888,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="VL08" onchange="DTskill(); culcSP()">
+												<select id="VL08" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -910,7 +910,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="VL09" onchange="DTskill(); culcSP()">
+												<select id="VL09" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -944,7 +944,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="SA01">
+												<select id="SA01" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -975,7 +975,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="SA02">
+												<select id="SA02" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1000,7 +1000,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="SA03">
+												<select id="SA03" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1029,7 +1029,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="SA04">
+												<select id="SA04" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1059,7 +1059,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="SA05">
+												<select id="SA05" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1088,7 +1088,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="SA06">
+												<select id="SA06" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1115,7 +1115,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="SA07">
+												<select id="SA07" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1142,7 +1142,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="SA08">
+												<select id="SA08" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1164,7 +1164,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="SA09">
+												<select id="SA09" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1186,7 +1186,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="SA10">
+												<select id="SA10" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1219,7 +1219,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="DL01">
+												<select id="DL01" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1248,7 +1248,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="DL02">
+												<select id="DL02" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1277,7 +1277,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="DL03">
+												<select id="DL03" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1306,7 +1306,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="DL04">
+												<select id="DL04" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1331,7 +1331,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="DL05">
+												<select id="DL05" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1360,7 +1360,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="DL06">
+												<select id="DL06" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1390,7 +1390,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="DL07">
+												<select id="DL07" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1412,7 +1412,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="DL08">
+												<select id="DL08" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1434,7 +1434,7 @@
 												</div>
 											</td>
 											<td>
-												<select id="DL09">
+												<select id="DL09" onchange="DTskill(); culcSP(); remainSP()">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -1456,56 +1456,58 @@
 	</div>
 		
 	<div class = "sb-slidebar sb-left sb-style-push">
-		<hr class="fade">
-		<div>
-			<input type="text" name="saveDataName" id="saveDataName" placeholder="Name">
-		</div>
-		<hr class="fade">
-		<div>
-			<input type="text" name="skillDrug" id="skillDrug" placeholder="スキルの素">
-		</div>
-		<hr class="fade">
-		<div>
-			<input type="text" name="currentLv" id="currentLv" placeholder="Lv" onchange="totalLv()">
-		</div>
-		<hr class="fade">
-		<div>
-			<select id="saveDataNum">
-				<option value="0">セーブデータ選択</option>
-				<option value="1">1:no data</option>
-				<option value="2">2:no data</option>
-				<option value="3">3:no data</option>
-				<option value="4">4:no data</option>
-				<option value="5">5:no data</option>
-				<option value="6">6:no data</option>
-				<option value="7">7:no data</option>
-				<option value="8">8:no data</option>
-				<option value="9">9:no data</option>
-				<option value="10">10:no data</option>
-				<option value="11">11:no data</option>
-				<option value="12">12:no data</option>
-				<option value="13">13:no data</option>
-				<option value="14">14:no data</option>
-				<option value="15">15:no data</option>
-			</select>
-		</div>
-		<hr class="fade">
-		<div class="btn">
-			<p onclick="save()">セーブ</p>
-		</div>
-		<hr class="fade">
-		<div class="btn">
-			<p onclick="load()">ロード</p>
-		</div>
-		<hr class="fade">
-		<div class="btn">
-			<p onclick="clearAll();DT2skill()">クリア</p>
-		</div>
-		<hr class="fade">
-		<div class="btn">
-			<p onclick="deleteAll()">セーブデータ全消去</p>
-		</div>
-		<hr class="fade">
+		<form name="saveData">
+			<hr class="fade">
+			<div>
+				<input type="text" name="saveDataName" id="saveDataName" placeholder="Name">
+			</div>
+			<hr class="fade">
+			<div>
+				<input type="text" name="skillDrug" id="skillDrug" placeholder="スキルの素" onchange="remainSP()">
+			</div>
+			<hr class="fade">
+			<div>
+				<input type="text" name="currentLv" id="currentLv" value="1" onchange="totalLv(); remainSP()">
+			</div>
+			<hr class="fade">
+			<div>
+				<select id="saveDataNum">
+					<option value="0">セーブデータ選択</option>
+					<option value="1">1:no data</option>
+					<option value="2">2:no data</option>
+					<option value="3">3:no data</option>
+					<option value="4">4:no data</option>
+					<option value="5">5:no data</option>
+					<option value="6">6:no data</option>
+					<option value="7">7:no data</option>
+					<option value="8">8:no data</option>
+					<option value="9">9:no data</option>
+					<option value="10">10:no data</option>
+					<option value="11">11:no data</option>
+					<option value="12">12:no data</option>
+					<option value="13">13:no data</option>
+					<option value="14">14:no data</option>
+					<option value="15">15:no data</option>
+				</select>
+			</div>
+			<hr class="fade">
+			<div class="btn">
+				<p onclick="save()">セーブ</p>
+			</div>
+			<hr class="fade">
+			<div class="btn">
+				<p onclick="load()">ロード</p>
+			</div>
+			<hr class="fade">
+			<div class="btn">
+				<p onclick="clearAll();DTskill();culcSP();remainSP()">クリア</p>
+			</div>
+			<hr class="fade">
+			<div class="btn">
+				<p onclick="deleteAll()">セーブデータ全消去</p>
+			</div>
+			<hr class="fade">
+		</form>
 	</div>
 
 	<div class = "sb-slidebar sb-right sb-style-push">

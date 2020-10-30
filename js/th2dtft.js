@@ -35,6 +35,27 @@ function DTskill() {
 	var VL08 = document.getElementById('VL08').selectedIndex;
 	var VL09 = document.getElementById('VL09').selectedIndex;
 
+	var SA01 = document.getElementById('SA01').selectedIndex;
+	var SA02 = document.getElementById('SA02').selectedIndex;
+	var SA03 = document.getElementById('SA03').selectedIndex;
+	var SA04 = document.getElementById('SA04').selectedIndex;
+	var SA05 = document.getElementById('SA05').selectedIndex;
+	var SA06 = document.getElementById('SA06').selectedIndex;
+	var SA07 = document.getElementById('SA07').selectedIndex;
+	var SA08 = document.getElementById('SA08').selectedIndex;
+	var SA09 = document.getElementById('SA09').selectedIndex;
+	var SA10 = document.getElementById('SA10').selectedIndex;
+
+	var DL01 = document.getElementById('DL01').selectedIndex;
+	var DL02 = document.getElementById('DL02').selectedIndex;
+	var DL03 = document.getElementById('DL03').selectedIndex;
+	var DL04 = document.getElementById('DL04').selectedIndex;
+	var DL05 = document.getElementById('DL05').selectedIndex;
+	var DL06 = document.getElementById('DL06').selectedIndex;
+	var DL07 = document.getElementById('DL07').selectedIndex;
+	var DL08 = document.getElementById('DL08').selectedIndex;
+	var DL09 = document.getElementById('DL09').selectedIndex;
+
 	var skillFT01 = document.getElementById('skillFT01');
 		textFT01 = FT01*(FT01+1);
 			skillFT01.innerHTML = textFT01;
@@ -134,6 +155,65 @@ function DTskill() {
 	var skillVL09 = document.getElementById('skillVL09');
 		textVL09 = VL09*(VL09+1);
 			skillVL09.innerHTML = textVL09;
+	
+		var skillSA01 = document.getElementById('skillSA01');
+			textSA01 = SA01*(SA01+1)/2;
+				skillSA01.innerHTML = textSA01;
+		var skillSA02 = document.getElementById('skillSA02');
+			textSA02 = SA02*(SA02+1);
+				skillSA02.innerHTML = textSA02;
+		var skillSA03 = document.getElementById('skillSA03');
+			textSA03 = SA03*(SA03+1)/2;
+				skillSA03.innerHTML = textSA03;
+		var skillSA04 = document.getElementById('skillSA04');
+			textSA04 = SA04*(SA04+1)/2;
+				skillSA04.innerHTML = textSA04;
+		var skillSA05 = document.getElementById('skillSA05');
+			textSA05 = SA05*(SA05+1)/2;
+				skillSA05.innerHTML = textSA05;
+		var skillSA06 = document.getElementById('skillSA06');
+			textSA06 = SA06*(SA06+1)/2;
+				skillSA06.innerHTML = textSA06;
+		var skillSA07 = document.getElementById('skillSA07');
+			textSA07 = SA07*(SA07+1)/2;
+				skillSA07.innerHTML = textSA07;
+		var skillSA08 = document.getElementById('skillSA08');
+			textSA08 = SA08*(SA08+1);
+				skillSA08.innerHTML = textSA08;
+		var skillSA09 = document.getElementById('skillSA09');
+			textSA09 = SA09*(SA09+1);
+				skillSA09.innerHTML = textSA09;
+		var skillSA10 = document.getElementById('skillSA10');
+			textSA10 = SA10*(SA10+1);
+				skillSA10.innerHTML = textSA10;
+
+		var skillDL01 = document.getElementById('skillDL01');
+			textDL01 = DL01*(DL01+1)/2;
+				skillDL01.innerHTML = textDL01;
+		var skillDL02 = document.getElementById('skillDL02');
+			textDL02 = DL02*(DL02+1)/2;
+				skillDL02.innerHTML = textDL02;
+		var skillDL03 = document.getElementById('skillDL03');
+			textDL03 = DL03*(DL03+1)/2;
+				skillDL03.innerHTML = textDL03;
+		var skillDL04 = document.getElementById('skillDL04');
+			textDL04 = DL04*(DL04+1);
+				skillDL04.innerHTML = textDL04;
+		var skillDL05 = document.getElementById('skillDL05');
+			textDL05 = DL05*(DL05+1)/2;
+				skillDL05.innerHTML = textDL05;
+		var skillDL06 = document.getElementById('skillDL06');
+			textDL06 = DL06*(DL06+1)/2;
+				skillDL06.innerHTML = textDL06;
+		var skillDL07 = document.getElementById('skillDL07');
+			textDL07 = DL07*(DL07+1);
+				skillDL07.innerHTML = textDL07;
+		var skillDL08 = document.getElementById('skillDL08');
+			textDL08 = DL08*(DL08+1);
+				skillDL08.innerHTML = textDL08;
+		var skillDL09 = document.getElementById('skillDL09');
+			textDL09 = DL09*(DL09+1);
+				skillDL09.innerHTML = textDL09;
 }
 
 function culcSP() {
@@ -171,7 +251,28 @@ function culcSP() {
 			Number(document.getElementById('skillVL06').textContent),
 			Number(document.getElementById('skillVL07').textContent),
 			Number(document.getElementById('skillVL08').textContent),
-			Number(document.getElementById('skillVL09').textContent)
+			Number(document.getElementById('skillVL09').textContent),
+
+			Number(document.getElementById('skillSA01').textContent),
+			Number(document.getElementById('skillSA02').textContent),
+			Number(document.getElementById('skillSA03').textContent),
+			Number(document.getElementById('skillSA04').textContent),
+			Number(document.getElementById('skillSA05').textContent),
+			Number(document.getElementById('skillSA06').textContent),
+			Number(document.getElementById('skillSA07').textContent),
+			Number(document.getElementById('skillSA08').textContent),
+			Number(document.getElementById('skillSA09').textContent),
+			Number(document.getElementById('skillSA10').textContent),
+
+			Number(document.getElementById('skillDL01').textContent),
+			Number(document.getElementById('skillDL02').textContent),
+			Number(document.getElementById('skillDL03').textContent),
+			Number(document.getElementById('skillDL04').textContent),
+			Number(document.getElementById('skillDL05').textContent),
+			Number(document.getElementById('skillDL06').textContent),
+			Number(document.getElementById('skillDL07').textContent),
+			Number(document.getElementById('skillDL08').textContent),
+			Number(document.getElementById('skillDL09').textContent)
 		];
 
 	sumSP = skillSPs.reduce(function(a, x){
@@ -179,4 +280,31 @@ function culcSP() {
 	},0);
 
 	document.getElementById('culcSP').innerHTML = sumSP;
+}
+
+function save() {
+	var saveDataArrays = [document.getElementById('saveDataName').value,
+				document.getElementById('skillDrug').value,
+				document.getElementById('currentLv').value,
+				document.getElementById('changeSelectA').value,
+				document.getElementById('changeSelectB').value
+
+	];
+
+	localStorage.setItem(document.getElementById('saveDataNum').value,JSON.stringify(saveDataArrays));
+
+	var saveNumber = document.getElementById('saveDataNum');
+	var saveName = document.getElementById('saveDataName').value;
+
+	saveNumber.options[saveNumber.selectedIndex].textContent = saveNumber.selectedIndex + ":" + saveName;
+}
+
+function load() {
+	var loadData = JSON.parse(localStorage.getItem(document.getElementById('saveDataNum').value));
+
+	document.getElementById('saveDataName').value = loadData[0];
+	document.getElementById('skillDrug').value = loadData[1];
+	document.getElementById('currentLv').value = loadData[2];
+	document.getElementById('changeSelectA').value = loadData[3];
+	document.getElementById('changeSelectB').value = loadData[4];
 }
