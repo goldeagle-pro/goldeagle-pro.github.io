@@ -1,12 +1,12 @@
-window.onload =loadName()
-function loadName(){ 
-
-	var saveNamess =JSON.parse(localStorage.getItem('test'));
-	for(i=0;i<wave.length;i++){
-	document.getElementById('saveDataNum').options[i].textContent=saveNames[i];
-}
+window.onload =loading()
+function loading(){ 
 	
+var wave =JSON.parse(localStorage.getItem('test'));
+for(i=0;i<wave.length;i++){
+  document.getElementById('saveDataNum').options[i].textContent=wave[i];
+}	
 }
+
 function DTskill() {
 	var FT01 = document.getElementById('FT01').selectedIndex;
 	var FT02 = document.getElementById('FT02').selectedIndex;
