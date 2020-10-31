@@ -2,1828 +2,484 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>マジックユーザー系</title>
+	<title>ファイター系</title>
+	<meta name = "viewport" content = "width = device-width, 
+		initial-scale = 1.0, minimum-scale = 1.0, 
+		maximum-scale = 1.0, user-scalable = no">
 	<!-- meta -->
 	<meta name="Keywords" content="ToHeart2,ダンジョントラベラーズ, スキルシミュレータ,マジックユーザー">
-	<!--CSS-->
-	<link rel="stylesheet" href="../css/th2dt_job.css">
-	<!--scripts-->
-	<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=1EPIj0XNw1ppV4DorJU786D_nZ4RhKg1CZ_CNYLINGi93u5d_155FTFdnxLeN7hZ" charset="UTF-8"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/TH2dt_job.css">
 
+	 <!-- Slidebars CSS -->
+	 <link rel="stylesheet" href="../css/slidebars.min.css">
+	 <!-- jQuery -->
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	 <!-- Slidebars -->
+	 <script src="../js/slidebars.min.js"></script>
 </head>
 <body>
-	<form name="skillSim">
-		<div class="container">
-			<h2>マジックユーザー系</h2>
-			<div class="getSP">
-				<p class="Lv">Lv</p>
-				<input id="curLv" type="text"  onchange="remSP()">
-				<p class="skillD">スキルの素</p>
-				<input id="skillDrug" type="text" onchange="remSP()">
+	<div canvas="container">
+		<form name="skillSim">
+			<div>
+				<p class="c">TH2DT Skill Sim.</p>
 			</div>
-			<div class="remainSP">
-				<p class="remain">残りSP：</p>
-				<p id="remSP">3</p>
-				<p class="useSP">使用SP：</p>
-				<p id="culcSP" onchange="remSP()">0</p>
-				<input type="button" class="clear" value="クリア" onclick="clearAll();DT2skill()">
+			<div class="menu">
+				<p class="sb-toggle-left box"><  メニュー</p>
+				<p class="sb-toggle-right box">クラス  ></p> 
 			</div>
-
-			<table class="jobSP" border="1" align="center">
-				<tr>
-					<th>基本職</th>
-					<th>Lv15職</th>
-					<th>Lv30職</th>
-				</tr>
-				<tr>
-					<td>マジックユーザー</td>
-					<td>
-						<select id="changeSelectA">
-							<option value="Lv15a">ソーサレス</option>
-							<option value="Lv15b">エンチャントレス</option>
-							<option value="Lv15c">プリーステス</option>
-						</select>
-					</td>
-					<td>
-						<select id="changeSelectB">
-							<option value="Lv30a">ウィッチ</option>
-							<option value="Lv30b">マジカルプリンセス</option>
-							<option value="Lv30c">セージ</option>
-							<option value="Lv30d">ビショップ</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<table border="1" frame="below">
-							<tr>
-								<td>スキル</td>
-								<td>sLv</td>
-								<td>必要SP</td>
-							</tr>
-							<tr>
-								<td class="skill">
-									<span>ファイアボール</span>
-									<p class="skillDesc">敵一人に火属性のダメージ</p>
-								</td>
-								<td>
-									<select id="MUa" onchange="DT2skill();culcSP();remSP()">
-										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>
-										<option value="7">7</option>
-										<option value="8">8</option>
-										<option value="9">9</option>
-										<option value="10">10</option>
-									</select>
-								</td>
-								<td>
-									<p id="skillMuA">0</p>
-								</td> 
-							</tr>
-							<tr>
-								<td class="skill">
-									<span>アイスエッジ</span>
-									<p class="skillDesc">敵一人に水属性のダメージ</p>
-								</td>
-								<td>
-									<select id="MUb" onchange="DT2skill();culcSP();remSP()">
-										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>
-										<option value="7">7</option>
-										<option value="8">8</option>
-										<option value="9">9</option>
-										<option value="10">10</option>
-									</select>
-								</td>
-								<td id="skillMuB">0</td>
-							</tr>
-							<tr>
-								<td class="skill">
-									<span>サンダーボルト</span>
-									<p class="skillDesc">敵一人に雷属性のダメージ</p>
-								</td>
-								<td>
-									<select id="MUc" onchange="DT2skill();culcSP();remSP()">
-										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>
-										<option value="7">7</option>
-										<option value="8">8</option>
-										<option value="9">9</option>
-										<option value="10">10</option>
-									</select>
-								</td>
-								<td id="skillMuC">0</td>
-							</tr>
-							<tr>
-								<td class="skill">
-									<span>エアカッター</span>
-									<p class="skillDesc">敵一人に風属性のダメージ</p>
-								</td>
-								<td>
-									<select id="MUd" onchange="DT2skill();culcSP();remSP()">
-										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>
-										<option value="7">7</option>
-										<option value="8">8</option>
-										<option value="9">9</option>
-										<option value="10">10</option>
-									</select>
-								</td>
-								<td id="skillMuD">0</td>
-							</tr>
-							<tr>
-								<td class="skill">
-									<span>ストーンハンマー</span>
-									<p class="skillDesc">敵一人に土属性のダメージ</p>
-								</td>
-								<td>
-									<select id="MUe" onchange="DT2skill();culcSP();remSP()">
-										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>
-										<option value="7">7</option>
-										<option value="8">8</option>
-										<option value="9">9</option>
-										<option value="10">10</option>
-									</select>
-								</td>
-								<td id="skillMuE">0</td>
-							</tr>
-							<tr>
-								<td class="skill">
-									<span>ヒール</span>
-									<p class="skillDesc">味方一人のHPを回復する</p>
-								</td>
-								<td>
-									<select id="MUf" onchange="DT2skill();culcSP();remSP()">
-										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>
-										<option value="7">7</option>
-										<option value="8">8</option>
-										<option value="9">9</option>
-										<option value="10">10</option>
-									</select>
-								</td>
-								<td id="skillMuF">0</td>
-							</tr>
-							<tr>
-								<td class="skill">
-									<span>ポイズン</span>
-									<p class="skillDesc">敵全員を毒にする</p>
-								</td>
-								<td>
-									<select id="MUg" onchange="DT2skill();culcSP();remSP()">
-										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-									</select>
-								</td>
-								<td id="skillMuG">0</td>
-							</tr>
-						</table>
-					</td>
-					<td>
-						<div id="selectDispA">
-							<div id="Lv15a">
-								<table border="1" frame="below">
-									<tr>
-										<td>スキル</td>
-										<td>sLv</td>
-										<td>必要SP</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ファイアブラスト</span>
-											<p class="skillDesc">敵全員に火属性のダメージ</p>
-										</td>
-										<td>
-											<select id="SOa" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillSoA">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>アイスストーム</span>
-											<p class="skillDesc">敵全員に水属性のダメージ</p>
-										</td>
-										<td>
-											<select id="SOb" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillSoB">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>サンダーチェイン</span>
-											<p class="skillDesc">敵全員に雷属性のダメージ</p>
-										</td>
-										<td>
-											<select id="SOc" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id ="skillSoC">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>エアタービュランス</span>
-											<p class="skillDesc">敵全員に風属性のダメージ</p>
-										</td>
-										<td>
-											<select id="SOd" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillSoD">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ストーンシャワー</span>
-											<p class="skillDesc">敵全員に土属性のダメージ</p>
-										</td>
-										<td>
-											<select id="SOe" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillSoE">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ブラッドドレイン</span>
-											<p class="skillDesc">敵一人からHP吸収</p>
-										</td>
-										<td>
-											<select id="SOf" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillSoF">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>コンセントレイト</span>
-											<p class="skillDesc">魔法詠唱、詩、ダンスが中断しにくくなる</p>
-										</td>
-										<td>
-											<select id="SOg" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillSoG">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>オートリフレッシュ</span>
-											<p class="skillDesc">戦闘時、毎ターンTP回復</p>
-										</td>
-										<td>
-											<select id="SOh" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillSoH">0</td>
-									</tr>
-								</table>
-							</div>
-							<div id="Lv15b">
-								<table border="1" frame="below">
-									<tr>
-										<td>スキル</td>
-										<td>sLv</td>
-										<td>必要SP</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ナース</span>
-											<p class="skillDesc">味方一人の状態異常を回復する</p>
-										</td>
-										<td>
-											<select id="ENa" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillEnA">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>フリーズ</span>
-											<p class="skillDesc">敵全員を凍結させる</p>
-										</td>
-										<td>
-											<select id="ENb" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEnB">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>パラリシス</span>
-											<p class="skillDesc">敵全員を麻痺させる</p>
-										</td>
-										<td>
-											<select id="ENc" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEnC">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>サイレンス</span>
-											<p class="skillDesc">敵全員を沈黙させる</p>
-										</td>
-										<td>
-											<select id="ENd" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEnD">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>エンチャントファイア</span>
-											<p class="skillDesc">味方一人の武器を火属性にする。火属性魔法のダメージアップ</p>
-										</td>
-										<td>
-											<select id="ENe" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEnE">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>エンチャントアイス</span>
-											<p class="skillDesc">味方一人の武器を水属性にする。水属性魔法のダメージアップ</p>
-										</td>
-										<td>
-											<select id="ENf" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEnF">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>エンチャントサンダー</span>
-											<p class="skillDesc">味方一人の武器を雷属性にする。雷属性魔法のダメージアップ</p>
-										</td>
-										<td>
-											<select id="ENg" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEnG">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>エンチャントエアー</span>
-											<p class="skillDesc">味方一人の武器を風属性にする。風属性魔法のダメージアップ</p>
-										</td>
-										<td>
-											<select id="ENh" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEnH">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>エンチャントアース</span>
-											<p class="skillDesc">味方一人の武器を土属性にする。土属性魔法のダメージアップ</p>
-										</td>
-										<td>
-											<select id="ENi" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEnI">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ディバインシールド</span>
-											<p class="skillDesc">自分の被ダメージを一定量無効化する</p>
-										</td>
-										<td>
-											<select id="ENj" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEnJ">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>サークルブレイブ</span>
-											<p class="skillDesc">味方全員の攻撃力アップ</p>
-										</td>
-										<td>
-											<select id="ENk" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEnK">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>サークルプロテクト</span>
-											<p class="skillDesc">味方全員の防御力アップ</p>
-										</td>
-										<td>
-											<select id="ENl" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEnL">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>スタン</span>
-											<p class="skillDesc">敵一人を気絶させる</p>
-										</td>
-										<td>
-											<select id="ENm" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEnM">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>リターン</span>
-											<p class="skillDesc">ダンジョンから脱出する</p>
-										</td>
-										<td>
-											<select id="ENn" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEnN">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ファストキャスト</span>
-											<p class="skillDesc">詠唱速度アップ</p>
-										</td>
-										<td>
-											<select id="ENo" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEnO">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>アダプテーション</span>
-											<p class="skillDesc">全属性耐性アップ</p>
-										</td>
-										<td>
-											<select id="ENp" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillEnP">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>オートミニリフレッシュ</span>
-											<p class="skillDesc">戦闘時、毎ターンTP回復</p>
-										</td>
-										<td>
-											<select id="ENq" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEnQ">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ヒールマスタリー</span>
-											<p class="skillDesc">回復魔法の回復量にボーナス</p>
-										</td>
-										<td>
-											<select id="ENr" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillEnR">0</td>
-									</tr>
-								</table>
-							</div>
-							<div id="Lv15c">
-								<table border="1" freme="below">
-									<tr>
-										<td>スキル</td>
-										<td>sLv</td>
-										<td>必要SP</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>
-												ファイアブラスト<br>
-												アイスストーム<br>
-												サンダーチェイン<br>
-												エアタービュランス<br>
-												ストーンシャワー
-											</span>
-											<p class="skillDesc">キャラに応じた全体属性魔法</p>
-										</td>
-										<td>
-											<select id="PRa" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillPrA">0</td>
-									</tr>
-									<tr>
-										<td class="slill">
-											<span>ナース</span>
-											<p class="skillDesc">味方一人の状態異常を回復する</p>
-										</td>
-										<td>
-											<select id="PRb" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillPrB">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>サークルヒール</span>
-											<p class="skillDesc">味方全員のHPを回復する</p>
-										</td>
-										<td>
-											<select id="PRc" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillPrC">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>リザレクション</span>
-											<p class="skillDesc">味方一人の死亡状態を回復する</p>
-										</td>
-										<td>
-											<select id="PRd" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillPrD">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>スロウ</span>
-											<p class="skillDesc">敵全体をスロウにする</p>
-										</td>
-										<td>
-											<select id="PRe" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillPrE">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ディバインシールド</span>
-											<p class="skillDesc">自分の被ダメージを一定量無効化する</p>
-										</td>
-										<td>
-											<select id="PRf" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillPrF">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ライト</span>
-											<p class="skillDesc">フィールドを明るく照らし、隠された扉を見つけ出す</p>
-										</td>
-										<td>
-											<select id="PRg" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillPrG">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>リターン</span>
-											<p class="skillDesc">ダンジョンから脱出する</p>
-										</td>
-										<td>
-											<select id="PRh" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillPrH">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>オートミニリカバ</span>
-											<p class="skillDesc">戦闘時、毎ターンHP回復</p>
-										</td>
-										<td>
-											<select id="PRi" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillPrI">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>オートミニリフレッシュ</span>
-											<p class="skillDesc">戦闘時、毎ターンTP回復</p>
-										</td>
-										<td>
-											<select id="PRj" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillPrJ">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ヒールマスタリー</span>
-											<p class="skillDesc">回復魔法の回復量にボーナス</p>
-										</td>
-										<td>
-											<select id="PRk" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillPrK">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ファストキャスト</span>
-											<p class="skillDesc">詠唱速度アップ</p>
-										</td>
-										<td>
-											<select id="PRl" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillPrL">0</td>
-									</tr>
-								</table>
-							</div>
-						</div>
-					</td>
-					<td>
-						<div id="selectDispB">
-							<div id="Lv30a">
-								<table border="1" frame="below">
-									<tr>
-										<td>スキル</td>
-										<td>sLv</td>
-										<td>必要SP</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ルーズスピリット</span>
-											<p class="skillDesc">魔法命中率を犠牲にして魔法攻撃力をあげる。移動中使用不可</p>
-										</td>
-										<td>
-											<select id="WTa" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillWtA">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>インフェルノ</span>
-											<p class="skillDesc">敵全員に火属性の大ダメージ</p>
-										</td>
-										<td>
-											<select id="WTb" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillWtB">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ダイヤモンドダスト</span>
-											<p class="skillDesc">敵全員に水属性の大ダメージ</p>
-										</td>
-										<td>
-											<select id="WTc" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillWtC">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ライトニング</span>
-											<p class="skillDesc">敵全員に雷属性の大ダメージ</p>
-										</td>
-										<td>
-											<select id="WTd" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillWtD">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>トルネード</span>
-											<p class="skillDesc">敵全員に風属性の大ダメージ</p>
-										</td>
-										<td>
-											<select id="WTe" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillWtE">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>メテオ</span>
-											<p class="skillDesc">敵全員に土属性の大ダメージ</p>
-										</td>
-										<td>
-											<select id="WTf" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillWtF">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ソウルドレイン</span>
-											<p class="skillDesc">敵一人からTP吸収</p>
-										</td>
-										<td>
-											<select id="WTg" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillWtG">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>スロウ</span>
-											<p class="skillDesc">敵全体をスロウにする</p>
-										</td>
-										<td>
-											<select id="WTh" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillWtH">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>エコノミー</span>
-											<p class="skillDesc">戦闘中のスキル使用時、消費TPを軽減する</p>
-										</td>
-										<td>
-											<select id="WTi" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillWtI">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ファストキャスト</span>
-											<p class="skillDesc">詠唱速度アップ</p>
-										</td>
-										<td>
-											<select id="WTj" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillWtJ">0</td>
-									</tr>
-								</table>
-							</div>
-							<div id="Lv30b">
-								<table border="1" frame="below">
-									<tr>
-										<td>スキル</td>
-										<td>sLv</td>
-										<td>必要SP</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>マジカルスラッシュ</span>
-											<p class="skillDesc">剣装備時、敵全体を攻撃する</p>
-										</td>
-										<td>
-											<select id="MPa" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillMpA">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>マジカルバリア</span>
-											<p class="skillDesc">味方全員の魔法ダメージを一度だけ減少させる</p>
-										</td>
-										<td>
-											<select id="MPb" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillMpB">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>マジカルチェンジ</span>
-											<p class="skillDesc">自身の能力を上昇させる</p>
-										</td>
-										<td>
-											<select id="MPc" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillMpC">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>カバー</span>
-											<p class="skillDesc">味方への物理攻撃を自分が代わって受ける</p>
-										</td>
-										<td>
-											<select id="MPd" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillMpD">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>イリュージョン</span>
-											<p class="skillDesc">自身に幻影を作り出し、敵の攻撃を回避する</p>
-										</td>
-										<td>
-											<select id="MPe" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillMpE">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>アクセラレーター</span>
-											<p class="skillDesc">味方一人の行動速度アップ</p>
-										</td>
-										<td>
-											<select id="MPf" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillMpF">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>レインボーフラッシュ</span>
-											<p class="skillDesc">敵全員に無属性のダメージ</p>
-										</td>
-										<td>
-											<select id="MPg" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillMpG">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ソードマスタリー</span>
-											<p class="skillDesc">剣装備時、攻撃力にボーナス</p>
-										</td>
-										<td>
-											<select id="MPh" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillMpH">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ダブルアタック</span>
-											<p class="skillDesc">通常攻撃時、時々2回攻撃</p>
-										</td>
-										<td>
-											<select id="MPi" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillMpI">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>根性</span>
-											<p class="skillDesc">死亡時、HP1で生き残ることがある</p>
-										</td>
-										<td>
-											<select id="MPj" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillMpJ">0</td>
-									</tr>
-								</table>
-							</div>
-							<div id="Lv30c">
-								<table border="1" frame="below">
-									<tr>
-										<td>スキル</td>
-										<td>sLv</td>
-										<td>必要SP</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>アイデンティファイ</span>
-											<p class="skillDesc">未鑑定アイテムを識別する</p>
-										</td>
-										<td>
-											<select id="SGa" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillSgA">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>テラー</span>
-											<p class="skillDesc">敵全員を気絶させる</p>
-										</td>
-										<td>
-											<select id="SGb" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillSgB">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>スリープ</span>
-											<p class="skillDesc">敵全員を睡眠させる</p>
-										</td>
-										<td>
-											<select id="SGc" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillSgC">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ペトリファクション</span>
-											<p class="skillDesc">敵全員を石化させる</p>
-										</td>
-										<td>
-											<select id="SGd" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillSgD">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>デス</span>
-											<p class="skillDesc">敵一人を即死させる</p>
-										</td>
-										<td>
-											<select id="SGe" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillSgE">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ディスペル</span>
-											<p class="skillDesc">敵全員の強化を打ち消す</p>
-										</td>
-										<td>
-											<select id="SGf" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillSgF">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>アクセラレーター</span>
-											<p class="skillDesc">味方一人の攻撃速度アップ</p>
-										</td>
-										<td>
-											<select id="SGg" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillSgG">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>アンプリケイション</span>
-											<p class="skillDesc">味方一人の最大HPアップ</p>
-										</td>
-										<td>
-											<select id="SGh" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillSgH">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>サンベール</span>
-											<p class="skillDesc">味方全員の魔法防御力アップ</p>
-										</td>
-										<td>
-											<select id="SGi" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillSgI">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>スタブプロテクト</span>
-											<p class="skillDesc">味方一人の突攻撃に対する耐性を高める</p>
-										</td>
-										<td>
-											<select id="SGj" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillSgJ">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>カットプロテクト</span>
-											<p class="skillDesc">味方一人の斬攻撃に対する耐性を高める</p>
-										</td>
-										<td>
-											<select id="SGk" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillSgK">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ブロウプロテクト</span>
-											<p class="skillDesc">味方一人の壊攻撃に対する耐性を高める</p>
-										</td>
-										<td>
-											<select id="SGl" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillSgL">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>エコノミー</span>
-											<p class="skillDesc">戦闘中のスキル使用時、消費TPを軽減する</p>
-										</td>
-										<td>
-											<select id="SGm" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillSgM">0</td>
-									</tr>
-								</table>
-							</div>
-							<div id="Lv30d">
-								<table border="1" frame="below">
-									<tr>
-										<td>スキル</td>
-										<td>sLv</td>
-										<td>必要SP</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ホーリージャッジ</span>
-											<p class="skillDesc">棍装備時、強力な打撃で攻撃</p>
-										</td>
-										<td>
-											<select id="BSa" onchange="DT2skill();culcSP();remSP()">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillBsA">0</td>
-										<tr>
-											<td class="skill">
-												<span>ジャスティス</span>
-												<p class="skillDesc">棍装備時、攻撃と同時に敵の防御力を低下させる</p>
-											</td>
-											<td>
-												<select id="BSb" onchange="DT2skill();culcSP();remSP()">
-													<option value="0">0</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-													<option value="5">5</option>
-													<option value="6">6</option>
-													<option value="7">7</option>
-													<option value="8">8</option>
-													<option value="9">9</option>
-													<option value="10">10</option>
-												</select>
-											</td>
-											<td id="skillBsB">0</td>
-										</tr>
-										<tr>
-											<td class="skill">
-												<span>フルヒール</span>
-												<p class="skillDesc">味方一人のHPを全快する</p>
-											</td>
-											<td>
-												<select id="BSc" onchange="DT2skill();culcSP();remSP()">
-													<option value="0">0</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-													<option value="5">5</option>
-												</select>
-											</td>
-											<td id="skillBsC">0</td>
-										</tr>
-										<tr>
-											<td class="skill">
-												<span>サークルナース</span>
-												<p class="skillDesc">味方全員の状態異常を回復する</p>
-											</td>
-											<td>
-												<select id="BSd" onchange="DT2skill();culcSP();remSP()">
-													<option value="0">0</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-													<option value="5">5</option>
-													<option value="6">6</option>
-													<option value="7">7</option>
-													<option value="8">8</option>
-													<option value="9">9</option>
-													<option value="10">10</option>
-												</select>
-											</td>
-											<td id="skillBsD">0</td>
-										</tr>
-										<tr>
-											<td class="skill">
-												<span>インシュランス</span>
-												<p class="skillDesc">自分の死亡時、一度だけ蘇生する</p>
-											</td>
-											<td>
-												<select id="BSe" onchange="DT2skill();culcSP();remSP()">
-													<option value="0">0</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-													<option value="5">5</option>
-												</select>
-											</td>
-											<td id="skillBsE">0</td>
-										</tr>
-										<tr>
-											<td class="skill">
-												<span>サンベール</span>
-												<p class="skillDesc">味方全員の魔法防御力アップ</p>
-											</td>
-											<td>
-												<select id="BSf" onchange="DT2skill();culcSP();remSP()">
-													<option value="0">0</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-													<option value="5">5</option>
-												</select>
-											</td>
-											<td id="skillBsF">0</td>
-										</tr>
-										<tr>
-											<td class="skill">
-												<span>ムーンカーテン</span>
-												<p class="skillDesc">味方全員の属性耐性アップ</p>
-											</td>
-											<td>
-												<select id="BSg" onchange="DT2skill();culcSP();remSP()">
-													<option value="0">0</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-													<option value="5">5</option>
-												</select>
-											</td>
-											<td id="skillBsG">0</td>
-										</tr>
-										<tr>
-											<td class="skill">
-												<span>シャインクルス</span>
-												<p class="skillDesc">不死の敵に対して大ダメージを与える</p>
-											</td>
-											<td>
-												<select id="BSh" onchange="DT2skill();culcSP();remSP()">
-													<option value="0">0</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-													<option value="5">5</option>
-													<option value="6">6</option>
-													<option value="7">7</option>
-													<option value="8">8</option>
-													<option value="9">9</option>
-													<option value="10">10</option>
-												</select>
-											</td>
-											<td id="skillBsH">0</td>
-										</tr>
-										<tr>
-											<td class="skill">
-												<span>メイスマスタリー</span>
-												<p class="skillDesc">棍装備時、攻撃力にボーナス</p>
-											</td>
-											<td>
-												<select id="BSi" onchange="DT2skill();culcSP();remSP()">
-													<option value="0">0</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-													<option value="5">5</option>
-													<option value="6">6</option>
-													<option value="7">7</option>
-													<option value="8">8</option>
-													<option value="9">9</option>
-													<option value="10">10</option>
-												</select>
-											</td>
-											<td id="skillBsI">0</td>
-										</tr>
-										<tr>
-											<td class="skill">
-												<span>ダブルアタック</span>
-												<p class="skillDesc">通常攻撃時、時々2回攻撃</p>
-											</td>
-											<td>
-												<select id="BSj" onchange="DT2skill();culcSP();remSP()">
-													<option value="0">0</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-													<option value="5">5</option>
-												</select>
-											</td>
-											<td id="skillBsJ">0</td>
-										</tr>
-									</tr>
-								</table>
-							</div>
-						</div>
-					</td>
-				</tr>
-			</table>
+			<p class="c">ファイター系</p>
+			<div class="useSPs">
+				<p>Lv:</p>
+				<p id="totalLv">1</p>
+				<p id="remain">残りSP:</p>
+				<p id="remainSP">3</p>
+				<p id="useSP">使用SP:</p>
+				<p id="culcSP">0</p>
+			</div>
+			<div class="skillTable">
+				<table class="skillName" border="1" align="center">
+					<tr>
+						<th>基本職</th>
+						<th>Lv15職</th>
+						<th>Lv30職</th>
+					</tr>
+					<tr>
+						<td>マジックユーザー</td>
+						<td>
+							<select id="changeSelectA">
+								<option value="Lv15a">ソーサレス</option>
+								<option value="Lv15b">エンチャントレス</option>
+								<option value="Lv15c">プリーステス</option>
+							</select>
+						</td>
+						<td>
+							<select id="changeSelectB">
+								<option value="Lv30a">ウィッチ</option>
+								<option value="Lv30b">マジカルプリンセス</option>
+								<option value="Lv30c">セージ</option>
+								<option value="Lv30d">ビショップ</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table border="1">
+								<tr>
+									<td>スキル</td>
+									<td>sLv</td>
+									<td>必要SP</td>
+								</tr>
+								<tr>
+									<td class="skill">
+										<span>ファイアボール</span>
+										<div class="skillDescA">
+											<p>敵一人に火属性のダメージ</p>
+											<hr class="skillup">
+											<p>LvUp時</br>
+											<span class="up">魔法ダメージアップ</span></br>
+											<span class="up">魔法命中アップ</span></br>
+											<span class="down">消費TPアップ</span></br>
+											<span class="down">詠唱速度ダウン</span></p>
+										</div>
+									</td>
+									<td>
+										<select id="MU01">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+									</td>
+									<td id="skillMU01">0</td>
+								</tr>
+								<tr>
+									<td class="skill">
+										<span>アイスエッジ</span>
+										<div class="skillDescA">
+											<p>敵一人に水属性のダメージ</p>
+											<hr class="skillup">
+											<p>LvUp時</br>
+											<span class="up">魔法ダメージアップ</span></br>
+											<span class="up">魔法命中アップ</span></br>
+											<span class="down">消費TPアップ</span></br>
+											<span class="down">詠唱速度ダウン</span></p>
+										</div>
+									</td>
+									<td>
+										<select id="MU02">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+									</td>
+									<td id="skillMU02">0</td>
+								</tr>
+								<tr>
+									<td class="skill">
+										<span>サンダーボルト</span>
+										<div class="skillDescA">
+											<p>敵一人に雷属性のダメージ</p>
+											<hr class="skillup">
+											<p>LvUp時</br>
+											<span class="up">魔法ダメージアップ</span></br>
+											<span class="up">魔法命中アップ</span></br>
+											<span class="down">消費TPアップ</span></br>
+											<span class="down">詠唱速度ダウン</span></p>
+										</div>
+									</td>
+									<td>
+										<select id="MU03">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+									</td>
+									<td id="skillMU03">0</td>
+								</tr>
+								<tr>
+									<td class="skill">
+										<span>エアカッター</span>
+										<div class="skillDescA">
+											<p>敵一人に風属性のダメージ</p>
+											<hr class="skillup">
+											<p>LvUp時</br>
+											<span class="up">魔法ダメージアップ</span></br>
+											<span class="up">魔法命中アップ</span></br>
+											<span class="down">消費TPアップ</span></br>
+											<span class="down">詠唱速度ダウン</span></p>
+										</div>
+									</td>
+									<td>
+										<select id="MU04">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+									</td>
+									<td id="skillMU04">0</td>
+								</tr>
+								<tr>
+									<td class="skill">
+										<span>ストーンハンマー</span>
+										<div class="skillDescA">
+											<p>敵一人に土属性のダメージ</p>
+											<hr class="skillup">
+											<p>LvUp時</br>
+											<span class="up">魔法ダメージアップ</span></br>
+											<span class="up">魔法命中アップ</span></br>
+											<span class="down">消費TPアップ</span></br>
+											<span class="down">詠唱速度ダウン</span></p>
+										</div>
+									</td>
+									<td>
+										<select id="MU05">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+									</td>
+									<td id="skillMU05">0</td>
+								</tr>
+								<tr>
+									<td class="skill">
+										<span>ヒール</span>
+										<div class="skillDescA">
+											<p>味方一人のHPを回復する</p>
+											<hr class="skillup">
+											<p>LvUp時</br>
+											<span class="up">HP回復量アップ</span></br>
+											<span class="down">消費TPアップ</span></p>
+										</div>
+									</td>
+									<td>
+										<select id="MU06">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+									</td>
+									<td id="skillMU06">0</td>
+								</tr>
+								<tr>
+									<td class="skill">
+										<span>ポイズン</span>
+										<div class="skillDescA">
+											<p>敵全員を毒にする</p>
+											<hr class="skillup">
+											<p>LvUp時</br>
+											<span class="up">魔法命中アップ</span></br>
+											<span class="up">詠唱速度アップ</span></br>
+											<span class="down">消費TPアップ</span></p>
+										</div>
+									</td>
+									<td>
+										<select id="MU07">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+									</td>
+									<td id="skillMU07">0</td>
+								</tr>
+							</table>
+						</td>
+						<td id="Lv15a">
+							<table border="1">
+								<tr>
+									<td>スキル</td>
+									<td>sLv</td>
+									<td>必要SP</td>
+								</tr>
+								<tr>
+									<td class="skill">
+										<span>ファイアブラスト</span>
+										<div class="skillDescB">
+											<p>敵全員に火属性のダメージ</p>
+											<hr class="skillup">
+											<p>LvUp時</br>
+											<span class="up">魔法ダメージアップ</span></br>
+											<span class="up">魔法命中アップ</span></br>
+											<span class="down">消費TPアップ</span></br>
+											<span class="down">詠唱速度ダウン</span></p>
+										</div>
+									</td>
+									<td>
+										<select id="SO01">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+									</td>
+									<td id="skillSO01">0</td>
+								</tr>
+								<tr>
+									<td class="skill">
+										<span>アイスストーム</span>
+										<div class="skillDescB">
+											<p>敵全員に水属性のダメージ</p>
+											<hr class="skillup">
+											<p>LvUp時</br>
+											<span class="up">魔法ダメージアップ</span></br>
+											<span class="up">魔法命中アップ</span></br>
+											<span class="down">消費TPアップ</span></br>
+											<span class="down">詠唱速度ダウン</span></p>
+										</div>
+									</td>
+									<td>
+										<select id="SO02">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+									</td>
+									<td id="skillSO02">0</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</div>
+	<div off-canvas = "sb-left left push">
+		<div class="left-content">
+			<form name="saveData">
+				<hr class="fade">
+				<div>
+					<input type="text" name="saveDataName" id="saveDataName" placeholder="Name">
+				</div>
+				<hr class="fade">
+				<div>
+					<input type="text" name="skillDrug" id="skillDrug" placeholder="スキルの素" onchange="remainSP()">
+				</div>
+				<hr class="fade">
+				<div>
+					<input type="text" name="currentLv" id="currentLv" value="1" onchange="totalLv(); remainSP()">
+				</div>
+				<hr class="fade">
+				<div>
+					<select id="saveDataNum">
+						<option value="0">セーブデータ選択</option>
+						<option value="1">1:no data</option>
+						<option value="2">2:no data</option>
+						<option value="3">3:no data</option>
+						<option value="4">4:no data</option>
+						<option value="5">5:no data</option>
+						<option value="6">6:no data</option>
+						<option value="7">7:no data</option>
+						<option value="8">8:no data</option>
+						<option value="9">9:no data</option>
+						<option value="10">10:no data</option>
+						<option value="11">11:no data</option>
+						<option value="12">12:no data</option>
+						<option value="13">13:no data</option>
+						<option value="14">14:no data</option>
+						<option value="15">15:no data</option>
+					</select>
+				</div>
+				<hr class="fade">
+				<div class="btn">
+					<p onclick="save()">セーブ</p>
+				</div>
+				<hr class="fade">
+				<div class="btn">
+					<p onclick="load()">ロード</p>
+				</div>
+				<hr class="fade">
+				<div class="btn">
+					<p onclick="clearAll();DTskill();culcSP();remainSP()">クリア</p>
+				</div>
+				<hr class="fade">
+				<div class="btn">
+					<p onclick="remove()">選択したセーブデータを消去</p>
+				</div>
+				<hr class="fade">
+			</form>
 		</div>
-	</form>
-	<script src="../js/th2dt.js"></script>
-	<script src="../js/TH2dtmu.js"></script>
+	</div>
+
+	<div off-canvas = "sb-right right push">
+		<div class="right-content">
+			<hr class="fade">
+			<div class="btn">
+				<p class="sb-close">ファイター系</p>
+			</div>
+			<hr class="fade">
+			<div class="btn">
+				<a href="https://goldeagle-pro.github.io/TH2/magicuser.html">マジックユーザー系</a>
+			</div>
+			<hr class="fade">
+			<div class="btn">
+				<a href="https://goldeagle-pro.github.io/TH2/scout.html">スカウト系</a>
+			</div>
+			<hr class="fade">
+			<div class="btn">
+				<a href="https://goldeagle-pro.github.io/TH2/maid.html">メイド系</a>
+			</div>
+			<hr class="fade">
+		</div>
+	</div>
+<!-- script -->
+	<script src="../js/TH2dt.js" type="text/javascript" charset="UTF-8"></script>
+	<script src="../js/TH2dtmu.js" type="text/javascript" charset="UTF-8"></script> 
+		
+	<script>
+		( function ( $ ) {
+		  // Initialize Slidebars
+		  var controller = new slidebars();
+		  controller.init();
+		
+		  /**
+		   * Original Version Style Control Classes
+		   */
+		
+		  // Open left
+		  $( '.sb-open-left' ).on( 'click', function ( event ) {
+		    event.preventDefault();
+		    event.stopPropagation();
+		
+		    controller.open( 'sb-left' );
+		  } );
+		
+		  // Toggle left
+		  $( '.sb-toggle-left' ).on( 'click', function ( event ) {
+		    event.preventDefault();
+		    event.stopPropagation();
+		
+		    controller.toggle( 'sb-left' );
+		  } );
+		
+		  // Open right
+		  $( '.sb-open-right' ).on( 'click', function ( event ) {
+		    event.preventDefault();
+		    event.stopPropagation();
+		
+		    controller.open( 'sb-right' );
+		  } );
+		
+		  // Toggle right
+		  $( '.sb-toggle-right' ).on( 'click', function ( event ) {
+		    event.preventDefault();
+		    event.stopPropagation();
+		
+		    controller.toggle( 'sb-right' );
+		  } );
+		
+		  // Close
+		  $( '.sb-close' ).on( 'click', function ( event ) {
+		    event.preventDefault();
+		    event.stopPropagation();
+		
+		    controller.close();
+		  } );
+		} ) ( jQuery );
+		</script>
 </body>
-</html>
+	
