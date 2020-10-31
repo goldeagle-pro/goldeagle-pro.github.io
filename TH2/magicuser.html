@@ -28,7 +28,7 @@
 				<p class="sb-toggle-left box"><  メニュー</p>
 				<p class="sb-toggle-right box">クラス  ></p> 
 			</div>
-			<p class="c">ファイター系</p>
+			<p class="c">マジックユーザー系</p>
 			<div class="useSPs">
 				<p>Lv:</p>
 				<p id="totalLv">1</p>
@@ -275,7 +275,7 @@
 							</table>
 						</td>
 						<td>
-							<div id="changeDispA">
+							<div id="selectDispA">
 								<div id="Lv15a">
 									<table border="1">
 										<tr>
@@ -536,461 +536,470 @@
 										</tr>
 									</table>
 								</div>
-							</div>
-							<div id="Lv15b">
-								<table border="1">
-									<tr>
-										<td>スキル</td>
-										<td>sLv</td>
-										<td>必要SP</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ナース</span>
-											<div class="skillDescB">
-												<p>味方一人の状態異常を回復する</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<span class="up">毒→麻痺→沈黙→凍結→睡眠→石化→スロウ→→→全ての状態異常</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN01">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillEN01">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>フリーズ</span>
-											<div class="skillDescB">
-												<p>敵全員を凍結させる</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<span class="up">魔法命中アップ</span></br>
-												<span class="up">詠唱速度アップ</span></br>
-												<span class="down">消費TPアップ</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN02">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEN02">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>パラリシス</span>
-											<div class="skillDescB">
-												<p>敵全員を麻痺させる</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<span class="up">魔法命中アップ</span></br>
-												<span class="up">詠唱速度アップ</span></br>
-												<span class="down">消費TPアップ</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN03">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEN03">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>サイレンス</span>
-											<div class="skillDescB">
-												<p>敵全員を沈黙させる</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<span class="up">魔法命中アップ</span></br>
-												<span class="up">詠唱速度アップ</span></br>
-												<span class="down">消費TPアップ</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN04">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEN04">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>エンチャントファイア</span>
-											<div class="skillDescB">
-												<p>味方一人の武器を火属性にする。</br>
-												火属性魔法のダメージアップ</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<span class="up">詠唱速度アップ</span></br>
-												<span class="up">効果ターン数アップ</span></br>
-												<span class="up">行動後速度修正アップ</span></br>
-												<span class="down">消費TPアップ</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN05">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEN05">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>エンチャントアイス</span>
-											<div class="skillDescB">
-												<p>味方一人の武器を水属性にする。</br>
-												水属性魔法のダメージアップ</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<span class="up">詠唱速度アップ</span></br>
-												<span class="up">効果ターン数アップ</span></br>
-												<span class="up">行動後速度修正アップ</span></br>
-												<span class="down">消費TPアップ</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN06">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEN06">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>エンチャントエアー</span>
-											<div class="skillDescB">
-												<p>味方一人の武器を風属性にする。</br>
-												風属性魔法のダメージアップ</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<span class="up">詠唱速度アップ</span></br>
-												<span class="up">効果ターン数アップ</span></br>
-												<span class="up">行動後速度修正アップ</span></br>
-												<span class="down">消費TPアップ</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN07">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEN07">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>エンチャントアース</span>
-											<div class="skillDescB">
-												<p>味方一人の武器を土属性にする。</br>
-												土属性魔法のダメージアップ</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<span class="up">詠唱速度アップ</span></br>
-												<span class="up">効果ターン数アップ</span></br>
-												<span class="up">行動後速度修正アップ</span></br>
-												<span class="down">消費TPアップ</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN08">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEN08">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>エンチャントサンダー</span>
-											<div class="skillDescB">
-												<p>味方一人の武器を雷属性にする。</br>
-												雷属性魔法のダメージアップ</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<span class="up">詠唱速度アップ</span></br>
-												<span class="up">効果ターン数アップ</span></br>
-												<span class="up">行動後速度修正アップ</span></br>
-												<span class="down">消費TPアップ</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN09">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEN09">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ディバインシールド</span>
-											<div class="skillDescB">
-												<p>自身の被ダメージを一定量無効化する</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<span class="up">ダメージ無効化量アップ</span></br>
-												<span class="down">消費TPアップ</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN10">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEN10">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>サークルブレイブ</span>
-											<div class="skillDescB">
-												<p>味方全員の攻撃力アップ</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<span class="up">攻撃力増加率アップ</span></br>
-												<span class="up">効果ターン数アップ</span></br>
-												<span class="up">行動後速度修正アップ</span></br>
-												<span class="down">消費TPアップ</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN11">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEN11">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>サークルプロテクト</span>
-											<div class="skillDescB">
-												<p>味方全員の防御力アップ</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<span class="up">防御力増加率アップ</span></br>
-												<span class="up">効果ターン数アップ</span></br>
-												<span class="up">行動後速度修正アップ</span></br>
-												<span class="down">消費TPアップ</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN12">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEN12">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>スタン</span>
-											<div class="skillDescB">
-												<p>敵一人を気絶させる</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<span class="up">魔法命中アップ</span></br>
-												<span class="up">行動後速度修正アップ</span></br>
-												<span class="down">消費TPアップ</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN13">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEN13">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>リターン</span>
-											<div class="skillDescB">
-												<p>ワールドマップに戻れます</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<span class="up">消費TPダウン</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN14">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEN14">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ファストキャスト</span>
-											<div class="skillDescB">
-												<p>詠唱速度アップ</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<spana class="up">詠唱速度アップ</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN15">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEN15">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>アダプテーション</span>
-											<div class="skillDescB">
-												<p>全属性耐性アップ</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<span class="up">属性耐性アップ</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN16">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillEN16">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>オートミニリフレッシュ</span>
-											<div class="skillDescB">
-												<p>戦闘時、毎ターンTPが少し回復</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<span class="up">TP回復量アップ</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN17">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</td>
-										<td id="skillEN17">0</td>
-									</tr>
-									<tr>
-										<td class="skill">
-											<span>ヒールマスタリー</span>
-											<div class="skillDescB">
-												<p>回復魔法の回復量にボーナス</p>
-												<hr class="skillup">
-												<p>LvUp時</br>
-												<span class="up">HP回復量ボーナスアップ</span></p>
-											</div>
-										</td>
-										<td>
-											<select id="EN18">
-												<option value="0">0</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												<option value="7">7</option>
-												<option value="8">8</option>
-												<option value="9">9</option>
-												<option value="10">10</option>
-											</select>
-										</td>
-										<td id="skillEN18">0</td>
-									</tr>
-								</table>
+								<div id="Lv15b">
+									<table border="1">
+										<tr>
+											<td>スキル</td>
+											<td>sLv</td>
+											<td>必要SP</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>ナース</span>
+												<div class="skillDescB">
+													<p>味方一人の状態異常を回復する</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">毒→麻痺→沈黙→凍結→睡眠→石化→スロウ→→→全ての状態異常</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN01">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillEN01">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>フリーズ</span>
+												<div class="skillDescB">
+													<p>敵全員を凍結させる</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">魔法命中アップ</span></br>
+													<span class="up">詠唱速度アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN02">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillEN02">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>パラリシス</span>
+												<div class="skillDescB">
+													<p>敵全員を麻痺させる</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">魔法命中アップ</span></br>
+													<span class="up">詠唱速度アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN03">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillEN03">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>サイレンス</span>
+												<div class="skillDescB">
+													<p>敵全員を沈黙させる</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">魔法命中アップ</span></br>
+													<span class="up">詠唱速度アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN04">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillEN04">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>エンチャントファイア</span>
+												<div class="skillDescB">
+													<p>味方一人の武器を火属性にする。</br>
+													火属性魔法のダメージアップ</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">詠唱速度アップ</span></br>
+													<span class="up">効果ターン数アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN05">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillEN05">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>エンチャントアイス</span>
+												<div class="skillDescB">
+													<p>味方一人の武器を水属性にする。</br>
+													水属性魔法のダメージアップ</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">詠唱速度アップ</span></br>
+													<span class="up">効果ターン数アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN06">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillEN06">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>エンチャントエアー</span>
+												<div class="skillDescB">
+													<p>味方一人の武器を風属性にする。</br>
+													風属性魔法のダメージアップ</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">詠唱速度アップ</span></br>
+													<span class="up">効果ターン数アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN07">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillEN07">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>エンチャントアース</span>
+												<div class="skillDescB">
+													<p>味方一人の武器を土属性にする。</br>
+													土属性魔法のダメージアップ</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">詠唱速度アップ</span></br>
+													<span class="up">効果ターン数アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN08">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillEN08">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>エンチャントサンダー</span>
+												<div class="skillDescB">
+													<p>味方一人の武器を雷属性にする。</br>
+													雷属性魔法のダメージアップ</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">詠唱速度アップ</span></br>
+													<span class="up">効果ターン数アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN09">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillEN09">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>ディバインシールド</span>
+												<div class="skillDescB">
+													<p>自身の被ダメージを一定量無効化する</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">ダメージ無効化量アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN10">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillEN10">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>サークルブレイブ</span>
+												<div class="skillDescB">
+													<p>味方全員の攻撃力アップ</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">攻撃力増加率アップ</span></br>
+													<span class="up">効果ターン数アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN11">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillEN11">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>サークルプロテクト</span>
+												<div class="skillDescB">
+													<p>味方全員の防御力アップ</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">防御力増加率アップ</span></br>
+													<span class="up">効果ターン数アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN12">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillEN12">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>スタン</span>
+												<div class="skillDescB">
+													<p>敵一人を気絶させる</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">魔法命中アップ</span></br>
+													<span class="up">行動後速度修正アップ</span></br>
+													<span class="down">消費TPアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN13">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillEN13">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>リターン</span>
+												<div class="skillDescB">
+													<p>ワールドマップに戻れます</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">消費TPダウン</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN14">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillEN14">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>ファストキャスト</span>
+												<div class="skillDescB">
+													<p>詠唱速度アップ</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<spana class="up">詠唱速度アップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN15">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillEN15">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>アダプテーション</span>
+												<div class="skillDescB">
+													<p>全属性耐性アップ</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">属性耐性アップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN16">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillEN16">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>オートミニリフレッシュ</span>
+												<div class="skillDescB">
+													<p>戦闘時、毎ターンTPが少し回復</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">TP回復量アップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN17">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</td>
+											<td id="skillEN17">0</td>
+										</tr>
+										<tr>
+											<td class="skill">
+												<span>ヒールマスタリー</span>
+												<div class="skillDescB">
+													<p>回復魔法の回復量にボーナス</p>
+													<hr class="skillup">
+													<p>LvUp時</br>
+													<span class="up">HP回復量ボーナスアップ</span></p>
+												</div>
+											</td>
+											<td>
+												<select id="EN18">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</td>
+											<td id="skillEN18">0</td>
+										</tr>
+									</table>
+								</div>
+								<div id="Lv15c">
+									<table border="1">
+										<tr>
+											<td>スキル</td>
+											<td>sLv</td>
+											<td>必要SP</td>
+										</tr>
+									</table>
+								</div>
 							</div>
 						</td>
 					</tr>
