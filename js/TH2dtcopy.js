@@ -62,6 +62,13 @@ function remainSP() {
 	document.getElementById('remainSP').innerHTML = sumRemainSP;
 }
 
+function remove() {
+	localStorage.removeItem( document.getElementById('saveDataNum').selectedIndex);
+
+	document.skillSim.reset();
+	document.saveData.reset();
+}
+
 function clearAll() {
 	document.skillSim.reset();
 	document.getElementById('saveDataName').value = "";
