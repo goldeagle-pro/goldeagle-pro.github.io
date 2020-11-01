@@ -1,7 +1,7 @@
 window.onload =loading()
 function loading(){ 
 	
-var wave =JSON.parse(localStorage.getItem('test'));
+var wave =JSON.parse(localStorage.getItem('startKey'));
 for(i=0;i<wave.length;i++){
   document.getElementById('saveDataNum').options[i].textContent=wave[i];
 }	
@@ -295,7 +295,7 @@ function save() {
 	var saveNumber = document.getElementById('saveDataNum');
 	var saveWord = document.getElementById('saveDataName').value;
 
-	selectNumber= saveNumber.options.selectedIndex
+	selectNumber= saveNumber.options.selectedIndex;
 	saveNumber.options[selectNumber].textContent = saveNumber.options.selectedIndex+":"+saveWord;
 
 	var saveNumberArrays = [];
@@ -305,7 +305,7 @@ function save() {
 	saveNumberArrays.push(obj);
 	}
 
-	localStorage.setItem('test',JSON.stringify(saveNumberArrays));
+	localStorage.setItem('startKey',JSON.stringify(saveNumberArrays));
 
 	var saveDataArrays = [	document.getElementById('saveDataName').value,
 				document.getElementById('skillDrug').value,
