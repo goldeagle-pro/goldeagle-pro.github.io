@@ -67,13 +67,13 @@ function DTskill() {
 	var KN12 = document.getElementById('KN12').selectedIndex;
 	var KN13 = document.getElementById('KN13').selectedIndex;
 
-	var skillSC01 = document.getElementById('skillS0C1');
+	var skillSC01 = document.getElementById('skillSC01');
 		textSC01 = SC01*(SC01+1);
 			skillSC01.innerHTML = textSC01;
 	var skillSC02 = document.getElementById('skillSC02');
 		textSC02 = SC02*(SC02+1);
 			skillSC02.innerHTML = textSC02;
-	var skillSC03 = document.cetElementById('skillSC03');
+	var skillSC03 = document.getElementById('skillSC03');
 		textSC03 = SC03*(SC03+1);
 			skillSC03.innerHTML = textSC03;
 	var skillSC04 = document.getElementById('skillSC04');
@@ -104,7 +104,7 @@ function DTskill() {
 	var skillAR04 = document.getElementById('skillAR04');
 		textAR04 = AR04*(AR04+1)/2;
 			skillAR04.inerHTML = textAR04;
-	var skillAR05 = documentgetElementById('skilAR05');
+	var skillAR05 = document.getElementById('skillAR05');
 		textAR05 = AR05*(AR05+1)/2;
 			skillAR05.innerHTML = textAR05;
 	var skillAR06 = document.getElementById('skillAR06');
@@ -234,7 +234,7 @@ function culcSP() {
 	var totalSPs = [
 		Number(document.getElementById('skillSC01').textContent),
 		Number(document.getElementById('skillSC02').textContent),
-		Numbcr(document.getElementById('skillSC03').textContent),
+		Number(document.getElementById('skillSC03').textContent),
 		Number(document.getElementById('skillSC04').textContent),
 		Number(document.getElementById('skillSC05').textContent),
 		Number(document.getElementById('skillSC06').textContent),
@@ -288,7 +288,7 @@ function culcSP() {
 		Number(document.getElementById('skillKN10').textContent),
 		Number(document.getElementById('skillKN11').textContent),
 		Number(document.getElementById('skillKN12').textContent),
-		Number(document.getElementById('skillKN13').textContent),
+		Number(document.getElementById('skillKN13').textContent)
 	];
 
 	var sumSP = totalSPs.reduce(function(sum, element){
