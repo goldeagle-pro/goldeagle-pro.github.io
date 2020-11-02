@@ -3,7 +3,7 @@ function loading(){
 	
 var wave =JSON.parse(localStorage.getItem('startKey'));
 for(i=0;i<wave.length;i++){
-  document.getElementById('saveDataNum').options[i].textContent=wave[i];
+  document.getElementById('saveDataNumFighter').options[i].textContent=wave[i];
 }	
 }
 
@@ -292,7 +292,7 @@ function culcSP() {
 }
 
 function save() {
-	var saveNumber = document.getElementById('saveDataNum');
+	var saveNumber = document.getElementById('saveDataNumFighter');
 	var saveWord = document.getElementById('saveDataName').value;
 
 	selectNumber= saveNumber.options.selectedIndex;
@@ -371,13 +371,13 @@ function save() {
 				document.getElementById('DL09').options.selectedIndex
 	];
 
-	localStorage.setItem(document.getElementById('saveDataNum').value,JSON.stringify(saveDataArrays));
+	localStorage.setItem(document.getElementById('saveDataNumFighter').value,JSON.stringify(saveDataArrays));
 
 	
 }
 
 function load() {
-	var loadData = JSON.parse(localStorage.getItem(document.getElementById('saveDataNum').value));
+	var loadData = JSON.parse(localStorage.getItem(document.getElementById('saveDataNumFighter').value));
 
 	document.getElementById('saveDataName').value = loadData[0];
 	document.getElementById('skillDrug').value = loadData[1];
@@ -447,4 +447,11 @@ function load() {
 	remainSP();
 	totalLv();
 
+}
+
+function remove() {
+	localStorage.removeItem( document.getElementById('saveDataNumFighter').selectedIndex);
+
+	document.skillSim.reset();
+	document.saveData.reset();
 }
