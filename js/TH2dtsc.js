@@ -72,7 +72,7 @@ function DTskill() {
 			skillSC01.innerHTML = textSC01;
 	var skillSC02 = document.getElementById('skillSC02');
 		textSC02 = SC02*(SC02+1);
-	c	skillSC02.innerHTML = textSC02;
+			skillSC02.innerHTML = textSC02;
 	var skillSC03 = document.cetElementById('skillSC03');
 		textSC03 = SC03*(SC03+1);
 			skillSC03.innerHTML = textSC03;
@@ -102,7 +102,7 @@ function DTskill() {
 		textAR03 = AR03*(AR03+1)/2;
 			skillAR03.innerHTML = textAR03;
 	var skillAR04 = document.getElementById('skillAR04');
-		textAR04 = AR04*(AR04+1)/;
+		textAR04 = AR04*(AR04+1)/2;
 			skillAR04.inerHTML = textAR04;
 	var skillAR05 = documentgetElementById('skilAR05');
 		textAR05 = AR05*(AR05+1)/2;
@@ -230,7 +230,7 @@ function DTskill() {
 			skillKN13.innerHTML = textKN13;
 }
 
-function culcSP()C{
+function culcSP() {
 	var totalSPs = [
 		Number(document.getElementById('skillSC01').textContent),
 		Number(document.getElementById('skillSC02').textContent),
@@ -297,4 +297,160 @@ function culcSP()C{
 
 	var culcSP = document.getElementById('culcSP');
 	culcSP.innerHTML = sumSP;
+}
+
+function save() {
+	var saveNumber = document.getElementById('saveDataNum');
+	var saveWord = document.getElementById('saveDataName').nodeValue;
+
+	selectNumber = saveNumber.options.selectedIndex;
+	saveNumber.options[selectNumber].textContent = saveNumber.options.selectedIndex + ":" + saveWord;
+
+	var saveNumberArrays = [];
+	for(var i=0; i<saveNumber.options.length; i++) {
+		var obj = saveNumber.options[i].textContent;
+		saveNumberArrays.push(obj);
+	}
+
+	localStorage.setItem('startKey',JSON.stringify(saveNumberArrays));
+
+	var saveDataArrays = [	document.getElementById('saveDataName').value,
+				document.getElementById('skillDrug').value,
+				document.getElementById('currentLv').value,
+				document.getElementById('changeSelectA').value,
+				document.getElementById('changeSelectB').value,
+
+				document.getElementById('SC01').options.selectedIndex,
+				document.getElementById('SC02').options.selectedIndex,
+				document.getElementById('SC03').options.selectedIndex,
+				document.getElementById('SC04').options.selectedIndex,
+				document.getElementById('SC05').options.selectedIndex,
+				document.getElementById('SC06').options.selectedIndex,
+				document.getElementById('SC07').options.selectedIndex,
+				document.getElementById('SC08').options.selectedIndex,
+
+				document.getElementById('AR01').options.selectedIndex,
+				document.getElementById('AR02').options.selectedIndex,
+				document.getElementById('AR03').options.selectedIndex,
+				document.getElementById('AR04').options.selectedIndex,
+				document.getElementById('AR05').options.selectedIndex,
+				document.getElementById('AR06').options.selectedIndex,
+
+				document.getElementById('AS01').options.selectedIndex,
+				document.getElementById('AS02').options.selectedIndex,
+				document.getElementById('AS03').options.selectedIndex,
+				document.getElementById('AS04').options.selectedIndex,
+				document.getElementById('AS05').options.selectedIndex,
+				document.getElementById('AS06').options.selectedIndex,
+
+				document.getElementById('SN01').options.selectedIndex,
+				document.getElementById('SN02').options.selectedIndex,
+				document.getElementById('SN03').options.selectedIndex,
+				document.getElementById('SN04').options.selectedIndex,
+				document.getElementById('SN05').options.selectedIndex,
+				document.getElementById('SN06').options.selectedIndex,
+				document.getElementById('SN07').options.selectedIndex,
+
+				document.getElementById('TH01').options.selectedIndex,
+				document.getElementById('TH02').options.selectedIndex,
+				document.getElementById('TH03').options.selectedIndex,
+				document.getElementById('TH04').options.selectedIndex,
+				document.getElementById('TH05').options.selectedIndex,
+				document.getElementById('TH06').options.selectedIndex,
+				document.getElementById('TH07').options.selectedIndex,
+				document.getElementById('TH08').options.selectedIndex,
+				document.getElementById('TH09').options.selectedIndex,
+				document.getElementById('TH10').options.selectedIndex,
+				document.getElementById('TH11').options.selectedIndex,
+				document.getElementById('TH12').options.selectedIndex,
+
+				document.getElementById('KN01').options.selectedIndex,
+				document.getElementById('KN02').options.selectedIndex,
+				document.getElementById('KN03').options.selectedIndex,
+				document.getElementById('KN04').options.selectedIndex,
+				document.getElementById('KN05').options.selectedIndex,
+				document.getElementById('KN06').options.selectedIndex,
+				document.getElementById('KN07').options.selectedIndex,
+				document.getElementById('KN08').options.selectedIndex,
+				document.getElementById('KN09').options.selectedIndex,
+				document.getElementById('KN10').options.selectedIndex,
+				document.getElementById('KN11').options.selectedIndex,
+				document.getElementById('KN12').options.selectedIndex,
+				document.getElementById('KN13').options.selectedIndex
+	];
+
+	localStorage.setItem(document.getElementById('saveDataNum').value,JSON.stringify(saveDataArrays));
+}
+
+function load() {
+	var loadData = JSON.parse(localStorage.getItem(document.getElementById('saveDataNum').value));
+
+	document.getElementById('saveDataName').value = loadData[0];
+	document.getElementById('skillDrug').value = loadData[1];
+	document.getElementById('currentLv').value = loadData[2];
+	document.getElementById('changeSelectA').value = loadData[3];
+	document.getElementById('changeSelectB').value = loadData[4];
+
+	document.getElementById('SC01').options.selectedIndex = loadData[5];
+	document.getElementById('SC02').options.selectedIndex = loadData[6];
+	document.getElementById('SC03').options.selectedIndex = loadData[7];
+	document.getElementById('SC04').options.selectedIndex = loadData[8];
+	document.getElementById('SC05').options.selectedIndex = loadData[9];
+	document.getElementById('SC06').options.selectedIndex = loadData[10];
+	document.getElementById('SC07').options.selectedIndex = loadData[11];
+	document.getElementById('SC08').options.selectedIndex = loadData[12];
+
+	document.getElementById('AR01').options.selectedIndex = loadData[13];
+	document.getElementById('AR02').options.selectedIndex = loadData[14];
+	document.getElementById('AR03').options.selectedIndex = loadData[15];
+	document.getElementById('AR04').options.selectedIndex = loadData[16];
+	document.getElementById('AR05').options.selectedIndex = loadData[17];
+	document.getElementById('AR06').options.selectedIndex = loadData[18];
+
+	document.getElementById('AS01').options.selectedIndex = loadData[19];
+	document.getElementById('AS02').options.selectedIndex = loadData[20];
+	document.getElementById('AS03').options.selectedIndex = loadData[21];
+	document.getElementById('AS04').options.selectedIndex = loadData[22];
+	document.getElementById('AS05').options.selectedIndex = loadData[23];
+	document.getElementById('AS06').options.selectedIndex = loadData[24];
+
+	document.getElementById('SN01').options.selectedIndex = loadData[25];
+	document.getElementById('SN02').options.selectedIndex = loadData[26];
+	document.getElementById('SN03').options.selectedIndex = loadData[27];
+	document.getElementById('SN04').options.selectedIndex = loadData[28];
+	document.getElementById('SN05').options.selectedIndex = loadData[29];
+	document.getElementById('SN06').options.selectedIndex = loadData[30];
+	document.getElementById('SN07').options.selectedIndex = loadData[31];
+
+	document.getElementById('TH01').options.selectedIndex = loadData[32];
+	document.getElementById('TH02').options.selectedIndex = loadData[33];
+	document.getElementById('TH03').options.selectedIndex = loadData[34];
+	document.getElementById('TH04').options.selectedIndex = loadData[35];
+	document.getElementById('TH05').options.selectedIndex = loadData[36];
+	document.getElementById('TH06').options.selectedIndex = loadData[37];
+	document.getElementById('TH07').options.selectedIndex = loadData[38];
+	document.getElementById('TH08').options.selectedIndex = loadData[39];
+	document.getElementById('TH09').options.selectedIndex = loadData[40];
+	document.getElementById('TH10').options.selectedIndex = loadData[41];
+	document.getElementById('TH11').options.selectedIndex = loadData[42];
+	document.getElementById('TH12').options.selectedIndex = loadData[43];
+
+	document.getElementById('KN01').options.selectedIndex = loadData[44];
+	document.getElementById('KN02').options.selectedIndex = loadData[45];
+	document.getElementById('KN03').options.selectedIndex = loadData[46];
+	document.getElementById('KN04').options.selectedIndex = loadData[47];
+	document.getElementById('KN05').options.selectedIndex = loadData[48];
+	document.getElementById('KN06').options.selectedIndex = loadData[49];
+	document.getElementById('KN07').options.selectedIndex = loadData[50];
+	document.getElementById('KN08').options.selectedIndex = loadData[51];
+	document.getElementById('KN09').options.selectedIndex = loadData[52];
+	document.getElementById('KN10').options.selectedIndex = loadData[53];
+	document.getElementById('KN11').options.selectedIndex = loadData[54];
+	document.getElementById('KN12').options.selectedIndex = loadData[55];
+	document.getElementById('KN13').options.selectedIndex = loadData[56];
+	
+	DTskill();
+	culcSP();
+	remainSP();
+	totalLv();
 }
