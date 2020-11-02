@@ -40,7 +40,7 @@
   margin-right: 10px;
 }
 
-#skillTable {
+.skill  {
   position: relative;
 }
 
@@ -49,11 +49,11 @@
 }
 /* スキル説明*/
 
-.skillDescA {
+.skillDesc {
   display: none;
   position: absolute;
-  top: 250px;
-  left: 500px;
+  top: 50px;
+  left: 50px;
   width: 250px;
   border: 2px solid #000080;
   border-radius: 8px;
@@ -61,13 +61,13 @@
   padding: 8px;
 }
 
-.skillDescA hr {
+.skillDesc hr {
   height: 1px;
   background: linear-gradient(to right, #000080, #CED6F8);
   border: none;
 }
 
-.skill:hover .skillDescA {
+.skill:hover .skillDesc {
   display: block;
   z-index: 10;
 }
@@ -75,8 +75,8 @@
 .skillDescB {
   display: none;
   position: absolute;
-  top: 250px;
-  left: 750px;
+  top: -160px;
+  left: 50px;
   width: 250px;
   border: 2px solid #000080;
   border-radius: 8px;
@@ -95,28 +95,7 @@
   z-index: 10;
 }
 
-.skillDescC {
-  display: none;
-  position: absolute;
-  top: 250px;
-  left: 500px;
-  width: 250px;
-  border: 2px solid #000080;
-  border-radius: 8px;
-  background-color: #CED6F8;
-  padding: 8px;
-}
 
-.skillDescC hr {
-  height: 1px;
-  background: linear-gradient(to right, #000080, #CED6F8);
-  border: none;
-}
-
-.skill:hover .skillDescC {
-  display: block;
-  z-index: 10;
-}
 .up {
   color: #000080;
 }
