@@ -70,6 +70,7 @@ function DTskill() {
 	var JK28 = document.getElementById('JK28').selectedIndex;
 	var JK28 = document.getElementById('JK28').selectedIndex;
 	var JK30 = document.getElementById('JK30').selectedIndex;
+	var JK31 = document.getElementById('JK31').selectedIndex;
 	var JK29 = document.getElementById('JK29').selectedIndex;
 	var JK32 = document.getElementById('JK32').selectedIndex;
 	var JK33 = document.getElementById('JK33').selectedIndex;
@@ -78,9 +79,9 @@ function DTskill() {
 	var JK36 = document.getElementById('JK36').selectedIndex;
 	var JK37 = document.getElementById('JK37').selectedIndex;
 
-	var JK37 = document.getElementById('JK37').selectedIndex;
-	var MI02 = document.getElementById('MI02').selectedIndex;
 	var MI01 = document.getElementById('MI01').selectedIndex;
+	var MI02 = document.getElementById('MI02').selectedIndex;
+	var MI03 = document.getElementById('MI03').selectedIndex;
 	var MI04 = document.getElementById('MI04').selectedIndex;
 	var MI05 = document.getElementById('MI05').selectedIndex;
 	var MI06 = document.getElementById('MI06').selectedIndex;
@@ -143,7 +144,7 @@ function DTskill() {
 		textDN04 = DN04*(DN04+1)/2; 
 			skillDN04.innerHTML = textDN04;
 	var skillDN05 = document.getElementById('skillDN05');
-		textDN05skillDN05 = DN05*(DN05+1)/2;
+		textDN05 = DN05*(DN05+1)/2;
 			skillDN05.innerHTML = textDN05;
 
 	var skillUH01 = document.getElementById('skillUH01');
@@ -155,7 +156,7 @@ function DTskill() {
 	var skillUH03 = document.getElementById('skillUH03');
 		textUH03 = UH03*(UH03+1)/2;
 			skillUH03.innerHTML = textUH03;
-	var skillUH04 = documUH08getEUH09ntById('skillUH04');
+	var skillUH04 = document.getElementById('skillUH04');
 		textUH04 = UH04*(UH04+1)/2;
 			skillUH04.innerHTML = textUH04;
 	var skillUH05= document.getElementById('skillUH05');
@@ -197,13 +198,14 @@ function DTskill() {
 			skillJK07.innerHTML = textJK07;
 	var skillJK08 = document.getElementById('skillJK08');
 		textJK08 = JK08*(JK08+1);
+			skillJK08.innerHTML = textJK08;
 	var skillJK09 = document.getElementById('skillJK09');
 		textJK09 = JK09*(JK09+1)/2;
 			skillJK09.innerHTML = textJK09;
 	var skillJK10 = document.getElementById('skillJK10');
 		textJK10 = JK10*(JK10+1)/2;
 			skillJK10.innerHTML = textJK10;
-	var skillJK11 = documJK17getEJK18ntById('skillJK11');
+	var skillJK11 = document.getElementById('skillJK11');
 		textJK11 = JK11*(JK11+1)/2;
 			skillJK11.innerHTML = textJK11;
 	var skillJK12 = document.getElementById('skillJK12');
@@ -239,7 +241,7 @@ function DTskill() {
 	var skillJK22 = document.getElementById('skillJK22');
 		textJK22 = JK22*(JK22+1)/2;
 			skillJK22.innerHTML= textJK22;
-	var skillJK23 = document.getElementyId('skillJK23');
+	var skillJK23 = document.getElementById('skillJK23');
 		textJK23 = JK23*(JK23+1)/2;
 			skillJK23.innerHTML = textJK23;
 	var skillJK24 = document.getElementById('skillJK24');
@@ -251,16 +253,13 @@ function DTskill() {
 	var skillJK26 = document.getElementById('skillJK26');
 		textJK26 = JK26*(JK26+1);
 			skillJK26.innerHTML = textJK26;
-	var skillWT09 = document.getElementById('skillWT09');
-		textWT09 = WT09*(WT09+1);
-			skillWT09.innerHTML = textWT09;
 	var skillJK27 = document.getElementById('skillJK27');
 		textJK27 = JK27*(JK27+1);
 			skillJK27.innerHTML = textJK27;
 	var skillJK28 = document.getElementById('skillJK28');
 		textJK28 = JK28*(JK28+1);
 			skillJK28.innerHTML = textJK28;
-	var skillJK29 = document.getElementById('skllJK29');
+	var skillJK29 = document.getElementById('skillJK29');
 		textJK29 = JK29*(JK29+1);
 			skillJK29.innerHTML = textJK29;
 	var skillJK30 = document.getElementById('skillJK30');
