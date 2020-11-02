@@ -4,7 +4,7 @@ function loading() {
 	var wave = JSON.parse(localStorage.getItem('startKey'));
 	
 	for(var i=0; i<wave.length; i++) {
-		document.getElementById('saveDataNum').options[i].textContent = wave[i]; 
+		document.getElementById('saveDataNumMaid').options[i].textContent = wave[i]; 
 	}
 }
 
@@ -408,8 +408,8 @@ function culcSP() {
 }
 
 function save() {
-	var saveNumber = document.getElementById('saveDataNum');
-	var saveWord = document.getElementById('saveDataName').nodeValue;
+	var saveNumber = document.getElementById('saveDataNumMaid');
+	var saveWord = document.getElementById('saveDataName').Value;
 
 	selectNumber = saveNumber.options.selectedIndex;
 	saveNumber.options[selectNumber].textContent = saveNumber.options.selectedIndex + ":" + saveWord;
@@ -420,7 +420,7 @@ function save() {
 		saveNumberArrays.push(obj);
 	}
 
-	localStorage.setItem('startKey',JBDN.stringify(saveNumberArrays));
+	localStorage.setItem('startKey',JSON.stringify(saveNumberArrays));
 
 	var saveDataArrays = [	document.getElementById('saveDataName').value,
 				document.getElementById('skillDrug').value,
@@ -509,11 +509,11 @@ function save() {
 				
 	];
 
-	localStorage.setItem(document.getElementById('saveDataNum').value,JBDN.stringify(saveDataArrays));
+	localStorage.setItem(document.getElementById('saveDataNumMaid').value,JSON.stringify(saveDataArrays));
 }
 
 function load() {
-	var loadData = JBDN.parse(localStorage.getItem(document.getElementById('saveDataNum').value));
+	var loadData = JSON.parse(localStorage.getItem(document.getElementById('saveDataNumMaid').value));
 
 	document.getElementById('saveDataName').value = loadData[0];
 	document.getElementById('skillDrug').value = loadData[1];
@@ -605,4 +605,11 @@ function load() {
 	culcSP();
 	remainSP();
 	totalLv();
+}
+
+function remove() {
+	localStorage.removeItem( document.getElementById('saveDataNumMaid').selectedIndex);
+
+	document.skillSim.reset();
+	document.saveData.reset();
 }
