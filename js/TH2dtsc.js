@@ -1,284 +1,294 @@
-function DT2skill() {
-	var SCa = document.getElementById('SCa').selectedIndex;
-	var SCb = document.getElementById('SCb').selectedIndex;
-	var SCc = document.getElementById('SCc').selectedIndex;
-	var SCd = document.getElementById('SCd').selectedIndex;
-	var SCe = document.getElementById('SCe').selectedIndex;
-	var SCf = document.getElementById('SCf').selectedIndex;
-	var SCg = document.getElementById('SCg').selectedIndex;
-	var SCh = document.getElementById('SCh').selectedIndex;
+window.onload = loading();
 
-	var ARa = document.getElementById('ARa').selectedIndex;
-	var ARb = document.getElementById('ARb').selectedIndex;
-	var ARc = document.getElementById('ARc').selectedIndex;
-	var ARd = document.getElementById('ARd').selectedIndex;
-	var ARe = document.getElementById('ARe').selectedIndex;
-	var ARf = document.getElementById('ARf').selectedIndex;
-
-	var ASa = document.getElementById('ASa').selectedIndex;
-	var ASb = document.getElementById('ASb').selectedIndex;
-	var ASc = document.getElementById('ASc').selectedIndex;
-	var ASd = document.getElementById('ASd').selectedIndex;
-	var ASe = document.getElementById('ASe').selectedIndex;
-	var ASf = document.getElementById('ASf').selectedIndex;
-
-	var SNa = document.getElementById('SNa').selectedIndex;
-	var SNb = document.getElementById('SNb').selectedIndex;
-	var SNc = document.getElementById('SNc').selectedIndex;
-	var SNd = document.getElementById('SNd').selectedIndex;
-	var SNe = document.getElementById('SNe').selectedIndex;
-	var SNf = document.getElementById('SNf').selectedIndex;
-	var SNg = document.getElementById('SNg').selectedIndex;
-
-	var THa = document.getElementById('THa').selectedIndex;
-	var THb = document.getElementById('THb').selectedIndex;
-	var THc = document.getElementById('THc').selectedIndex;
-	var THd = document.getElementById('THd').selectedIndex;
-	var THe = document.getElementById('THe').selectedIndex;
-	var THf = document.getElementById('THf').selectedIndex;
-	var THg = document.getElementById('THg').selectedIndex;
-	var THh = document.getElementById('THh').selectedIndex;
-	var THi = document.getElementById('THi').selectedIndex;
-	var THj = document.getElementById('THj').selectedIndex;
-	var THk = document.getElementById('THk').selectedIndex;
-	var THl = document.getElementById('THl').selectedIndex;
-
-	var KNa = document.getElementById('KNa').selectedIndex;
-	var KNb = document.getElementById('KNb').selectedIndex;
-	var KNc = document.getElementById('KNc').selectedIndex;
-	var KNd = document.getElementById('KNd').selectedIndex;
-	var KNe = document.getElementById('KNe').selectedIndex;
-	var KNf = document.getElementById('KNf').selectedIndex;
-	var KNg = document.getElementById('KNg').selectedIndex;
-	var KNh = document.getElementById('KNh').selectedIndex;
-	var KNi = document.getElementById('KNi').selectedIndex;
-	var KNj = document.getElementById('KNj').selectedIndex;
-	var KNk = document.getElementById('KNk').selectedIndex;
-	var KNl = document.getElementById('KNl').selectedIndex;
-	var KNm = document.getElementById('KNm').selectedIndex;
-
-	var skillScA = document.getElementById('skillScA');
-		textScA = SCa*(SCa+1);
-			skillScA.innerHTML = textScA;
-	var skillScB = document.getElementById('skillScB');
-		textScB = SCb*(SCb+1);
-			skillScB.innerHTML = textScB;
-	var skillScC = document.getElementById('skillScC');
-		textScC = SCc*(SCc+1);
-			skillScC.innerHTML = textScC;
-	var skillScD = document.getElementById('skillScD');
-		textScD = SCd*(SCd+1)/2;
-			skillScD.innerHTML = textScD;
-	var skillScE = document.getElementById('skillScE');
-		textScE = SCe*(SCe+1)/2;
-			skillScE.innerHTML = textScE;
-	var skillScF = document.getElementById('skillScF');
-		textScF = SCf*(SCf+1);
-			skillScF.innerHTML = textScF;
-	var skillScG = document.getElementById('skillScG');
-		textScG = SCg*(SCg+1)/2;
-			skillScG.innerHTML = textScG;
-	var skillScH = document.getElementById('skillScH');
-		textScH = SCh*(SCh+1);
-			skillScH.innerHTML = textScH;
-
-	var skillArA = document.getElementById('skillArA');
-		textArA = ARa*(ARa+1)/2;
-			skillArA.innerHTML = textArA;
-	var skillArB = document.getElementById('skillArB');
-		textArB = ARb*(ARb+1)/2;
-			skillArB.innerHTML = textArB;
-	var skillArC = document.getElementById('skillArC');
-		textArC = ARc*(ARc+1)/2;
-			skillArC.innerHTML = textArC;
-	var skillArD = document.getElementById('skillArD');
-		textArD = ARd*(ARd+1)/2;
-			skillArD.innerHTML = textArD;
-	var skillArE = document.getElementById('skillArE');
-		textArE = ARe*(ARe+1)/2;
-			skillArE.innerHTML = textArE;
-	var skillArF = document.getElementById('skillArF');
-		textArF = ARf*(ARf+1);
-			skillArF.innerHTML = textArF;
-
-	var skillAsA = document.getElementById('skillAsA');
-		textAsA = ASa*(ASa+1)/2;
-			skillAsA.innerHTML = textAsA;
-	var skillAsB = document.getElementById('skillAsB');
-		textAsB = ASb*(ASb+1)/2;
-			skillAsB.innerHTML = textAsB;
-	var skillAsC = document.getElementById('skillAsC');
-		textAsC = ASc*(ASc+1)/2;
-			skillAsC.innerHTML = textAsC;
-	var skillAsD = document.getElementById('skillAsD');
-		textAsD = ASd*(ASd+1);
-			skillAsD.innerHTML = textAsD;
-	var skillAsE = document.getElementById('skillAsE');
-		textAsE = ASe*(ASe+1);
-			skillAsE.innerHTML = textAsE;
-	var skillAsF = document.getElementById('skillAsF');
-		textAsF = ASf*(ASf+1);
-			skillAsF.innerHTML = textAsF;
-
-	var skillSnA = document.getElementById('skillSnA');
-		textSnA = SNa*(SNa+1)/2;
-			skillSnA.innerHTML = textSnA;
-	var skillSnB = document.getElementById('skillSnB');
-		textSnB = SNb*(SNb+1)/2;
-			skillSnB.innerHTML = textSnB;
-	var skillSnC = document.getElementById('skillSnC');
-		textSnC = SNc*(SNc+1);
-			skillSnC.innerHTML = textSnC;
-	var skillSnD = document.getElementById('skillSnD');
-		textSnD = SNd*(SNd+1);
-			skillSnD.innerHTML = textSnD;
-	var skillSnE = document.getElementById('skillSnE');
-		textSnE = SNe*(SNe+1)/2;
-			skillSnE.innerHTML = textSnE;
-	var skillSnF = document.getElementById('skillSnF');
-		textSnF = SNf*(SNf+1);
-			skillSnF.innerHTML = textSnF;
-	var skillSnG = document.getElementById('skillSnG');
-		textSnG = SNg*(SNg+1);
-			skillSnG.innerHTML = textSnG;
-
-	var skillThA = document.getElementById('skillThA');
-		textThA = THa*(THa+1);
-			skillThA.innerHTML = textThA;
-	var skillThB = document.getElementById('skillThB');
-		textThB = THb*(THb+1)/2;
-			skillThB.innerHTML = textThB;
-	var skillThC = document.getElementById('skillThC');
-		textThC = THc*(THc+1);
-			skillThC.innerHTML = textThC;
-	var skillThD = document.getElementById('skillThD');
-		textThD = THd*(THd+1);
-			skillThD.innerHTML = textThD;
-	var skillThE = document.getElementById('skillThE');
-		textThE = THe*(THe+1)/2;
-			skillThE.innerHTML = textThE;
-	var skillThF = document.getElementById('skillThF');
-		textThF = THf*(THf+1);
-			skillThF.innerHTML = textThF;
-	var skillThG = document.getElementById('skillThG');
-		textThG = THg*(THg+1);
-			skillThG.innerHTML = textThG;
-	var skillThH = document.getElementById('skillThH');
-		textThH = THh*(THh+1);
-			skillThH.innerHTML = textThH;
-	var skillThI = document.getElementById('skillThI');
-		textThI = THi*(THi+1);
-			skillThI.innerHTML = textThI;
-	var skillThJ = document.getElementById('skillThJ');
-		textThJ = THj*(THj+1);
-			skillThJ.innerHTML = textThJ;
-	var skillThK = document.getElementById('skillThK');
-		textThK = THk*(THk+1);
-			skillThK.innerHTML = textThK;
-	var skillThL = document.getElementById('skillThL');
-		textThL = THl*(THl+1);
-			skillThL.innerHTML = textThL;
-
-	var skillKnA = document.getElementById('skillKnA');
-		textKnA = KNa*(KNa+1)/2;
-			skillKnA.innerHTML = textKnA;
-	var skillKnB = document.getElementById('skillKnB');
-		textKnB = KNb*(KNb+1);
-			skillKnB.innerHTML = textKnB;
-	var skillKnC = document.getElementById('skillKnC');
-		textKnC = KNc*(KNc+1);
-			skillKnC.innerHTML = textKnC;
-	var skillKnD = document.getElementById('skillKnD');
-		textKnD = KNd*(KNd+1);
-			skillKnD.innerHTML = textKnD;
-	var skillKnE = document.getElementById('skillKnE');
-		textKnE = KNe*(KNe+1);
-			skillKnE.innerHTML = textKnE;
-	var skillKnF = document.getElementById('skillKnF');
-		textKnF = KNf*(KNf+1);
-			skillKnF.innerHTML = textKnF;
-	var skillKnG = document.getElementById('skillKnG');
-		textKnG = KNg*(KNg+1);
-			skillKnG.innerHTML = textKnG;
-	var skillKnH = document.getElementById('skillKnH');
-		textKnH = KNh*(KNh+1);
-			skillKnH.innerHTML = textKnH;
-	var skillKnI = document.getElementById('skillKnI');
-		textKnI = KNi*(KNi+1);
-			skillKnI.innerHTML = textKnI;
-	var skillKnJ = document.getElementById('skillKnJ');
-		textKnJ = KNj*(KNj+1)/2;
-			skillKnJ.innerHTML = textKnJ;
-	var skillKnK = document.getElementById('skillKnK');
-		textKnK = KNk*(KNk+1)/2;
-			skillKnK.innerHTML = textKnK;
-	var skillKnL = document.getElementById('skillKnL');
-		textKnL = KNl*(KNl+1)/2;
-			skillKnL.innerHTML = textKnL;
-	var skillKnM = document.getElementById('skillKnM');
-		textKnM = KNm*(KNm+1)/2;
-			skillKnM.innerHTML = textKnM;
+function loading() {
+	var wave = JSON.parse(localStorage.getItem('startKey'));
+	
+	for(var i=0; i<wave.length; i++) {
+		document.getElementById('saveDataNum').options[i].textContent = wave[i]; 
+	}
 }
 
-function culcSP(){
+function DTskill() {
+	var SC01 = document.getElementById('SC01').selectedIndex;
+	var SC02 = document.getElementById('SC02').selectedIndex;
+	var SC03 = document.getElementById('SC03').selectedIndex;
+	var SC04 = document.getElementById('SC04').selectedIndex;
+	var SC05 = document.getElementById('SC05').selectedIndex;
+	var SC06 = document.getElementById('SC06').selectedIndex;
+	var SC07 = document.getElementById('SC07').selectedIndex;
+	var SC08 = document.getElementById('SC08').selectedIndex;
+
+	var AR01 = document.getElementById('AR01').selectedIndex;
+	var AR02 = document.getElementById('AR02').selectedIndex;
+	var AR03 = document.getElementById('AR03').selectedIndex;
+	var AR04 = document.getElementById('AR04').selectedIndex;
+	var AR05 = document.getElementById('AR05').selectedIndex;
+	var AR06 = document.getElementById('AR06').selectedIndex;
+
+	var AS01 = document.getElementById('AS01').selectedIndex;
+	var AS02 = document.getElementById('AS02').selectedIndex;
+	var AS03 = document.getElementById('AS03').selectedIndex;
+	var AS04 = document.getElementById('AS04').selectedIndex;
+	var AS05 = document.getElementById('AS05').selectedIndex;
+	var AS06 = document.getElementById('AS06').selectedIndex;
+
+	var SN01 = document.getElementById('SN01').selectedIndex;
+	var SN02 = document.getElementById('SN02').selectedIndex;
+	var SN03 = document.getElementById('SN03').selectedIndex;
+	var SN04 = document.getElementById('SN04').selectedIndex;
+	var SN05 = document.getElementById('SN05').selectedIndex;
+	var SN06 = document.getElementById('SN06').selectedIndex;
+	var SN07 = document.getElementById('SN07').selectedIndex;
+
+	var TH01 = document.getElementById('TH01').selectedIndex;
+	var TH02 = document.getElementById('TH02').selectedIndex;
+	var TH03 = document.getElementById('TH03').selectedIndex;
+	var TH04 = document.getElementById('TH04').selectedIndex;
+	var TH05 = document.getElementById('TH05').selectedIndex;
+	var TH06 = document.getElementById('TH06').selectedIndex;
+	var TH07 = document.getElementById('TH07').selectedIndex;
+	var TH08 = document.getElementById('TH08').selectedIndex;
+	var TH09 = document.getElementById('TH09').selectedIndex;
+	var TH10 = document.getElementById('TH10').selectedIndex;
+	var TH11 = document.getElementById('TH11').selectedIndex;
+	var TH12 = document.getElementById('TH12').selectedIndex;
+
+	var KN01 = document.getElementById('KN01').selectedIndex;
+	var KN02 = document.getElementById('KN02').selectedIndex;
+	var KN03 = document.getElementById('KN03').selectedIndex;
+	var KN04 = document.getElementById('KN04').selectedIndex;
+	var KN05 = document.getElementById('KN05').selectedIndex;
+	var KN06 = document.getElementById('KN06').selectedIndex;
+	var KN07 = document.getElementById('KN07').selectedIndex;
+	var KN08 = document.getElementById('KN08').selectedIndex;
+	var KN09 = document.getElementById('KN09').selectedIndex;
+	var KN10 = document.getElementById('KN10').selectedIndex;
+	var KN11 = document.getElementById('KN11').selectedIndex;
+	var KN12 = document.getElementById('KN12').selectedIndex;
+	var KN13 = document.getElementById('KN13').selectedIndex;
+
+	var skillSC01 = document.getElementById('skillS0C1');
+		textSC01 = SC01*(SC01+1);
+			skillSC01.innerHTML = textSC01;
+	var skillSC02 = document.getElementById('skillSC02');
+		textSC02 = SC02*(SC02+1);
+	c	skillSC02.innerHTML = textSC02;
+	var skillSC03 = document.cetElementById('skillSC03');
+		textSC03 = SC03*(SC03+1);
+			skillSC03.innerHTML = textSC03;
+	var skillSC04 = document.getElementById('skillSC04');
+		textSC04 = SC04*(SC04+1)/2;
+			skillSC04.innerHTML = textSC04;
+	var skillSC05 = document.getElementById('skillSC05');
+		textSC05 = SC05*(SC05+1)/2;
+			skillSC05.innerHTML = textSC05;
+	var skillSC06 = document.getElementById('skillSC06');
+		textSC06 = SC06*(SC06+1);
+			skillSC06.innerHTML = textSC06;
+	var skillSC07 = document.getElementById('skillSC07');
+		textSC07 = SC07*(SC07+1)/2;
+			skillSC07.innerHTML = textSC07;
+	var skillSC08 = document.getElementById('skillSC08');
+		textSC08 = SC08*(SC08+1);
+			skillSC08.innerHTML = textSC08;
+
+	var skillAR01 = document.getElementById('skillAR01');
+		textAR01 = AR01*(AR01+1)/2;
+			skillAR01.innerHTML = textAR01;
+	var skillAR02 = document.getElementById('skillAR02');
+		textAR02 = AR02*(AR02+1)/2;
+			skillAR02.innerHTML = textAR02;
+	var skillAR03 = document.getElementById('skillAR03');
+		textAR03 = AR03*(AR03+1)/2;
+			skillAR03.innerHTML = textAR03;
+	var skillAR04 = document.getElementById('skillAR04');
+		textAR04 = AR04*(AR04+1)/;
+			skillAR04.inerHTML = textAR04;
+	var skillAR05 = documentgetElementById('skilAR05');
+		textAR05 = AR05*(AR05+1)/2;
+			skillAR05.innerHTML = textAR05;
+	var skillAR06 = document.getElementById('skillAR06');
+		textAR06 = AR06*(AR06+1);
+			skillAR06.innerHTML = textAR06;
+
+	var skillAS01 = document.getElementById('skillAS01');
+		textAS01 = AS01*(AS01+1)/2;
+			skillAS01.innerHTML = textAS01;
+	var skillAS02 = document.getElementById('skillAS02');
+		textAS02 = AS02*(AS02+1)/2;
+			skillAS02.innerHTML = textAS02;
+	var skillAS03 = document.getElementById('skillAS03');
+		textAS03 = AS03*(AS03+1)/2;
+			skillAS03.innerHTML = textAS03;
+	var skillAS04 = document.getElementById('skillAS04');
+		textAS04 = AS04*(AS04+1);
+			skillAS04.innerHTML = textAS04;
+	var skillAS05 = document.getElementById('skillAS05');
+		textAS05 = AS05*(AS05+1);
+			skillAS05.innerHTML = textAS05;
+	var skillAS06 = document.getElementById('skillAS06');
+		textAS06 = AS06*(AS06+1);
+			skillAS06.innerHTML = textAS06;
+
+	var skillSN01 = document.getElementById('skillSN01');
+		textSN01 = SN01*(SN01+1)/2;
+			skillSN01.innerHTML = textSN01;
+	var skillSN02 = document.getElementById('skillSN02');
+		textSN02 = SN02*(SN02+1)/2;
+			skillSN02.innerHTML = textSN02;
+	var skillSN03 = document.getElementById('skillSN03');
+		textSN03 = SN03*(SN03+1);
+			skillSN03.innerHTML = textSN03;
+	var skillSN04 = document.getElementById('skillSN04');
+		textSN04 = SN04*(SN04+1);
+			skillSN04.innerHTML = textSN04;
+	var skillSN05 = document.getElementById('skillSN05');
+		textSN05 = SN05*(SN05+1)/2;
+			skillSN05.innerHTML = textSN05;
+	var skillSN06 = document.getElementById('skillSN06');
+		textSN06 = SN06*(SN06+1);
+			skillSN06.innerHTML = textSN06;
+	var skillSN07 = document.getElementById('skillSN07');
+		textSN07 = SN07*(SN07+1);
+			skillSN07.innerHTML = textSN07;
+
+	var skillTH01 = document.getElementById('skillTH01');
+		textTH01 = TH01*(TH01+1);
+			skillTH01.innerHTML = textTH01;
+	var skillTH02 = document.getElementById('skillTH02');
+		textTH02 = TH02*(TH02+1)/2;
+			skillTH02.innerHTML = textTH02;
+	var skillTH03 = document.getElementById('skillTH03');
+		textTH03 = TH03*(TH03+1);
+			skillTH03.innerHTML = textTH03;
+	var skillTH04 = document.getElementById('skillTH04');
+		textTH04 = TH04*(TH04+1);
+			skillTH04.innerHTML = textTH04;
+	var skillTH05 = document.getElementById('skillTH05');
+		textTH05 = TH05*(TH05+1)/2;
+			skillTH05.innerHTML = textTH05;
+	var skillTH06 = document.getElementById('skillTH06');
+		textTH06 = TH06*(TH06+1);
+			skillTH06.innerHTML = textTH06;
+	var skillTH07 = document.getElementById('skillTH07');
+		textTH07 = TH07*(TH07+1);
+			skillTH07.innerHTML = textTH07;
+	var skillTH08 = document.getElementById('skillTH08');
+		textTH08 = TH08*(TH08+1);
+			skillTH08.innerHTML = textTH08;
+	var skillTH09 = document.getElementById('skillTH09');
+		textTH09 = TH09*(TH09+1);
+			skillTH09.innerHTML = textTH09;
+	var skillTH10 = document.getElementById('skillTH10');
+		textTH10 = TH10*(TH10+1);
+			skillTH10.innerHTML = textTH10;
+	var skillTH11 = document.getElementById('skillTH11');
+		textTH11 = TH11*(TH11+1);
+			skillTH11.innerHTML = textTH11;
+	var skillTH12 = document.getElementById('skillTH12');
+		textTH12 = TH12*(TH12+1);
+			skillTH12.innerHTML = textTH12;
+
+	var skillKN01 = document.getElementById('skillKN01');
+		textKN01 = KN01*(KN01+1)/2;
+			skillKN01.innerHTML = textKN01;
+	var skillKN02 = document.getElementById('skillKN02');
+		textKN02 = KN02*(KN02+1);
+			skillKN02.innerHTML = textKN02;
+	var skillKN03 = document.getElementById('skillKN03');
+		textKN03 = KN03*(KN03+1);
+			skillKN03.innerHTML = textKN03;
+	var skillKN04 = document.getElementById('skillKN04');
+		textKN04 = KN04*(KN04+1);
+			skillKN04.innerHTML = textKN04;
+	var skillKN05 = document.getElementById('skillKN05');
+		textKN05 = KN05*(KN05+1);
+			skillKN05.innerHTML = textKN05;
+	var skillKN06 = document.getElementById('skillKN06');
+		textKN06 = KN06*(KN06+1);
+			skillKN06.innerHTML = textKN06;
+	var skillKN07 = document.getElementById('skillKN07');
+		textKN07 = KN07*(KN07+1);
+			skillKN07.innerHTML = textKN07;
+	var skillKN08 = document.getElementById('skillKN08');
+		textKN08 = KN08*(KN08+1);
+			skillKN08.innerHTML = textKN08;
+	var skillKN09 = document.getElementById('skillKN09');
+		textKN09 = KN09*(KN09+1);
+			skillKN09.innerHTML = textKN09;
+	var skillKN10 = document.getElementById('skillKN10');
+		textKN10 = KN10*(KN10+1)/2;
+			skillKN10.innerHTML = textKN10;
+	var skillKN11 = document.getElementById('skillKN11');
+		textKN11 = KN11*(KN11+1)/2;
+			skillKN11.innerHTML = textKN11;
+	var skillKN12 = document.getElementById('skillKN12');
+		textKN12 = KN12*(KN12+1)/2;
+			skillKN12.innerHTML = textKN12;
+	var skillKN13 = document.getElementById('skillKN13');
+		textKN13 = KN13*(KN13+1)/2;
+			skillKN13.innerHTML = textKN13;
+}
+
+function culcSP()C{
 	var totalSPs = [
-		Number(document.getElementById('skillScA').textContent),
-		Number(document.getElementById('skillScB').textContent),
-		Number(document.getElementById('skillScC').textContent),
-		Number(document.getElementById('skillScD').textContent),
-		Number(document.getElementById('skillScE').textContent),
-		Number(document.getElementById('skillScF').textContent),
-		Number(document.getElementById('skillScG').textContent),
-		Number(document.getElementById('skillScH').textContent),
+		Number(document.getElementById('skillSC01').textContent),
+		Number(document.getElementById('skillSC02').textContent),
+		Numbcr(document.getElementById('skillSC03').textContent),
+		Number(document.getElementById('skillSC04').textContent),
+		Number(document.getElementById('skillSC05').textContent),
+		Number(document.getElementById('skillSC06').textContent),
+		Number(document.getElementById('skillSC07').textContent),
+		Number(document.getElementById('skillSC08').textContent),
 
-		Number(document.getElementById('skillArA').textContent),
-		Number(document.getElementById('skillArB').textContent),
-		Number(document.getElementById('skillArC').textContent),
-		Number(document.getElementById('skillArD').textContent),
-		Number(document.getElementById('skillArE').textContent),
-		Number(document.getElementById('skillArF').textContent),
+		Number(document.getElementById('skillAR01').textContent),
+		Number(document.getElementById('skillAR02').textContent),
+		Number(document.getElementById('skillAR03').textContent),
+		Number(document.getElementById('skillAR04').textContent),
+		Number(document.getElementById('skillAR05').textContent),
+		Number(document.getElementById('skillAR06').textContent),
 
-		Number(document.getElementById('skillAsA').textContent),
-		Number(document.getElementById('skillAsB').textContent),
-		Number(document.getElementById('skillAsC').textContent),
-		Number(document.getElementById('skillAsD').textContent),
-		Number(document.getElementById('skillAsE').textContent),
-		Number(document.getElementById('skillAsF').textContent),
+		Number(document.getElementById('skillAS01').textContent),
+		Number(document.getElementById('skillAS02').textContent),
+		Number(document.getElementById('skillAS03').textContent),
+		Number(document.getElementById('skillAS04').textContent),
+		Number(document.getElementById('skillAS05').textContent),
+		Number(document.getElementById('skillAS06').textContent),
 
-		Number(document.getElementById('skillSnA').textContent),
-		Number(document.getElementById('skillSnB').textContent),
-		Number(document.getElementById('skillSnC').textContent),
-		Number(document.getElementById('skillSnD').textContent),
-		Number(document.getElementById('skillSnE').textContent),
-		Number(document.getElementById('skillSnF').textContent),
-		Number(document.getElementById('skillSnG').textContent),
+		Number(document.getElementById('skillSN01').textContent),
+		Number(document.getElementById('skillSN02').textContent),
+		Number(document.getElementById('skillSN03').textContent),
+		Number(document.getElementById('skillSN04').textContent),
+		Number(document.getElementById('skillSN05').textContent),
+		Number(document.getElementById('skillSN06').textContent),
+		Number(document.getElementById('skillSN07').textContent),
 
-		Number(document.getElementById('skillThA').textContent),
-		Number(document.getElementById('skillThB').textContent),
-		Number(document.getElementById('skillThC').textContent),
-		Number(document.getElementById('skillThD').textContent),
-		Number(document.getElementById('skillThE').textContent),
-		Number(document.getElementById('skillThF').textContent),
-		Number(document.getElementById('skillThG').textContent),
-		Number(document.getElementById('skillThH').textContent),
-		Number(document.getElementById('skillThI').textContent),
-		Number(document.getElementById('skillThJ').textContent),
-		Number(document.getElementById('skillThK').textContent),
-		Number(document.getElementById('skillThL').textContent),
+		Number(document.getElementById('skillTH01').textContent),
+		Number(document.getElementById('skillTH02').textContent),
+		Number(document.getElementById('skillTH03').textContent),
+		Number(document.getElementById('skillTH04').textContent),
+		Number(document.getElementById('skillTH05').textContent),
+		Number(document.getElementById('skillTH06').textContent),
+		Number(document.getElementById('skillTH07').textContent),
+		Number(document.getElementById('skillTH08').textContent),
+		Number(document.getElementById('skillTH09').textContent),
+		Number(document.getElementById('skillTH10').textContent),
+		Number(document.getElementById('skillTH11').textContent),
+		Number(document.getElementById('skillTH12').textContent),
 
-		Number(document.getElementById('skillKnA').textContent),
-		Number(document.getElementById('skillKnB').textContent),
-		Number(document.getElementById('skillKnC').textContent),
-		Number(document.getElementById('skillKnD').textContent),
-		Number(document.getElementById('skillKnE').textContent),
-		Number(document.getElementById('skillKnF').textContent),
-		Number(document.getElementById('skillKnG').textContent),
-		Number(document.getElementById('skillKnH').textContent),
-		Number(document.getElementById('skillKnI').textContent),
-		Number(document.getElementById('skillKnJ').textContent),
-		Number(document.getElementById('skillKnK').textContent),
-		Number(document.getElementById('skillKnL').textContent),
-		Number(document.getElementById('skillKnM').textContent),
+		Number(document.getElementById('skillKN01').textContent),
+		Number(document.getElementById('skillKN02').textContent),
+		Number(document.getElementById('skillKN03').textContent),
+		Number(document.getElementById('skillKN04').textContent),
+		Number(document.getElementById('skillKN05').textContent),
+		Number(document.getElementById('skillKN06').textContent),
+		Number(document.getElementById('skillKN07').textContent),
+		Number(document.getElementById('skillKN08').textContent),
+		Number(document.getElementById('skillKN09').textContent),
+		Number(document.getElementById('skillKN10').textContent),
+		Number(document.getElementById('skillKN11').textContent),
+		Number(document.getElementById('skillKN12').textContent),
+		Number(document.getElementById('skillKN13').textContent),
 	];
 
 	var sumSP = totalSPs.reduce(function(sum, element){
