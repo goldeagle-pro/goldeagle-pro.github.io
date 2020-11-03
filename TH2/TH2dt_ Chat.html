@@ -26,7 +26,7 @@
 				環のSP+10</br>
 				（レベルリセットで消滅する）</td>
 				<td>
-					<select id="chat001">
+					<select id="chat001" onchange="changeItem(this); changeLine(this)">
 						<option value="0">未発生</option>
 						<option value="1">発生済み</option>
 					</select>
@@ -38,7 +38,7 @@
 				<td>武器の種類について</td>
 				<td>-</td>
 				<td>
-					<select id="chat002">
+					<select id="chat002" onchange="changeItem(this); changeLine(this)">
 						<option value="0">未発生</option>
 						<option value="1">発生済み</option>
 					</select>
@@ -52,7 +52,7 @@
 				<td>ちゃんとHPの残量には注意してる？</td>
 				<td>全員のHPTP完全回復</td>
 				<td>
-					<select id="chat003">
+					<select id="chat003" onchange="changeItem(this); changeLine(this)">
 						<option value="0">未発生</option>
 						<option value="1">発生済み</option>
 					</select>
@@ -64,7 +64,7 @@
 				<td>冒険ももうすぐ終わり</td>
 				<td>-</td>
 				<td>
-					<select id="chat004">
+					<select id="chat004" onchange="changeItem(this); changeLine(this)">
 						<option value="0">未発生</option>
 						<option value="1">発生済み</option>
 					</select>
@@ -76,7 +76,7 @@
 				<td>犬嫌い</td>
 				<td>魚肉ソーセージ入手</td>
 				<td>
-					<select id="chat005">
+					<select id="chat005" onchange="changeItem(this); changeLine(this)">
 						<option value="0">未発生</option>
 						<option value="1">発生済み</option>
 					</select>
@@ -88,7 +88,7 @@
 				<td>帰ったらキャンプに行こう</td>
 				<td>-</td>
 				<td>
-					<select id="chat006">
+					<select id="chat006" onchange="changeItem(this); changeLine(this)">
 						<option value="0">未発生</option>
 						<option value="1">発生済み</option>
 					</select>
@@ -100,7 +100,7 @@
 				<td>似合う服より着たい服</td>
 				<td>-</td>
 				<td>
-					<select id="chat007">
+					<select id="chat007" onchange="changeItem(this); changeLine(this)">
 						<option value="0">未発生</option>
 						<option value="1">発生済み</option>
 					</select>
@@ -112,7 +112,7 @@
 				<td>チラ見の回数</td>
 				<td>-</td>
 				<td>
-					<select id="chat008">
+					<select id="chat008" onchange="changeItem(this); changeLine(this)">
 						<option value="0">未発生</option>
 						<option value="1">発生済み</option>
 					</select>
@@ -124,7 +124,7 @@
 				<td>固有ドロップアイテムについて</td>
 				<td>-</td>
 				<td>
-					<select id="chat009">
+					<select id="chat009" onchange="changeItem(this); changeLine(this)">
 						<option value="0">未発生</option>
 						<option value="1">発生済み</option>
 					</select>
@@ -136,7 +136,7 @@
 				<td>どっちが姉になって欲しい？</td>
 				<td>-</td>
 				<td>
-					<select id="chat010">
+					<select id="chat010" onchange="changeItem(this); changeLine(this)">
 						<option value="0">未発生</option>
 						<option value="1">発生済み</option>
 					</select>
@@ -148,7 +148,7 @@
 				<td>モンスター図鑑という名のエロ本</td>
 				<td>-</td>
 				<td>
-					<select id="chat011">
+					<select id="chat011" onchange="changeItem(this); changeLine(this)">
 						<option value="0">未発生</option>
 						<option value="1">発生済み</option>
 					</select>
@@ -159,7 +159,7 @@
 				<td>敵の詠唱無し属性攻撃を受ける</td>
 				<td>敵の詠唱なし属性攻撃について</td>
 				<td>-</td><td>
-					<select id="chat012">
+					<select id="chat012" onchange="changeItem(this); changeLine(this)">
 						<option value="0">未発生</option>
 						<option value="1">発生済み</option>
 					</select>
@@ -1348,5 +1348,25 @@
 			</tr>
 		</table>
 	</div>
+
+<script>
+	function changeItem(obj) {
+		if(obj.value == 0) {
+			obj.style.color = "";
+		} else {
+			obj.style.color = "gray";
+		}
+	};
+
+	function changeLine(obj) {
+		if(obj.value == 0) {
+			obj.style.textDecoration = "none";
+		} else {
+			obj.style.textDecoration ="line-through"
+		}
+	};
+
+</script>
+
 </body>
 </html>
