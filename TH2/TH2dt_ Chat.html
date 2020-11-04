@@ -8,1346 +8,1353 @@
 	<title>雑談</title>
 </head>
 <body>
-	<div class="container">
-		<p align="center">TH2DT　雑談</p>
-		<table border="1" align="center">
-			<tr>
-				<td>会話キャラ</td>
-				<td>発生条件</td>
-				<td>内容</td>
-				<td>入手アイテム等</td>
-				<td>遭遇済み</td>
-			</tr>
-			<tr>
-				<td>環</td>
-				<td>戦闘でマンドラゴラの四葉を入手</td>
-				<td>それ、貰える？</td>
-				<td>マンドラゴラの四葉使用</br>
-				環のSP+10</br>
-				（レベルリセットで消滅する）</td>
-				<td>
-					<select id="chat-0" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>環</td>
-				<td>3層以降</td>
-				<td>武器の種類について</td>
-				<td>-</td>
-				<td>
-					<select id="chat-1" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>環　このみ</td>
-				<td>王家の墓で戦闘中にこのみが戦闘不能</br>
-				→復活後に戦闘終了</br>
-				（環は戦闘不能になってはいけない</td>
-				<td>ちゃんとHPの残量には注意してる？</td>
-				<td>全員のHPTP完全回復</td>
-				<td>
-					<select id="chat-2" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>環　このみ</td>
-				<td>ワールドマップに「現実世界へ」が出ている状態で100マス以上移動する</td>
-				<td>冒険ももうすぐ終わり</td>
-				<td>-</td>
-				<td>
-					<select id="chat-3" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>環　このみ</td>
-				<td>ゲンジ丸を召喚する</td>
-				<td>犬嫌い</td>
-				<td>魚肉ソーセージ入手</td>
-				<td>
-					<select id="chat-4" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>環　このみ　菜々子</td>
-				<td>3人がLV15以上＆50回以上戦闘</td>
-				<td>帰ったらキャンプに行こう</td>
-				<td>-</td>
-				<td>
-					<select id="chat-5" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>環　このみ　るーこ</td>
-				<td>環が侍＆るーこがビショップ</td>
-				<td>似合う服より着たい服</td>
-				<td>-</td>
-				<td>
-					<select id="chat-6" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>環　よっち　ちゃる　はるみ</td>
-				<td>8層以降（戦闘後）</td>
-				<td>チラ見の回数</td>
-				<td>-</td>
-				<td>
-					<select id="chat-7" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>環　花梨</td>
-				<td>戦闘後</td>
-				<td>固有ドロップアイテムについて</td>
-				<td>-</td>
-				<td>
-					<select id="chat-8" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>環　まーりゃん</td>
-				<td>ダークカテドラルでまーりゃんが歌姫</td>
-				<td>どっちが姉になって欲しい？</td>
-				<td>-</td>
-				<td>
-					<select id="chat-9" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>環　まーりゃん　ささら</td>
-				<td>モンスターを封印する</td>
-				<td>モンスター図鑑という名のエロ本</td>
-				<td>-</td>
-				<td>
-					<select id="chat-10" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>環　まーりゃん</td>
-				<td>敵の詠唱無し属性攻撃を受ける</td>
-				<td>敵の詠唱なし属性攻撃について</td>
-				<td>-</td><td>
-					<select id="chat-11" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>環　まーりゃん　菜々子</td>
-				<td>10層以降（戦闘後）</td>
-				<td>タマ姉みたいになれるかな</td>
-				<td>-</td>
-				<td>
-					<select id="chat-12" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>環　春夏</td>
-				<td>環が侍＆斬鉄剣を所持した状態で10マス以上移動する</br>
-				（装備させると発生しないので注意！）</td>
-				<td>この刀、頂戴！</td>
-				<td>斬鉄剣使用</br>
-				白皇の仮面入手</td>
-				<td>
-					<select id="chat-13" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>環　愛佳　春夏　瑠璃</td>
-				<td>17層以降（戦闘後）</td>
-				<td>たまには違う物を食べたい</td>
-				<td>-</td>
-				<td>
-					<select id="chat-14" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>環　由真</td>
-				<td>-</td>
-				<td>効率のいいスキル割り振りについて</td>
-				<td>-</td>
-				<td>
-					<select id="chat-15" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>このみ　郁乃</td>
-				<td>所持金が3桁以下の状態で未鑑定品を10個以上持っている</td>
-				<td>郁乃の説教</td>
-				<td>--</td>
-				<td>
-					<select id="chat-16" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>このみ　郁乃　愛佳</td>
-				<td>50回以上戦闘</td>
-				<td>服交換</td>
-				<td>--</td>
-				<td>
-					<select id="chat-17" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>このみ　愛佳</td>
-				<td>スライムゼリーを所持</td>
-				<td>おいしそう</td>
-				<td>スライムゼリー使用</br>
-				このみと愛佳がスロウ</td>
-				<td>
-					<select id="chat-18" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>このみ　よっち　ちゃる</td>
-				<td>--</td>
-				<td>パーティスキルについて</td>
-				<td>--</td>
-				<td>
-					<select id="chat-19" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>このみ　春夏</td>
-				<td>このみが睡眠状態</td>
-				<td>このみの起こし方</td>
-				<td>このみが睡眠解除</td>
-				<td>
-					<select id="chat-20" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>このみ　春夏</td>
-				<td>春夏がジョシコーセー</td>
-				<td>お母さんにもタカ君分けてよ</td>
-				<td>--</td>
-				<td>
-					<select id="chat-21" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>このみ　春夏　菜々子</td>
-				<td>フルーツ系の敵が3体以上出現（戦闘後）</td>
-				<td>フルーツパフェ食べたい</td>
-				<td>このみが麻痺</td>
-				<td>
-					<select id="chat-22" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>このみ　春夏</td>
-				<td>近くの森2で全員のHPが50％以下</td>
-				<td>休憩しよう</td>
-				<td>全員のHP全快&必殺カレー入手</td>
-				<td>
-					<select id="chat-23" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>郁乃</td>
-				<td>郁乃が毒状態＆ハルニレの葉を持っていない</td>
-				<td>郁乃の説教</td>
-				<td>--</td>
-				<td>
-					<select id="chat-24" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>郁乃</td>
-				<td>郁乃がスロウ状態</td>
-				<td>郁乃の説教</td>
-				<td>--</td>
-				<td>
-					<select id="chat-25" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>郁乃</td>
-				<td>道具袋がMAXの状態でアイテムを手に入れる</td>
-				<td>郁乃の説教</td>
-				<td>--</td>
-				<td>
-					<select id="chat-26" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>郁乃　愛佳</td>
-				<td>三十重の塔で郁乃のHPがMAX＆愛佳のHPが50%以下</td>
-				<td>ハァハァ…休憩…する？</td>
-				<td>愛佳が全回復</td>
-				<td>
-					<select id="chat-27" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>郁乃　愛佳</td>
-				<td>三十重の塔で愛佳のHPが25%以下</td>
-				<td>ちょん切るわよ</td>
-				<td>愛佳が全回復</td>
-				<td>
-					<select id="chat-28" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>郁乃　愛佳　珊瑚</td>
-				<td>100回以上戦闘</td>
-				<td>お腹すきませんか？</td>
-				<td>全員のTP全回復</td>
-				<td>
-					<select id="chat-29" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>郁乃　愛佳　瑠璃　珊瑚</td>
-				<td>10層以降（戦闘後）</td>
-				<td>どっちがうっかりさん？</td>
-				<td>妖精リンゴ入手</td>
-				<td>
-					<select id="chat-30" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>郁乃　よっち　ちゃる</td>
-				<td>50回以上戦闘</td>
-				<td>重いモノぶらさげてるから</td>
-				<td>--</td>
-				<td>
-					<select id="chat-31" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>郁乃　花梨</td>
-				<td>愛佳&花梨のミステリ研に誘うイベントを見る</td>
-				<td>ミステリ研勧誘その2</br>
-				笹森花梨の憂鬱</td>
-				<td>--</td>
-				<td>
-					<select id="chat-32" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>郁乃　はるみ</td>
-				<td>はるみと郁乃がLV40以上で戦闘終了</td>
-				<td>小さい時にお股を覗かれた？</td>
-				<td>--</td>
-				<td>
-					<select id="chat-33" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>郁乃　菜々子</td>
-				<td>菜々子がセージ</td>
-				<td>このロリコン</td>
-				<td>--</td>
-				<td>
-					<select id="chat-34" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>愛佳</td>
-				<td>ザッハトルテを所持&愛佳以外のキャラに食べ物系のアイテムを使用</br>
-				（マップ限定、使用後一歩移動する）</td>
-				<td>チョコっとつまみ食い</td>
-				<td>ザッハトルテ使用</br>
-				愛佳のHP全回復</td>
-				<td>
-					<select id="chat-35" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>愛佳　シルファ</td>
-				<td>愛佳とシルファがLV15以上で戦闘終了</td>
-				<td>武器と詠唱速度について</td>
-				<td>--</td>
-				<td>
-					<select id="chat-36" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>愛佳　シルファ　はるみ</td>
-				<td>50回以上戦闘</td>
-				<td>私もメイドロボに</td>
-				<td>--</td>
-				<td>
-					<select id="chat-37" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>愛佳　シルファ　由真</td>
-				<td>--</td>
-				<td>由真の長所と短所について</td>
-				<td>--</td>
-				<td>
-					<select id="chat-38" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>愛佳　瑠璃</td>
-				<td>--</td>
-				<td>捕獲とステータスチェックについて</td>
-				<td>--</td>
-				<td>
-					<select id="chat-39" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>愛佳　花梨</td>
-				<td>50回以上戦闘</br>
-				（6層で確認、1層ではダメだった）</td>
-				<td>ミステリ研勧誘</td>
-				<td>--</td>
-				<td>
-					<select id="chat-40" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>愛佳　由真</td>
-				<td>50回以上戦闘</td>
-				<td>作戦のマンネリ化？</td>
-				<td>--</td>
-				<td>
-					<select id="chat-41" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>愛佳　由真</td>
-				<td>三十重の塔で50回以上戦闘</td>
-				<td>無事に帰れたら何する？</td>
-				<td>--</td>
-				<td>
-					<select id="chat-42" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>愛佳　由真</td>
-				<td>宝箱を10個以上開ける</br>
-				（メインダンジョンにて確認、累計ではなく一度に）</br>
-				（階段での別フロアへの移動は可）</td>
-				<td>宝箱について</td>
-				<td>--</td>
-				<td>
-					<select id="chat-43" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>愛佳　優季　ちゃる</td>
-				<td>戦闘解放区3で50回以上戦闘</td>
-				<td>お好み焼きが食べたい</td>
-				<td>PT全員のHP全回復</td>
-				<td>
-					<select id="chat-44" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>シルファ</td>
-				<td>クラスチェンジした状態でスキルを使わずに10回以上戦闘</td>
-				<td>歌や踊りについて</td>
-				<td>--</td>
-				<td>
-					<select id="chat-45" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>シルファ</td>
-				<td>落とし穴から落ちる</td>
-				<td>痛いのれす</td>
-				<td>--</td>
-				<td>
-					<select id="chat-46" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>シルファ　優季</td>
-				<td>4層以降</td>
-				<td>携帯非常口について</td>
-				<td>--</td>
-				<td>
-					<select id="chat-47" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>シルファ　はるみ</td>
-				<td>戦闘解放区で人間系の敵が2体以上出現（戦闘後）</td>
-				<td>人間怖い</td>
-				<td>--</td>
-				<td>
-					<select id="chat-48" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>シルファ　はるみ</td>
-				<td>戦闘でシルファ抱き枕を入手する</td>
-				<td>ずるい！</td>
-				<td>シルファ抱き枕使用</br>
-				全員のHP全回復</td>
-				<td>
-					<select id="chat-49" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>シルファ　はるみ</td>
-				<td>ミミック系を倒す</td>
-				<td>だまされた！卑怯なのれす！</td>
-				<td>--</td>
-				<td>
-					<select id="chat-50" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>シルファ　はるみ　イルファ</td>
-				<td>16層以降</td>
-				<td>愚姉？愚妹？</td>
-				<td>--</td>
-				<td>
-					<select id="chat-51" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>シルファ　はるみ　イルファ</td>
-				<td>シルファがジョシコーセー&イルファがくノ一</td>
-				<td>立ち絵に関する話題</td>
-				<td>--</td>
-				<td>
-					<select id="chat-52" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>シルファ　珊瑚</td>
-				<td>塔で戦闘中にシルファが戦闘不能になった後、復活させる</td>
-				<td>珊瑚によるシルファのメンテナンス</td>
-				<td>シルファのAGI+20</td>
-				<td>
-					<select id="chat-53" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>瑠璃</td>
-				<td>--</td>
-				<td>非戦闘時のウォークライについて</td>
-				<td>--</td>
-				<td>
-					<select id="chat-54" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>瑠璃</td>
-				<td>パーティにメイド系がいない</td>
-				<td>TPについて</td>
-				<td>--</td>
-				<td>
-					<select id="chat-55" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>瑠璃　優季</td>
-				<td>瑠璃がダークロード&優季が歌姫</td>
-				<td>この衣装、似合いますか？</td>
-				<td>--</td>
-				<td>
-					<select id="chat-56" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>瑠璃　珊瑚</td>
-				<td>ゴーレム系の敵が出現（戦闘後）</td>
-				<td>ゴーレム改造</td>
-				<td>万能箒HNX-12入手</td>
-				<td>
-					<select id="chat-57" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>瑠璃　珊瑚</td>
-				<td>ダークカテドラルで戦闘中に珊瑚が戦闘不能</br>
-				→復活後に戦闘終了
-				（瑠璃は戦闘不能になってはいけない）</td>
-				<td>貴明へのダメだし</td>
-				<td>珊瑚のHP・TP全回復</td>
-				<td>
-					<select id="chat-58" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>よっち</td>
-				<td>よっちがヴァルキリー&ワイバーン系の敵を倒す（戦闘後）</td>
-				<td>勇者とお姫様</td>
-				<td>--</td>
-				<td>
-					<select id="chat-59" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>よっち　ちゃる</td>
-				<td>--</td>
-				<td>装備品の選び方について</br>
-				（値段や攻撃力だけでなくスキルも～）</td>
-				<td>--</td>
-				<td>
-					<select id="chat-60" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>よっち　ちゃる</td>
-				<td>よっちが侍で10マス以上移動する</td>
-				<td>これを使いこなせて一人前</td>
-				<td>任侠の小太刀入手</td>
-				<td>
-					<select id="chat-61" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>よっち　ちゃる</td>
-				<td>戦闘でしましまパンツを入手</td>
-				<td>おなかすいたっス～</td>
-				<td>しましまパンツ使用</td>
-				<td>
-					<select id="chat-62" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>よっち　花梨</td>
-				<td>10層以降</td>
-				<td>強敵ザコについて</td>
-				<td>--</td>
-				<td>
-					<select id="chat-63" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>よっち　はるみ</td>
-				<td>6層以降（戦闘後）</td>
-				<td>協力スキルについて</td>
-				<td>--</td>
-				<td>
-					<select id="chat-64" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>よっち　ささら</td>
-				<td>--</td>
-				<td>ユニークスキルについて</td>
-				<td>--</td>
-				<td>
-					<select id="chat-65" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>よっち　るーこ</td>
-				<td>50回以上戦闘</td>
-				<td>こんなの拾った</td>
-				<td>魔獣配合ゼリー入手</td>
-				<td>
-					<select id="chat-66" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>優季</td>
-				<td>6層以降</td>
-				<td>セーブの使い方について</td>
-				<td>--</td>
-				<td>
-					<select id="chat-67" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>優季</td>
-				<td>ハルニレの葉を所持&優季が麻痺状態</td>
-				<td>M調教？</td>
-				<td>ハルニレの葉使用</br>
-				優季の麻痺解除</td>
-				<td>
-					<select id="chat-68" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>優季　ちゃる</td>
-				<td>6層以降</td>
-				<td>一方通行後のエンカウントについて</td>
-				<td>--</td>
-				<td>
-					<select id="chat-69" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>優季　花梨</td>
-				<td>王家の墓</td>
-				<td>ピラミッドみたいな感じ？</td>
-				<td>黄金色の仮面入手</td>
-				<td>
-					<select id="chat-70" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>優季　ささら</td>
-				<td>16層以降</td>
-				<td>現実世界が気になります</td>
-				<td>--</td>
-				<td>
-					<select id="chat-71" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>優季　るーこ</td>
-				<td>るーこがマジカルプリンセス</td>
-				<td>猫可愛いですね</td>
-				<td>ガトーショコラ入手</td>
-				<td>
-					<select id="chat-72" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>優季　由真　菜々子　イルファ</td>
-				<td>イルファがLV15以上&菜々子のHPが50%以下</td>
-				<td>菜々子ちゃん大丈夫？</td>
-				<td>--</td>
-				<td>
-					<select id="chat-73" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>ちゃる</td>
-				<td>依頼を受けていない状態</td>
-				<td>依頼は受けた方がいい</td>
-				<td>--</td>
-				<td>
-					<select id="chat-74" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>ちゃる　はるみ</td>
-				<td>4層のちゃるがいた小屋に入る</td>
-				<td>あの時の続き…</td>
-				<td>ウエイトレストレイ&携帯非常口入手</td>
-				<td>
-					<select id="chat-75" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>ちゃる　まーりゃん　由真</td>
-				<td>50回以上戦闘</td>
-				<td>メガネ素が足りない</td>
-				<td>--</td>
-				<td>
-					<select id="chat-76" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>ちゃる　由真</td>
-				<td>近くの森で50回以上戦闘</td>
-				<td>お花を摘みに…</td>
-				<td>妖精キノコ入手</td>
-				<td>
-					<select id="chat-77" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>花梨</td>
-				<td>戦闘後</td>
-				<td>スキルの有効な組み合わせについて</td>
-				<td>--</td>
-				<td>
-					<select id="chat-78" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>花梨</td>
-				<td>ダークカテドラルでメギドの書を所持</td>
-				<td>タカちゃんの物はあたしの物</td>
-				<td>メギドの書使用</br>
-				花梨のRES+20</br>
-				※貴重な最強のユニーク本なので、誤って取られないよう注意</td>
-				<td>
-					<select id="chat-79" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>花梨</td>
-				<td>タマゴサンドを所持&戦闘後花梨のHPが50%以下</td>
-				<td>お腹すいた</td>
-				<td>タマゴサンド使用</br>
-				花梨のHP全回復</td>
-				<td>
-					<select id="chat-80" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>花梨</td>
-				<td>ガストラップにかかる</td>
-				<td>ガストラップについて</td>
-				<td>ガスマスク入手</td>
-				<td>
-					<select id="chat-81" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>花梨　るーこ</td>
-				<td>梅干入りおにぎりを所持&</br>
-				12層以降で戦闘終了</td>
-				<td>サド？マゾ？</td>
-				<td>梅干入りおにぎり使用&</br>
-				るーこのHPが全回復</td>
-				<td>
-					<select id="chat-82" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>はるみ　珊瑚</td>
-				<td>塔ではるみが2回戦闘不能になる</td>
-				<td>メンテナンスして</td>
-				<td>はるみのHP+20</td>
-				<td>
-					<select id="chat-83" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>はるみ　イルファ</td>
-				<td>12層以降</td>
-				<td>イルファは役立たず？</td>
-				<td>はるみが沈黙</td>
-				<td>
-					<select id="chat-84" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>珊瑚</td>
-				<td>高級モンスター図鑑5つ所持&100歩移動</td>
-				<td>改造したい</td>
-				<td>高級モンスター図鑑5つ使用</br>
-				来栖川印モンスター図鑑入手</td>
-				<td>
-					<select id="chat-85" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>珊瑚　イルファ</td>
-				<td>強化装甲を3つ所持</td>
-				<td>改造したい</td>
-				<td>強化装甲3つ使用</br>
-				バリアシステム入手</td>
-				<td>
-					<select id="chat-86" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>まーりゃん</td>
-				<td>ダークカテドラルでまーりゃんがLV60以上（戦闘後）</td>
-				<td>城が欲しい</td>
-				<td>--</td>
-				<td>
-					<select id="chat-87" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>まーりゃん　ささら</td>
-				<td>メインダンジョンの戦闘中にささらが戦闘不能</br>
-				→復活後に戦闘終了</br>
-				（まーりゃんは戦闘不能になってはいけない）</td>
-				<td>まーりゃんが貴明の指示にダメだし</td>
-				<td>デニッシュ入手</td>
-				<td>
-					<select id="chat-88" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>まーりゃん　春夏</td>
-				<td>つやつやミストを所持</td>
-				<td>このみママも歳には勝てない？</td>
-				<td>つやつやミスト使用</br>
-				魚肉ソーセージ入手</td>
-				<td>
-					<select id="chat-89" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>まーりゃん　由真</td>
-				<td>ちゃる&由真の近くの森での会話後&</br>
-				13層を探索</td>
-				<td>この壁どこかで…</td>
-				<td>--</td>
-				<td>
-					<select id="chat-90" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>まーりゃん　菜々子</td>
-				<td>まーりゃんがバード&菜々子がビショップ&</br>
-				9層以降（戦闘後）</td>
-				<td>この格好似合う？</td>
-				<td>--</td>
-				<td>
-					<select id="chat-91" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>ささら</td>
-				<td>クラーケンを封印する</td>
-				<td>ぬるっとした…ソレが欲しいの…1</td>
-				<td>クラーケンの封印書使用</td>
-				<td>
-					<select id="chat-92" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>ささら</td>
-				<td>クラーケンのイベント後にブルオクトパスを封印する</td>
-				<td>ぬるっとした…ソレが欲しいの…2</td>
-				<td>ブルオクトパスの封印書使用</td>
-				<td>
-					<select id="chat-93" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>ささら</td>
-				<td>ブルオクトパスのイベント後にラートシカムイを封印する</td>
-				<td>ぬるっとした…ソレが欲しいの…3</td>
-				<td>ラートシカムイの封印書使用</br>
-				燕の産んだ子安貝（依頼品）入手</td>
-				<td>
-					<select id="chat-94" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>ささら　由真</td>
-				<td>王家の墓でささらがヴァルキリー由真がくノ一</td>
-				<td>防御と素早さについて</td>
-				<td>--</td>
-				<td>
-					<select id="chat-95" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>ささら　珊瑚　花梨</td>
-				<td>塔で50回以上戦闘</td>
-				<td>強敵と雑魚、どっちから倒す派？</td>
-				<td>--</td>
-				<td>
-					<select id="chat-96" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>春夏</td>
-				<td>春夏がジョシコーセー</td>
-				<td>似合う？</td>
-				<td>鉄板入り学生鞄入手</td>
-				<td>
-					<select id="chat-97" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>春夏</td>
-				<td>八塩折之酒を所持</td>
-				<td>それ、貰えないかしら？</td>
-				<td>魚肉ソーセージ入手</td>
-				<td>
-					<select id="chat-98" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>春夏　るーこ</td>
-				<td>17層以降</td>
-				<td>四天王について</td>
-				<td>ハナさんの店で「強者の証」依頼解禁</td>
-				<td>
-					<select id="chat-99" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>由真</td>
-				<td>敵が逃走する</td>
-				<td>100%逃げられるなんてズルい！</td>
-				<td>--</td>
-				<td>
-					<select id="chat-100" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>由真</td>
-				<td>かずさTシャツを入手する</td>
-				<td>他人とは思えない</td>
-				<td>かずさTシャツ使用</br>
-				由真のTP+40</td>
-				<td>
-					<select id="chat-101" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>菜々子　るーこ</td>
-				<td>菜々子がウィッチ</td>
-				<td>魔法使いになれたけど…</td>
-				<td>--</td>
-				<td>
-					<select id="chat-102" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>菜々子　るーこ</td>
-				<td>ダークカテドラルで50回以上戦闘した後1マス移動する</td>
-				<td>こんなの落ちてたよ</td>
-				<td>菜々子のINT+20</td>
-				<td>
-					<select id="chat-103" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>るーこ</td>
-				<td>戦闘中にるーこが戦闘不能になり、蘇生後に戦闘終了</td>
-				<td>作戦へのダメだし</td>
-				<td>ムィ・コゥーハの霊薬入手</td>
-				<td>
-					<select id="chat-104" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>るーこ</td>
-				<td>18層以降でダークパワーを所持</td>
-				<td>作り変えてやろう</td>
-				<td>ダークパワー使用</br>
-				闇の篭手入手</td>
-				<td>
-					<select id="chat-105" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>イルファ</td>
-				<td>戦闘解放区で地雷を踏む</td>
-				<td>地雷に注意</td>
-				<td>--</td>
-				<td>
-					<select id="chat-106" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>イルファ</td>
-				<td>イルファが石化進行中状態で、10マス以上移動する</td>
-				<td>石化は自然回復しない</td>
-				<td>--</td>
-				<td>
-					<select id="chat-107" onchange="changeItem(this); changeLine(this)">
-						<option value="0">未発生</option>
-						<option value="1">発生済み</option>
-					</select>
-				</td>
-			</tr>
-		</table>
-	</div>
+	<form name="chat">
+		<div class="container">
+			<p align="center">TH2DT　雑談</p>
+			<div class="menu" align="center">
+				<input type="button" value="セーブ" onclick="save()">
+				<input type="button" value="ロード" onclick="load();">
+				<input type="button" value="クリア" onclick="remove()">
+			</div>
+			<table border="1" align="center">
+				<tr>
+					<td>会話キャラ</td>
+					<td>発生条件</td>
+					<td>内容</td>
+					<td>入手アイテム等</td>
+					<td>遭遇済み</td>
+				</tr>
+				<tr>
+					<td>環</td>
+					<td>戦闘でマンドラゴラの四葉を入手</td>
+					<td>それ、貰える？</td>
+					<td>マンドラゴラの四葉使用</br>
+					環のSP+10</br>
+					（レベルリセットで消滅する）</td>
+					<td>
+						<select id="chat-0" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>環</td>
+					<td>3層以降</td>
+					<td>武器の種類について</td>
+					<td>-</td>
+					<td>
+						<select id="chat-1" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>環　このみ</td>
+					<td>王家の墓で戦闘中にこのみが戦闘不能</br>
+					→復活後に戦闘終了</br>
+					（環は戦闘不能になってはいけない</td>
+					<td>ちゃんとHPの残量には注意してる？</td>
+					<td>全員のHPTP完全回復</td>
+					<td>
+						<select id="chat-2" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>環　このみ</td>
+					<td>ワールドマップに「現実世界へ」が出ている状態で100マス以上移動する</td>
+					<td>冒険ももうすぐ終わり</td>
+					<td>-</td>
+					<td>
+						<select id="chat-3" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>環　このみ</td>
+					<td>ゲンジ丸を召喚する</td>
+					<td>犬嫌い</td>
+					<td>魚肉ソーセージ入手</td>
+					<td>
+						<select id="chat-4" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>環　このみ　菜々子</td>
+					<td>3人がLV15以上＆50回以上戦闘</td>
+					<td>帰ったらキャンプに行こう</td>
+					<td>-</td>
+					<td>
+						<select id="chat-5" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>環　このみ　るーこ</td>
+					<td>環が侍＆るーこがビショップ</td>
+					<td>似合う服より着たい服</td>
+					<td>-</td>
+					<td>
+						<select id="chat-6" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>環　よっち　ちゃる　はるみ</td>
+					<td>8層以降（戦闘後）</td>
+					<td>チラ見の回数</td>
+					<td>-</td>
+					<td>
+						<select id="chat-7" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>環　花梨</td>
+					<td>戦闘後</td>
+					<td>固有ドロップアイテムについて</td>
+					<td>-</td>
+					<td>
+						<select id="chat-8" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>環　まーりゃん</td>
+					<td>ダークカテドラルでまーりゃんが歌姫</td>
+					<td>どっちが姉になって欲しい？</td>
+					<td>-</td>
+					<td>
+						<select id="chat-9" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>環　まーりゃん　ささら</td>
+					<td>モンスターを封印する</td>
+					<td>モンスター図鑑という名のエロ本</td>
+					<td>-</td>
+					<td>
+						<select id="chat-10" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>環　まーりゃん</td>
+					<td>敵の詠唱無し属性攻撃を受ける</td>
+					<td>敵の詠唱なし属性攻撃について</td>
+					<td>-</td><td>
+						<select id="chat-11" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>環　まーりゃん　菜々子</td>
+					<td>10層以降（戦闘後）</td>
+					<td>タマ姉みたいになれるかな</td>
+					<td>-</td>
+					<td>
+						<select id="chat-12" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>環　春夏</td>
+					<td>環が侍＆斬鉄剣を所持した状態で10マス以上移動する</br>
+					（装備させると発生しないので注意！）</td>
+					<td>この刀、頂戴！</td>
+					<td>斬鉄剣使用</br>
+					白皇の仮面入手</td>
+					<td>
+						<select id="chat-13" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>環　愛佳　春夏　瑠璃</td>
+					<td>17層以降（戦闘後）</td>
+					<td>たまには違う物を食べたい</td>
+					<td>-</td>
+					<td>
+						<select id="chat-14" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>環　由真</td>
+					<td>-</td>
+					<td>効率のいいスキル割り振りについて</td>
+					<td>-</td>
+					<td>
+						<select id="chat-15" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>このみ　郁乃</td>
+					<td>所持金が3桁以下の状態で未鑑定品を10個以上持っている</td>
+					<td>郁乃の説教</td>
+					<td>--</td>
+					<td>
+						<select id="chat-16" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>このみ　郁乃　愛佳</td>
+					<td>50回以上戦闘</td>
+					<td>服交換</td>
+					<td>--</td>
+					<td>
+						<select id="chat-17" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>このみ　愛佳</td>
+					<td>スライムゼリーを所持</td>
+					<td>おいしそう</td>
+					<td>スライムゼリー使用</br>
+					このみと愛佳がスロウ</td>
+					<td>
+						<select id="chat-18" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>このみ　よっち　ちゃる</td>
+					<td>--</td>
+					<td>パーティスキルについて</td>
+					<td>--</td>
+					<td>
+						<select id="chat-19" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>このみ　春夏</td>
+					<td>このみが睡眠状態</td>
+					<td>このみの起こし方</td>
+					<td>このみが睡眠解除</td>
+					<td>
+						<select id="chat-20" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>このみ　春夏</td>
+					<td>春夏がジョシコーセー</td>
+					<td>お母さんにもタカ君分けてよ</td>
+					<td>--</td>
+					<td>
+						<select id="chat-21" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>このみ　春夏　菜々子</td>
+					<td>フルーツ系の敵が3体以上出現（戦闘後）</td>
+					<td>フルーツパフェ食べたい</td>
+					<td>このみが麻痺</td>
+					<td>
+						<select id="chat-22" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>このみ　春夏</td>
+					<td>近くの森2で全員のHPが50％以下</td>
+					<td>休憩しよう</td>
+					<td>全員のHP全快&必殺カレー入手</td>
+					<td>
+						<select id="chat-23" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>郁乃</td>
+					<td>郁乃が毒状態＆ハルニレの葉を持っていない</td>
+					<td>郁乃の説教</td>
+					<td>--</td>
+					<td>
+						<select id="chat-24" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>郁乃</td>
+					<td>郁乃がスロウ状態</td>
+					<td>郁乃の説教</td>
+					<td>--</td>
+					<td>
+						<select id="chat-25" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>郁乃</td>
+					<td>道具袋がMAXの状態でアイテムを手に入れる</td>
+					<td>郁乃の説教</td>
+					<td>--</td>
+					<td>
+						<select id="chat-26" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>郁乃　愛佳</td>
+					<td>三十重の塔で郁乃のHPがMAX＆愛佳のHPが50%以下</td>
+					<td>ハァハァ…休憩…する？</td>
+					<td>愛佳が全回復</td>
+					<td>
+						<select id="chat-27" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>郁乃　愛佳</td>
+					<td>三十重の塔で愛佳のHPが25%以下</td>
+					<td>ちょん切るわよ</td>
+					<td>愛佳が全回復</td>
+					<td>
+						<select id="chat-28" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>郁乃　愛佳　珊瑚</td>
+					<td>100回以上戦闘</td>
+					<td>お腹すきませんか？</td>
+					<td>全員のTP全回復</td>
+					<td>
+						<select id="chat-29" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>郁乃　愛佳　瑠璃　珊瑚</td>
+					<td>10層以降（戦闘後）</td>
+					<td>どっちがうっかりさん？</td>
+					<td>妖精リンゴ入手</td>
+					<td>
+						<select id="chat-30" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>郁乃　よっち　ちゃる</td>
+					<td>50回以上戦闘</td>
+					<td>重いモノぶらさげてるから</td>
+					<td>--</td>
+					<td>
+						<select id="chat-31" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>郁乃　花梨</td>
+					<td>愛佳&花梨のミステリ研に誘うイベントを見る</td>
+					<td>ミステリ研勧誘その2</br>
+					笹森花梨の憂鬱</td>
+					<td>--</td>
+					<td>
+						<select id="chat-32" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>郁乃　はるみ</td>
+					<td>はるみと郁乃がLV40以上で戦闘終了</td>
+					<td>小さい時にお股を覗かれた？</td>
+					<td>--</td>
+					<td>
+						<select id="chat-33" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>郁乃　菜々子</td>
+					<td>菜々子がセージ</td>
+					<td>このロリコン</td>
+					<td>--</td>
+					<td>
+						<select id="chat-34" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>愛佳</td>
+					<td>ザッハトルテを所持&愛佳以外のキャラに食べ物系のアイテムを使用</br>
+					（マップ限定、使用後一歩移動する）</td>
+					<td>チョコっとつまみ食い</td>
+					<td>ザッハトルテ使用</br>
+					愛佳のHP全回復</td>
+					<td>
+						<select id="chat-35" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>愛佳　シルファ</td>
+					<td>愛佳とシルファがLV15以上で戦闘終了</td>
+					<td>武器と詠唱速度について</td>
+					<td>--</td>
+					<td>
+						<select id="chat-36" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>愛佳　シルファ　はるみ</td>
+					<td>50回以上戦闘</td>
+					<td>私もメイドロボに</td>
+					<td>--</td>
+					<td>
+						<select id="chat-37" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>愛佳　シルファ　由真</td>
+					<td>--</td>
+					<td>由真の長所と短所について</td>
+					<td>--</td>
+					<td>
+						<select id="chat-38" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>愛佳　瑠璃</td>
+					<td>--</td>
+					<td>捕獲とステータスチェックについて</td>
+					<td>--</td>
+					<td>
+						<select id="chat-39" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>愛佳　花梨</td>
+					<td>50回以上戦闘</br>
+					（6層で確認、1層ではダメだった）</td>
+					<td>ミステリ研勧誘</td>
+					<td>--</td>
+					<td>
+						<select id="chat-40" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>愛佳　由真</td>
+					<td>50回以上戦闘</td>
+					<td>作戦のマンネリ化？</td>
+					<td>--</td>
+					<td>
+						<select id="chat-41" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>愛佳　由真</td>
+					<td>三十重の塔で50回以上戦闘</td>
+					<td>無事に帰れたら何する？</td>
+					<td>--</td>
+					<td>
+						<select id="chat-42" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>愛佳　由真</td>
+					<td>宝箱を10個以上開ける</br>
+					（メインダンジョンにて確認、累計ではなく一度に）</br>
+					（階段での別フロアへの移動は可）</td>
+					<td>宝箱について</td>
+					<td>--</td>
+					<td>
+						<select id="chat-43" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>愛佳　優季　ちゃる</td>
+					<td>戦闘解放区3で50回以上戦闘</td>
+					<td>お好み焼きが食べたい</td>
+					<td>PT全員のHP全回復</td>
+					<td>
+						<select id="chat-44" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>シルファ</td>
+					<td>クラスチェンジした状態でスキルを使わずに10回以上戦闘</td>
+					<td>歌や踊りについて</td>
+					<td>--</td>
+					<td>
+						<select id="chat-45" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>シルファ</td>
+					<td>落とし穴から落ちる</td>
+					<td>痛いのれす</td>
+					<td>--</td>
+					<td>
+						<select id="chat-46" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>シルファ　優季</td>
+					<td>4層以降</td>
+					<td>携帯非常口について</td>
+					<td>--</td>
+					<td>
+						<select id="chat-47" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>シルファ　はるみ</td>
+					<td>戦闘解放区で人間系の敵が2体以上出現（戦闘後）</td>
+					<td>人間怖い</td>
+					<td>--</td>
+					<td>
+						<select id="chat-48" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>シルファ　はるみ</td>
+					<td>戦闘でシルファ抱き枕を入手する</td>
+					<td>ずるい！</td>
+					<td>シルファ抱き枕使用</br>
+					全員のHP全回復</td>
+					<td>
+						<select id="chat-49" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>シルファ　はるみ</td>
+					<td>ミミック系を倒す</td>
+					<td>だまされた！卑怯なのれす！</td>
+					<td>--</td>
+					<td>
+						<select id="chat-50" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>シルファ　はるみ　イルファ</td>
+					<td>16層以降</td>
+					<td>愚姉？愚妹？</td>
+					<td>--</td>
+					<td>
+						<select id="chat-51" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>シルファ　はるみ　イルファ</td>
+					<td>シルファがジョシコーセー&イルファがくノ一</td>
+					<td>立ち絵に関する話題</td>
+					<td>--</td>
+					<td>
+						<select id="chat-52" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>シルファ　珊瑚</td>
+					<td>塔で戦闘中にシルファが戦闘不能になった後、復活させる</td>
+					<td>珊瑚によるシルファのメンテナンス</td>
+					<td>シルファのAGI+20</td>
+					<td>
+						<select id="chat-53" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>瑠璃</td>
+					<td>--</td>
+					<td>非戦闘時のウォークライについて</td>
+					<td>--</td>
+					<td>
+						<select id="chat-54" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>瑠璃</td>
+					<td>パーティにメイド系がいない</td>
+					<td>TPについて</td>
+					<td>--</td>
+					<td>
+						<select id="chat-55" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>瑠璃　優季</td>
+					<td>瑠璃がダークロード&優季が歌姫</td>
+					<td>この衣装、似合いますか？</td>
+					<td>--</td>
+					<td>
+						<select id="chat-56" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>瑠璃　珊瑚</td>
+					<td>ゴーレム系の敵が出現（戦闘後）</td>
+					<td>ゴーレム改造</td>
+					<td>万能箒HNX-12入手</td>
+					<td>
+						<select id="chat-57" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>瑠璃　珊瑚</td>
+					<td>ダークカテドラルで戦闘中に珊瑚が戦闘不能</br>
+					→復活後に戦闘終了
+					（瑠璃は戦闘不能になってはいけない）</td>
+					<td>貴明へのダメだし</td>
+					<td>珊瑚のHP・TP全回復</td>
+					<td>
+						<select id="chat-58" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>よっち</td>
+					<td>よっちがヴァルキリー&ワイバーン系の敵を倒す（戦闘後）</td>
+					<td>勇者とお姫様</td>
+					<td>--</td>
+					<td>
+						<select id="chat-59" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>よっち　ちゃる</td>
+					<td>--</td>
+					<td>装備品の選び方について</br>
+					（値段や攻撃力だけでなくスキルも～）</td>
+					<td>--</td>
+					<td>
+						<select id="chat-60" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>よっち　ちゃる</td>
+					<td>よっちが侍で10マス以上移動する</td>
+					<td>これを使いこなせて一人前</td>
+					<td>任侠の小太刀入手</td>
+					<td>
+						<select id="chat-61" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>よっち　ちゃる</td>
+					<td>戦闘でしましまパンツを入手</td>
+					<td>おなかすいたっス～</td>
+					<td>しましまパンツ使用</td>
+					<td>
+						<select id="chat-62" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>よっち　花梨</td>
+					<td>10層以降</td>
+					<td>強敵ザコについて</td>
+					<td>--</td>
+					<td>
+						<select id="chat-63" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>よっち　はるみ</td>
+					<td>6層以降（戦闘後）</td>
+					<td>協力スキルについて</td>
+					<td>--</td>
+					<td>
+						<select id="chat-64" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>よっち　ささら</td>
+					<td>--</td>
+					<td>ユニークスキルについて</td>
+					<td>--</td>
+					<td>
+						<select id="chat-65" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>よっち　るーこ</td>
+					<td>50回以上戦闘</td>
+					<td>こんなの拾った</td>
+					<td>魔獣配合ゼリー入手</td>
+					<td>
+						<select id="chat-66" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>優季</td>
+					<td>6層以降</td>
+					<td>セーブの使い方について</td>
+					<td>--</td>
+					<td>
+						<select id="chat-67" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>優季</td>
+					<td>ハルニレの葉を所持&優季が麻痺状態</td>
+					<td>M調教？</td>
+					<td>ハルニレの葉使用</br>
+					優季の麻痺解除</td>
+					<td>
+						<select id="chat-68" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>優季　ちゃる</td>
+					<td>6層以降</td>
+					<td>一方通行後のエンカウントについて</td>
+					<td>--</td>
+					<td>
+						<select id="chat-69" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>優季　花梨</td>
+					<td>王家の墓</td>
+					<td>ピラミッドみたいな感じ？</td>
+					<td>黄金色の仮面入手</td>
+					<td>
+						<select id="chat-70" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>優季　ささら</td>
+					<td>16層以降</td>
+					<td>現実世界が気になります</td>
+					<td>--</td>
+					<td>
+						<select id="chat-71" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>優季　るーこ</td>
+					<td>るーこがマジカルプリンセス</td>
+					<td>猫可愛いですね</td>
+					<td>ガトーショコラ入手</td>
+					<td>
+						<select id="chat-72" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>優季　由真　菜々子　イルファ</td>
+					<td>イルファがLV15以上&菜々子のHPが50%以下</td>
+					<td>菜々子ちゃん大丈夫？</td>
+					<td>--</td>
+					<td>
+						<select id="chat-73" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>ちゃる</td>
+					<td>依頼を受けていない状態</td>
+					<td>依頼は受けた方がいい</td>
+					<td>--</td>
+					<td>
+						<select id="chat-74" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>ちゃる　はるみ</td>
+					<td>4層のちゃるがいた小屋に入る</td>
+					<td>あの時の続き…</td>
+					<td>ウエイトレストレイ&携帯非常口入手</td>
+					<td>
+						<select id="chat-75" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>ちゃる　まーりゃん　由真</td>
+					<td>50回以上戦闘</td>
+					<td>メガネ素が足りない</td>
+					<td>--</td>
+					<td>
+						<select id="chat-76" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>ちゃる　由真</td>
+					<td>近くの森で50回以上戦闘</td>
+					<td>お花を摘みに…</td>
+					<td>妖精キノコ入手</td>
+					<td>
+						<select id="chat-77" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>花梨</td>
+					<td>戦闘後</td>
+					<td>スキルの有効な組み合わせについて</td>
+					<td>--</td>
+					<td>
+						<select id="chat-78" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>花梨</td>
+					<td>ダークカテドラルでメギドの書を所持</td>
+					<td>タカちゃんの物はあたしの物</td>
+					<td>メギドの書使用</br>
+					花梨のRES+20</br>
+					※貴重な最強のユニーク本なので、誤って取られないよう注意</td>
+					<td>
+						<select id="chat-79" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>花梨</td>
+					<td>タマゴサンドを所持&戦闘後花梨のHPが50%以下</td>
+					<td>お腹すいた</td>
+					<td>タマゴサンド使用</br>
+					花梨のHP全回復</td>
+					<td>
+						<select id="chat-80" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>花梨</td>
+					<td>ガストラップにかかる</td>
+					<td>ガストラップについて</td>
+					<td>ガスマスク入手</td>
+					<td>
+						<select id="chat-81" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>花梨　るーこ</td>
+					<td>梅干入りおにぎりを所持&</br>
+					12層以降で戦闘終了</td>
+					<td>サド？マゾ？</td>
+					<td>梅干入りおにぎり使用&</br>
+					るーこのHPが全回復</td>
+					<td>
+						<select id="chat-82" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>はるみ　珊瑚</td>
+					<td>塔ではるみが2回戦闘不能になる</td>
+					<td>メンテナンスして</td>
+					<td>はるみのHP+20</td>
+					<td>
+						<select id="chat-83" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>はるみ　イルファ</td>
+					<td>12層以降</td>
+					<td>イルファは役立たず？</td>
+					<td>はるみが沈黙</td>
+					<td>
+						<select id="chat-84" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>珊瑚</td>
+					<td>高級モンスター図鑑5つ所持&100歩移動</td>
+					<td>改造したい</td>
+					<td>高級モンスター図鑑5つ使用</br>
+					来栖川印モンスター図鑑入手</td>
+					<td>
+						<select id="chat-85" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>珊瑚　イルファ</td>
+					<td>強化装甲を3つ所持</td>
+					<td>改造したい</td>
+					<td>強化装甲3つ使用</br>
+					バリアシステム入手</td>
+					<td>
+						<select id="chat-86" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>まーりゃん</td>
+					<td>ダークカテドラルでまーりゃんがLV60以上（戦闘後）</td>
+					<td>城が欲しい</td>
+					<td>--</td>
+					<td>
+						<select id="chat-87" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>まーりゃん　ささら</td>
+					<td>メインダンジョンの戦闘中にささらが戦闘不能</br>
+					→復活後に戦闘終了</br>
+					（まーりゃんは戦闘不能になってはいけない）</td>
+					<td>まーりゃんが貴明の指示にダメだし</td>
+					<td>デニッシュ入手</td>
+					<td>
+						<select id="chat-88" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>まーりゃん　春夏</td>
+					<td>つやつやミストを所持</td>
+					<td>このみママも歳には勝てない？</td>
+					<td>つやつやミスト使用</br>
+					魚肉ソーセージ入手</td>
+					<td>
+						<select id="chat-89" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>まーりゃん　由真</td>
+					<td>ちゃる&由真の近くの森での会話後&</br>
+					13層を探索</td>
+					<td>この壁どこかで…</td>
+					<td>--</td>
+					<td>
+						<select id="chat-90" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>まーりゃん　菜々子</td>
+					<td>まーりゃんがバード&菜々子がビショップ&</br>
+					9層以降（戦闘後）</td>
+					<td>この格好似合う？</td>
+					<td>--</td>
+					<td>
+						<select id="chat-91" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>ささら</td>
+					<td>クラーケンを封印する</td>
+					<td>ぬるっとした…ソレが欲しいの…1</td>
+					<td>クラーケンの封印書使用</td>
+					<td>
+						<select id="chat-92" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>ささら</td>
+					<td>クラーケンのイベント後にブルオクトパスを封印する</td>
+					<td>ぬるっとした…ソレが欲しいの…2</td>
+					<td>ブルオクトパスの封印書使用</td>
+					<td>
+						<select id="chat-93" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>ささら</td>
+					<td>ブルオクトパスのイベント後にラートシカムイを封印する</td>
+					<td>ぬるっとした…ソレが欲しいの…3</td>
+					<td>ラートシカムイの封印書使用</br>
+					燕の産んだ子安貝（依頼品）入手</td>
+					<td>
+						<select id="chat-94" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>ささら　由真</td>
+					<td>王家の墓でささらがヴァルキリー由真がくノ一</td>
+					<td>防御と素早さについて</td>
+					<td>--</td>
+					<td>
+						<select id="chat-95" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>ささら　珊瑚　花梨</td>
+					<td>塔で50回以上戦闘</td>
+					<td>強敵と雑魚、どっちから倒す派？</td>
+					<td>--</td>
+					<td>
+						<select id="chat-96" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>春夏</td>
+					<td>春夏がジョシコーセー</td>
+					<td>似合う？</td>
+					<td>鉄板入り学生鞄入手</td>
+					<td>
+						<select id="chat-97" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>春夏</td>
+					<td>八塩折之酒を所持</td>
+					<td>それ、貰えないかしら？</td>
+					<td>魚肉ソーセージ入手</td>
+					<td>
+						<select id="chat-98" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>春夏　るーこ</td>
+					<td>17層以降</td>
+					<td>四天王について</td>
+					<td>ハナさんの店で「強者の証」依頼解禁</td>
+					<td>
+						<select id="chat-99" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>由真</td>
+					<td>敵が逃走する</td>
+					<td>100%逃げられるなんてズルい！</td>
+					<td>--</td>
+					<td>
+						<select id="chat-100" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>由真</td>
+					<td>かずさTシャツを入手する</td>
+					<td>他人とは思えない</td>
+					<td>かずさTシャツ使用</br>
+					由真のTP+40</td>
+					<td>
+						<select id="chat-101" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>菜々子　るーこ</td>
+					<td>菜々子がウィッチ</td>
+					<td>魔法使いになれたけど…</td>
+					<td>--</td>
+					<td>
+						<select id="chat-102" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>菜々子　るーこ</td>
+					<td>ダークカテドラルで50回以上戦闘した後1マス移動する</td>
+					<td>こんなの落ちてたよ</td>
+					<td>菜々子のINT+20</td>
+					<td>
+						<select id="chat-103" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>るーこ</td>
+					<td>戦闘中にるーこが戦闘不能になり、蘇生後に戦闘終了</td>
+					<td>作戦へのダメだし</td>
+					<td>ムィ・コゥーハの霊薬入手</td>
+					<td>
+						<select id="chat-104" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>るーこ</td>
+					<td>18層以降でダークパワーを所持</td>
+					<td>作り変えてやろう</td>
+					<td>ダークパワー使用</br>
+					闇の篭手入手</td>
+					<td>
+						<select id="chat-105" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>イルファ</td>
+					<td>戦闘解放区で地雷を踏む</td>
+					<td>地雷に注意</td>
+					<td>--</td>
+					<td>
+						<select id="chat-106" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>イルファ</td>
+					<td>イルファが石化進行中状態で、10マス以上移動する</td>
+					<td>石化は自然回復しない</td>
+					<td>--</td>
+					<td>
+						<select id="chat-107" onchange="changeItem(this); changeLine(this)">
+							<option value="0">未発生</option>
+							<option value="1">発生済み</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</form>
 
 <script src="../js/TH2dt_Chat.js" type="text/javascript" charset="UTF-8"></script>
 </body>
