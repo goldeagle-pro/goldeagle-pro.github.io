@@ -1,0 +1,17 @@
+body {
+	padding: 0 40px;
+}
+
+.deco {
+	color: #4692C2;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	width: 170px;
+	padding: 8px 0;
+	margin: 5px 3px;
+	background-color: #DDFFDD;
+	border: 2px solid gray;
+	border-radius: 4px;
+}
+
