@@ -5,7 +5,7 @@ function changeItem(obj) {
 	} else {
 		obj.style.color = "gray";
 	}
-};
+}
 
 function changeLine(obj) {
 	
@@ -14,4 +14,4 @@ function changeLine(obj) {
 	} else {
 		obj.style.textDecoration ="line-through"
 	}
-};
+}
