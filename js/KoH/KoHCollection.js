@@ -1,3 +1,5 @@
+window.onload = load();
+
 function changeObtain(obj) {
 	if(obj.value == 100) {
 		obj.style.color = "gray";
@@ -41,7 +43,7 @@ function save() {
 	localStorage.setItem("lvKey",JSON.stringify(lvArrays));
 
 	var skillLvArrays = [];
-	for(var i=0; i<394; i++) {
+	for(var i=0; i<497; i++) {
 		var skillLvData = document.getElementById("sLv-"+i).value;
 		skillLvArrays.push(skillLvData);
 	}
@@ -67,8 +69,24 @@ function load() {
 	}
 
 	var skillLvArrays = JSON.parse(localStorage.getItem("skillLvKey"));
-	for(var i=0; i<394; i++) {
+	for(var i=0; i<497; i++) {
 		document.getElementById("sLv-"+i).value =skillLvArrays[i];
+	}
+}
+
+function remove() {
+	localStorage.removeItem("obtKey");
+	localStorage.removeItem("awakeKey");
+	localStorage.removeItem("lvKey");
+	localStorage.removeItem("skillLvKey");
+
+	document.collection.reset();
+}
+
+function confirmation() {
+	ret = confirm("データを消去してよろしいですか？");
+	if(ret == true) {
+		remove();
 	}
 }
 

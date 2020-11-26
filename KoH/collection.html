@@ -12,8 +12,12 @@
 </head>
 <body>
 	<form name="collection">
-		<input type="button" class="btn" value="セーブ" onclick="save()">
-		<input type="button" class="btn" value="ロード" onclick="load()">
+		<h2>コレクション</h2>
+		<div class="btn-wrapper">
+			<input type="button" class="btn save" value="セーブ" onclick="save()">
+			<input type="button" class="btn load" value="ロード" onclick="load()">
+			<input type="button" class="btn clear" value="クリア" onclick="confirmation()">
+		</div>
 		<table border="1" align="center">
 			<tr>
 				<th>天界Ⅰ</th>
@@ -9055,7 +9059,7 @@
 							<td rowspan="3"><input id="Lv-140" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-394" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9072,7 +9076,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-395" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9089,7 +9093,7 @@
 						<tr>
 							<td>スキル3</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-396" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9121,7 +9125,7 @@
 							<td rowspan="2"><input id="Lv-141" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-397" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9137,7 +9141,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-398" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9168,7 +9172,7 @@
 							<td rowspan="3"><input id="Lv-142" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-399" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9185,7 +9189,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-400" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9202,7 +9206,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-401" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9247,7 +9251,7 @@
 							<td rowspan="3"><input id="Lv-143" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-402" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9262,7 +9266,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-403" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9278,7 +9282,7 @@
 						<tr>
 							<td>スキル4</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-404" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9306,7 +9310,7 @@
 							<td rowspan="2"><input id="Lv-144" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-405" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9321,7 +9325,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-406" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9372,7 +9376,7 @@
 							<td rowspan="2"><input id="Lv-145" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-407" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9389,7 +9393,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-408" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9421,7 +9425,7 @@
 							<td rowspan="2"><input id="Lv-146" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-409" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9437,7 +9441,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-410" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9483,7 +9487,7 @@
 							<td rowspan="2"><input id="Lv-147" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-411" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9500,7 +9504,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-412" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9532,7 +9536,7 @@
 							<td rowspan="1"><input id="Lv-148" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-413" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9564,7 +9568,7 @@
 							<td rowspan="2"><input id="Lv-149" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-414" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9581,7 +9585,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-415" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9633,7 +9637,7 @@
 							<td rowspan="3"><input id="Lv-150" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-416" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9649,7 +9653,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-417" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9660,7 +9664,7 @@
 						<tr>
 							<td>スキル3</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-418" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9691,7 +9695,7 @@
 							<td rowspan="2"><input id="Lv-151" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-419" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9708,7 +9712,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-420" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9740,7 +9744,7 @@
 							<td rowspan="2"><input id="Lv-152" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-421" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9756,7 +9760,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-422" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9801,7 +9805,7 @@
 							<td rowspan="1"><input id="Lv-153" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-423" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9833,7 +9837,7 @@
 							<td rowspan="2"><input id="Lv-154" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-424" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9850,7 +9854,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-425" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9882,7 +9886,7 @@
 							<td rowspan="2"><input id="Lv-155" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-426" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9899,7 +9903,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-427" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9951,7 +9955,7 @@
 							<td rowspan="2"><input id="Lv-156" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-428" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9967,7 +9971,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-429" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -9997,7 +10001,7 @@
 							<td rowspan="2"><input id="Lv-157" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-430" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10013,7 +10017,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-431" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10045,7 +10049,7 @@
 							<td rowspan="2"><input id="Lv-158" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-432" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10061,7 +10065,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-433" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10106,7 +10110,7 @@
 							<td rowspan="3"><input id="Lv-159" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-434" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10123,7 +10127,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-435" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10134,7 +10138,7 @@
 						<tr>
 							<td>スキル3</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-436" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10166,7 +10170,7 @@
 							<td rowspan="2"><input id="Lv-160" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-437" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10181,7 +10185,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-438" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10227,7 +10231,7 @@
 							<td rowspan="3"><input id="Lv-161" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-439" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10244,7 +10248,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-440" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10261,7 +10265,7 @@
 						<tr>
 							<td>スキル3</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-441" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10289,7 +10293,7 @@
 							<td rowspan="2"><input id="Lv-162" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-442" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10305,7 +10309,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-443" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10350,7 +10354,7 @@
 							<td rowspan="3"><input id="Lv-163" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-444" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10367,7 +10371,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-445" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10383,7 +10387,7 @@
 						<tr>
 							<td>スキル4</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-446" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10411,7 +10415,7 @@
 							<td rowspan="3"><input id="Lv-164" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-447" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10428,7 +10432,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-448" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10439,7 +10443,7 @@
 						<tr>
 							<td>スキル3</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-449" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10466,7 +10470,7 @@
 							<td rowspan="3"><input id="Lv-165" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-450" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10483,7 +10487,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-451" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10496,7 +10500,7 @@
 						<tr>
 							<td>スキル3</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-452" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10544,7 +10548,7 @@
 							<td rowspan="3"><input id="Lv-166" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-453" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10561,7 +10565,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-454" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10578,7 +10582,7 @@
 						<tr>
 							<td>スキル3</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-455" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10610,7 +10614,7 @@
 							<td rowspan="3"><input id="Lv-167" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-456" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10627,7 +10631,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-457" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10644,7 +10648,7 @@
 						<tr>
 							<td>スキル3</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-458" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10690,7 +10694,7 @@
 							<td rowspan="4"><input id="Lv-168" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-459" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10707,7 +10711,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-460" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10724,7 +10728,7 @@
 						<tr>
 							<td>スキル3</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-461" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10741,7 +10745,7 @@
 						<tr>
 							<td>スキル4</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-462" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10773,7 +10777,7 @@
 							<td rowspan="2"><input id="Lv-169" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-463" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10790,7 +10794,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-464" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10822,7 +10826,7 @@
 							<td rowspan="2"><input id="Lv-170" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-465" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10839,7 +10843,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-466" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10891,7 +10895,7 @@
 							<td rowspan="2"><input id="Lv-171" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-467" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10908,7 +10912,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-468" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10934,7 +10938,7 @@
 							<td rowspan="2"><input id="Lv-172" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-469" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10951,7 +10955,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-470" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10978,7 +10982,7 @@
 							<td rowspan="2"><input id="Lv-173" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-471" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -10995,7 +10999,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-472" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11035,7 +11039,7 @@
 							<td rowspan="2"><input id="Lv-174" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-473" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11052,7 +11056,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-474" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11084,7 +11088,7 @@
 							<td rowspan="2"><input id="Lv-175" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-475" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11101,7 +11105,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-476" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11133,7 +11137,7 @@
 							<td rowspan="2"><input id="Lv-176" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-477" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11150,7 +11154,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-478" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11202,7 +11206,7 @@
 							<td rowspan="2"><input id="Lv-177" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-479" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11219,7 +11223,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-480" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11246,7 +11250,7 @@
 							<td rowspan="2"><input id="Lv-178" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-481" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11263,7 +11267,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-482" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11295,7 +11299,7 @@
 							<td rowspan="2"><input id="Lv-179" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-483" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11312,7 +11316,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-484" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11358,7 +11362,7 @@
 							<td rowspan="2"><input id="Lv-180" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-485" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11375,7 +11379,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-486" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11401,7 +11405,7 @@
 							<td rowspan="2"><input id="Lv-181" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-487" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11418,7 +11422,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-488" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11444,7 +11448,7 @@
 							<td rowspan="2"><input id="Lv-182" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-489" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11461,7 +11465,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-490" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11506,7 +11510,7 @@
 							<td rowspan="2"><input id="Lv-183" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-491" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11523,7 +11527,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-492" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11554,7 +11558,7 @@
 							<td rowspan="2"><input id="Lv-184" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-493" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11571,7 +11575,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-494" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11602,7 +11606,7 @@
 							<td rowspan="2"><input id="Lv-185" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-495" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -11619,7 +11623,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-496" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
