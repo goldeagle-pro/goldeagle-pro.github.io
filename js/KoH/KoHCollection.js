@@ -31,5 +31,7 @@ function load() {
 	var obtArrays = JSON.parse(localStorage.getItem("obtKey"));
 	for(i=0; i<3; i++) {
 		document.getElementById("obt-"+ i).value = obtArrays[i];
+		changeObtain(document.getElementById("obt-"+i));
 	}
+	
 }
