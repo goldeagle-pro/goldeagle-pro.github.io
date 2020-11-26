@@ -9,6 +9,8 @@
 </head>
 <body>
 	<form name="collection">
+		<input type="button" class="btn" value="セーブ" onclick="save()">
+		<input type="button" class="btn" value="ロード" onclick="load()">
 		<table border="1" align="center">
 			<tr>
 				<th>天界Ⅰ</th>
@@ -29,21 +31,21 @@
 						<tr>
 							<td rowspan="3">ラファエル</td>
 							<td rowspan="3">
-								<select class="obtain" onchange="changeObtain(this)">
+								<select class="obtain" id="obt-0" onchange="changeObtain(this)">
 									<option value="100" selected>未</option>
 									<option value="200">済</option>
 								</select>
 							</td>
 							<td rowspan="3">
-								<select class="awakening" onchange="changeAwakening(this)">
+								<select id="awake-0" class="awakening" onchange="changeAwakening(this)">
 									<option value="300">未覚醒</option>
 									<option value="400">覚醒済</option>
 								</select>
 							</td>
-							<td rowspan="3"><input class="Lv" type="text" value="1"></td>
+							<td rowspan="3"><input id="Lv-0" class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-0" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -57,7 +59,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-1" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -69,7 +71,7 @@
 						<tr>
 							<td>スキル3</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-2" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -84,13 +86,13 @@
 						<tr>
 							<td rowspan="3">ラブエル</td>
 							<td rowspan="3">
-								<select class="obtain" onchange="changeObtain(this)">
+								<select id="obt-1" class="obtain" onchange="changeObtain(this)">
 									<option value="100" selected>未</option>
 									<option value="200">済</option>
 								</select>
 							</td>
 							<td rowspan="3">
-								<select class="awakening" onchange="changeAwakening(this)">
+								<select id="awake-1" class="awakening" onchange="changeAwakening(this)">
 									<option value="300">未覚醒</option>
 									<option value="400">覚醒済</option>
 								</select>
@@ -98,7 +100,7 @@
 							<td rowspan="3"><input class="Lv" type="text" value="1"></td>
 							<td>スキル1</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-4" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -113,7 +115,7 @@
 						<tr>
 							<td>スキル2</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-5" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -126,7 +128,7 @@
 						<tr>
 							<td>スキル3</td>
 							<td>
-								<select class="skillLv">
+								<select id="sLv-6" class="skillLv">
 									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>

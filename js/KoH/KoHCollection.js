@@ -17,3 +17,19 @@ function changeAwakening(obj) {
 		obj.style.color = "black"
 	}
 }
+
+function save() {
+	var obtArrays = [];
+	for(i=0; i<3; i++) {
+		var obtData = document.getElementById("obt-"+ i).value;
+		obtArrays.push(obtData);
+	}
+	localStorage.setItem("obtKey",JSON.stringify(obtArrays));
+}
+
+function load() {
+	var obtArrays = JSON.parse(localStorage.getItem("obtKey"));
+	for(i=0; i<3; i++) {
+		document.getElementById("obt-"+ i).value = obtArrays[i];
+	}
+}
