@@ -13,10 +13,27 @@ h2 {
 	border-radius: 5px;
 	font-size: 20px;
 	font-weight: bold;
+	color: white;
 }
 
 .btn:hover {
 	cursor: pointer;
+}
+
+.save {
+	background-color: rgb(95, 171, 248);
+}
+
+.save:hover {
+	background-color: dodgerblue;
+}
+
+.load {
+	background-color: #90ee90;
+}
+
+.load:hover {
+	background-color: #33df20;
 }
 
 .clear {
