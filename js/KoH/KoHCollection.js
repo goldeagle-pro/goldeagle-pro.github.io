@@ -41,7 +41,7 @@ function save() {
 	localStorage.setItem("lvKey",JSON.stringify(lvArrays));
 
 	var skillLvArrays = [];
-	for(var i=0; i<214; i++) {
+	for(var i=0; i<394; i++) {
 		var skillLvData = document.getElementById("sLv-"+i).value;
 		skillLvArrays.push(skillLvData);
 	}
@@ -67,7 +67,7 @@ function load() {
 	}
 
 	var skillLvArrays = JSON.parse(localStorage.getItem("skillLvKey"));
-	for(var i=0; i<214; i++) {
+	for(var i=0; i<394; i++) {
 		document.getElementById("sLv-"+i).value =skillLvArrays[i];
 	}
 }
