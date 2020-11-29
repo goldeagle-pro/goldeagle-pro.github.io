@@ -1,9 +1,9 @@
 window.onload = load();
 
 function changeObtain(obj) {
-	if(obj.value == 1) {
+	if(obj.value == 0) {
 		obj.style.color = "gray";
-	} else if(obj.value == 2) {
+	} else if(obj.value == 1) {
 		obj.style.color = "red";
 	} else {
 		obj.style.color = "black";
@@ -11,9 +11,9 @@ function changeObtain(obj) {
 }
 
 function changeAwakening(obj) {
-	if(obj.value == 1) {
+	if(obj.value == 0) {
 		obj.style.color = "yellow"
-	} else if(obj.value == 2) {
+	} else if(obj.value == 1) {
 		obj.style.color = "purple"
 	} else {
 		obj.style.color = "black"
