@@ -18,3 +18,16 @@
 	margin: 5px;
 	font-size: 20px;
 }
+
+.right-text {
+	display: inline-block;
+	height: 50px;
+	width: 30px;
+	text-align: center;
+	margin: 5px 0;
+	background-color: rgb(255, 230, 197);
+}
+
+.right-text p {
+	vertical-align: middle;
+}
