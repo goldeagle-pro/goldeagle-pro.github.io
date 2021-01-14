@@ -1,3 +1,4 @@
 function myFunction() {
-	console.log('Hello, GAS!');
+	const sheet = SpreadsheetApp.getActiveSheet();
+	console.log(sheet.getName());
 }
