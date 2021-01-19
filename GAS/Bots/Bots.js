@@ -1,4 +1,5 @@
 function myFunction() {
 	const sheet = SpreadsheetApp.getActiveSheet();
-	console.log(sheet.getName());
+	const range = sheet.getRange('A3:C3');
+	console.log(range.getValues());
 }
