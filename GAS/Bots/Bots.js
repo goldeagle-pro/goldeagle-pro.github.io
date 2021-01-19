@@ -8,7 +8,7 @@ function myFunction() {
 			sheet.getRange(i, 4).setValue(true);
 		
 			if(i >= lastRow) {
-				sheet.getRange(2, 4, lastRow - 1).getA1Notation();
+				sheet.getRange(2, 4, lastRow - 1).clearContent();
 			}
 			break;	
 		}
