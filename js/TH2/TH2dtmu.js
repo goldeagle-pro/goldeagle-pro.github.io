@@ -487,7 +487,7 @@ function culcSP() {
 
 function save() {
 	var saveNumber = document.getElementById('saveDataNumMagicuser');
-	var saveWord = document.getElementById('saveDataName').nodeValue;
+	var saveWord = document.getElementById('saveDataNameMagicuser').nodeValue;
 
 	selectNumber = saveNumber.options.selectedIndex;
 	saveNumber.options[selectNumber].textContent = saveNumber.options.selectedIndex + ":" + saveWord;
@@ -500,7 +500,7 @@ function save() {
 
 	localStorage.setItem('startKey',JSON.stringify(saveNumberArrays));
 
-	var saveDataArrays = [	document.getElementById('saveDataName').value,
+	var saveDataArrays = [	document.getElementById('saveDataNameMagicuser').value,
 				document.getElementById('skillDrug').value,
 				document.getElementById('currentLv').value,
 				document.getElementById('changeSelectA').value,
