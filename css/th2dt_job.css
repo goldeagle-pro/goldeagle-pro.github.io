@@ -136,6 +136,6 @@ a {
   background-color: #ffffff;
 }
 
-.numberSpace {
-  width: 10px;
+.statas {
+  display: inline-block;
 }
