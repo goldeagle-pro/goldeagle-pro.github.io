@@ -487,7 +487,7 @@ function culcSP() {
 
 function save() {
 	var saveNumber = document.getElementById('saveDataNumMagicuser');
-	var saveWord = document.getElementById('saveDataNameMu').nodeValue;
+	var saveWord = document.getElementById('saveDataName').nodeValue;
 
 	selectNumber = saveNumber.options.selectedIndex;
 	saveNumber.options[selectNumber].textContent = saveNumber.options.selectedIndex + ":" + saveWord;
