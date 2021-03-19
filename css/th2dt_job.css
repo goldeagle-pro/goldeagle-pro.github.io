@@ -135,3 +135,7 @@ a {
 #saveDataNum {
   background-color: #ffffff;
 }
+
+.numberSpace {
+  width: 10px;
+}
