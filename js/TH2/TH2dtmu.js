@@ -4,7 +4,7 @@ function loading() {
 	var wave = JSON.parse(localStorage.getItem('startKey'));
 	
 	for(var i=0; i<wave.length; i++) {
-		document.getElementById('saveDataNumMagicuser').options[i].textContent = wave[i]; 
+		document.getElementById('saveDataNum').options[i].textContent = wave[i]; 
 	}
 }
 
