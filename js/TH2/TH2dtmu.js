@@ -713,7 +713,6 @@ function load() {
 	document.getElementById('BS09').options.selectedIndex = loadData[92];
 	document.getElementById('BS10').options.selectedIndex = loadData[93];
 
-	job();
 	DTskill();
 	culcSP();
 	remainSP();
