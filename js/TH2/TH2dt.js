@@ -68,5 +68,9 @@ function clearAll() {
 	document.getElementById('skillDrug').value = "";
 	document.getElementById('currentLv').value = 1;
 	document.getElementById('totalLv').innerHTML = document.getElementById('currentLv').value;
+
+	DTskill();
+	culcSP();
+	remainSP()
 }
 
