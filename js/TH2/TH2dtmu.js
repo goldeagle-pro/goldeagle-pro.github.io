@@ -604,11 +604,11 @@ function save() {
 				document.getElementById('BS10').options.selectedIndex
 	];
 
-	localStorage.setItem(document.getElementById('saveDataNumMagicuser').value,JSON.stringify(saveDataArrays));
+	localStorage.setItem(document.getElementById('saveDataNum').value,JSON.stringify(saveDataArrays));
 }
 
 function load() {
-	var loadData = JSON.parse(localStorage.getItem(document.getElementById('saveDataNumMagicuser').value));
+	var loadData = JSON.parse(localStorage.getItem(document.getElementById('saveDataNum').value));
 
 	document.getElementById('saveDataName').value = loadData[0];
 	document.getElementById('skillDrug').value = loadData[1];
@@ -720,7 +720,7 @@ function load() {
 }
 
 function remove() {
-	localStorage.removeItem( document.getElementById('saveDataNumMagicuser').selectedIndex);
+	localStorage.removeItem( document.getElementById('saveDataNum').selectedIndex);
 
 	document.skillSim.reset();
 	document.saveData.reset();
