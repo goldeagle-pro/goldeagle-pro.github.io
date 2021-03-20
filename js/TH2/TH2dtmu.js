@@ -486,7 +486,11 @@ function culcSP() {
 }
 
 function save() {
-	
+	var saveNumber = document.getElementById('saveDataNum');
+	var saveWord = document.getElementById('saveDataName').nodeValue;
+
+	selectNumber = saveNumber.options.selectedIndex;
+	saveNumber.options[selectNumber].textContent = saveNumber.options.selectedIndex + ":" + saveWord;
 
 	var saveNumberArrays = [];
 	for(var i=0; i<saveNumber.options.length; i++) {
