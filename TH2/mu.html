@@ -25,18 +25,6 @@
 				<p class="c">TH2DT Skill Sim.</p>	
 			</div>
 			<p class="c">マジックユーザー系</p>
-			<div align="center">
-				<div class="useSPs">
-					<p>Lv:</p>
-					<input type="text" name="currentLv" class="SPNumber" id="currentLv" value="1" onchange="remainSP()">
-					<p>スキルの素:</p>
-					<input type="text" class="SPNumber" id="skillDrug" onchange="remainSP()">
-					<p id="remain">残りSP:</p>
-					<p id="remainSP">3</p>
-					<p id="useSP">使用SP:</p>
-					<p id="culcSP">0</p>
-				</div>
-			</div>
 			<div>
 				<select name="lv" id="saveDataName">
 					<option value="1">1:no data</option>
@@ -51,6 +39,19 @@
 					<option value="10">10:no data</option>
 				</select>
 			</div>
+			<div align="center">
+				<div class="useSPs">
+					<p>Lv:</p>
+					<input type="text" name="currentLv" class="SPNumber" id="currentLv" value="1" onchange="remainSP()">
+					<p>スキルの素:</p>
+					<input type="text" class="SPNumber" id="skillDrug" onchange="remainSP()">
+					<p id="remain">残りSP:</p>
+					<p id="remainSP">3</p>
+					<p id="useSP">使用SP:</p>
+					<p id="culcSP">0</p>
+				</div>
+			</div>
+			
 			<div id="skillTable">
 				<table id="skillName" border="1" align="center">
 					<tr>
