@@ -139,3 +139,8 @@ a {
 .statas {
   display: inline-block;
 }
+
+.lvNumber {
+  margin-left: 5px;
+  width: 15px;
+}

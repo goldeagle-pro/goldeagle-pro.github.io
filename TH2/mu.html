@@ -22,18 +22,18 @@
 	<div canvas="container">
 		<form name="skillSim">
 			<div>
-				<p class="c">TH2DT Skill Sim.</p>
+				<p class="c">TH2DT Skill Sim.</p>	
 			</div>
 			<p class="c">マジックユーザー系</p>
-			<div>
-				<p class="statas">Lv:</p>
-				<input type="text" class="lvNumber">
-			
-				<p class="statas" id="remain">残りSP:</p>
-				<p class="statas" id="remainSP">3</p>
-			
-				<p class="statas" id="useSP">使用SP:</p>
-				<p class="statas" id="culcSP">0</p>
+			<div align="center">
+				<div class="useSPs">
+					<p>Lv:</p>
+					<input type="text" name="currentLv" id="currentLv" value="1" onchange="totalLv(); remainSP()">
+					<p id="remain">残りSP:</p>
+					<p id="arraySP">3</p>
+					<p id="useSP">使用SP:</p>
+					<p id="culcSP">0</p>
+				</div>
 			</div>
 			<div id="skillTable">
 				<table id="skillName" border="1" align="center">
