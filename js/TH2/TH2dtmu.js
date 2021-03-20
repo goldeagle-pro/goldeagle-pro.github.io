@@ -487,6 +487,13 @@ function culcSP() {
 
 function save() {
 	
+
+	var saveNumberArrays = [];
+	for(var i=0; i<saveNumber.options.length; i++) {
+		var obj = saveNumber.options[i].textContent;
+		saveNumberArrays.push(obj);
+	}
+
 	localStorage.setItem('startKey',JSON.stringify(saveNumberArrays));
 
 	var saveDataArrays = [	document.getElementById('saveDataName').value,
