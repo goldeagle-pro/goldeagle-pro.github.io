@@ -123,9 +123,15 @@
   border: 1px solid #000080;
   width :80px;
   height: 30px;
+  position: relative;
   border-radius: 5px;
   text-align: center;
   margin:0 5px 10px 5px;
+}
+
+.btn p {
+  position: absolute;
+  margin: auto;
 }
 
 
