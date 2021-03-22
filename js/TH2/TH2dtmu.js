@@ -155,7 +155,7 @@ function DTskill() {
 			skillSO08.innerHTML = textSO08;
 	var skillSO09 = document.getElementById('skillSO09');
 		textSO09 = SO09*(SO09+1);
-			skillSO08.innerHTML = textSO09;					
+			skillSO09.innerHTML = textSO09;					
 
 	var skillEN01 = document.getElementById('skillEN01');
 		textEN01 = EN01*(EN01+1)/2;
