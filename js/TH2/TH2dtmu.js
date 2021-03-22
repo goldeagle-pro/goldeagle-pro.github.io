@@ -250,7 +250,7 @@ function DTskill() {
 			skillPR12.innerHTML = textPR12;
 
 	var skillWT01 = document.getElementById('skillWT01');
-		textWT01 = WT01*(WT01+1)/2;
+		textWT01 = WT01*(WT01+1);
 			skillWT01.innerHTML = textWT01;
 	var skillWT02 = document.getElementById('skillWT02');
 		textWT02 = WT02*(WT02+1)/2;
