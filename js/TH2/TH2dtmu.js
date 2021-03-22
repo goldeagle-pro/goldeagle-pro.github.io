@@ -25,7 +25,7 @@ function DTskill() {
 	var SO06 = document.getElementById('SO06').selectedIndex;
 	var SO07 = document.getElementById('SO07').selectedIndex;
 	var SO08 = document.getElementById('SO08').selectedIndex;
-	var SO08 = document.getElementById('SO09').selectedIndex;
+	var SO09 = document.getElementById('SO09').selectedIndex;
 
 	var EN01 = document.getElementById('EN01').selectedIndex;
 	var EN02 = document.getElementById('EN02').selectedIndex;
