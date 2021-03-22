@@ -409,7 +409,7 @@ function culcSP() {
 
 function save() {
 	var saveNumber = document.getElementById('saveDataNum');
-	var saveWord = document.getElementById('saveDataName').Value;
+	var saveWord = document.getElementById('saveDataName').value;
 
 	selectNumber = saveNumber.options.selectedIndex;
 	saveNumber.options[selectNumber].textContent = saveNumber.options.selectedIndex + ":" + saveWord;
