@@ -219,7 +219,7 @@ function DTskill() {
 		textPR02 = PR02*(PR02+1)/2;
 			skillPR02.innerHTML = textPR02;
 	var skillPR03 = document.getElementById('skillPR03');
-		textPR03 = PR03*(PR03+1);
+		textPR03 = PR03*(PR03+1)/2;
 			skillPR03.innerHTML = textPR03;
 	var skillPR04 = document.getElementById('skillPR04');
 		textPR04 = PR04*(PR04+1);
