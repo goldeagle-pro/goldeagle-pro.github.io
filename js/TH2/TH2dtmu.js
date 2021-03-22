@@ -486,7 +486,7 @@ function culcSP() {
 		return sum + element;
 	},0);
 
-	culcNum = document.getElementById('culcSP').innerHTML = sumSP;
+	document.getElementById('culcSP').innerHTML = sumSP;
 	
 
 function save() {
