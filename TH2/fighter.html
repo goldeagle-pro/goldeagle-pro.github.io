@@ -23,22 +23,53 @@
 	<div canvas="container">
 		<form name="skillSim">
 			<div>
-				<p class="c">TH2DT Skill Sim.</p>
-			</div>
-			<div class="menu">
-				<p class="sb-toggle-left box"><  メニュー</p>
-				<p class="sb-toggle-right box">クラス  ></p> 
+				<p class="c">TH2DT Skill Sim.</p>	
 			</div>
 			<p class="c">ファイター系</p>
-			<div class="useSPs">
-				<p>Lv:</p>
-				<p id="totalLv">1</p>
-				<p id="remain">残りSP:</p>
-				<p id="remainSP">3</p>
-				<p id="useSP">使用SP:</p>
-				<p id="culcSP">0</p>
+			<div align="center" class="nameHolder">
+				<input type="text" class="name" placeholder="Name" id="saveDataName">
 			</div>
-
+			<div align="center">
+				<div class="saveData">
+					<select name="lv" id="saveDataNum">
+						<option value="0">0:no data</option>
+						<option value="1">1:no data</option>
+						<option value="2">2:no data</option>
+						<option value="3">3:no data</option>
+						<option value="4">4:no data</option>
+						<option value="5">5:no data</option>
+						<option value="6">6:no data</option>
+						<option value="7">7:no data</option>
+						<option value="8">8:no data</option>
+						<option value="9">9:no data</option>
+						<option value="10">10:no data</option>
+						<option value="11">11:no data</option>
+						<option value="12">12:no data</option>
+						<option value="13">13:no data</option>
+						<option value="14">14:no data</option>
+						<option value="15">15:no data</option>
+						<option value="16">16:no data</option>
+						<option value="17">17:no data</option>
+						<option value="18">18:no data</option>
+						<option value="19">19:no data</option>
+					</select>
+				</div>
+				<div class="btn saveData">
+					<p onclick="save()">セーブ</p>
+				</div>
+				<div class="btn saveData">
+					<p onclick="load()">ロード</p>
+				</div>
+				<div class="btn saveData">
+					<p onclick="clearAll()">クリア</p>
+				</div>
+				<div class="btn saveData">
+					<p onclick="DTskill(); culcSP(); remainSP()">計算</p>
+				</div>
+				<div class="btn saveData">
+					<a href="https://goldeagle-pro.github.io/TH2/TH2DT.html">TOP</a>
+				</div>
+			</div>
 			<div id="skillTable">
 				<table id="skillName" border="1" align="center">
 					<tr>
