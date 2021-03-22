@@ -164,5 +164,8 @@ a {
 .name {
   height: 30px;
   font-size: 20px;
+}
+
+.nameHolder {
   margin-bottom: 10px;
 }
