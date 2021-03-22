@@ -487,7 +487,7 @@ function culcSP() {
 	},0);
 
 	document.getElementById('culcSP').innerHTML = sumSP;
-	
+}	
 
 function save() {
 	var saveNumber = document.getElementById('saveDataNum');
