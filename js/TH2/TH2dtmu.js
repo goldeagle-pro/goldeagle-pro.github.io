@@ -25,6 +25,7 @@ function DTskill() {
 	var SO06 = document.getElementById('SO06').selectedIndex;
 	var SO07 = document.getElementById('SO07').selectedIndex;
 	var SO08 = document.getElementById('SO08').selectedIndex;
+	var SO08 = document.getElementById('SO09').selectedIndex;
 
 	var EN01 = document.getElementById('EN01').selectedIndex;
 	var EN02 = document.getElementById('EN02').selectedIndex;
@@ -147,11 +148,14 @@ function DTskill() {
 		textSO06 = SO06*(SO06+1)/2;
 			skillSO06.innerHTML = textSO06;
 	var skillSO07 = document.getElementById('skillSO07');
-		textSO07 = SO07*(SO07+1);
+		textSO07 = SO07*(SO07+1)/2;
 			skillSO07.innerHTML = textSO07;
 	var skillSO08 = document.getElementById('skillSO08');
 		textSO08 = SO08*(SO08+1);
 			skillSO08.innerHTML = textSO08;
+	var skillSO09 = document.getElementById('skillSO09');
+		textSO09 = SO09*(SO09+1);
+			skillSO08.innerHTML = textSO09;					
 
 	var skillEN01 = document.getElementById('skillEN01');
 		textEN01 = EN01*(EN01+1)/2;
@@ -396,6 +400,7 @@ function culcSP() {
 			Number(document.getElementById('skillSO06').textContent),
 			Number(document.getElementById('skillSO07').textContent),
 			Number(document.getElementById('skillSO08').textContent),
+			Number(document.getElementById('skillSO09').textContent),
 
 			Number(document.getElementById('skillEN01').textContent),
 			Number(document.getElementById('skillEN02').textContent),
