@@ -15,8 +15,6 @@
 	 <link rel="stylesheet" href="../css/slidebars.min.css">
 	 <!-- jQuery -->
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	 <!-- Slidebars -->
-	 <script src="../js/slidebars.min.js"></script>
 </head>
 	
 <body>
@@ -1495,143 +1493,10 @@
 		</form>
 	</div>
 		
-	<div off-canvas = "sb-left left push">
-		<div class="left-content">
-			<form name="saveData">
-				<hr class="fade">
-				<div>
-					<input type="text" name="saveDataName" id="saveDataName" placeholder="Name">
-				</div>
-				<hr class="fade">
-				<div>
-					<input type="text" name="skillDrug" id="skillDrug" placeholder="スキルの素" onchange="remainSP()">
-				</div>
-				<hr class="fade">
-				<div>
-					<input type="text" name="currentLv" id="currentLv" value="1" onchange="totalLv(); remainSP()">
-				</div>
-				<hr class="fade">
-				<div>
-					<select id="saveDataNumFighter">
-						<option value="0" disabled selected value>セーブデータ選択</option>
-						<option value="1">1:no data</option>
-						<option value="2">2:no data</option>
-						<option value="3">3:no data</option>
-						<option value="4">4:no data</option>
-						<option value="5">5:no data</option>
-						<option value="6">6:no data</option>
-						<option value="7">7:no data</option>
-						<option value="8">8:no data</option>
-						<option value="9">9:no data</option>
-						<option value="10">10:no data</option>
-						<option value="11">11:no data</option>
-						<option value="12">12:no data</option>
-						<option value="13">13:no data</option>
-						<option value="14">14:no data</option>
-						<option value="15">15:no data</option>
-					</select>
-				</div>
-				<hr class="fade">
-				<div class="btn">
-					<p onclick="save()">セーブ</p>
-				</div>
-				<hr class="fade">
-				<div class="btn">
-					<p onclick="load()">ロード</p>
-				</div>
-				<hr class="fade">
-				<div class="btn">
-					<p onclick="clearAll();DTskill();culcSP();remainSP()">クリア</p>
-				</div>
-				<hr class="fade">
-				<div class="btn">
-					<p onclick="remove()">選択したセーブデータを消去</p>
-				</div>
-				<hr class="fade">
-			</form>
-		</div>
-	</div>
-
-	<div off-canvas = "sb-right right push">
-		<div class="right-content">
-			<hr class="fade">
-			<div class="btn">
-				<p class="sb-close">ファイター系</p>
-			</div>
-			<hr class="fade">
-			<div class="btn">
-				<a href="https://goldeagle-pro.github.io/TH2/magicuser.html">マジックユーザー系</a>
-			</div>
-			<hr class="fade">
-			<div class="btn">
-				<a href="https://goldeagle-pro.github.io/TH2/scout.html">スカウト系</a>
-			</div>
-			<hr class="fade">
-			<div class="btn">
-				<a href="https://goldeagle-pro.github.io/TH2/maid.html">メイド系</a>
-			</div>
-			<hr class="fade">
-			<div class="btn">
-				<a href="TH2DT.html">TOPに戻る</a>
-			</div>
-			<hr class="fade">
-		</div>
-	</div>
+	
 <!-- script -->
 	<script src="../js/TH2/TH2dt.js" type="text/javascript" charset="UTF-8"></script>
 	<script src="../js/TH2/TH2dtft.js" type="text/javascript" charset="UTF-8"></script> 
 		
-	<script>
-		( function ( $ ) {
-		  // Initialize Slidebars
-		  var controller = new slidebars();
-		  controller.init();
-		
-		  /**
-		   * Original Version Style Control Classes
-		   */
-		
-		  // Open left
-		  $( '.sb-open-left' ).on( 'click', function ( event ) {
-		    event.preventDefault();
-		    event.stopPropagation();
-		
-		    controller.open( 'sb-left' );
-		  } );
-		
-		  // Toggle left
-		  $( '.sb-toggle-left' ).on( 'click', function ( event ) {
-		    event.preventDefault();
-		    event.stopPropagation();
-		
-		    controller.toggle( 'sb-left' );
-		  } );
-		
-		  // Open right
-		  $( '.sb-open-right' ).on( 'click', function ( event ) {
-		    event.preventDefault();
-		    event.stopPropagation();
-		
-		    controller.open( 'sb-right' );
-		  } );
-		
-		  // Toggle right
-		  $( '.sb-toggle-right' ).on( 'click', function ( event ) {
-		    event.preventDefault();
-		    event.stopPropagation();
-		
-		    controller.toggle( 'sb-right' );
-		  } );
-		
-		  // Close
-		  $( '.sb-close' ).on( 'click', function ( event ) {
-		    event.preventDefault();
-		    event.stopPropagation();
-		
-		    controller.close();
-		  } );
-		} ) ( jQuery );
-		</script>
-
 </body>
 </html>
