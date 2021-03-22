@@ -491,7 +491,7 @@ function culcSP() {
 
 function save() {
 	var saveNumber = document.getElementById('saveDataNum');
-	var saveWord = document.getElementById('saveDataName').nodeValue;
+	var saveWord = document.getElementById('saveDataName').Value;
 
 	selectNumber = saveNumber.options.selectedIndex;
 	saveNumber.options[selectNumber].textContent = saveNumber.options.selectedIndex + ":" + saveWord;
