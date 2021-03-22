@@ -482,7 +482,7 @@ function culcSP() {
 			Number(document.getElementById('skillBS10').textContent),
 ];
 
-	var sumSP = skillSPs.reduce(function(sum, element) {
+	sumSP = skillSPs.reduce(function(sum, element) {
 		return sum + element;
 	},0);
 
