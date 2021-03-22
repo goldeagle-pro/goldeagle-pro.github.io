@@ -301,7 +301,7 @@ function DTskill() {
 	var skillMP07 = document.getElementById('skillMP07');
 		textMP07 = MP07*(MP07+1)/2;
 			skillMP07.innerHTML = textMP07;
-	var skillMP08 = document.getElementById('skillMP07');
+	var skillMP08 = document.getElementById('skillMP08');
 		textMP08 = MP08*(MP08+1)/2;
 			skillMP08.innerHTML = textMP08;
 	var skillMP09 = document.getElementById('skillMP09');
