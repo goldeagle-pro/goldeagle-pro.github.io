@@ -186,7 +186,7 @@ function DTskill() {
 		textTH11 = TH11*(TH11+1);
 			skillTH11.innerHTML = textTH11;
 	var skillTH12 = document.getElementById('skillTH12');
-		textTH12 = TH12*(TH12+1);
+		textTH12 = TH12*(TH12+1)/2;
 			skillTH12.innerHTML = textTH12;
 
 	var skillKN01 = document.getElementById('skillKN01');
