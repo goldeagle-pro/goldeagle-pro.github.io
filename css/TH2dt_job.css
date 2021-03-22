@@ -160,3 +160,9 @@ a {
   height: 15px;
   padding: 5px 0;
 }
+
+.name {
+  align: center;
+  height: 30px;
+  font-size: 20px;
+}
