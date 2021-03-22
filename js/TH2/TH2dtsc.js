@@ -103,7 +103,7 @@ function DTskill() {
 			skillAR03.innerHTML = textAR03;
 	var skillAR04 = document.getElementById('skillAR04');
 		textAR04 = AR04*(AR04+1)/2;
-			skillAR04.inerHTML = textAR04;
+			skillAR04.innerHTML = textAR04;
 	var skillAR05 = document.getElementById('skillAR05');
 		textAR05 = AR05*(AR05+1)/2;
 			skillAR05.innerHTML = textAR05;
