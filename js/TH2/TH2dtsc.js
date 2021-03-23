@@ -379,7 +379,7 @@ function save() {
 				document.getElementById('KN13').options.selectedIndex
 	];
 
-	localStorage.setItem(document.getElementById('saveDataNum	').value,JSON.stringify(saveDataArrays));
+	localStorage.setItem(document.getElementById('saveDataNum').value,JSON.stringify(saveDataArrays));
 }
 
 function load() {
